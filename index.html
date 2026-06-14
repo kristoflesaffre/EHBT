@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eerste Hulp bij Trauma — begrijpelijke antwoorden over trauma en herstel</title>
+<meta name="description" content="Rustige, onderbouwde antwoorden over trauma, complex trauma en herstel. Onafhankelijk geschreven en geïnspireerd door traumawetenschap, hechtingsonderzoek en gerenommeerde bronnen. Geen vervanging voor professionele hulp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Albert+Sans:ital,wght@0,400..800;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='82' font-size='78'>🌿</text></svg>">
+</head>
+<body>
+
+<div class="korrel" aria-hidden="true"></div>
+
+<header class="site-kop" id="siteKop">
+  <div class="logo" aria-label="Eerste Hulp bij Trauma">
+    <a class="logo-home" href="#/" aria-label="Eerste Hulp bij Trauma — naar startpagina">
+      <span class="logo-merk">EHB<span class="logo-o">T</span></span>
+    </a>
+    <span class="logo-sub">
+      Eerste Hulp bij
+      <span class="logo-wissel" aria-hidden="true">
+        <span class="logo-wissel-woord logo-wissel-trauma">Trauma</span>
+        <span class="logo-wissel-woord logo-wissel-herstel">Herstel</span>
+      </span>
+      <span class="visueel-verborgen">Trauma en Herstel</span>
+    </span>
+  </div>
+  <nav class="hoofdnav" aria-label="Hoofdnavigatie">
+    <a href="#/noodhulp" data-nav="noodhulp">🆘 Acute hulp</a>
+    <a href="#/themas" data-nav="themas">Vragen</a>
+    <a href="#/uitgelegd" data-nav="uitgelegd">Trauma uitgelegd</a>
+    <a href="#/therapieen" data-nav="therapieen">Therapieën</a>
+    <a href="#/mythes" data-nav="mythes">Mythes</a>
+    <a href="#/boeken" data-nav="boeken">Boekenkast</a>
+  </nav>
+  <button class="zoek-knop" id="zoekKnop" aria-label="Zoeken (sneltoets: /)">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <span>Zoeken</span>
+  </button>
+  <button class="menu-knop" id="menuKnop" aria-label="Menu openen" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<button class="mobiel-zoekbalk" id="mobielZoekbalk" aria-label="Zoeken">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+  <span>Zoeken naar een onderwerp…</span>
+</button>
+
+<div class="mobiel-menu" id="mobielMenu" hidden>
+  <nav aria-label="Mobiel menu">
+    <a href="#/noodhulp">🆘 Acute hulp</a>
+    <a href="#/themas">Vragen per thema</a>
+    <a href="#/uitgelegd">Trauma uitgelegd</a>
+    <a href="#/therapieen">Therapieën</a>
+    <a href="#/mythes">Mythes ontkracht</a>
+    <a href="#/boeken">Boekenkast</a>
+  </nav>
+</div>
+
+<div class="zoek-laag" id="zoekLaag" hidden role="dialog" aria-modal="true" aria-label="Zoeken">
+  <div class="zoek-paneel">
+    <div class="zoek-veld">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" id="zoekInput" placeholder="Typ je vraag… bv. flashback, dissociatie, EMDR" autocomplete="off">
+      <button class="zoek-sluit" id="zoekSluit" aria-label="Zoeken sluiten"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <div class="zoek-resultaten" id="zoekResultaten" role="listbox" aria-label="Zoekresultaten"></div>
+  </div>
+</div>
+
+<main id="app" tabindex="-1"></main>
+
+<footer class="site-voet">
+  <div class="voet-binnen">
+    <div class="voet-merk">
+      <span class="logo-merk licht">EHB<span class="logo-o">T</span></span>
+      <p>Rustige, onderbouwde uitleg over trauma en herstel — onafhankelijk geschreven en geïnspireerd door traumawetenschap, hechtingsonderzoek en gerenommeerde bronnen. Geen oordeel, wel richting.</p>
+    </div>
+    <nav class="voet-nav" aria-label="Voetnavigatie">
+      <a href="#/noodhulp">Acute hulp</a>
+      <a href="#/themas">Alle vragen</a>
+      <a href="#/uitgelegd">Trauma uitgelegd</a>
+      <a href="#/therapieen">Therapieën</a>
+      <a href="#/mythes">Mythes</a>
+      <a href="#/boeken">Boekenkast</a>
+    </nav>
+    <div class="voet-crisis">
+      <strong>In crisis of acuut gevaar?</strong>
+      <span><a href="tel:112">112</a> — onmiddellijk gevaar</span>
+      <span><a href="tel:1813">1813</a> — Zelfmoordlijn (gratis, 24/7)</span>
+      <span><a href="tel:106">106</a> — Tele-Onthaal</span>
+    </div>
+    <p class="voet-noot">Deze onafhankelijke site is niet verbonden aan de auteurs of uitgevers van de genoemde boeken en bevat geen downloadbare boekbestanden. De inhoud is onafhankelijk geschreven, educatief van aard en <strong>geen vervanging voor professionele psychologische, psychiatrische of medische hulp</strong>, en evenmin een diagnose. Herken je jezelf in wat je leest, of maak je je zorgen? Bespreek het met je huisarts of een erkende hulpverlener. In crisis: bel&nbsp;112, de Zelfmoordlijn&nbsp;1813 of Tele-Onthaal&nbsp;106.</p>
+  </div>
+</footer>
+
+<script src="js/data-boeken.js"></script>
+<script src="js/data-vragen-1.js"></script>
+<script src="js/data-vragen-2.js"></script>
+<script src="js/data-vragen-3.js"></script>
+<script src="js/data-vragen-4.js"></script>
+<script src="js/data-vragen-5.js"></script>
+<script src="js/data-vragen-6.js"></script>
+<script src="js/data-vragen-7.js"></script>
+<script src="js/data-vragen-8.js"></script>
+<script src="js/data-vragen-9.js"></script>
+<script src="js/data-vragen-10.js"></script>
+<script src="js/data-vragen-11.js"></script>
+<script src="js/data-vragen-12.js"></script>
+<script src="js/data-vragen-13.js"></script>
+<script src="js/data-vragen-14.js"></script>
+<script src="js/data-vragen-15.js"></script>
+<script src="js/data-vragen-16.js"></script>
+<script src="js/data-vragen-17.js"></script>
+<script src="js/data-vragen-18.js"></script>
+<script src="js/data-vragen-19.js"></script>
+<script src="js/data-therapieen.js"></script>
+<script src="js/data-uitgelegd.js"></script>
+<script src="js/data-extra.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
