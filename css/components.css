@@ -885,6 +885,26 @@
   line-height: 1.62;
 }
 
+.therapie-groep {
+  margin-top: clamp(32px, 5vw, 56px);
+}
+
+.therapie-groep-kop {
+  max-width: 760px;
+  margin-bottom: 18px;
+}
+
+.therapie-groep-kop h2 {
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
+  margin-bottom: 8px;
+}
+
+.therapie-groep-kop p {
+  color: var(--inkt-zacht);
+  max-width: 680px;
+  margin: 0;
+}
+
 @media (max-width: 760px) {
   .therapie-context-grid {
     grid-template-columns: 1fr;
@@ -1804,6 +1824,22 @@
 .therapie-voluit {
   display: block; color: var(--inkt-zacht); font-size: .82rem;
   font-weight: 600; margin: 0 0 14px;
+}
+.therapie-pastbij {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  margin: -4px 0 14px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent, var(--terracotta)) 11%, var(--kaart));
+  border: 1px solid color-mix(in srgb, var(--accent, var(--terracotta)) 28%, transparent);
+  color: var(--accent, var(--terracotta-diep));
+  font-size: .68rem;
+  font-weight: 850;
+  letter-spacing: .07em;
+  text-transform: uppercase;
 }
 .therapie-kaart .evidentie-badge { margin-top: auto; align-self: flex-start; }
 .therapie-kaart::after { content: none; }

@@ -316,7 +316,7 @@ function renderHome() {
   </section>
 
   <section class="sectie home-sectie">
-    ${sectieKop("Behandeling", "Welke therapieën helpen bij trauma?", "Van EMDR tot somatische therapie en IFS: wat het is, voor wie het bedoeld is en hoe stevig het onderbouwd is.", "", { href: "#/therapieen", label: `Alle ${THERAPIEEN.length} therapieën` })}
+    ${sectieKop("Behandeling", "Welke therapieën helpen bij trauma?", "PTSS vraagt vaak iets anders dan complex of vroeg relationeel trauma. Bekijk per aanpak waar die vooral voor bedoeld is.", "", { href: "#/therapieen", label: `Alle ${THERAPIEEN.length} therapieën` })}
     <div class="onderzoek-raster onderzoek-raster-home">
       ${THERAPIEEN.slice(0, 3).map((t, i) => therapieKaartHTML(t, i)).join("")}
     </div>
@@ -412,6 +412,29 @@ const EVIDENTIE_KLEUR = {
   "in ontwikkeling": "var(--evidentie-ontwikkeling)"
 };
 
+const THERAPIE_GROEPEN = [
+  {
+    id: "ptss",
+    titel: "PTSS: traumaherinneringen verwerken",
+    tekst: "Voor afgebakende traumatische gebeurtenissen staan traumagerichte behandelingen centraal: de herinnering, vermijding en alarmreactie verliezen hun lading."
+  },
+  {
+    id: "cptss",
+    titel: "CPTSS: lichaam, delen en ontwikkeling",
+    tekst: "Bij complex of vroeg relationeel trauma gaat het vaak niet om één herinnering, maar om een zenuwstelsel, zelfbeeld en relatiepatroon dat jarenlang gevormd werd."
+  },
+  {
+    id: "stabilisatie",
+    titel: "Stabilisatie en regulatie",
+    tekst: "Soms is de eerste stap niet verwerken maar veilig genoeg worden: minder crisis, minder dissociatie, meer lichaamscontact en meer draagkracht."
+  },
+  {
+    id: "relationeel",
+    titel: "Hechting en relaties",
+    tekst: "Wanneer trauma vooral zichtbaar wordt in nabijheid, afstand, conflict of vertrouwen, kan relationeel werk een belangrijke ingang zijn."
+  }
+];
+
 function evidentieBadgeHTML(niveau, eigenLabel = "") {
   const label = eigenLabel || EVIDENTIE_LABEL[niveau] || niveau;
   const kleur = EVIDENTIE_KLEUR[niveau] || "var(--evidentie-sterk)";
@@ -424,9 +447,25 @@ function therapieKaartHTML(t, i = 0) {
     <span class="onderzoek-label">${t.icoon} Therapie</span>
     <h3>${t.naam}</h3>
     <span class="therapie-voluit">${t.voluit}</span>
+    ${t.pastBij ? `<span class="therapie-pastbij">${t.pastBij}</span>` : ""}
     <p class="onderzoek-haakje">${t.kort}</p>
     ${evidentieBadgeHTML(t.evidentieNiveau, t.evidentieLabel)}
   </a>`;
+}
+
+function therapieGroepHTML(groep, groepIndex = 0) {
+  const items = THERAPIEEN.filter(t => (t.overzichtGroep || "stabilisatie") === groep.id);
+  if (!items.length) return "";
+  return `
+    <section class="therapie-groep verschijn" style="--wacht:${Math.min(groepIndex * 0.08, 0.28)}s">
+      <div class="therapie-groep-kop">
+        <h2>${groep.titel}</h2>
+        <p>${groep.tekst}</p>
+      </div>
+      <div class="onderzoek-raster">
+        ${items.map((t, i) => therapieKaartHTML(t, i)).join("")}
+      </div>
+    </section>`;
 }
 
 function conceptKaartHTML(c, i = 0) {
@@ -703,9 +742,7 @@ function renderTherapieen() {
         <p>DBT is sterk voor crisisvaardigheden, emotieregulatie en zelfbeschadiging. Het is meestal geen volledige traumaverwerking op zich. Bij complex trauma kan DBT wel een belangrijke eerste laag zijn: veilig genoeg worden om daarna lichaamsgericht, relationeel of traumagericht te kunnen werken.</p>
       </article>
     </div>
-    <div class="onderzoek-raster">
-      ${THERAPIEEN.map((t, i) => therapieKaartHTML(t, i)).join("")}
-    </div>
+    ${THERAPIE_GROEPEN.map(therapieGroepHTML).join("")}
   </section>`;
 }
 

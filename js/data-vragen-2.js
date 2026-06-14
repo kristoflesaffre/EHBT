@@ -321,47 +321,41 @@ const VRAGEN_2 = [
       "behandeling",
       "vertrouwen"
     ],
-    kort: "Goede traumatherapie is erop gebouwd om je níet te overspoelen. Een tijdelijke toename van emoties kan voorkomen, maar structureel erger worden is een teken dat de aanpak of het tempo bijgesteld moet worden.",
+    kort: "Goede traumatherapie is erop gericht om je stap voor stap te helpen verwerken, niet om je te overspoelen. Een tijdelijke toename van emoties kan voorkomen, maar langdurig meer ontregeling is een signaal dat het tempo, de aanpak of de samenwerking opnieuw bekeken moet worden.",
     blokken: [
       {
-        tekst: "De angst is reëel: door erover te praten haal je dingen naar boven die je net onder controle had. Sommige mensen hebben ooit een slechte ervaring gehad met hulp die te snel ging. Toch is goed uitgevoerde traumatherapie juist ontworpen om dat te voorkomen."
-      },
-      {
         kop: "Het verschil zit in tempo en veiligheid",
-        tekst: "Een traumagerichte therapeut bouwt eerst veiligheid en stabiliteit op en doseert daarna zorgvuldig. Een korte, tijdelijke toename van emoties of vermoeidheid na een sessie kan normaal zijn — verwerking kost energie. Maar als je structureel ontregeld raakt, langdurig overspoeld blijft of je onveilig voelt bij je therapeut, dan is dat een signaal dat er iets moet veranderen, niet dat therapie 'nu eenmaal pijn doet'."
-      },
-      {
-        kop: "Jij houdt de regie",
-        tekst: "Goede hulp werkt mét jou, niet óver je heen. Je mag vragen hoe er gewerkt wordt, aangeven wanneer het te veel is, en het tempo mee bepalen. Een match met de juiste therapeut is belangrijk; voelt het niet veilig, dan mag je iemand anders zoeken. Vertrouwen is geen luxe bij traumawerk — het is de werkzame basis."
+        tekst: "Veel mensen zijn bang dat therapie oude pijn opnieuw opent. Die bezorgdheid is begrijpelijk. Misschien heb je ervaringen bewust of onbewust op afstand gehouden om te kunnen functioneren, of heb je eerder hulp gehad die te snel ging. Toch is goede traumatherapie niet bedoeld om je zomaar terug te brengen naar pijnlijke ervaringen. Het doel is juist om moeilijke ervaringen op een veilige en draagbare manier te benaderen.\nkop: Het verschil zit in tempo en veiligheid\ntekst: Traumatherapie werkt meestal het best wanneer er eerst voldoende veiligheid, stabiliteit en vertrouwen is opgebouwd. Pas daarna wordt gekeken naar wat verwerkt wil worden. <strong>Een tijdelijke toename van emoties, vermoeidheid of gevoeligheid na een sessie kan normaal zijn.</strong> Verwerken vraagt energie. Maar wanneer je langdurig overspoeld blijft, steeds verder ontregeld raakt of je onveilig voelt binnen het therapeutische contact, verdient dat aandacht. Dat betekent niet automatisch dat therapie verkeerd is, maar wel dat het tempo of de aanpak mogelijk niet goed aansluit bij wat jij nodig hebt.\nkop: Jij hoeft het niet alleen te dragen\ntekst: Goede traumatherapie gebeurt samen. Je mag aangeven wanneer iets te veel wordt, vragen om te vertragen of bespreken wat een sessie met je doet. Een therapeut hoort ruimte te maken voor die signalen. <strong>Vertrouwen en samenwerking zijn geen extra's, maar een belangrijk onderdeel van herstel.</strong> Voelt het contact structureel onveilig of niet passend, dan mag je onderzoeken of een andere therapeut beter bij je past.\n\nkop: Meer voelen is niet hetzelfde als achteruitgaan\ntekst: Wanneer mensen voor het eerst meer contact krijgen met emoties, lichaamsreacties of herinneringen die lang op afstand stonden, kan dat aanvoelen alsof het slechter gaat. Soms is dat een teken dat er meer bewustzijn ontstaat, niet dat er schade wordt aangericht. Het verschil zit vaak in de vraag of je na verloop van tijd ook meer begrip, keuzevrijheid, stabiliteit of herstelmomenten ervaart. Als dat uitblijft, bespreek dat dan open met je behandelaar."
       }
     ],
     doeDit: [
-      "Kies een traumagerichte therapeut en bespreek vooraf hoe overspoeling wordt voorkomen.",
-      "Geef grenzen aan; je mag het tempo mee bepalen.",
-      "Onderscheid tijdelijke naweeën van structurele ontregeling — bespreek dat laatste meteen."
+      "Bespreek vooraf hoe een therapeut omgaat met veiligheid, stabilisatie en overspoeling.",
+      "Geef aan wanneer iets te snel gaat of te intens voelt.",
+      "Houd in de gaten hoe je je tussen sessies voelt en bespreek langdurige ontregeling.",
+      "Zoek een therapeut bij wie je je voldoende veilig voelt om eerlijk te zijn over je grenzen."
     ],
     vermijd: [
-      "Hulp blijven mijden uit angst, terwijl klachten je leven beperken.",
-      "Bij een slechte match concluderen dat 'therapie niet voor jou werkt'.",
-      "Doorgaan met een aanpak die je telkens overspoelt."
+      "Denken dat meer emoties automatisch betekenen dat therapie schade doet.",
+      "Een slechte ervaring met één therapeut zien als bewijs dat therapie niet werkt.",
+      "Blijven doorgaan met een aanpak die je telkens opnieuw overspoelt zonder dit te bespreken.",
+      "Je ongemak verzwijgen uit angst om lastig gevonden te worden."
     ],
-    zegDit: [
-      "“Dit gaat me te snel. Kunnen we vertragen?”"
-    ],
+    zegDit: "\"Dit voelt te veel voor mij op dit moment.\", \"Kunnen we vertragen?\", \"Ik merk dat ik tussen sessies ontregeld blijf.\", \"Ik wil graag begrijpen waarom we deze stap zetten.\"",
     bronnen: [
       {
         boek: "complex-ptsd-workbook",
-        detail: "Over veilige, gefaseerde behandeling en het belang van tempo."
+        detail: "Over gefaseerde traumabehandeling, stabilisatie en het belang van tempo."
       },
       {
         boek: "healing-developmental-trauma",
-        detail: "Over werken in het hier-en-nu zonder te overspoelen."
+        detail: "Over veiligheid, zelfregulatie en het voorkomen van overspoeling tijdens traumawerk."
       }
     ],
     gerelateerd: [
       "moet-ik-herbeleven",
       "hoe-lang-duurt-herstel",
       "weinig-jeugdherinneringen"
-    ]
+    ],
+    _index: 13
   }
 ];

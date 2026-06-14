@@ -39,7 +39,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=The%20Body%20Keeps%20the%20Score%20Bessel%20van%20der%20Kolk"
       }
-    ]
+    ],
+    cover: "img/covers/body-keeps-score.jpg"
   },
   "cptsd-surviving-thriving": {
     titel: "Complex PTSD: From Surviving to Thriving",
@@ -67,7 +68,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Complex%20PTSD%20From%20Surviving%20to%20Thriving%20Pete%20Walker"
       }
-    ]
+    ],
+    cover: "img/covers/cptsd-surviving-thriving.jpg"
   },
   "no-bad-parts": {
     titel: "No Bad Parts",
@@ -95,7 +97,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=No%20Bad%20Parts%20Internal%20Family%20Systems%20Richard%20Schwartz"
       }
-    ]
+    ],
+    cover: "img/covers/no-bad-parts.jpg"
   },
   anchored: {
     titel: "Anchored",
@@ -123,7 +126,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Anchored%20Deb%20Dana%20polyvagal%20Deb%20Dana"
       }
-    ]
+    ],
+    cover: "img/covers/anchored.jpg"
   },
   "waking-the-tiger": {
     titel: "Waking the Tiger",
@@ -151,7 +155,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Waking%20the%20Tiger%20Healing%20Trauma%20Peter%20Levine"
       }
-    ]
+    ],
+    cover: "img/covers/waking-the-tiger.jpg"
   },
   "healing-developmental-trauma": {
     titel: "Healing Developmental Trauma",
@@ -180,7 +185,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Healing%20Developmental%20Trauma%20NARM%20Laurence%20Heller"
       }
-    ]
+    ],
+    cover: "img/covers/healing-developmental-trauma.jpg"
   },
   "running-on-empty": {
     titel: "Running on Empty",
@@ -208,7 +214,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Running%20on%20Empty%20Childhood%20Emotional%20Neglect%20Jonice%20Webb"
       }
-    ]
+    ],
+    cover: "img/covers/running-on-empty.jpg"
   },
   "healing-fragmented-selves": {
     titel: "Healing the Fragmented Selves of Trauma Survivors",
@@ -236,7 +243,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Healing%20the%20Fragmented%20Selves%20of%20Trauma%20Survivors%20Janina%20Fisher"
       }
-    ]
+    ],
+    cover: "img/covers/healing-fragmented-selves.jpg"
   },
   "myth-of-normal": {
     titel: "The Myth of Normal",
@@ -264,7 +272,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=The%20Myth%20of%20Normal%20Gabor%20Mate"
       }
-    ]
+    ],
+    cover: "img/covers/myth-of-normal.jpg"
   },
   "complex-ptsd-workbook": {
     titel: "The Complex PTSD Workbook",
@@ -292,7 +301,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=The%20Complex%20PTSD%20Workbook%20Arielle%20Schwartz"
       }
-    ]
+    ],
+    cover: "img/covers/complex-ptsd-workbook.jpg"
   },
   "deepest-well": {
     titel: "The Deepest Well",
@@ -320,7 +330,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=The%20Deepest%20Well%20Nadine%20Burke%20Harris%20Nadine%20Burke%20Harris"
       }
-    ]
+    ],
+    cover: "img/covers/deepest-well.jpg"
   },
   attached: {
     titel: "Attached",
@@ -347,7 +358,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Attached%20the%20new%20science%20of%20adult%20attachment%20Amir%20Levine"
       }
-    ]
+    ],
+    cover: "img/covers/attached.jpg"
   },
   "in-an-unspoken-voice": {
     titel: "In an Unspoken Voice",
@@ -375,7 +387,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=In%20an%20Unspoken%20Voice%20Peter%20Levine%20Peter%20Levine"
       }
-    ]
+    ],
+    cover: "img/covers/in-an-unspoken-voice.jpg"
   },
   "trauma-and-memory": {
     titel: "Trauma and Memory",
@@ -403,7 +416,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Trauma%20and%20Memory%20Peter%20Levine%20Peter%20Levine"
       }
-    ]
+    ],
+    cover: "img/covers/trauma-and-memory.jpg"
   },
   "when-body-says-no": {
     titel: "When the Body Says No",
@@ -432,7 +446,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=When%20the%20Body%20Says%20No%20Gabor%20Mate%20Gabor%20Mate"
       }
-    ]
+    ],
+    cover: "img/covers/when-body-says-no.jpg"
   },
   "what-happened-to-you": {
     titel: "What Happened to You?",
@@ -461,7 +476,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=What%20Happened%20to%20You%20Bruce%20Perry%20Oprah%20Bruce%20Perry"
       }
-    ]
+    ],
+    cover: "img/covers/what-happened-to-you.jpg"
   },
   "break-the-cycle": {
     titel: "Break the Cycle",
@@ -490,7 +506,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Break%20the%20Cycle%20Mariel%20Buque%20intergenerational%20Mariel%20Buque"
       }
-    ]
+    ],
+    cover: "img/covers/break-the-cycle.jpg"
   },
   "tiny-traumas": {
     titel: "Tiny Traumas",
@@ -518,7 +535,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Tiny%20Traumas%20Meg%20Arroll%20Meg%20Arroll"
       }
-    ]
+    ],
+    cover: "img/covers/tiny-traumas.jpg"
   },
   "end-of-trauma": {
     titel: "The End of Trauma",
@@ -546,7 +564,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=The%20End%20of%20Trauma%20George%20Bonanno%20George%20Bonanno"
       }
-    ]
+    ],
+    cover: "img/covers/end-of-trauma.jpg"
   },
   "politics-of-trauma": {
     titel: "The Politics of Trauma",
@@ -574,7 +593,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=The%20Politics%20of%20Trauma%20Staci%20Haines%20Staci%20Haines"
       }
-    ]
+    ],
+    cover: "img/covers/politics-of-trauma.jpg"
   },
   "healing-shame-binds": {
     titel: "Healing the Shame That Binds You",
@@ -602,7 +622,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Healing%20the%20Shame%20That%20Binds%20You%20John%20Bradshaw%20John%20Bradshaw"
       }
-    ]
+    ],
+    cover: "img/covers/healing-shame-binds.jpg"
   },
   carefrontation: {
     titel: "Carefrontation",
@@ -631,7 +652,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Carefrontation%20Arlene%20Drake%20Arlene%20Drake"
       }
-    ]
+    ],
+    cover: "img/covers/carefrontation.jpg"
   },
   "its-not-your-fault": {
     titel: "It's Not Your Fault",
@@ -659,7 +681,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=It's%20Not%20Your%20Fault%20Alex%20Howard%20trauma%20Alex%20Howard"
       }
-    ]
+    ],
+    cover: "img/covers/its-not-your-fault.jpg"
   },
   "overcoming-childhood-trauma": {
     titel: "Overcoming Your Childhood Trauma",
@@ -687,7 +710,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Overcoming%20Your%20Childhood%20Trauma%20Sostenes%20Lima%20Sostenes%20Lima"
       }
-    ]
+    ],
+    cover: "img/covers/overcoming-childhood-trauma.jpg"
   },
   "wounded-inner-child": {
     titel: "Healing Your Wounded Inner Child",
@@ -715,7 +739,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Healing%20Your%20Wounded%20Inner%20Child%20Maria%20Clarke%20Maria%20Clarke"
       }
-    ]
+    ],
+    cover: "img/covers/wounded-inner-child.jpg"
   },
   "transforming-legacy": {
     titel: "Transforming the Legacy",
@@ -744,7 +769,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Transforming%20the%20Legacy%20Kathryn%20Basham%20Kathryn%20Basham"
       }
-    ]
+    ],
+    cover: "img/covers/transforming-legacy.jpg"
   },
   "drama-gifted-child": {
     titel: "The Drama of the Gifted Child",
@@ -773,7 +799,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=The%20Drama%20of%20the%20Gifted%20Child%20Alice%20Miller%20Alice%20Miller"
       }
-    ]
+    ],
+    cover: "img/covers/drama-gifted-child.jpg"
   },
   "emotional-incest": {
     titel: "The Emotional Incest Syndrome",
@@ -802,7 +829,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=The%20Emotional%20Incest%20Syndrome%20Patricia%20Love%20Patricia%20Love"
       }
-    ]
+    ],
+    cover: "img/covers/emotional-incest.jpg"
   },
   "will-i-ever-be-good-enough": {
     titel: "Will I Ever Be Good Enough?",
@@ -831,7 +859,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Will%20I%20Ever%20Be%20Good%20Enough%20Karyl%20McBride%20Karyl%20McBride"
       }
-    ]
+    ],
+    cover: "img/covers/will-i-ever-be-good-enough.jpg"
   },
   "trapped-in-the-mirror": {
     titel: "Trapped in the Mirror",
@@ -859,7 +888,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Trapped%20in%20the%20Mirror%20Elan%20Golomb%20narcissistic%20parents%20Elan%20Golomb"
       }
-    ]
+    ],
+    cover: "img/covers/trapped-in-the-mirror.jpg"
   },
   "disease-to-please": {
     titel: "The Disease to Please",
@@ -887,7 +917,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=The%20Disease%20to%20Please%20Harriet%20Braiker%20Harriet%20Braiker"
       }
-    ]
+    ],
+    cover: "img/covers/disease-to-please.jpg"
   },
   "not-price-of-admission": {
     titel: "Not the Price of Admission",
@@ -915,7 +946,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Not%20the%20Price%20of%20Admission%20Laura%20Brown%20Laura%20Brown"
       }
-    ]
+    ],
+    cover: "img/covers/not-price-of-admission.jpg"
   },
   "healing-emotional-self": {
     titel: "Healing Your Emotional Self",
@@ -944,7 +976,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Healing%20Your%20Emotional%20Self%20Beverly%20Engel%20Beverly%20Engel"
       }
-    ]
+    ],
+    cover: "img/covers/healing-emotional-self.jpg"
   },
   "compassion-self-hate": {
     titel: "Compassion and Self-Hate",
@@ -972,7 +1005,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Compassion%20and%20Self-Hate%20Theodore%20Rubin%20Theodore%20Rubin"
       }
-    ]
+    ],
+    cover: "img/covers/compassion-self-hate.jpg"
   },
   "soul-without-shame": {
     titel: "Soul Without Shame",
@@ -999,7 +1033,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Soul%20Without%20Shame%20Byron%20Brown%20Byron%20Brown"
       }
-    ]
+    ],
+    cover: "img/covers/soul-without-shame.jpg"
   },
   "nurturing-resilience": {
     titel: "Nurturing Resilience",
@@ -1028,7 +1063,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Nurturing%20Resilience%20Kathy%20Kain%20Kathy%20Kain"
       }
-    ]
+    ],
+    cover: "img/covers/nurturing-resilience.jpg"
   },
   "heal-body-heal-mind": {
     titel: "Heal the Body, Heal the Mind",
@@ -1056,7 +1092,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Heal%20the%20Body%20Heal%20the%20Mind%20Susanne%20Babbel%20Susanne%20Babbel"
       }
-    ]
+    ],
+    cover: "img/covers/heal-body-heal-mind.jpg"
   },
   "becoming-the-body": {
     titel: "Becoming the Body",
@@ -1083,7 +1120,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Becoming%20the%20Body%20Ken%20Michaels%20somatic%20Ken%20Michaels"
       }
-    ]
+    ],
+    cover: "img/covers/becoming-the-body.jpg"
   },
   "body-first-healing": {
     titel: "Body-First Healing",
@@ -1111,7 +1149,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Body-First%20Healing%20Brittany%20Piper%20Brittany%20Piper"
       }
-    ]
+    ],
+    cover: "img/covers/body-first-healing.jpg"
   },
   "mindful-somatic-awareness": {
     titel: "Mindful Somatic Awareness for Anxiety Relief",
@@ -1139,7 +1178,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Mindful%20Somatic%20Awareness%20Michele%20Blume%20Michele%20Blume"
       }
-    ]
+    ],
+    cover: "img/covers/mindful-somatic-awareness.jpg"
   },
   "somatic-ifs": {
     titel: "Somatic Internal Family Systems Therapy",
@@ -1167,7 +1207,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Somatic%20Internal%20Family%20Systems%20Susan%20McConnell%20Susan%20McConnell"
       }
-    ]
+    ],
+    cover: "img/covers/somatic-ifs.jpg"
   },
   "ifs-workbook": {
     titel: "Internal Family Systems Therapy Workbook",
@@ -1195,7 +1236,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Internal%20Family%20Systems%20Therapy%20Workbook%20Susan%20McConnell%20Susan%20McConnell"
       }
-    ]
+    ],
+    cover: "img/covers/ifs-workbook.jpg"
   },
   "narm-practical-guide": {
     titel: "The Practical Guide for Healing Developmental Trauma",
@@ -1224,7 +1266,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Practical%20Guide%20Healing%20Developmental%20Trauma%20Heller%20Laurence%20Heller"
       }
-    ]
+    ],
+    cover: "img/covers/narm-practical-guide.jpg"
   },
   "tender-parts": {
     titel: "The Tender Parts",
@@ -1252,7 +1295,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=The%20Tender%20Parts%20Ilyse%20Kennedy%20Ilyse%20Kennedy"
       }
-    ]
+    ],
+    cover: "img/covers/tender-parts.jpg"
   },
   "cptsd-coping-workbook": {
     titel: "The Complex PTSD Coping Skills Workbook",
@@ -1281,7 +1325,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Complex%20PTSD%20Coping%20Skills%20Workbook%20Greenberg%20Tamara%20Greenberg"
       }
-    ]
+    ],
+    cover: "img/covers/cptsd-coping-workbook.jpg"
   },
   "dbt-cptsd-workbook": {
     titel: "The DBT Skills Workbook for CPTSD",
@@ -1310,7 +1355,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=DBT%20Skills%20Workbook%20for%20CPTSD%20Sheri%20van%20Dijk%20Sheri%20van%20Dijk"
       }
-    ]
+    ],
+    cover: "img/covers/dbt-cptsd-workbook.jpg"
   },
   ptsdreams: {
     titel: "PTSDreams",
@@ -1338,7 +1384,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=PTSDreams%20Linda%20Yael%20Schiller%20nightmares%20Linda%20Schiller"
       }
-    ]
+    ],
+    cover: "img/covers/ptsdreams.jpg"
   },
   "stoning-demons-1": {
     titel: "Stoning Demons: Childhood Trauma as a Primer for CPTSD",
@@ -1365,7 +1412,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Stoning%20Demons%20Childhood%20Trauma%20CPTSD%20Kimberly%20Callis%20Kimberly%20Callis"
       }
-    ]
+    ],
+    cover: "img/covers/stoning-demons-1.jpg"
   },
   "stoning-demons-2": {
     titel: "Stoning Demons: Symptoms and Progression of CPTSD",
@@ -1392,7 +1440,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Stoning%20Demons%20Symptoms%20CPTSD%20Kimberly%20Callis%20Kimberly%20Callis"
       }
-    ]
+    ],
+    cover: "img/covers/stoning-demons-2.jpg"
   },
   "neurofeedback-developmental": {
     titel: "Neurofeedback in the Treatment of Developmental Trauma",
@@ -1420,7 +1469,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Neurofeedback%20Developmental%20Trauma%20Sebern%20Fisher%20Sebern%20Fisher"
       }
-    ]
+    ],
+    cover: "img/covers/neurofeedback-developmental.jpg"
   },
   "hold-me-tight": {
     titel: "Hold Me Tight",
@@ -1447,7 +1497,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Hold%20Me%20Tight%20Sue%20Johnson%20EFT%20Sue%20Johnson"
       }
-    ]
+    ],
+    cover: "img/covers/hold-me-tight.jpg"
   },
   "journey-abandonment": {
     titel: "The Journey from Abandonment to Healing",
@@ -1475,7 +1526,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Journey%20from%20Abandonment%20to%20Healing%20Susan%20Anderson%20Susan%20Anderson"
       }
-    ]
+    ],
+    cover: "img/covers/journey-abandonment.jpg"
   },
   "understanding-borderline-mother": {
     titel: "Understanding the Borderline Mother",
@@ -1503,7 +1555,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Understanding%20the%20Borderline%20Mother%20Christine%20Lawson%20Christine%20Lawson"
       }
-    ]
+    ],
+    cover: "img/covers/understanding-borderline-mother.jpg"
   },
   "hate-you-dont-leave": {
     titel: "I Hate You — Don't Leave Me",
@@ -1532,7 +1585,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=I%20Hate%20You%20Don't%20Leave%20Me%20borderline%20Kreisman%20Jerold%20Kreisman"
       }
-    ]
+    ],
+    cover: "img/covers/hate-you-dont-leave.jpg"
   },
   "surviving-compassion-fatigue": {
     titel: "Surviving Compassion Fatigue",
@@ -1560,7 +1614,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Surviving%20Compassion%20Fatigue%20Beverly%20Kyer%20Beverly%20Kyer"
       }
-    ]
+    ],
+    cover: "img/covers/surviving-compassion-fatigue.jpg"
   },
   "get-me-out-of-here": {
     titel: "Get Me Out of Here",
@@ -1588,7 +1643,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Get%20Me%20Out%20of%20Here%20Rachel%20Reiland%20borderline%20Rachel%20Reiland"
       }
-    ]
+    ],
+    cover: "img/covers/get-me-out-of-here.jpg"
   },
   "when-body-speaks": {
     titel: "When the Body Speaks",
@@ -1616,7 +1672,8 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=When%20the%20Body%20Speaks%20Liz%20Tenuto%20Liz%20Tenuto"
       }
-    ]
+    ],
+    cover: "img/covers/when-body-speaks.jpg"
   },
   "neurodivergent-somatics": {
     titel: "Neurodivergent Somatics in Therapy",
@@ -1644,13 +1701,10 @@ const BOEKEN = {
         label: "Standaard Boekhandel",
         url: "https://www.standaardboekhandel.be/zoeken?text=Neurodivergent%20Somatics%20in%20Therapy%20Nyck%20Walsh%20Nyck%20Walsh"
       }
-    ]
+    ],
+    cover: "img/covers/neurodivergent-somatics.jpg"
   }
 };
-
-Object.keys(BOEKEN).forEach(id => {
-  BOEKEN[id].cover = `img/covers/${id}.jpg`;
-});
 
 const THEMAS = [
   {
@@ -1750,3 +1804,4 @@ const LEEFTIJDEN = [
     naam: "Vroeg / complex"
   }
 ];
+

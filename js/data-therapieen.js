@@ -43,6 +43,8 @@ const THERAPIEEN = [
     evidentie: "EMDR behoort tot de best onderzochte traumabehandelingen en wordt door internationale richtlijnen aanbevolen voor PTSS. Bij complex trauma kan EMDR ook helpen, maar meestal pas wanneer er voldoende stabiliteit, veiligheid en therapeutische afstemming is.",
     evidentieNiveau: "sterk",
     evidentieLabel: "Richtlijnbehandeling PTSS",
+    overzichtGroep: "ptss",
+    pastBij: "Vooral PTSS",
     geschiktBij: [
       "wat-is-trauma",
       "emoties"
@@ -54,7 +56,68 @@ const THERAPIEEN = [
       }
     ],
     gerelateerd: [
+      "trauma-focused-cbt",
       "somatic-experiencing",
+      "schematherapie"
+    ]
+  },
+  {
+    id: "trauma-focused-cbt",
+    naam: "Traumagerichte CBT",
+    voluit: "Trauma-focused CBT, CPT en exposure",
+    icoon: "🧠",
+    accent: "#4a6b8a",
+    kort: "Werkt rechtstreeks met traumaherinneringen, vermijding en vastzittende overtuigingen zoals schuld, schaamte of gevaar.",
+    voorWie: "Vooral PTSS na een afgebakende gebeurtenis of reeks herinneringen. Bij CPTSS kan het deel zijn van behandeling, maar meestal pas na stabilisatie en met aandacht voor dissociatie, schaamte en relaties.",
+    blokken: [
+      {
+        tekst: "Traumagerichte cognitieve gedragstherapie is een verzamelnaam voor behandelingen die rechtstreeks werken met de traumaherinnering, vermijding en overtuigingen die na trauma vastlopen. Denk aan trauma-focused CBT, Cognitive Processing Therapy (CPT) en vormen van exposure."
+      },
+      {
+        kop: "Waar het op mikt",
+        tekst: "De behandeling helpt je brein opnieuw leren dat de gebeurtenis voorbij is, dat vermijden de angst vaak in stand houdt, en dat overtuigingen als 'het was mijn schuld' of 'ik ben nooit veilig' onderzocht kunnen worden. Bij complex trauma gebeurt dit doorgaans trager, gefaseerder en met meer aandacht voor regulatie."
+      }
+    ],
+    hoeWerkt: [
+      {
+        kop: "Psycho-educatie",
+        tekst: "Je leert hoe PTSS, vermijding, herbeleving en alarmreacties werken."
+      },
+      {
+        kop: "Herinnering benaderen",
+        tekst: "Je werkt stapsgewijs met de herinnering of met vermeden situaties, zonder jezelf te overspoelen."
+      },
+      {
+        kop: "Betekenis onderzoeken",
+        tekst: "Vastzittende overtuigingen rond schuld, schaamte, machteloosheid of gevaar worden zorgvuldig bekeken."
+      },
+      {
+        kop: "Nieuwe veiligheid oefenen",
+        tekst: "Je bouwt ervaring op dat herinneringen en triggers te dragen zijn zonder dat het oude gevaar terugkeert."
+      }
+    ],
+    evidentie: "Traumagerichte CBT, CPT en exposure behoren tot de best onderzochte richtlijnbehandelingen voor PTSS. Bij complex trauma kunnen ze nuttig zijn, maar zelden als snelle standaardroute: stabiliteit, tempo en therapeutische veiligheid wegen dan zwaarder.",
+    evidentieNiveau: "sterk",
+    evidentieLabel: "Richtlijnbehandeling PTSS",
+    overzichtGroep: "ptss",
+    pastBij: "Vooral PTSS",
+    geschiktBij: [
+      "wat-is-trauma",
+      "emoties"
+    ],
+    bronnen: [
+      {
+        boek: "complex-ptsd-workbook",
+        detail: "Bespreekt gefaseerd werken, stabilisatie en traumagerichte verwerking bij complex trauma."
+      },
+      {
+        boek: "body-keeps-score",
+        detail: "Over PTSS, traumaherinneringen en waarom verwerking meer vraagt dan alleen begrijpen."
+      }
+    ],
+    gerelateerd: [
+      "emdr",
+      "dbt",
       "schematherapie"
     ]
   },
@@ -96,6 +159,8 @@ const THERAPIEEN = [
     evidentie: "Somatic Experiencing is klinisch veel gebruikt en sluit goed aan bij trauma dat lichamelijk doorwerkt. Er is groeiend onderzoek met positieve effecten, maar de gecontroleerde evidentiebasis is kleiner dan die van richtlijnbehandelingen zoals EMDR en trauma-focused CBT.",
     evidentieNiveau: "veelbelovend",
     evidentieLabel: "Groeiende evidentie",
+    overzichtGroep: "cptss",
+    pastBij: "CPTSS / lichaam",
     geschiktBij: [
       "lichaam",
       "herstel"
@@ -153,6 +218,8 @@ const THERAPIEEN = [
     evidentie: "IFS wordt klinisch veel gebruikt bij complex trauma, schaamte, innerlijke conflicten en dissociatieve klachten. De theorie sluit goed aan bij delenwerk in traumatherapie; gecontroleerd onderzoek groeit, maar is nog minder breed dan bij klassieke PTSS-behandelingen.",
     evidentieNiveau: "veelbelovend",
     evidentieLabel: "Groeiende evidentie",
+    overzichtGroep: "cptss",
+    pastBij: "CPTSS / delen",
     geschiktBij: [
       "innerlijk",
       "cptss"
@@ -210,6 +277,8 @@ const THERAPIEEN = [
     evidentie: "NARM is een klinisch invloedrijk model voor ontwikkelingstrauma en relationele patronen. Het is inhoudelijk sterk uitgewerkt, maar de gecontroleerde onderzoeksbasis is nog beperkt; zie het daarom als gespecialiseerd klinisch kader, niet als breed bewezen standaardbehandeling.",
     evidentieNiveau: "in ontwikkeling",
     evidentieLabel: "Klinisch kader",
+    overzichtGroep: "cptss",
+    pastBij: "Ontwikkelingstrauma",
     geschiktBij: [
       "cptss",
       "hechting"
@@ -263,6 +332,8 @@ const THERAPIEEN = [
     evidentie: "DBT is goed onderzocht voor emotieregulatieproblemen, zelfbeschadiging, suïcidaliteit en het borderline-patroon. Dat betekent niet dat standaard-DBT de kern van complex trauma verwerkt. Bij CPTSS is DBT vooral ondersteunend: stabiliseren, vaardigheden opbouwen en daarna of daarnaast traumagericht, lichaamsgericht of relationeel werken.",
     evidentieNiveau: "sterk",
     evidentieLabel: "Sterk als stabilisatie",
+    overzichtGroep: "stabilisatie",
+    pastBij: "Stabilisatie",
     geschiktBij: [
       "emoties",
       "cptss"
@@ -316,6 +387,8 @@ const THERAPIEEN = [
     evidentie: "Schematherapie heeft een stevige onderzoeksbasis voor persoonlijkheidsproblematiek en complexe, langdurige klachten.",
     evidentieNiveau: "sterk",
     evidentieLabel: "Sterk bij patronen",
+    overzichtGroep: "cptss",
+    pastBij: "CPTSS / patronen",
     geschiktBij: [
       "cptss",
       "innerlijk",
@@ -370,6 +443,8 @@ const THERAPIEEN = [
     evidentie: "De polyvagaaltheorie is klinisch zeer invloedrijk als verklarend kader; sommige aannames zijn wetenschappelijk nog in debat, en het wordt vooral als lens binnen andere behandelingen gebruikt.",
     evidentieNiveau: "in ontwikkeling",
     evidentieLabel: "Kader, geen losse therapie",
+    overzichtGroep: "stabilisatie",
+    pastBij: "Regulatie",
     geschiktBij: [
       "lichaam",
       "herstel"
@@ -423,6 +498,8 @@ const THERAPIEEN = [
     evidentie: "Er is groeiend onderzoek naar neurofeedback bij trauma, vooral bij ontwikkelingstrauma en regulatieproblemen. De resultaten zijn interessant, maar de methode vraagt een ervaren behandelaar en wordt meestal gezien als aanvulling op traumatherapie, niet als volledige vervanging.",
     evidentieNiveau: "veelbelovend",
     evidentieLabel: "Groeiende evidentie",
+    overzichtGroep: "stabilisatie",
+    pastBij: "Regulatie",
     geschiktBij: [
       "lichaam",
       "cptss",
@@ -481,6 +558,8 @@ const THERAPIEEN = [
     evidentie: "IRT behoort tot de best onderzochte interventies voor nachtmerries en wordt aanbevolen bij trauma-gerelateerde slaapstoornissen. Het is relatief kort, laagdrempelig en kan goed gecombineerd worden met andere traumabehandeling.",
     evidentieNiveau: "sterk",
     evidentieLabel: "Sterk bij nachtmerries",
+    overzichtGroep: "ptss",
+    pastBij: "PTSS / slaap",
     geschiktBij: [
       "slaap",
       "herstel"
@@ -538,6 +617,8 @@ const THERAPIEEN = [
     evidentie: "EFT is goed onderzocht als relatietherapie en wordt internationaal aanbevolen. Het helpt ook om te begrijpen hoe hechtingstrauma doorwerkt in volwassen relaties — ook als je het alleen leest, zonder therapie.",
     evidentieNiveau: "sterk",
     evidentieLabel: "Sterk bij relaties",
+    overzichtGroep: "relationeel",
+    pastBij: "Hechting / relatie",
     geschiktBij: [
       "hechting",
       "emoties"
@@ -595,6 +676,8 @@ const THERAPIEEN = [
     evidentie: "Somatic IFS is klinisch invloedrijk binnen het IFS-werkveld en sluit aan bij het groeiende inzicht dat trauma in het lichaam leeft. Gecontroleerd onderzoek specifiek naar deze combinatie is nog beperkt.",
     evidentieNiveau: "veelbelovend",
     evidentieLabel: "Groeiende evidentie",
+    overzichtGroep: "cptss",
+    pastBij: "CPTSS / lichaam + delen",
     geschiktBij: [
       "innerlijk",
       "lichaam",
@@ -653,6 +736,8 @@ const THERAPIEEN = [
     evidentie: "Onderzoek naar trauma-informed yoga en lichaamsgerichte beweging bij PTSS laat bemoedigende effecten zien, vooral bij stressreductie en lichaamsbewustzijn. Het wordt meestal ingezet als aanvulling, niet als enige behandeling.",
     evidentieNiveau: "veelbelovend",
     evidentieLabel: "Groeiende evidentie",
+    overzichtGroep: "stabilisatie",
+    pastBij: "Lichaam / regulatie",
     geschiktBij: [
       "lichaam",
       "herstel"
