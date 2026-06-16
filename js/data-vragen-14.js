@@ -152,7 +152,7 @@ const VRAGEN_14 = [
       "hechting",
       "kind"
     ],
-    kort: "Een borderline moeder kan intens liefdevol en plots afwijzend zijn. Kinderen leren hyperalert te zijn op humeur, zich schuldig te voelen over de emoties van moeder, en hun eigen identiteit ondergeschikt te maken.",
+    kort: "Een borderline moeder kan intens liefdevol en plots afwijzend zijn. Kinderen leren altijd op scherp te staan voor haar humeur, zich schuldig te voelen over de emoties van moeder, en hun eigen ik op de tweede plaats te zetten.",
     blokken: [
       {
         tekst: "Borderline gaat over extreme emotionele schommelingen, angst voor verlating, en soms grensoverschrijdend gedrag. Voor een kind is de boodschap vaak: jij bent verantwoordelijk voor mijn gevoelens; liefde kan elk moment omdraaien; ik moet me aanpassen om veilig te blijven. Dat is geen normale opvoeding — het is relationele onveiligheid."

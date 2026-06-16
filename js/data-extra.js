@@ -161,7 +161,7 @@ const NOODHULP = [
     id: "nood-nachtmerrie",
     titel: "Nachtelijke paniek of nachtmerrie",
     icoon: "🌙",
-    kort: "Wakker geschrokken, hart bonzend, gedesoriënteerd. Zo kom je terug naar veiligheid en rust.",
+    kort: "Wakker geschrokken, hart bonzend, in de war. Zo kom je terug naar veiligheid en rust.",
     stappen: [
       {
         kop: "Oriënteer je",
@@ -208,7 +208,7 @@ const NOODHULP = [
       },
       {
         kop: "Daarna",
-        tekst: "Merk je vaak overspoeling, dan helpt het om je 'window of tolerance' te leren kennen en te verbreden, eventueel met een traumagerichte hulpverlener."
+        tekst: "Raak je vaak overspoeld, dan helpt het om te leren hoeveel spanning je aankunt, en die ruimte langzaam groter te maken, eventueel met een traumagerichte hulpverlener."
       }
     ],
     bronnen: [
@@ -234,7 +234,7 @@ const NOODHULP = [
       },
       {
         kop: "Verbind met één veilig iemand",
-        tekst: "Stuur één bericht: 'Ik heb het moeilijk en heb steun nodig.' Of bel Tele-Onthaal (106) en blijf aan de lijn. Verbinding is het tegengif van isolement.",
+        tekst: "Stuur één bericht: 'Ik heb het moeilijk en heb steun nodig.' Of bel Tele-Onthaal (106) en blijf aan de lijn. Verbinding is het tegengif van eenzaamheid.",
         zeg: "“Ik heb het nu zwaar. Ik hoef dit niet alleen te dragen.”"
       },
       {
@@ -280,7 +280,7 @@ const NOODHULP = [
       },
       {
         kop: "Daarna",
-        tekst: "Terugkerende woede-explosies verdienen aandacht. Ze wijzen vaak op oude wonden of een te smal draagvermogen. Bespreek het met een hulpverlener die trauma begrijpt."
+        tekst: "Terugkerende woede-uitbarstingen verdienen aandacht. Ze wijzen vaak op oude wonden, of op dat je systeem nog maar weinig aankan. Bespreek het met een hulpverlener die trauma begrijpt."
       }
     ],
     bronnen: [
@@ -316,7 +316,7 @@ const NOODHULP = [
       },
       {
         kop: "Daarna",
-        tekst: "Als relaties je steeds terug in oude pijn trekken, helpt traumagerichte relatietherapie of individuele therapie om triggers te herkennen en je window of tolerance te verbreden."
+        tekst: "Als relaties je steeds terug in oude pijn trekken, helpt traumagerichte relatietherapie of individuele therapie om triggers te herkennen en de ruimte die je aankunt groter te maken."
       }
     ],
     bronnen: [
@@ -342,7 +342,7 @@ const MYTHES = [
   {
     id: "mythe-geen-herinnering",
     mythe: "“Als je je het niet herinnert, is er niets ergs gebeurd.”",
-    feit: "Het ontbreken van herinneringen bewijst niets. Juist onder hoge stress of op jonge leeftijd slaat het brein ervaringen vaak fragmentarisch op, of houdt het ze beschermend op afstand.\n\nTrauma laat zich ook voelen zonder helder verhaal: via lichaamsreacties, terugkerende gevoelens en patronen in relaties. Je hoeft niet 'alles te weten' om er last van te hebben — of om er iets aan te kunnen doen.",
+    feit: "Het ontbreken van herinneringen bewijst niets. Juist onder hoge stress of op jonge leeftijd slaat het brein ervaringen vaak in losse stukjes op, of houdt het ze uit bescherming op afstand.\n\nTrauma laat zich ook voelen zonder helder verhaal: via lichaamsreacties, terugkerende gevoelens en patronen in relaties. Je hoeft niet 'alles te weten' om er last van te hebben — of om er iets aan te kunnen doen.",
     bron: "body-keeps-score",
     bronDetail: "over hoe stress de opslag van herinneringen verandert.",
     leeftijd: [
@@ -353,7 +353,7 @@ const MYTHES = [
   {
     id: "mythe-moet-praten",
     mythe: "“Je moet erover praten om eroverheen te komen.”",
-    feit: "Praten kan helpen, maar het in detail navertellen van je trauma is geen voorwaarde — en kan zelfs schaden als er nog geen veiligheid is. Voor veel mensen werken lichaamsgerichte wegen minstens zo goed.\n\nGoede traumatherapie begint met stabiliteit en doseert zorgvuldig. Methodes als EMDR of somatische therapie helpen je verwerken zonder dat je alles hoeft uit te spreken of te herbeleven.",
+    feit: "Praten kan helpen, maar het in detail navertellen van je trauma is geen voorwaarde — en kan zelfs schaden als er nog geen veiligheid is. Voor veel mensen werken lichaamsgerichte wegen minstens zo goed.\n\nGoede traumatherapie begint met rust en stevigheid, en gaat in kleine stapjes. Methodes als EMDR of lichaamsgerichte (somatische) therapie helpen je verwerken zonder dat je alles hoeft uit te spreken of te herbeleven.",
     bron: "waking-the-tiger",
     bronDetail: "over verwerking via het lichaam, niet alleen via woorden.",
     leeftijd: [
@@ -421,7 +421,7 @@ const MYTHES = [
   {
     id: "mythe-zwakte-tonen",
     mythe: "“Zwakte tonen is gevaarlijk.”",
-    feit: "Als je vroeg leerde dat kwetsbaarheid bestraft werd, voelt tonen wie je bent inderdaad riskant. Dat was een slimme aanpassing aan een onveilige omgeving — geen karakterfout.\n\nIn veilige contexten is kwetsbaarheid juist de weg naar verbinding en heling. Het gevaar zat in het verleden; nu kun je geleidelijk leren wie veilig genoeg is om je echte gevoelens te delen. Dat is geen zwakte, maar moed.",
+    feit: "Als je vroeg leerde dat kwetsbaarheid bestraft werd, voelt tonen wie je bent inderdaad riskant. Dat was een slimme aanpassing aan een onveilige omgeving — geen karakterfout.\n\nIn veilige situaties is kwetsbaarheid juist de weg naar verbinding en heling. Het gevaar zat in het verleden; nu kun je geleidelijk leren wie veilig genoeg is om je echte gevoelens te delen. Dat is geen zwakte, maar moed.",
     bron: "running-on-empty",
     bronDetail: "over het verbergen van behoeften na emotionele verwaarlozing.",
     leeftijd: [
@@ -432,7 +432,7 @@ const MYTHES = [
   {
     id: "mythe-trauma-is-ptss",
     mythe: "“Trauma is hetzelfde als PTSS.”",
-    feit: "PTSS is een diagnose voor een specifiek patroon na een afgebakende, overweldigende gebeurtenis: herbelevingen, vermijding, hyperalertheid. Trauma is breder: het verwijst naar wat er in je zenuwstelsel achterbleef, met of zonder die diagnose.\n\nVeel mensen dragen diepe sporen van langdurige onveiligheid — complex trauma — zonder aan alle PTSS-criteria te voldoen. Jouw lijden hoeft geen label te hebben om echt te zijn, of om hulp te verdienen.",
+    feit: "PTSS is een diagnose voor een bepaald patroon na één duidelijke, overweldigende gebeurtenis: herbelevingen, vermijden en altijd op scherp staan. Trauma is breder: het gaat om wat er in je zenuwstelsel achterbleef, met of zonder die diagnose.\n\nVeel mensen dragen diepe sporen van langdurige onveiligheid — complex trauma — zonder dat ze aan alle kenmerken van PTSS voldoen. Jouw lijden hoeft geen etiket te hebben om echt te zijn, of om hulp te verdienen.",
     bron: "cptsd-surviving-thriving",
     bronDetail: "over het verschil tussen eenmalig trauma en complex trauma.",
     leeftijd: [
@@ -456,7 +456,7 @@ const MYTHES = [
   {
     id: "mythe-dissociatie-spook",
     mythe: "“Dissociatie is eng en spookachtig.”",
-    feit: "Dissociatie — wegdrijven, leegte, 'niet bij jezelf zijn' — voelt vaak beangstigend, maar het is geen gekte. Het is een ingebouwde bescherming van je zenuwstelsel wanneer iets te overweldigend werd om te voelen.\n\nMiljoenen mensen dissociëren; het is een normale overlevingsreactie, geen defect. Met begrip, grounding en vaak traumagerichte hulp kun je leren weer aanwezig te zijn — zonder angst voor je eigen beschermingssysteem.",
+    feit: "Dissociatie — wegdrijven, leegte, 'niet bij jezelf zijn' — voelt vaak beangstigend, maar het is geen gekte. Het is een ingebouwde bescherming van je zenuwstelsel wanneer iets te overweldigend werd om te voelen.\n\nMiljoenen mensen dissociëren; het is een normale overlevingsreactie, niet iets wat stuk is. Met begrip, grounding en vaak traumagerichte hulp kun je leren weer aanwezig te zijn — zonder angst voor je eigen beschermingssysteem.",
     bron: "no-bad-parts",
     bronDetail: "over beschermende delen en het begrijpen van dissociatie zonder angst.",
     leeftijd: [
@@ -468,7 +468,7 @@ const MYTHES = [
   {
     id: "mythe-medicatie-zwakte",
     mythe: "“Medicatie nemen is zwakte.”",
-    feit: "Medicatie is geen teken dat je faalt, maar een hulpmiddel wanneer je zenuwstelsel zo lang onder druk stond dat het extra steun nodig heeft. Slaap, angst of depressie na trauma hebben een biologische basis — geen gebrek aan wilskracht.\n\nSommige mensen hebben medicatie tijdelijk nodig om überhaupt te kunnen rusten of deelnemen aan therapie. Dat is geen uitweg maar een steiger — en de keuze ervoor is net zo legitiem als de keuze ertegen.",
+    feit: "Medicatie is geen teken dat je faalt, maar een hulpmiddel wanneer je zenuwstelsel zo lang onder druk stond dat het extra steun nodig heeft. Slaap, angst of depressie na trauma hebben een biologische basis — geen gebrek aan wilskracht.\n\nSommige mensen hebben medicatie tijdelijk nodig om überhaupt te kunnen rusten of mee te doen aan therapie. Dat is geen zwaktebod maar een steuntje — en de keuze ervoor is net zo goed als de keuze ertegen.",
     bron: "when-body-says-no",
     bronDetail: "over de lichamelijke kosten van chronische stress en wanneer steun nodig is.",
     leeftijd: [
@@ -480,7 +480,7 @@ const MYTHES = [
   {
     id: "mythe-ouders-beschermen",
     mythe: "“Je moet je ouders beschermen.”",
-    feit: "Kinderen passen zich van nature aan hun verzorgers aan — ook door de pijn van volwassenen te dragen of het geheim te bewaren. Dat rolletje kan tot ver in het volwassen leven doorwerken: je verdedigt hen, minimaliseert wat er gebeurde, of voelt schuld als je boos bent.\n\nMaar jij was het kind. Het was niet jouw taak om hen te beschermen. Herstel begint vaak bij toestemming om de waarheid te zien — zonder dat je loyaal hoeft te blijven aan het stilzwijgen.",
+    feit: "Kinderen passen zich van nature aan hun verzorgers aan — ook door de pijn van volwassenen te dragen of het geheim te bewaren. Dat rolletje kan tot ver in je volwassen leven doorwerken: je verdedigt hen, praat klein wat er gebeurde, of voelt je schuldig als je boos bent.\n\nMaar jij was het kind. Het was niet jouw taak om hen te beschermen. Herstel begint vaak met jezelf toestaan om de waarheid te zien — zonder dat je trouw hoeft te blijven aan het zwijgen.",
     bron: "will-i-ever-be-good-enough",
     bronDetail: "over de loyaliteit van het kind en de prijs van het beschermen van ouders.",
     leeftijd: [
@@ -491,7 +491,7 @@ const MYTHES = [
   {
     id: "mythe-therapeuten-zelfde",
     mythe: "“Alle therapeuten zijn hetzelfde.”",
-    feit: "Therapeuten verschillen sterk in opleiding, aanpak en trauma-begrip. Een slechte ervaring betekent niet dat hulp niet werkt — het kan betekenen dat de match, methode of timing niet klopte.\n\nTraumagerichte benaderingen (EMDR, somatisch werk, IFS, schematherapie) vragen specifieke kennis. Zoek iemand die jouw type trauma herkent, veiligheid serieus neemt en je tempo respecteert. De juiste match kan alles verschil maken.",
+    feit: "Therapeuten verschillen sterk in opleiding, aanpak en trauma-begrip. Een slechte ervaring betekent niet dat hulp niet werkt — het kan betekenen dat de match, methode of timing niet klopte.\n\nTraumagerichte aanpakken (EMDR, lichaamsgericht werk, IFS, schematherapie) vragen specifieke kennis. Zoek iemand die jouw type trauma herkent, veiligheid serieus neemt en je tempo respecteert. De juiste match kan alles verschil maken.",
     bron: "what-happened-to-you",
     bronDetail: "over wat goede traumazorg inhoudt en waar je op kunt letten.",
     leeftijd: [
@@ -503,7 +503,7 @@ const MYTHES = [
   {
     id: "mythe-lichaamswerk-zweverig",
     mythe: "“Lichaamswerk is zweverig en onwetenschappelijk.”",
-    feit: "Lichaamsgerichte traumatherapie is geen modegril maar steunt op decennia onderzoek: trauma wordt opgeslagen in het zenuwstelsel en lichaam, niet alleen als verhaal in je hoofd. Adem, beweging, aanraking en grounding zijn meetbare ingangen naar herstel.\n\nBenaderingen als somatische therapie, sensorimotor werk en polyvagaal-geïnformeerde oefeningen worden wereldwijd in traumaklinieken toegepast. Het voelt soms ongewoon, maar de wetenschap erachter is degelijk.",
+    feit: "Lichaamsgerichte traumatherapie is geen rage, maar steunt op tientallen jaren onderzoek: trauma wordt opgeslagen in je zenuwstelsel en lichaam, niet alleen als verhaal in je hoofd. Adem, beweging, aanraking en aarden zijn echte, meetbare ingangen naar herstel.\n\nAanpakken als lichaamsgerichte (somatische) therapie en oefeningen die met je zenuwstelsel werken, worden wereldwijd in traumaklinieken gebruikt. Het voelt soms ongewoon, maar de wetenschap erachter is degelijk.",
     bron: "body-keeps-score",
     bronDetail: "over hoe trauma in het lichaam leeft en waarom lichaamsgerichte methodes werken.",
     leeftijd: [
@@ -515,9 +515,9 @@ const MYTHES = [
   {
     id: "mythe-voor-altijd-kapot",
     mythe: "“Trauma maakt je voor altijd kapot.”",
-    feit: "Trauma laat diepe sporen na — dat ontkennen we niet. Maar 'beschadigd voor altijd' is geen wetmatigheid. Hersenen en zenuwstelsels zijn veranderbaar: met veiligheid, verwerking en herhaalde corrigerende ervaringen kan je systeem opnieuw leren.\n\nHerstel betekent zelden dat alles wordt uitgewist. Het betekent dat het verleden je minder overneemt, dat je sneller terugkalmeert, en dat je weer keuzes maakt die van jou zijn. Veel mensen leven niet ondanks hun verleden, maar met een dieper begrip van zichzelf erna.",
+    feit: "Trauma laat diepe sporen na — dat ontkennen we niet. Maar 'voor altijd kapot' is geen wet. Hersenen en zenuwstelsels kunnen veranderen: met veiligheid, verwerking en steeds opnieuw goede ervaringen kan je systeem opnieuw leren.\n\nHerstel betekent zelden dat alles wordt uitgewist. Het betekent dat het verleden je minder overneemt, dat je sneller terug tot rust komt, en dat je weer keuzes maakt die van jou zijn. Veel mensen leven niet ondanks hun verleden, maar met een dieper begrip van zichzelf erna.",
     bron: "end-of-trauma",
-    bronDetail: "over neuroplasticiteit en de mogelijkheid van herstel na trauma.",
+    bronDetail: "over hoe het brein kan veranderen en herstel na trauma mogelijk is.",
     leeftijd: [
       "zelf",
       "recent",
@@ -544,26 +544,26 @@ const REGELS = [
   },
   {
     titel: "Tempo is therapie",
-    tekst: "Doseren, niet overspoelen. Verwerken binnen je draagvermogen heelt; eroverheen geduwd worden destabiliseert. Traag mag — richting telt meer dan snelheid.",
+    tekst: "Doseren, niet overspoelen. Verwerken binnen wat je aankunt heelt; eroverheen geduwd worden brengt je uit balans. Traag mag — richting telt meer dan snelheid.",
     bron: "waking-the-tiger"
   },
   {
-    titel: "Verbinding heelt, isolement verdiept",
+    titel: "Verbinding heelt, eenzaamheid verdiept",
     tekst: "Trauma gedijt in eenzaamheid en schaamte. Een veilige relatie — met een dierbare of therapeut — is een van de krachtigste helende factoren die er zijn.",
     bron: "no-bad-parts"
   },
   {
     titel: "Je reacties waren overleving",
-    tekst: "Vechten, vluchten, bevriezen, pleasen, dissociëren: het waren slimme aanpassingen aan een onmogelijke situatie. Geen zwakte, maar bescherming die zijn werk deed.",
+    tekst: "Vechten, vluchten, bevriezen, pleasen, afhaken (dissociëren): het waren slimme aanpassingen aan een onmogelijke situatie. Geen zwakte, maar bescherming die haar werk deed.",
     bron: "cptsd-surviving-thriving"
   },
   {
-    titel: "Mededogen verslaat de criticus",
-    tekst: "Zachtheid voor jezelf is geen luxe maar de tegenkracht die trauma nodig heeft. Strengheid voedt schaamte; mededogen ontkracht haar.",
+    titel: "Mildheid wint van de strenge stem",
+    tekst: "Zachtheid voor jezelf is geen luxe, maar precies de tegenkracht die trauma nodig heeft. Strengheid voedt schaamte; mildheid maakt haar zwakker.",
     bron: "no-bad-parts"
   },
   {
-    titel: "Herstel is niet-lineair",
+    titel: "Herstel gaat met vallen en opstaan",
     tekst: "Heling gaat met golven en terugval. Een slechte periode wist je vooruitgang niet uit. Geduld en mildheid horen bij het proces.",
     bron: "complex-ptsd-workbook"
   },
@@ -584,12 +584,12 @@ const REGELS = [
   },
   {
     titel: "Je mag de waarheid zien",
-    tekst: "Je hoeft je ouders, familie of verleden niet te beschermen ten koste van jezelf. Loyaliteit aan het stilzwijgen is geen liefde — eerlijkheid naar jezelf is de basis van herstel.",
+    tekst: "Je hoeft je ouders, familie of verleden niet te beschermen ten koste van jezelf. Trouw blijven aan het zwijgen is geen liefde — eerlijk zijn tegen jezelf is de basis van herstel.",
     bron: "will-i-ever-be-good-enough"
   },
   {
     titel: "Herstel is mogelijk",
-    tekst: "Trauma verandert je, maar definieert je niet permanent. Met tijd, veiligheid en de juiste hulp kan je zenuwstelsel opnieuw leren — niet perfect, maar vrijer.",
+    tekst: "Trauma verandert je, maar bepaalt niet voor altijd wie je bent. Met tijd, veiligheid en de juiste hulp kan je zenuwstelsel opnieuw leren — niet perfect, maar vrijer.",
     bron: "end-of-trauma"
   }
 ];

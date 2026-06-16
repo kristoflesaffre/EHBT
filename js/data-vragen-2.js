@@ -110,7 +110,7 @@ const VRAGEN_2 = [
     bronnen: [
       {
         boek: "body-keeps-score",
-        detail: "Over slaap, hyperalertheid en hoe het zenuwstelsel rust opnieuw leert."
+        detail: "Over slaap, altijd op scherp staan, en hoe het zenuwstelsel weer leert rusten."
       },
       {
         boek: "anchored",
@@ -139,14 +139,14 @@ const VRAGEN_2 = [
       "grenzen",
       "zelfzorg"
     ],
-    kort: "Je hoeft geen therapeut te zijn — je grootste bijdrage is veilig, voorspelbaar en aanwezig zijn. En je mag óók je eigen grenzen en draagkracht serieus nemen.",
+    kort: "Je hoeft geen therapeut te zijn — je grootste bijdrage is veilig, voorspelbaar en aanwezig zijn. En je mag óók je eigen grenzen en wat je aankunt serieus nemen.",
     blokken: [
       {
         tekst: "Iemand liefhebben met trauma kan verwarrend zijn: terugtrekking, prikkelbaarheid of plotselinge afstand voelen soms als afwijzing, terwijl het vaak overlevingsreacties zijn. Je wilt helpen, maar weet niet altijd hoe — en raakt zelf soms uitgeput."
       },
       {
         kop: "Veiligheid is je grootste geschenk",
-        tekst: "Je hoeft het trauma niet te 'repareren'. Wat het meeste helpt, is een stabiele, voorspelbare aanwezigheid: kalm blijven als je partner overspoeld raakt, niet persoonlijk nemen wat uit angst voortkomt, en samen rust opzoeken. Dit heet co-regulatie: jouw gereguleerde zenuwstelsel helpt dat van je partner kalmeren."
+        tekst: "Je hoeft het trauma niet te 'repareren'. Wat het meeste helpt, is een stabiele, voorspelbare aanwezigheid: kalm blijven als je partner overspoeld raakt, niet persoonlijk nemen wat uit angst voortkomt, en samen rust opzoeken. Dit heet samen kalmeren (co-regulatie): doordat jij rustig blijft, helpt jouw zenuwstelsel dat van je partner kalmeren."
       },
       {
         kop: "Jij telt ook mee",
@@ -170,7 +170,7 @@ const VRAGEN_2 = [
     bronnen: [
       {
         boek: "anchored",
-        detail: "Over co-regulatie: hoe een gereguleerd zenuwstelsel een ander helpt kalmeren."
+        detail: "Over samen kalmeren (co-regulatie): hoe jouw rust een ander helpt kalmeren."
       },
       {
         boek: "attached",
@@ -208,17 +208,17 @@ const VRAGEN_2 = [
       },
       {
         kop: "Eerst veiligheid, dan verwerking",
-        tekst: "Moderne traumabehandeling werkt gefaseerd. De eerste fase draait om stabilisatie: veiligheid, zelfregulatie en grip krijgen op overspoeling. Pas als die basis er is, wordt er — gedoseerd — gewerkt aan de herinneringen, en altijd binnen je 'window of tolerance'. Opnieuw overspoeld raken is geen behandeling maar een teken dat het te snel of te veel gaat."
+        tekst: "Moderne traumabehandeling werkt in fasen. De eerste fase draait om stevig worden: veiligheid, jezelf leren kalmeren en grip krijgen op overspoeling. Pas als die basis er is, wordt er — in kleine stapjes — gewerkt aan de herinneringen, en altijd binnen wat je aankunt (je 'window of tolerance'). Opnieuw overspoeld raken is geen behandeling, maar een teken dat het te snel of te veel gaat."
       },
       {
         kop: "Verwerken zonder verdrinken",
-        tekst: "Methodes als EMDR of somatische therapie helpen je het verleden te verwerken terwijl je met één voet stevig in het heden blijft. Je hoeft niet alles in detail te vertellen of te herbeleven om vooruit te komen. Een goede therapeut doseert, checkt voortdurend of je het aankunt, en stopt voordat het te veel wordt."
+        tekst: "Methodes als EMDR of lichaamsgerichte (somatische) therapie helpen je het verleden te verwerken terwijl je met één voet stevig in het heden blijft. Je hoeft niet alles in detail te vertellen of te herbeleven om vooruit te komen. Een goede therapeut doseert, checkt voortdurend of je het aankunt, en stopt voordat het te veel wordt."
       }
     ],
     doeDit: [
       "Zoek een traumagerichte therapeut die gefaseerd werkt.",
       "Bespreek vooraf hoe overspoeling wordt voorkomen en hoe je 'stop' aangeeft.",
-      "Bouw eerst stabiliteit en zelfregulatie op."
+      "Bouw eerst rust en stevigheid op, en leer jezelf kalmeren."
     ],
     vermijd: [
       "Jezelf dwingen het hele verhaal in detail te vertellen 'omdat het moet'.",
@@ -233,7 +233,7 @@ const VRAGEN_2 = [
       },
       {
         boek: "body-keeps-score",
-        detail: "Over verwerken binnen het draagvermogen van het zenuwstelsel."
+        detail: "Over verwerken binnen wat je zenuwstelsel aankan."
       }
     ],
     gerelateerd: [
@@ -263,15 +263,15 @@ const VRAGEN_2 = [
     kort: "Je window of tolerance is de zone waarin je stress aankunt zonder over de kook te gaan of dicht te klappen. Trauma maakt die zone smaller — maar je kunt hem stap voor stap weer verbreden.",
     blokken: [
       {
-        tekst: "De 'window of tolerance' is een handig beeld voor de zone waarin je je veilig genoeg voelt om helder te denken, te voelen én aanwezig te blijven. Binnen dat raam kun je stress hanteren. Erbuiten schiet je omhoog (overspoeling, paniek, woede) of omlaag (verdoving, leegte, shutdown)."
+        tekst: "De 'window of tolerance' is een handig beeld voor de zone waarin je je veilig genoeg voelt om helder te denken, te voelen én aanwezig te blijven. Binnen dat raam kun je stress aan. Erbuiten schiet je omhoog (overspoeling, paniek, woede) of omlaag (verdoving, leegte, dichtklappen)."
       },
       {
         kop: "Trauma versmalt het raam",
-        tekst: "Bij trauma wordt die zone vaak smal: je schiet sneller in hyperactivatie of in shutdown, en kleine prikkels duwen je er al overheen. Dat is geen onwil, maar een zenuwstelsel dat overgevoelig is afgesteld. Herkennen waar je zit — boven, binnen of onder het raam — is de eerste stap naar regie."
+        tekst: "Bij trauma wordt die zone vaak smal: je schiet sneller omhoog (paniek, woede) of je klapt dicht, en kleine prikkels duwen je er al overheen. Dat is geen onwil, maar een zenuwstelsel dat overgevoelig staat afgesteld. Herkennen waar je zit — boven, binnen of onder het raam — is de eerste stap naar grip."
       },
       {
         kop: "Het raam verbreden",
-        tekst: "Je verbreedt je window niet door grenzen te forceren, maar door telkens net aan de rand te oefenen en dan terug te keren naar veiligheid. Grounding, ademhaling, beweging en de aanwezigheid van veilige mensen helpen je terug in het raam. Met herhaling leert je systeem dat het meer aankan — de zone groeit mee."
+        tekst: "Je maakt je zone breder, niet door grenzen te forceren, maar door telkens net aan de rand te oefenen en dan terug te keren naar veiligheid. Aarden (grounding), ademhaling, beweging en veilige mensen om je heen helpen je terug in het raam. Met herhaling leert je systeem dat het meer aankan — de zone groeit mee."
       }
     ],
     doeDit: [
@@ -281,7 +281,7 @@ const VRAGEN_2 = [
     ],
     vermijd: [
       "Jezelf forceren ver buiten je raam 'omdat je sterk moet zijn'.",
-      "Overspoeling of shutdown negeren en doorduwen.",
+      "Overspoeling of dichtklappen negeren en doorduwen.",
       "Denken dat een smal raam permanent is."
     ],
     zegDit: [
@@ -321,17 +321,28 @@ const VRAGEN_2 = [
       "behandeling",
       "vertrouwen"
     ],
-    kort: "Goede traumatherapie is erop gericht om je stap voor stap te helpen verwerken, niet om je te overspoelen. Een tijdelijke toename van emoties kan voorkomen, maar langdurig meer ontregeling is een signaal dat het tempo, de aanpak of de samenwerking opnieuw bekeken moet worden.",
+    kort: "Goede traumatherapie helpt je stap voor stap verwerken, niet om je te overspoelen. Even meer emoties kan voorkomen, maar blijf je lang uit balans, dan is dat een signaal dat het tempo, de aanpak of de samenwerking opnieuw bekeken moet worden.",
     blokken: [
       {
+        tekst: "Veel mensen zijn bang dat therapie oude pijn opnieuw openmaakt. Die angst is begrijpelijk. Misschien heb je ervaringen bewust of onbewust op afstand gehouden om te kunnen functioneren, of ging eerdere hulp te snel. Toch is goede traumatherapie er niet op gericht je zomaar terug te brengen naar pijnlijke ervaringen. Het doel is juist om moeilijke dingen op een veilige en behapbare manier te benaderen."
+      },
+      {
         kop: "Het verschil zit in tempo en veiligheid",
-        tekst: "Veel mensen zijn bang dat therapie oude pijn opnieuw opent. Die bezorgdheid is begrijpelijk. Misschien heb je ervaringen bewust of onbewust op afstand gehouden om te kunnen functioneren, of heb je eerder hulp gehad die te snel ging. Toch is goede traumatherapie niet bedoeld om je zomaar terug te brengen naar pijnlijke ervaringen. Het doel is juist om moeilijke ervaringen op een veilige en draagbare manier te benaderen.\nkop: Het verschil zit in tempo en veiligheid\ntekst: Traumatherapie werkt meestal het best wanneer er eerst voldoende veiligheid, stabiliteit en vertrouwen is opgebouwd. Pas daarna wordt gekeken naar wat verwerkt wil worden. <strong>Een tijdelijke toename van emoties, vermoeidheid of gevoeligheid na een sessie kan normaal zijn.</strong> Verwerken vraagt energie. Maar wanneer je langdurig overspoeld blijft, steeds verder ontregeld raakt of je onveilig voelt binnen het therapeutische contact, verdient dat aandacht. Dat betekent niet automatisch dat therapie verkeerd is, maar wel dat het tempo of de aanpak mogelijk niet goed aansluit bij wat jij nodig hebt.\nkop: Jij hoeft het niet alleen te dragen\ntekst: Goede traumatherapie gebeurt samen. Je mag aangeven wanneer iets te veel wordt, vragen om te vertragen of bespreken wat een sessie met je doet. Een therapeut hoort ruimte te maken voor die signalen. <strong>Vertrouwen en samenwerking zijn geen extra's, maar een belangrijk onderdeel van herstel.</strong> Voelt het contact structureel onveilig of niet passend, dan mag je onderzoeken of een andere therapeut beter bij je past.\n\nkop: Meer voelen is niet hetzelfde als achteruitgaan\ntekst: Wanneer mensen voor het eerst meer contact krijgen met emoties, lichaamsreacties of herinneringen die lang op afstand stonden, kan dat aanvoelen alsof het slechter gaat. Soms is dat een teken dat er meer bewustzijn ontstaat, niet dat er schade wordt aangericht. Het verschil zit vaak in de vraag of je na verloop van tijd ook meer begrip, keuzevrijheid, stabiliteit of herstelmomenten ervaart. Als dat uitblijft, bespreek dat dan open met je behandelaar."
+        tekst: "Traumatherapie werkt meestal het best als er eerst genoeg veiligheid, rust en vertrouwen is opgebouwd. Pas daarna kijk je naar wat verwerkt wil worden. <strong>Je kunt je na een sessie tijdelijk emotioneler, moe of gevoeliger voelen — dat kan normaal zijn.</strong> Verwerken kost energie. Maar als je lang overspoeld blijft, steeds verder uit balans raakt, of je onveilig voelt bij je therapeut, dan verdient dat aandacht. Dat betekent niet meteen dat therapie verkeerd is, maar wel dat het tempo of de aanpak misschien niet goed past bij wat jij nodig hebt."
+      },
+      {
+        kop: "Je hoeft het niet alleen te dragen",
+        tekst: "Goede traumatherapie doe je samen. Je mag aangeven wanneer iets te veel wordt, vragen om te vertragen, of bespreken wat een sessie met je doet. Een therapeut hoort daar ruimte voor te maken. <strong>Vertrouwen en samenwerken zijn geen extra's, maar een belangrijk onderdeel van herstel.</strong> Voelt het contact steeds onveilig of niet passend, dan mag je kijken of een andere therapeut beter bij je past."
+      },
+      {
+        kop: "Meer voelen is niet hetzelfde als achteruitgaan",
+        tekst: "Als je voor het eerst meer contact krijgt met emoties, lichaamsreacties of herinneringen die lang op afstand stonden, kan dat voelen alsof het slechter gaat. Soms is dat juist een teken dat er meer bewustzijn ontstaat, niet dat er schade wordt aangericht. Het verschil zit vaak in de vraag of je na verloop van tijd ook meer begrip, keuzevrijheid, rust of goede momenten ervaart. Blijft dat uit, bespreek dat dan open met je behandelaar."
       }
     ],
     doeDit: [
       "Bespreek vooraf hoe een therapeut omgaat met veiligheid, stabilisatie en overspoeling.",
       "Geef aan wanneer iets te snel gaat of te intens voelt.",
-      "Houd in de gaten hoe je je tussen sessies voelt en bespreek langdurige ontregeling.",
+      "Houd in de gaten hoe je je tussen sessies voelt, en bespreek het als je lang uit balans blijft.",
       "Zoek een therapeut bij wie je je voldoende veilig voelt om eerlijk te zijn over je grenzen."
     ],
     vermijd: [
@@ -340,7 +351,7 @@ const VRAGEN_2 = [
       "Blijven doorgaan met een aanpak die je telkens opnieuw overspoelt zonder dit te bespreken.",
       "Je ongemak verzwijgen uit angst om lastig gevonden te worden."
     ],
-    zegDit: "\"Dit voelt te veel voor mij op dit moment.\", \"Kunnen we vertragen?\", \"Ik merk dat ik tussen sessies ontregeld blijf.\", \"Ik wil graag begrijpen waarom we deze stap zetten.\"",
+    zegDit: "\"Dit voelt te veel voor mij op dit moment.\", \"Kunnen we vertragen?\", \"Ik merk dat ik tussen sessies uit balans blijf.\", \"Ik wil graag begrijpen waarom we deze stap zetten.\"",
     bronnen: [
       {
         boek: "complex-ptsd-workbook",
@@ -348,7 +359,7 @@ const VRAGEN_2 = [
       },
       {
         boek: "healing-developmental-trauma",
-        detail: "Over veiligheid, zelfregulatie en het voorkomen van overspoeling tijdens traumawerk."
+        detail: "Over veiligheid, jezelf leren kalmeren en overspoeling voorkomen tijdens traumawerk."
       }
     ],
     gerelateerd: [

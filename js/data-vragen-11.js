@@ -95,7 +95,7 @@ const VRAGEN_11 = [
       },
       {
         kop: "Managers en brandweermannen",
-        tekst: "Managers zijn proactieve beschermers: ze plannen, controleren, pleasen, analyseren — alles om kwetsbaarheid te vermijden. Brandweermannen treden in als de pijn toch doorbreekt: impulsief gedrag, woede-uitbarstingen, dissociatie, verslaving, of automutilatie. Beide typen doen hun best om je te redden, ook als hun methodes nu schade aanrichten."
+        tekst: "Managers zijn vooruit denkende beschermers: ze plannen, controleren, pleasen, analyseren — alles om kwetsbaarheid te vermijden. Brandweermannen treden in als de pijn toch doorbreekt: impulsief gedrag, woede-uitbarstingen, afhaken (dissociatie), verslaving, of automutilatie. Beide typen doen hun best om je te redden, ook als hun manieren nu schade aanrichten."
       },
       {
         kop: "Van strijd naar samenwerking",
@@ -284,22 +284,22 @@ const VRAGEN_11 = [
       "pijn",
       "brandweer"
     ],
-    kort: "Automutilatie is geen aandachtszucht of manipulatie — het is vaak een wanhopige manier om overweldigende emoties te reguleren, dissociatie te doorbreken, of innerlijke pijn uitwendig te maken. Het is een teken van lijden, geen karakterfout.",
+    kort: "Automutilatie is geen aandachtszucht of manipulatie — het is vaak een wanhopige manier om overweldigende emoties te kalmeren, het afhaken (dissociatie) te doorbreken, of innerlijke pijn naar buiten te brengen. Het is een teken van lijden, geen karakterfout.",
     blokken: [
       {
         tekst: "Snijden, branden, slaan — gedrag dat van buitenaf moeilijk te begrijpen is. Veel mensen voelen schaamte en veroordeling, ook van hulpverleners. Toch is automutilatie bij trauma verrassend begrijpelijk wanneer je het ziet als wat het is: een overlevingsreactie."
       },
       {
         kop: "Wat het soms doet",
-        tekst: "Automutilatie kan innerlijke pijn omzetten in iets voelbaars en 'beheersbaars'. Het kan dissociatie — het gevoel los van je lichaam te zijn — doorbreken. Het kan intense emoties kort dempen via een fysiologische schok. In delenwerk zie je het vaak als een brandweerman-deel dat snel ingrijpt wanneer alles te veel wordt."
+        tekst: "Automutilatie kan innerlijke pijn omzetten in iets voelbaars en 'beheersbaars'. Het kan het afhaken (dissociatie) — het gevoel los van je lichaam te zijn — doorbreken. Het kan intense emoties kort dempen via een lichamelijke schok. In delenwerk zie je het vaak als een brandweerman-deel dat snel ingrijpt wanneer alles te veel wordt."
       },
       {
         kop: "Weg uit schaamte, richting hulp",
-        tekst: "Automutilatie stopt zelden door moraliseren of verbieden. Het vraagt veiligheid, alternatieven voor regulatie, en vaak traumagerichte therapie. Als je automutilatie herkent: je bent niet 'gek' of 'slecht'. Zoek professionele hulp — niet omdat je zwak bent, maar omdat er andere manieren bestaan om te overleven."
+        tekst: "Automutilatie stopt zelden door moraliseren of verbieden. Het vraagt veiligheid, andere manieren om te kalmeren, en vaak traumagerichte therapie. Als je automutilatie herkent: je bent niet 'gek' of 'slecht'. Zoek professionele hulp — niet omdat je zwak bent, maar omdat er andere manieren bestaan om te overleven."
       }
     ],
     doeDit: [
-      "Benoem het als regulatie, niet als karakterfout.",
+      "Benoem het als een manier om te kalmeren, niet als karakterfout.",
       "Zoek professionele hulp bij iemand met traumakennis.",
       "Bouw alternatieven op met begeleiding: koud water, intense beweging, grounding."
     ],
@@ -486,8 +486,8 @@ const VRAGEN_11 = [
         tekst: "Je kijkt naar je leven en voelt weinig. Geen grote verdriet, geen vreugde — vooral leegte. Soms vraag je je af of je wel echt bestaat. Anderen lijken te leven; jij functioneert. Die leegte is een van de meest eenzame trauma-ervaringen."
       },
       {
-        kop: "Leegte als shutdown",
-        tekst: "Wanneer een kind te lang overweldigd wordt zonder troost, schakelt het zenuwstelsel soms naar shutdown: voelen wordt te duur. Leegte is dan geen gebrek aan persoonlijkheid, maar een beschermende dimmer op je innerlijke wereld. Het hield je destijds bij elkaar."
+        kop: "Leegte als dichtklappen (shutdown)",
+        tekst: "Wanneer een kind te lang overweldigd wordt zonder troost, klapt het zenuwstelsel soms dicht (shutdown): voelen wordt te duur. Leegte is dan geen gebrek aan persoonlijkheid, maar een beschermende dimmer op je innerlijke wereld. Het hield je destijds bij elkaar."
       },
       {
         kop: "Terug naar voelen",
@@ -679,7 +679,7 @@ const VRAGEN_11 = [
     kort: "Trauma kan je identiteit opsplitsen: wie je was, wie je moest zijn om te overleven, en wie je werkelijk bent. Identiteit terugvinden is geen terugkeer naar 'voorheen', maar langzaam ontdekken wie je bent wanneer overleven niet meer je enige opdracht is.",
     blokken: [
       {
-        tekst: "Je vraagt je af: wie ben ik eigenlijk? Ben ik mijn trauma? Ben ik mijn coping? Ben ik de persoon die alles onder controle houdt, of degene die constant crasht? Na jaren overleven voelt 'ik' vaak vaag, fragmentarisch of vervormd."
+        tekst: "Je vraagt je af: wie ben ik eigenlijk? Ben ik mijn trauma? Ben ik mijn manier van overleven? Ben ik de persoon die alles onder controle houdt, of degene die constant instort? Na jaren overleven voelt 'ik' vaak vaag, versplinterd of vervormd."
       },
       {
         kop: "Identiteit onder druk",

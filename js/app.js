@@ -219,7 +219,15 @@ function gemengdeLichtkrantVragen(vragen) {
 }
 
 const PAGINA_BEELDEN = {
-  // Paginakopbeelden zijn optioneel; zonder beeld degradeert sectieKop netjes.
+  vragen: "img/page-headers/vragen.jpg",
+  noodhulp: "img/page-headers/noodhulp.jpg",
+  mythes: "img/page-headers/mythes.jpg",
+  therapieen: "img/page-headers/therapieen.jpg",
+  uitgelegd: "img/page-headers/uitgelegd.jpg",
+  hechting: "img/page-headers/hechting.jpg",
+  stoornissen: "img/page-headers/stoornissen.jpg",
+  regels: "img/page-headers/regels.jpg",
+  boeken: "img/page-headers/boeken.jpg"
 };
 
 function kopBeeldHTML(id) {
@@ -261,6 +269,9 @@ function renderHome() {
       <div class="vorm-boog"></div>
       <div class="vorm vorm-1"></div><div class="vorm vorm-2"></div><div class="vorm vorm-3"></div>
     </div>
+    <figure class="held-foto" aria-hidden="true">
+      <img src="img/hero/trauma-en-herstel.jpg" alt="" loading="eager" fetchpriority="high">
+    </figure>
     <div class="held-binnen">
       <h1 class="verschijn" style="--wacht:.22s">Rustige uitleg over <em>trauma en herstel</em></h1>
       <p class="held-intro verschijn" style="--wacht:.44s">Begrijpelijke, onderbouwde antwoorden over wat trauma met lichaam, brein en relaties doet — en welke wegen naar herstel er zijn. Geschreven in gewone taal, geïnspireerd door traumawetenschap en hechtingsonderzoek. Geen diagnose, geen oordeel: richting, op je eigen tempo.</p>
@@ -302,7 +313,7 @@ function renderHome() {
   </section>
 
   <section class="sectie home-sectie">
-    ${sectieKop("🆘 Acute hulp", "Voor als het nú overspoelt", "Geen theorie maar een stappenplan voor het moment zelf: een flashback, een paniekaanval, dissociatie of de drang om jezelf pijn te doen.", "", { href: "#/noodhulp", label: `Alle ${NOODHULP.length} plannen` })}
+    ${sectieKop("🆘 Acute hulp", "Voor als het nú overspoelt", "Geen theorie maar een stappenplan voor het moment zelf: een flashback, een paniekaanval, afhaken (dissociatie) of de drang om jezelf pijn te doen.", "", { href: "#/noodhulp", label: `Alle ${NOODHULP.length} plannen` })}
     ${crisisBalkHTML()}
     <div class="kaart-raster nood-raster">
       ${NOODHULP.slice(0, 4).map((n, i) => `
@@ -316,14 +327,14 @@ function renderHome() {
   </section>
 
   <section class="sectie home-sectie">
-    ${sectieKop("Behandeling", "Welke therapieën helpen bij trauma?", "PTSS vraagt vaak iets anders dan complex of vroeg relationeel trauma. Bekijk per aanpak waar die vooral voor bedoeld is.", "", { href: "#/therapieen", label: `Alle ${THERAPIEEN.length} therapieën` })}
+    ${sectieKop("Behandeling", "Welke therapieën helpen bij trauma?", "PTSS vraagt vaak iets anders dan complex trauma of vroeg trauma in relaties. Bekijk per aanpak waar die vooral voor bedoeld is.", "", { href: "#/therapieen", label: `Alle ${THERAPIEEN.length} therapieën` })}
     <div class="onderzoek-raster onderzoek-raster-home">
       ${THERAPIEEN.slice(0, 3).map((t, i) => therapieKaartHTML(t, i)).join("")}
     </div>
   </section>
 
   <section class="sectie home-sectie">
-    ${sectieKop("Hardnekkige mythes", "Dit denkt men vaak — en het klopt niet", "Over trauma circuleren veel halve waarheden. Klik open voor wat het onderzoek werkelijk laat zien.")}
+    ${sectieKop("Hardnekkige mythes", "Dit denkt men vaak — en het klopt niet", "Over trauma gaan veel halve waarheden rond. Klik open voor wat het onderzoek echt laat zien.")}
     <div id="mytheLijst">
       ${MYTHES.slice(0, 3).map(mytheHTML).join("")}
     </div>
@@ -331,7 +342,7 @@ function renderHome() {
   </section>
 
   <section class="sectie home-sectie">
-    ${sectieKop("De rode draad", "Grondbeginselen van traumasensitief herstel", "Traumawetenschap, klinische praktijk en gerenommeerde bronnen wijzen opvallend vaak dezelfde kant op. Oriënterende inzichten om daarna zelf verder te lezen.")}
+    ${sectieKop("De rode draad", "De basis van herstel na trauma", "Wetenschap, ervaring uit de praktijk en bekende boeken wijzen opvallend vaak dezelfde kant op. Algemene inzichten om daarna zelf verder te lezen.")}
     <div class="regel-raster home-regel-swimlane">
       ${REGELS.map((r, i) => regelHTML(r, i)).join("")}
     </div>
@@ -339,7 +350,7 @@ function renderHome() {
   </section>
 
   <section class="sectie home-sectie">
-    ${sectieKop("De bronnen", "Boeken om verder te lezen", "Deze site bevat eigen tekst, bibliografische verwijzingen en zoeklinks — geen boekbestanden of officiële samenvattingen. Gerenommeerde werken om zelf verder in te lezen.")}
+    ${sectieKop("De bronnen", "Boeken om verder te lezen", "Deze site bevat eigen tekst, verwijzingen naar boeken en zoeklinks — geen boekbestanden of officiële samenvattingen. Bekende werken om zelf verder in te lezen.")}
     <div class="chip-rij verschijn">
       ${Object.entries(BOEKEN).map(([id, b]) => `<a class="chip" href="#/boek/${id}">${b.icoon} ${b.titel}</a>`).join("")}
     </div>
@@ -403,8 +414,8 @@ function regelHTML(r, i) {
 
 const EVIDENTIE_LABEL = {
   sterk: "Sterk onderbouwd",
-  veelbelovend: "Groeiende evidentie",
-  "in ontwikkeling": "Klinisch kader"
+  veelbelovend: "Groeiend bewijs",
+  "in ontwikkeling": "Praktijkmodel"
 };
 const EVIDENTIE_KLEUR = {
   sterk: "var(--evidentie-sterk)",
@@ -416,22 +427,22 @@ const THERAPIE_GROEPEN = [
   {
     id: "ptss",
     titel: "PTSS: traumaherinneringen verwerken",
-    tekst: "Voor afgebakende traumatische gebeurtenissen staan traumagerichte behandelingen centraal: de herinnering, vermijding en alarmreactie verliezen hun lading."
+    tekst: "Bij één duidelijke schokkende gebeurtenis staan traumagerichte behandelingen centraal. De herinnering, het vermijden en de alarmreactie verliezen hun lading."
   },
   {
     id: "cptss",
     titel: "CPTSS: lichaam, delen en ontwikkeling",
-    tekst: "Bij complex of vroeg relationeel trauma gaat het vaak niet om één herinnering, maar om een zenuwstelsel, zelfbeeld en relatiepatroon dat jarenlang gevormd werd."
+    tekst: "Bij complex trauma of vroeg trauma in relaties gaat het vaak niet om één herinnering. Het gaat om een zenuwstelsel, een zelfbeeld en relatiepatronen die jarenlang zijn gevormd."
   },
   {
     id: "stabilisatie",
-    titel: "Stabilisatie en regulatie",
-    tekst: "Soms is de eerste stap niet verwerken maar veilig genoeg worden: minder crisis, minder dissociatie, meer lichaamscontact en meer draagkracht."
+    titel: "Eerst tot rust en stevigheid komen",
+    tekst: "Soms is de eerste stap niet verwerken, maar eerst veilig genoeg worden: minder crisis, minder afhaken (dissociatie), meer contact met je lichaam en meer aankunnen."
   },
   {
     id: "relationeel",
     titel: "Hechting en relaties",
-    tekst: "Wanneer trauma vooral zichtbaar wordt in nabijheid, afstand, conflict of vertrouwen, kan relationeel werk een belangrijke ingang zijn."
+    tekst: "Wordt trauma vooral zichtbaar in nabijheid, afstand, ruzie of vertrouwen? Dan kan werken aan je relaties een belangrijke ingang zijn."
   }
 ];
 
@@ -442,8 +453,11 @@ function evidentieBadgeHTML(niveau, eigenLabel = "") {
 }
 
 function therapieKaartHTML(t, i = 0) {
+  const heeftBeeld = Boolean(t.beeld && t.beeld.src);
+  const kaartBeeldPos = (t.beeld && t.beeld.kaartPos) || "center";
   return `
-  <a class="onderzoek-kaart therapie-kaart verschijn" href="#/therapie/${t.id}" style="--accent:${t.accent}; --wacht:${Math.min(i * 0.05, 0.45)}s">
+  <a class="onderzoek-kaart therapie-kaart${heeftBeeld ? " therapie-kaart-met-beeld" : ""} verschijn" href="#/therapie/${t.id}" style="--accent:${t.accent}; --wacht:${Math.min(i * 0.05, 0.45)}s">
+    ${heeftBeeld ? `<span class="therapie-kaart-beeld" aria-hidden="true" style="--kaart-beeld-pos:${kaartBeeldPos}"><img src="${t.beeld.src}" alt="" loading="lazy"></span>` : ""}
     <span class="onderzoek-label">${t.icoon} Therapie</span>
     <h3>${t.naam}</h3>
     <span class="therapie-voluit">${t.voluit}</span>
@@ -700,7 +714,7 @@ function renderNood(id) {
 function renderMythes() {
   app.innerHTML = `
   <section class="sectie">
-    ${sectieKop("Mythbusters", "Hardnekkige mythes over trauma, ontkracht", "Halve waarheden die vaak doorgegeven worden en die onderzoek en de geraadpleegde bronnen stevig tegenspreken. Klik open voor wat er wél klopt.", "mythes")}
+    ${sectieKop("Mythbusters", "Veelgehoorde mythes over trauma", "Halve waarheden die vaak worden doorgegeven, maar die het onderzoek en de gebruikte bronnen stevig tegenspreken. Klik open voor wat er wél klopt.", "mythes")}
     <div class="leeftijd-strip mythe-filter verschijn" role="group" aria-label="Filter mythes op invalshoek">
       ${leeftijdStripHTML()}
     </div>
@@ -728,18 +742,18 @@ function renderMythes() {
 function renderTherapieen() {
   app.innerHTML = `
   <section class="sectie">
-    ${sectieKop("Therapieën", "Welke behandelingen helpen bij trauma?", "Er bestaat geen enkele 'beste' traumatherapie. De juiste aanpak hangt sterk af van het soort trauma, je klachten en hoeveel veiligheid/regulatie er eerst nodig is.", "therapieen")}
+    ${sectieKop("Therapieën", "Welke behandelingen helpen bij trauma?", "Er bestaat geen enkele 'beste' traumatherapie. Welke aanpak past, hangt sterk af van het soort trauma, je klachten, en hoeveel veiligheid en rust er eerst nodig zijn.", "therapieen")}
     <div class="bron-notitie verschijn">
-      <strong>Lees dit eerst:</strong> richtlijnen geven vooral sterke steun aan traumagerichte behandelingen zoals EMDR en trauma-focused CBT voor PTSS. Bij complex of vroeg relationeel trauma is vaak meer nodig: stabilisatie, lichaamswerk, hechting/relatie, schaamte en delenwerk. Deze pagina's helpen je het gesprek met een hulpverlener voor te bereiden — ze vervangen dat gesprek niet.
+      <strong>Lees dit eerst:</strong> richtlijnen geven vooral sterke steun aan traumagerichte behandelingen zoals EMDR en trauma-focused CBT bij PTSS. Bij complex trauma of vroeg trauma in relaties is vaak meer nodig: eerst stevig worden, lichaamswerk, hechting en relaties, schaamte en delenwerk. Deze pagina's helpen je het gesprek met een hulpverlener voor te bereiden — ze vervangen dat gesprek niet.
     </div>
     <div class="therapie-context-grid verschijn">
       <article class="therapie-context-kaart">
         <h2>PTSS of complex trauma?</h2>
-        <p>Bij een afgebakende traumatische gebeurtenis staat vaak de herinnering centraal: herbeleving, vermijding en alarm. Bij complex trauma gaat het meestal om herhaalde of vroege onveiligheid, vaak in relaties. Dan spelen ook zelfbeeld, emotieregulatie, schaamte, dissociatie en vertrouwen mee.</p>
+        <p>Bij één duidelijke schokkende gebeurtenis staat vaak de herinnering centraal: herbeleven, vermijden en alarm. Bij complex trauma gaat het meestal om onveiligheid die zich herhaalde of vroeg begon, vaak in relaties. Dan spelen ook je zelfbeeld, je emoties kalmeren, schaamte, afhaken (dissociatie) en vertrouwen mee.</p>
       </article>
       <article class="therapie-context-kaart">
         <h2>Waar past DBT dan?</h2>
-        <p>DBT is sterk voor crisisvaardigheden, emotieregulatie en zelfbeschadiging. Het is meestal geen volledige traumaverwerking op zich. Bij complex trauma kan DBT wel een belangrijke eerste laag zijn: veilig genoeg worden om daarna lichaamsgericht, relationeel of traumagericht te kunnen werken.</p>
+        <p>DBT is sterk voor crisisvaardigheden, je emoties kalmeren en zelfbeschadiging. Meestal is het op zichzelf geen volledige traumaverwerking. Bij complex trauma kan DBT wel een belangrijke eerste laag zijn: stevig genoeg worden om daarna lichaamsgericht, in relaties of traumagericht te kunnen werken.</p>
       </article>
     </div>
     ${THERAPIE_GROEPEN.map(therapieGroepHTML).join("")}
@@ -750,6 +764,11 @@ function renderTherapie(id) {
   const t = therapieVan(id);
   if (!t) return renderTherapieen();
   const verwant = (t.gerelateerd || []).map(therapieVan).filter(Boolean);
+  const therapieBeeld = t.beeld && t.beeld.src
+    ? `<figure class="therapie-detail-beeld verschijn" style="--wacht:.16s">
+        <img src="${t.beeld.src}" alt="${t.beeld.alt || ""}" loading="eager">
+      </figure>`
+    : "";
   app.innerHTML = `
   <article class="sectie sectie-smal">
     <a class="terug-link" href="#/therapieen"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Alle therapieën</a>
@@ -757,6 +776,7 @@ function renderTherapie(id) {
     <h1 class="vraag-titel verschijn" style="--wacht:.05s">${t.naam}</h1>
     <p class="sectie-intro verschijn" style="--wacht:.08s">${t.voluit}</p>
     <div class="tldr verschijn" style="--wacht:.12s"><p>${t.kort}</p></div>
+    ${therapieBeeld}
     <div class="therapie-voorwie verschijn"><span><strong>Voor wie</strong>${t.voorWie}</span></div>
     <div class="antwoord-blok">
       ${(t.blokken || []).map((b, i) => `
@@ -878,7 +898,7 @@ function renderHechting() {
   app.innerHTML = `
   <section class="sectie">
     <a class="terug-link" href="#/uitgelegd"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Trauma uitgelegd</a>
-    ${sectieKop("🪢 Hechting", "De vier hechtingsstijlen", "Hoe je als kind leerde of nabijheid veilig was, vormt een blauwdruk voor latere relaties. Geen vast etiket: stijlen kunnen verschuiven richting meer veiligheid.")}
+    ${sectieKop("🪢 Hechting", "De vier hechtingsstijlen", "Hoe je als kind leerde of nabijheid veilig was, werkt door in je latere relaties. Het is geen vast etiket: stijlen kunnen verschuiven naar meer veiligheid.", "hechting")}
     <div class="hechting-raster">${HECHTINGSSTIJLEN.map((h, i) => hechtingKaartHTML(h, i)).join("")}</div>
   </section>`;
 }
@@ -923,7 +943,7 @@ function renderStoornissen() {
   app.innerHTML = `
   <section class="sectie">
     <a class="terug-link" href="#/uitgelegd"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Trauma uitgelegd</a>
-    ${sectieKop("🪞 Persoonlijkheid", "Persoonlijkheidsstoornissen, met respect uitgelegd", "Patronen die vaak wortelen in vroege onveiligheid. Educatief en niet-stigmatiserend bedoeld.")}
+    ${sectieKop("🪞 Persoonlijkheid", "Persoonlijkheidsstoornissen, met respect uitgelegd", "Patronen die vaak ontstaan door vroege onveiligheid. Bedoeld om te begrijpen, niet om een stempel te geven.", "stoornissen")}
     <div class="disclaimer-blok stoornis-banner verschijn"><span><strong>Belangrijk:</strong> dit is geen diagnose-instrument. Een persoonlijkheidsstoornis stel je niet zelf of bij een ander vast — dat doet een gekwalificeerde professional. Gebruik deze termen nooit als verwijt of scheldwoord.</span></div>
     <div class="kaart-raster">${STOORNISSEN.map((s, i) => stoornisKaartHTML(s, i)).join("")}</div>
   </section>`;
@@ -981,7 +1001,7 @@ function renderStoornis(id) {
 function renderRegels() {
   app.innerHTML = `
   <section class="sectie">
-    ${sectieKop("De rode draad", "Grondbeginselen van traumasensitief herstel", "Traumawetenschap, klinische ervaring en gerenommeerde bronnen komen opvallend vaak op dezelfde kern uit. Oriënterende inzichten — geen voorschriften.", "regels")}
+    ${sectieKop("De rode draad", "De basis van herstel na trauma", "Wetenschap, ervaring uit de praktijk en bekende boeken komen opvallend vaak op dezelfde kern uit. Algemene inzichten — geen voorschriften.", "regels")}
     <div class="regel-raster">${REGELS.map((r, i) => regelHTML(r, i)).join("")}</div>
   </section>`;
 }

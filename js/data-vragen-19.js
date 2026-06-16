@@ -95,7 +95,7 @@ const VRAGEN_19 = [
       },
       {
         kop: "Hoop is geen 'alles komt goed'",
-        tekst: "Realistische hoop zegt niet dat je morgen genezen bent. Ze zegt: mensen kunnen leren reguleren, relaties kunnen veiliger worden, je lichaam kan kalmer worden, je hoeft niet eeuwig in dezelfde pijn te blijven. Onderzoek naar veerkracht toont dat herstel vaker voorkomt dan we denken — maar het kost tijd en steun."
+        tekst: "Realistische hoop zegt niet dat je morgen genezen bent. Ze zegt: mensen kunnen leren zichzelf te kalmeren, relaties kunnen veiliger worden, je lichaam kan kalmer worden, je hoeft niet eeuwig in dezelfde pijn te blijven. Onderzoek naar veerkracht toont dat herstel vaker voorkomt dan we denken — maar het kost tijd en steun."
       },
       {
         kop: "Hoop voeden in de praktijk",

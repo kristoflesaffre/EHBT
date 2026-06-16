@@ -89,18 +89,18 @@ const VRAGEN_12 = [
       "hulp",
       "afstand"
     ],
-    kort: "Online therapie kan effectief zijn voor trauma, vooral voor stabilisatie, psycho-educatie en relationeel werk — mits je een veilige, privé plek hebt en de therapeut traumagericht werkt. Het is geen perfecte vervanging voor iedereen, maar wel een serieuze optie.",
+    kort: "Online therapie kan goed werken bij trauma, vooral voor stevig worden, uitleg over hoe trauma werkt, en werken aan relaties — mits je een veilige, privé plek hebt en de therapeut traumagericht werkt. Het is niet voor iedereen een perfecte vervanging, maar wel een serieuze optie.",
     blokken: [
       {
-        tekst: "Online therapie werd normaal — en veel mensen vragen zich af of het 'echt' werkt voor trauma. Het antwoord is genuanceerd: voor sommigen is het ideaal, voor anderen mist het te veel."
+        tekst: "Online therapie werd normaal — en veel mensen vragen zich af of het 'echt' werkt voor trauma. Het antwoord is niet zwart-wit: voor sommigen is het ideaal, voor anderen mist het te veel."
       },
       {
         kop: "Wanneer het kan werken",
-        tekst: "Online werkt vaak goed voor: regulatie-oefeningen, delenwerk in rustig tempo, psycho-educatie, en als je fysieke afstand, mobiliteitsproblemen of angst voor wachtkamers een drempel vormen. Een vertrouwde therapeut die je al kent, kan online soms naadloos doorgaan."
+        tekst: "Online werkt vaak goed voor: kalmeer-oefeningen, delenwerk in rustig tempo, uitleg over hoe trauma werkt, en als afstand, moeite met reizen of angst voor wachtkamers een drempel vormen. Een vertrouwde therapeut die je al kent, kan online soms naadloos doorgaan."
       },
       {
         kop: "Wanneer voorzichtig",
-        tekst: "Bij zware dissociatie, suïcidaliteit, complexe lichaamsgerichte werk of als je geen privéruimte hebt, kan online beperkend zijn. Let op: een goede verbinding, een therapeut die overspoeling herkent, en afspraken over wat te doen bij disconnect. Online is geen goedkope variant — kwaliteit en veiligheid tellen even hard mee."
+        tekst: "Bij zwaar afhaken (dissociatie), gedachten aan zelfdoding, ingewikkeld lichaamsgericht werk, of als je geen privéruimte hebt, kan online beperkend zijn. Let op: een goede verbinding, een therapeut die overspoeling herkent, en afspraken over wat je doet als de verbinding wegvalt. Online is geen goedkope variant — kwaliteit en veiligheid tellen even hard mee."
       }
     ],
     doeDit: [
@@ -322,7 +322,7 @@ const VRAGEN_12 = [
       },
       {
         boek: "cptsd-coping-workbook",
-        detail: "Over dagelijkse coping en reflectie-oefeningen."
+        detail: "Over dagelijks omgaan met klachten en oefeningen om stil te staan bij jezelf."
       },
       {
         boek: "ifs-workbook",
@@ -360,7 +360,7 @@ const VRAGEN_12 = [
       },
       {
         kop: "Waarom het werkt",
-        tekst: "Creativiteit activeert andere hersennetwerken dan analyseren. Het kan het zenuwstelsel reguleren via ritme (muziek, trommelen), beweging (dans, yoga), of focus (tekenen, handwerk). Het vraagt geen 'mooi resultaat' — het proces telt. Veel traumatherapeuten integreren kunst, muziek of beweging in behandeling."
+        tekst: "Creativiteit zet andere delen van je brein aan dan analyseren. Het kan je zenuwstelsel kalmeren via ritme (muziek, trommelen), beweging (dans, yoga), of focus (tekenen, handwerk). Het hoeft geen 'mooi resultaat' op te leveren — het gaat om het doen zelf. Veel traumatherapeuten gebruiken kunst, muziek of beweging in de behandeling."
       },
       {
         kop: "Zonder druk",
@@ -617,14 +617,14 @@ const VRAGEN_12 = [
       "IFS",
       "match"
     ],
-    kort: "Een tweede therapeut zoeken is normaal — verschillende fases vragen verschillende methodes. Stabilisatie, lichaamswerk, EMDR of delenwerk sluiten elkaar niet uit, maar vragen wel coördinatie en duidelijke communicatie.",
+    kort: "Een tweede therapeut zoeken is normaal — verschillende fasen vragen verschillende methodes. Stevig worden, lichaamswerk, EMDR of delenwerk sluiten elkaar niet uit, maar vragen wel goede afstemming en duidelijke communicatie.",
     blokken: [
       {
-        tekst: "Je hebt maanden of jaren gewerkt met één therapeut. Nu voel je dat je vastzit, of juist klaar bent voor een volgende stap — EMDR, somatisch werk, IFS. Hoe zoek je zonder alles kwijt te raken?"
+        tekst: "Je hebt maanden of jaren gewerkt met één therapeut. Nu voel je dat je vastzit, of juist klaar bent voor een volgende stap — EMDR, lichaamsgericht werk, IFS. Hoe zoek je zonder alles kwijt te raken?"
       },
       {
         kop: "Waarom wisselen of aanvullen",
-        tekst: "Geen enkele therapeut dekt alles. Stabilisatie kan bij de ene; verwerking bij een EMDR-specialist; lichaamswerk bij een somatisch therapeut. Soms klikt de match niet — wisselen is dan geen verraad, maar zelfzorg. Andere keren stuurt je huidige therapeut door: 'voor dit stuk heb je iemand anders nodig'."
+        tekst: "Geen enkele therapeut dekt alles. Stevig worden kan bij de ene; verwerking bij een EMDR-specialist; lichaamswerk bij een lichaamsgerichte therapeut. Soms klikt het niet — wisselen is dan geen verraad, maar zelfzorg. Andere keren stuurt je huidige therapeut door: 'voor dit stuk heb je iemand anders nodig'."
       },
       {
         kop: "Praktisch aanpakken",
@@ -750,14 +750,14 @@ const VRAGEN_12 = [
       "hulp",
       "niveau"
     ],
-    kort: "Doorverwijzing naar een specialist is nodig wanneer klachten ernstig, complex of specialistisch zijn — denk aan EMDR, dissociatieve stoornissen, ernstige verslaving, of wanneer basishulp onvoldoende helpt. Je huisarts of huidige therapeut kan meedenken.",
+    kort: "Doorverwijzing naar een specialist is nodig wanneer klachten ernstig of ingewikkeld zijn of om specialistische hulp vragen — denk aan EMDR, dissociatieve stoornissen, ernstige verslaving, of wanneer basishulp onvoldoende helpt. Je huisarts of huidige therapeut kan meedenken.",
     blokken: [
       {
-        tekst: "Je bent al een tijd in behandeling, of je huisarts behandelde je klachten als 'stress' — maar het wordt niet beter. Of je herkent ernstige symptomen: hevige dissociatie, flashbacks die je leven stilzetten, verslaving, eetproblemen, of suïcidale gedachten. Wanneer is 'gewone' hulp niet genoeg?"
+        tekst: "Je bent al een tijd in behandeling, of je huisarts behandelde je klachten als 'stress' — maar het wordt niet beter. Of je herkent ernstige klachten: hevig afhaken (dissociatie), flashbacks die je leven stilzetten, verslaving, eetproblemen, of gedachten aan zelfdoding. Wanneer is 'gewone' hulp niet genoeg?"
       },
       {
         kop: "Signalen voor specialistische hulp",
-        tekst: "Overweeg doorverwijzing bij: complex trauma (CPTSS) met meerdere ernstige symptomen; dissociatieve identiteitsstoornis of ernstige dissociatie; trauma verwerking die EMDR, somatisch werk of IFS vraagt; comorbide verslaving of eetstoornis; langdurige uitval ondanks basistherapie; of wanneer je therapeut zelf aangeeft dat een specialist nodig is."
+        tekst: "Overweeg doorverwijzing bij: complex trauma (CPTSS) met meerdere ernstige klachten; dissociatieve identiteitsstoornis of ernstig afhaken (dissociatie); traumaverwerking die EMDR, lichaamsgericht werk of IFS vraagt; daarnaast een verslaving of eetstoornis; lang niet kunnen functioneren ondanks gewone therapie; of wanneer je therapeut zelf aangeeft dat een specialist nodig is."
       },
       {
         kop: "Hoe het aanpakken",

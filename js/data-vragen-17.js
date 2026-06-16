@@ -33,7 +33,7 @@ const VRAGEN_17 = [
       },
       {
         kop: "Wat CPTSS toevoegt",
-        tekst: "CPTSS ontstaat door herhaalde of langdurige overweldiging, vaak vroeg in het leven. Naast depressieve klachten komen er vaak thema's bij: emotionele dysregulatie, negatief zelfbeeld, moeite met relaties, vermijding, schaamte en een zenuwstelsel dat chronisch op scherp staat. Behandeling die alleen de stemming behandelt, mist dan vaak de kern."
+        tekst: "CPTSS ontstaat door herhaalde of langdurige overweldiging, vaak vroeg in het leven. Naast depressieve klachten komen er vaak thema's bij: moeite om je emoties te kalmeren, negatief zelfbeeld, moeite met relaties, vermijding, schaamte en een zenuwstelsel dat chronisch op scherp staat. Behandeling die alleen de stemming behandelt, mist dan vaak de kern."
       }
     ],
     doeDit: [
@@ -99,7 +99,7 @@ const VRAGEN_17 = [
       },
       {
         kop: "Behandeling verschilt soms",
-        tekst: "Angstbehandeling richt zich vaak op blootstelling en angstreductie. Bij complex trauma hoort eerst stabilisatie: veiligheid, regulatie, vertrouwen. Te snel confronteren kan overspoelen. Beide kunnen waar zijn: je hebt angst én een trauma-achtergrond. Het gaat om de volgorde en diepgang van hulp."
+        tekst: "Angstbehandeling richt zich vaak op blootstelling (exposure) en het verminderen van angst. Bij complex trauma hoort eerst stevig worden: veiligheid, kalmeren, vertrouwen. Te snel confronteren kan overspoelen. Beide kunnen waar zijn: je hebt angst én een trauma-achtergrond. Het gaat om de volgorde en de diepgang van de hulp."
       }
     ],
     doeDit: [
@@ -160,7 +160,7 @@ const VRAGEN_17 = [
       },
       {
         kop: "Waarom ze op elkaar lijken",
-        tekst: "Bij CPTSS kan emotionele dysregulatie heftig zijn: snel van 0 naar 100, moeite met remmen, periodes van hyperactiviteit gevolgd door uitputting. Dissociatie, slaaptekort en hyperalertheid kunnen ook wisselende toestanden nabootsen. Trauma en bipolaire stoornis kunnen bovendien samen voorkomen."
+        tekst: "Bij CPTSS kan moeite om je emoties te kalmeren heftig zijn: snel van 0 naar 100, moeite met remmen, periodes van veel energie gevolgd door uitputting. Afhaken (dissociatie), slaaptekort en altijd op scherp staan kunnen ook wisselende toestanden nabootsen. Trauma en bipolaire stoornis kunnen bovendien samen voorkomen."
       },
       {
         kop: "Waar professionals op letten",
@@ -192,7 +192,7 @@ const VRAGEN_17 = [
       },
       {
         boek: "cptsd-surviving-thriving",
-        detail: "Over emotionele dysregulatie bij complex trauma."
+        detail: "Over moeite om je emoties te kalmeren bij complex trauma."
       }
     ],
     gerelateerd: [
@@ -225,7 +225,7 @@ const VRAGEN_17 = [
       },
       {
         kop: "Gedeelde symptomen",
-        tekst: "Hyperalertheid lijkt op hyperactiviteit. Dissociatie lijkt op dagdromen. Overlevingsmodus put uit en lijkt op concentratieverlies. Impulsiviteit kan uit angst, vermijding of een overprikkeld zenuwstelsel komen — niet alleen uit 'aandachtsdeficiëntie'. Vroeg, chronisch stress kan hersenontwikkeling beïnvloeden."
+        tekst: "Altijd op scherp staan lijkt op hyperactiviteit. Afhaken (dissociatie) lijkt op dagdromen. Overlevingsmodus put uit en lijkt op concentratieverlies. Impulsiviteit kan uit angst, vermijding of een overprikkeld zenuwstelsel komen — niet alleen uit een aandachtstekort. Vroege, langdurige stress kan de ontwikkeling van het brein beïnvloeden."
       },
       {
         kop: "Behandeling met beide in beeld",
@@ -249,7 +249,7 @@ const VRAGEN_17 = [
     bronnen: [
       {
         boek: "neurodivergent-somatics",
-        detail: "Over hoe neurodivergente zenuwstelsels trauma anders ervaren en reguleren."
+        detail: "Over hoe neurodivergente zenuwstelsels trauma anders ervaren en tot rust komen."
       },
       {
         boek: "deepest-well",
@@ -257,7 +257,7 @@ const VRAGEN_17 = [
       },
       {
         boek: "body-keeps-score",
-        detail: "Over hoe trauma aandacht, impulscontrole en regulatie beïnvloedt."
+        detail: "Over hoe trauma aandacht, zelfbeheersing en het kalmeren van emoties beïnvloedt."
       }
     ],
     gerelateerd: [
@@ -283,7 +283,7 @@ const VRAGEN_17 = [
       "sensorisch",
       "maskeren"
     ],
-    kort: "Autistische mensen lopen vaker risico op pesten, misverstanden en onveiligheid — wat trauma kan geven. Trauma kan sociale angst, sensorische overprikkeling en shutdown versterken. Het onderscheid is lastig; beide verdienen erkenning en aangepaste hulp.",
+    kort: "Autistische mensen lopen vaker risico op pesten, misverstanden en onveiligheid — wat trauma kan geven. Trauma kan sociale angst, overprikkeling van de zintuigen en dichtklappen (shutdown) versterken. Het onderscheid is lastig; beide verdienen erkenning en aangepaste hulp.",
     blokken: [
       {
         tekst: "Je bent autistisch, of vermoedt het — en vraagt je af wat 'van het autisme' is en wat van wat je meemaakte komt. Of je herkent trauma-symptomen die ook op autisme lijken: vermijding, spanning, moeite met contact. Het antwoord is vaak: beide beïnvloeden elkaar."
@@ -294,18 +294,18 @@ const VRAGEN_17 = [
       },
       {
         kop: "Trauma versterkt autistische stress",
-        tekst: "Na trauma kunnen sensorische prikkels harder binnenkomen, sociale situaties angstiger voelen en shutdown of meltdown vaker voorkomen. Dat betekent niet dat autisme 'veroorzaakt' is door trauma — maar dat trauma de belasting vergroot. Hulp die rekening houdt met beide — tempo, sensoriek, communicatie — werkt beter dan standaard traumaprotocol."
+        tekst: "Na trauma kunnen prikkels via je zintuigen harder binnenkomen, sociale situaties angstiger voelen en dichtklappen (shutdown) of een meltdown vaker voorkomen. Dat betekent niet dat autisme 'veroorzaakt' is door trauma — maar dat trauma de belasting vergroot. Hulp die rekening houdt met beide — tempo, prikkels, communicatie — werkt beter dan een standaard traumabehandeling."
       }
     ],
     doeDit: [
       "Zoek hulpverleners met kennis van autisme én trauma.",
       "Erken maskeren als mogelijke bron van uitputting en schade.",
-      "Pas regulatie-oefeningen aan je sensorische profiel aan."
+      "Pas kalmeer-oefeningen aan bij hoe gevoelig jij bent voor prikkels."
     ],
     vermijd: [
       "Alle klachten toeschrijven aan autisme en trauma negeren.",
       "Trauma behandelen zonder rekening te houden met sensorische overbelasting.",
-      "Jezelf dwingen tot 'normale' sociale blootstelling."
+      "Jezelf dwingen tot 'normaal' sociaal contact."
     ],
     zegDit: [
       "“Ik heb aanpassingen nodig — dat betekent niet dat mijn pijn minder echt is.”",
@@ -314,7 +314,7 @@ const VRAGEN_17 = [
     bronnen: [
       {
         boek: "neurodivergent-somatics",
-        detail: "Over somatisch werk afgestemd op neurodivergente zenuwstelsels."
+        detail: "Over lichaamsgericht werk afgestemd op neurodivergente zenuwstelsels."
       },
       {
         boek: "myth-of-normal",
@@ -359,7 +359,7 @@ const VRAGEN_17 = [
       },
       {
         kop: "Labels met nuance",
-        tekst: "Een diagnose kan toegang geven tot hulp en erkenning. Maar 'persoonlijkheidsstoornis' klinkt voor velen als veroordeling. Traumagerichte benaderingen — schematherapie, DBT, somatisch werk — richten zich op patronen en veiligheid, niet op 'wie je bent'. Herstel is mogelijk; je bent geen vaststaand label."
+        tekst: "Een diagnose kan toegang geven tot hulp en erkenning. Maar 'persoonlijkheidsstoornis' klinkt voor velen als veroordeling. Traumagerichte aanpakken — schematherapie, DBT, lichaamsgericht werk — richten zich op patronen en veiligheid, niet op 'wie je bent'. Herstel is mogelijk; je bent geen vaststaand label."
       }
     ],
     doeDit: [
@@ -483,11 +483,11 @@ const VRAGEN_17 = [
     kort: "Institutioneel trauma ontstaat wanneer machtssystemen — scholen, kerken, zorg, justitie, leger — onveiligheid, misbruik of vernedering mogelijk maken of verhullen. De schade zit niet alleen in één persoon, maar in het vertrouwen in het systeem zelf.",
     blokken: [
       {
-        tekst: "Je werd niet alleen gewond door één persoon, maar door een instelling die het toeliet, verhulde of onbestraft liet: een school, een religieuze gemeenschap, een zorginstelling, een gevangenis. Dat achterlaat een ander soort spoor — wantrouwen in autoriteit en systemen."
+        tekst: "Je werd niet alleen gewond door één persoon, maar door een instelling die het toeliet, verborg of onbestraft liet: een school, een religieuze gemeenschap, een zorginstelling, een gevangenis. Dat laat een ander soort spoor na — wantrouwen in gezag en in instellingen."
       },
       {
         kop: "Wanneer het systeem faalt",
-        tekst: "Institutioneel trauma ontstaat waar macht ongelijk verdeeld is en waar klachten genegeerd, bestraft of weggepraat worden. Kinderen in pleegzorg, patiënten zonder inspraak, gevangenen, leerlingen bij pesten zonder interventie — het patroon is: je bent machteloos tegenover een structuur die je zou moeten beschermen."
+        tekst: "Institutioneel trauma ontstaat waar macht ongelijk verdeeld is en waar klachten genegeerd, bestraft of weggepraat worden. Kinderen in pleegzorg, patiënten zonder inspraak, gevangenen, leerlingen die gepest worden zonder dat iemand ingrijpt — het patroon is: je bent machteloos tegenover een systeem dat je zou moeten beschermen."
       },
       {
         kop: "Herstel en erkenning",
@@ -611,18 +611,18 @@ const VRAGEN_17 = [
       "identiteit",
       "onveiligheid"
     ],
-    kort: "Racisme — individueel en structureel — is chronische onveiligheid: microagressies, uitsluiting, geweld en de boodschap dat je minder waard bent. Dat laat diepe sporen na in lichaam, brein en zelfbeeld, generatie na generatie.",
+    kort: "Racisme — persoonlijk en in de samenleving — is voortdurende onveiligheid: kleine alledaagse vernederingen, uitsluiting, geweld en de boodschap dat je minder waard bent. Dat laat diepe sporen na in lichaam, brein en zelfbeeld, generatie na generatie.",
     blokken: [
       {
         tekst: "Racisme is niet 'alleen een mening' of 'iets waar je overheen moet stappen'. Het is herhaalde onveiligheid: de blik, de controle, de uitsluiting, het geweld, de boodschap dat je lichaam of identiteit gevaarlijk of minderwaardig is. Dat is trauma — individueel én collectief."
       },
       {
         kop: "Chronische dreiging",
-        tekst: "Raciale trauma ontstaat door herhaalde discriminatie, microagressies, institutionele uitsluiting en historisch geweld dat doorwerkt. Je zenuwstelsel leert alert te blijven in omgevingen die voor anderen veilig zijn. Hyperalertheid, vermoeidheid, woede, verdoving en lichamelijke klachten zijn begrijpelijke reacties — geen overdrijving."
+        tekst: "Trauma door racisme ontstaat door herhaalde discriminatie, kleine alledaagse vernederingen, uitsluiting door instellingen, en geweld uit het verleden dat doorwerkt. Je zenuwstelsel leert alert te blijven in omgevingen die voor anderen veilig zijn. Altijd op scherp staan, vermoeidheid, woede, verdoving en lichamelijke klachten zijn begrijpelijke reacties — geen overdrijving."
       },
       {
         kop: "Heling met context",
-        tekst: "Herstel vraagt erkenning van wat je meemaakte — niet gaslighting ('je ziet het te groot'). Veilige gemeenschap, identiteitskracht, somatisch werk en therapeuten die culturele context begrijpen, maken verschil. Je hoeft racisme niet alleen te dragen om 'sterk' te zijn."
+        tekst: "Herstel vraagt erkenning van wat je meemaakte — niet wegwuiven ('je ziet het te groot'). Een veilige gemeenschap, trots op wie je bent, lichaamsgericht werk en therapeuten die jouw achtergrond begrijpen, maken verschil. Je hoeft racisme niet alleen te dragen om 'sterk' te zijn."
       }
     ],
     doeDit: [

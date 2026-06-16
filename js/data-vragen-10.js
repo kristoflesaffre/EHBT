@@ -295,7 +295,7 @@ const VRAGEN_10 = [
       },
       {
         kop: "Triggers herkennen",
-        tekst: "Snel verliefd worden, direct aan iemand vastklampen, of juist afknappen bij de eerste irritatie — dat kunnen hechtingspatronen zijn. Dating is een oefenplek: merk wat je lichaam doet, gebruik grounding, en wees mild als het misgaat. Niet elke date hoeft te leiden tot een relatie; soms is 'nee' de beste keuze."
+        tekst: "Snel verliefd worden, direct aan iemand vastklampen, of juist afknappen bij de eerste irritatie — dat kunnen hechtingspatronen zijn. Dating is een oefenplek: merk wat je lichaam doet, gebruik aarden (grounding), en wees mild als het misgaat. Niet elke date hoeft te leiden tot een relatie; soms is 'nee' de beste keuze."
       }
     ],
     doeDit: [
@@ -623,7 +623,7 @@ const VRAGEN_10 = [
       },
       {
         kop: "Angst kalmeren, veiligheid bouwen",
-        tekst: "Herken de angst als oud alarm. Grounding helpt in het moment. Op langere termijn: hechtingstherapie, EFT, en relaties waarin mensen terugkomen na conflict. Je leert dat verlaten worden niet hetzelfde is als de dood — en dat je ook alleen kunt overleven, al voelt dat nu onmogelijk."
+        tekst: "Herken de angst als oud alarm. Aarden (grounding) helpt in het moment. Op langere termijn: hechtingstherapie, EFT, en relaties waarin mensen terugkomen na conflict. Je leert dat verlaten worden niet hetzelfde is als de dood — en dat je ook alleen kunt overleven, al voelt dat nu onmogelijk."
       }
     ],
     doeDit: [
@@ -743,18 +743,18 @@ const VRAGEN_10 = [
       "veiligheid",
       "venster"
     ],
-    kort: "Nabijheid zonder paniek begint met een lichaam dat geleerd heeft dat dichtbij komen gevaarlijk is. Via grounding, kleine stappen, voorspelbare veiligheid en therapie kun je je venster van tolerantie verruimen — nabijheid wordt dan mogelijk in plaats van bedreigend.",
+    kort: "Nabijheid zonder paniek begint met begrijpen dat je lichaam ooit leerde dat dichtbij komen gevaarlijk is. Via aarden (grounding), kleine stappen, voorspelbare veiligheid en therapie kun je de zone die je aankunt breder maken — nabijheid wordt dan mogelijk in plaats van bedreigend.",
     blokken: [
       {
-        tekst: "Een knuffel, iemand die naast je op de bank zit, oogcontact dat even te lang duurt — en je adem versnelt, je wilt weg, of je verdoofd. Je verlangt naar verbinding, maar je lichaam schreeuwt: gevaar."
+        tekst: "Een knuffel, iemand die naast je op de bank zit, oogcontact dat even te lang duurt — en je adem versnelt, je wilt weg, of je verdooft. Je verlangt naar verbinding, maar je lichaam schreeuwt: gevaar."
       },
       {
-        kop: "Het venster verruimen",
-        tekst: "Paniek bij nabijheid betekent dat je buiten je window of tolerance bent. Je zenuwstelsel heeft nog niet geleerd dat deze persoon, dit moment, veilig kan zijn. Dat leer je niet door jezelf te dwingen, maar door micro-doses nabijheid met regulatie: korte aanraking, ademen, stoppen wanneer nodig."
+        kop: "De zone breder maken",
+        tekst: "Paniek bij nabijheid betekent dat je buiten de zone bent die je aankunt (je 'window of tolerance'). Je zenuwstelsel heeft nog niet geleerd dat deze persoon, dit moment, veilig kan zijn. Dat leer je niet door jezelf te dwingen, maar door heel kleine stapjes nabijheid, met kalmeren: korte aanraking, ademen, stoppen wanneer nodig."
       },
       {
         kop: "Voorspelbaarheid helpt",
-        tekst: "Onverwachte nabijheid triggert vaker dan afgesproken contact. Vraag: 'mag ik even naast je zitten?' Gebruik grounding vóór en na. Werk met een therapeut aan wat aanraking en nabijheid vroeger betekenden. Langzaam kan je lichaam nabijheid associëren met veiligheid in plaats van gevaar."
+        tekst: "Onverwachte nabijheid triggert vaker dan afgesproken contact. Vraag: 'mag ik even naast je zitten?' Gebruik aarden (grounding) vóór en na. Werk met een therapeut aan wat aanraking en nabijheid vroeger betekenden. Langzaam kan je lichaam nabijheid koppelen aan veiligheid in plaats van gevaar."
       }
     ],
     doeDit: [
@@ -774,7 +774,7 @@ const VRAGEN_10 = [
     bronnen: [
       {
         boek: "narm-practical-guide",
-        detail: "Over regulatie en het verruimen van tolerantie voor nabijheid."
+        detail: "Over kalmeren en stap voor stap meer nabijheid aankunnen."
       },
       {
         boek: "anchored",

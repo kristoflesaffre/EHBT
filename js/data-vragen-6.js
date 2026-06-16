@@ -73,7 +73,7 @@ const VRAGEN_6 = [
   },
   {
     id: "wat-is-somatische-therapie",
-    vraag: "Wat is somatische therapie — en wanneer helpt het?",
+    vraag: "Wat is lichaamsgerichte (somatische) therapie — en wanneer helpt het?",
     thema: "lichaam",
     leeftijd: [
       "zelf",
@@ -89,10 +89,10 @@ const VRAGEN_6 = [
       "sensaties",
       "ontlading"
     ],
-    kort: "Somatische therapie werkt via het lichaam: sensaties, beweging en het zenuwstelsel. Handig wanneer praten alleen niet volstaat, of wanneer je lichaam 'vast' zit terwijl je hoofd al begrijpt wat er gebeurde.",
+    kort: "Lichaamsgerichte therapie (ook wel 'somatische' therapie) werkt via het lichaam: wat je voelt, beweging en het zenuwstelsel. Handig wanneer praten alleen niet genoeg is, of wanneer je lichaam 'vast' zit terwijl je hoofd al begrijpt wat er gebeurde.",
     blokken: [
       {
-        tekst: "Je begrijpt rationeel wat er gebeurde, maar je lichaam schrikt nog steeds, verstijft of zakt weg. Somatische therapie richt zich op díe laag: wat je voelt in spieren, adem, warmte, trilling — en hoe je systeem spanning kan voltooien en loslaten."
+        tekst: "Je begrijpt rationeel wat er gebeurde, maar je lichaam schrikt nog steeds, verstijft of zakt weg. Deze lichaamsgerichte therapie richt zich op díe laag: wat je voelt in spieren, adem, warmte, trilling — en hoe je systeem spanning kan afmaken en loslaten."
       },
       {
         kop: "Het lichaam als ingang",
@@ -100,7 +100,7 @@ const VRAGEN_6 = [
       },
       {
         kop: "Voor wie is het?",
-        tekst: "Somatische therapie kan helpen bij flashbacks, chronische spanning, dissociatie, slaapproblemen en het gevoel 'vast' te zitten. Het vraagt wel dat je geleidelijk leert voelen wat soms lang vermeden werd — daarom hoort het vaak in een veilige therapeutische relatie, in een tempo dat jij aankan."
+        tekst: "Lichaamsgerichte therapie kan helpen bij flashbacks, langdurige spanning, afhaken (dissociatie), slaapproblemen en het gevoel 'vast' te zitten. Het vraagt wel dat je geleidelijk leert voelen wat soms lang vermeden werd — daarom hoort het vaak in een veilige therapeutische relatie, in een tempo dat jij aankan."
       }
     ],
     doeDit: [
@@ -194,7 +194,7 @@ const VRAGEN_6 = [
       },
       {
         boek: "in-an-unspoken-voice",
-        detail: "Over regulatie van het zenuwstelsel en verschillende interventies."
+        detail: "Over het kalmeren van het zenuwstelsel en verschillende aanpakken."
       }
     ],
     gerelateerd: [
@@ -224,7 +224,7 @@ const VRAGEN_6 = [
     kort: "Een veiligheidsplan is een concreet stappenplan voor momenten waarop je overspoeld raakt, dissocieert of in crisis komt. Het is geen teken van zwakte — het is verstandig werken mét je zenuwstelsel in plaats van ertegen.",
     blokken: [
       {
-        tekst: "Als de golf komt — flashback, paniek, drang tot zelfbeschadiging, dissociatie — is het moeilijk helder te denken. Een veiligheidsplan legt vóóraf vast wat je dan doet, wie je belt, en welke signalen waarschuwen dat het erger wordt."
+        tekst: "Als de golf komt — flashback, paniek, drang tot zelfbeschadiging, afhaken (dissociatie) — is het moeilijk helder te denken. Een veiligheidsplan legt vóóraf vast wat je dan doet, wie je belt, en welke signalen waarschuwen dat het erger wordt."
       },
       {
         kop: "Wat staat erin?",
@@ -260,7 +260,7 @@ const VRAGEN_6 = [
       },
       {
         boek: "cptsd-surviving-thriving",
-        detail: "Over grounding en zelfregulatie bij emotionele flashbacks."
+        detail: "Over aarden (grounding) en jezelf kalmeren bij emotionele flashbacks."
       }
     ],
     gerelateerd: [
@@ -425,7 +425,7 @@ const VRAGEN_6 = [
       },
       {
         kop: "Vertrouwd ≠ veilig",
-        tekst: "Als je opgroeide in chaos, voelde rust misschien als 'te mooi om waar te zijn' — of als het moment vóór de volgende klap. Je zenuwstelsel associeert dan onbewust geluk met dreigend gevaar. Sabotage is soms een poging om controle terug te krijgen: liever zelf laten mislukken dan verrast worden."
+        tekst: "Als je opgroeide in chaos, voelde rust misschien als 'te mooi om waar te zijn' — of als het moment vóór de volgende klap. Je zenuwstelsel koppelt geluk dan onbewust aan dreigend gevaar. Sabotage is soms een poging om controle terug te krijgen: liever zelf laten mislukken dan verrast worden."
       },
       {
         kop: "Delen die bang zijn voor verandering",
@@ -654,7 +654,7 @@ const VRAGEN_6 = [
       },
       {
         boek: "myth-of-normal",
-        detail: "Over heling als integratie, niet als terugkeer naar 'voorheen'."
+        detail: "Over heling als één geheel worden, niet als terugkeer naar 'voorheen'."
       }
     ],
     gerelateerd: [

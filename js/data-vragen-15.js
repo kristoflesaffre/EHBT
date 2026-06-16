@@ -95,11 +95,11 @@ const VRAGEN_15 = [
       },
       {
         kop: "Het alarmsysteem slaapt niet mee",
-        tekst: "Bij trauma leert het zenuwstelsel dat rust gevaarlijk kan zijn. Overdag houd je het soms onder controle; 's nachts, wanneer je bewuste brein minder stuur geeft, kan het alarm spontaan afgaan. Dit lijkt op nachtelijke hyperalertheid of slaapstartle — het lichaam schakelt in één seconde van rust naar mobilisatie."
+        tekst: "Bij trauma leert het zenuwstelsel dat rust gevaarlijk kan zijn. Overdag houd je het soms onder controle; 's nachts, wanneer je bewuste brein minder stuur geeft, kan het alarm spontaan afgaan. Dit lijkt op 's nachts altijd op scherp staan of een slaapschok — het lichaam schakelt in één seconde van rust naar alarm."
       },
       {
         kop: "Terug naar rust",
-        tekst: "Na het schrikken helpt het om niet meteen te vechten tegen de slaap. Sta kort op, drink water, adem langzaam uit, of gebruik een grounding-oefening. Overdag: werk aan algemene zenuwstelselregulatie — beweging, voorspelbare routines, traumagerichte therapie. Bespreek aanhoudende klachten met huisarts of slaaptherapeut; soms spelen ook slaapapneu of medicatie mee."
+        tekst: "Na het schrikken helpt het om niet meteen te vechten tegen de slaap. Sta kort op, drink water, adem langzaam uit, of doe een aardingsoefening (grounding). Overdag: werk eraan om je zenuwstelsel te kalmeren — beweging, voorspelbare routines, traumagerichte therapie. Bespreek aanhoudende klachten met huisarts of slaaptherapeut; soms spelen ook slaapapneu of medicatie mee."
       }
     ],
     doeDit: [
@@ -119,7 +119,7 @@ const VRAGEN_15 = [
     bronnen: [
       {
         boek: "body-keeps-score",
-        detail: "Over slaapstoornissen en hypervigilantie als kernsymptomen van trauma."
+        detail: "Over slaapproblemen en altijd op scherp staan als kernklachten van trauma."
       },
       {
         boek: "ptsdreams",
@@ -127,7 +127,7 @@ const VRAGEN_15 = [
       },
       {
         boek: "anchored",
-        detail: "Over terugkeren van mobilisatie naar een rustiger zenuwstelseltoestand."
+        detail: "Over terugkeren van de actie-stand naar een rustiger zenuwstelsel."
       }
     ],
     gerelateerd: [
@@ -165,7 +165,7 @@ const VRAGEN_15 = [
       },
       {
         kop: "Kleine stappen, langdurig",
-        tekst: "Verwacht geen perfecte nachten binnen een week. Begin met één verandering: eerder dimmen, of elke ochtend op hetzelfde uur licht op. Daglicht overdag, beweging, en beperk dutjes na 15 uur. Als angst of nachtmerries het ritme telkens breken, combineer slaaphygiëne met traumatherapie — het ritme volgt vaak pas wanneer het zenuwstelsel iets kalmer wordt."
+        tekst: "Verwacht geen perfecte nachten binnen een week. Begin met één verandering: eerder dimmen, of elke ochtend op hetzelfde uur licht op. Daglicht overdag, beweging, en beperk dutjes na 15 uur. Als angst of nachtmerries het ritme telkens breken, combineer goede slaapgewoontes met traumatherapie — het ritme volgt vaak pas wanneer het zenuwstelsel iets kalmer wordt."
       }
     ],
     doeDit: [
@@ -185,11 +185,11 @@ const VRAGEN_15 = [
     bronnen: [
       {
         boek: "ptsdreams",
-        detail: "Over slaaphygiëne en het herstellen van vertrouwen in de nacht."
+        detail: "Over goede slaapgewoontes en het herstellen van vertrouwen in de nacht."
       },
       {
         boek: "body-keeps-score",
-        detail: "Over hoe trauma slaap verstoort en wat regulatie helpt."
+        detail: "Over hoe trauma slaap verstoort en wat helpt om te kalmeren."
       },
       {
         boek: "complex-ptsd-workbook",
@@ -241,7 +241,7 @@ const VRAGEN_15 = [
     ],
     vermijd: [
       "Jezelf dwingen in een bed dat paniek oproept 'omdat het hoort'.",
-      "Alcohol gebruiken om de angst te dempen — dat verstoort slaap en regulatie.",
+      "Alcohol gebruiken om de angst te dempen — dat verstoort je slaap en je rust.",
       "Denken dat je 'dom' bent omdat je thuis bang bent."
     ],
     zegDit: [
@@ -255,7 +255,7 @@ const VRAGEN_15 = [
       },
       {
         boek: "cptsd-surviving-thriving",
-        detail: "Over hypervigilantie en het moeilijk vinden van rust en overgave."
+        detail: "Over altijd op scherp staan en hoe moeilijk rust en overgave dan zijn."
       },
       {
         boek: "anchored",
@@ -359,17 +359,17 @@ const VRAGEN_15 = [
       },
       {
         kop: "Verlichting versus herstel",
-        tekst: "Slaapmiddelen kunnen inslapen vergemakkelijken op korte termijn, maar ze 'genezen' geen hyperalertheid of nachtmerries. Sommige middelen onderdrukken REM-slaap — juist de fase waarin dromen en verwerking plaatsvinden. Bij langdurig gebruik kan afhankelijkheid ontstaan, of wordt je natuurlijke slaapritme verder verstoord."
+        tekst: "Slaapmiddelen kunnen op korte termijn helpen om in te slapen, maar ze 'genezen' het altijd op scherp staan of nachtmerries niet. Sommige middelen onderdrukken de REM-slaap — juist de fase waarin je droomt en verwerkt. Bij langdurig gebruik kan afhankelijkheid ontstaan, of raakt je natuurlijke slaapritme verder verstoord."
       },
       {
         kop: "Wanneer wel overwegen?",
-        tekst: "Kortdurend, onder medisch toezicht, kan medicatie soms helpen om een neerwaartse spiraal te doorbreken — bijvoorbeeld na ernstige uitputting. Praat over niet-benzodiazepine opties, interactie met andere medicatie, en een exit-plan. Combineer medicatie waar mogelijk met slaaphygiëne, traumatherapie en zenuwstelselregulatie. Jij mag vragen stellen en nee zeggen."
+        tekst: "Kortdurend, onder medisch toezicht, kan medicatie soms helpen om een neerwaartse spiraal te doorbreken — bijvoorbeeld na ernstige uitputting. Praat over alternatieven voor benzo's, de wisselwerking met andere medicatie, en een afbouwplan. Combineer medicatie waar mogelijk met goede slaapgewoontes, traumatherapie en je zenuwstelsel kalmeren. Jij mag vragen stellen en nee zeggen."
       }
     ],
     doeDit: [
       "Bespreek slaapproblemen eerst met je huisarts — inclusief trauma en andere medicatie.",
       "Vraag naar kortdurend gebruik, bijwerkingen en afbouwmogelijkheden.",
-      "Combineer medicatie met regulatie, ritme en traumagerichte hulp waar mogelijk."
+      "Combineer medicatie met kalmeren, ritme en traumagerichte hulp waar mogelijk."
     ],
     vermijd: [
       "Slaapmiddelen langdurig zonder medisch overleg gebruiken.",
@@ -391,7 +391,7 @@ const VRAGEN_15 = [
       },
       {
         boek: "what-happened-to-you",
-        detail: "Over geïntegreerde zorg waarin medicatie één puzzelstuk is."
+        detail: "Over zorg die alles samen neemt, waarin medicatie één puzzelstuk is."
       }
     ],
     gerelateerd: [
@@ -418,29 +418,29 @@ const VRAGEN_15 = [
       "slaap",
       "scanning"
     ],
-    kort: "Nachtelijke hyperalertheid betekent dat je zenuwstelsel 's nachts blijft scannen op gevaar: elk geluid, elke schaduw kan een reactie uitlokken. Het is overdag hypervigilantie die geen pauze krijgt wanneer je het meest kwetsbaar bent.",
+    kort: "Nachtelijke hyperalertheid betekent dat je zenuwstelsel 's nachts blijft zoeken naar gevaar: elk geluid, elke schaduw kan een reactie uitlokken. Het is het altijd op scherp staan van overdag, dat 's nachts geen pauze krijgt — juist als je het kwetsbaarst bent.",
     blokken: [
       {
         tekst: "Terwijl anderen diep slapen, ben jij half-wakker: oren gespitst, spieren gespannen, klaar om te springen. Soms hoor je dingen die anderen niet horen. Slaap voelt als wachtlopen. Dit put je uit en maakt overdag alles zwaarder."
       },
       {
         kop: "Geen 'uit'-knop na zonsondergang",
-        tekst: "Hyperalertheid overdag is al zwaar; 's nachts wordt het erger omdat je bewuste controle afneemt en het overlevingsbrein de leiding neemt. Trauma leerde je systeem dat gevaar onvoorspelbaar komt — vaak juist wanneer je rust. Het lichaam weigert overgave zolang het nog geen veiligheid ervaart."
+        tekst: "Altijd op scherp staan overdag is al zwaar; 's nachts wordt het erger omdat je bewuste controle afneemt en het overlevingsbrein de leiding neemt. Trauma leerde je systeem dat gevaar onvoorspelbaar komt — vaak juist wanneer je rust. Het lichaam weigert overgave zolang het nog geen veiligheid ervaart."
       },
       {
-        kop: "Regulatie vóór en tijdens de nacht",
-        tekst: "Werk overdag aan zenuwstelselregulatie: adem, beweging, voorspelbaarheid, veilige relaties. 's Avonds: vermijd prikkels die alertheid aanwakkeren. Grounding bij nachtelijk wakker worden. Traumatherapie — somatisch, EMDR of imagery voor nachtmerries — kan het alarm geleidelijk minder gevoelig maken. Geduld: je lichaam leerde jarenlang waken; het leert ook weer rusten."
+        kop: "Kalmeren, overdag en 's nachts",
+        tekst: "Werk overdag aan het kalmeren van je zenuwstelsel: adem, beweging, voorspelbaarheid, veilige relaties. 's Avonds: vermijd prikkels die je alerter maken. Aarden (grounding) als je 's nachts wakker wordt. Traumatherapie — lichaamsgericht, EMDR of imagery rehearsal voor nachtmerries — kan het alarm geleidelijk minder gevoelig maken. Geduld: je lichaam leerde jarenlang waken; het leert ook weer rusten."
       }
     ],
     doeDit: [
       "Herken nachtelijke alertheid als trauma-symptoom, niet als karakterfout.",
-      "Bouw overdag regulatie op zodat je systeem 's nachts minder gespannen start.",
+      "Bouw overdag rust op (jezelf leren kalmeren) zodat je systeem 's nachts minder gespannen start.",
       "Zoek traumagerichte hulp als waakzaamheid je leven domineert."
     ],
     vermijd: [
       "Denken dat harder 'ontspannen proberen' het oplost.",
       "Nachten lang wakker blijven scannen op gevaar.",
-      "Hyperalertheid negeren en alleen op koffie vertrouwen overdag."
+      "Altijd op scherp staan negeren en alleen op koffie vertrouwen overdag."
     ],
     zegDit: [
       "“Mijn waakzaamheid beschermde me. Nu mag ik leren uitrusten.”",
@@ -449,7 +449,7 @@ const VRAGEN_15 = [
     bronnen: [
       {
         boek: "body-keeps-score",
-        detail: "Over hypervigilantie als kernsymptoom van trauma, dag en nacht."
+        detail: "Over altijd op scherp staan als kernklacht van trauma, dag en nacht."
       },
       {
         boek: "ptsdreams",
@@ -552,19 +552,19 @@ const VRAGEN_15 = [
     kort: "Lucide dromen — weten dat je droomt terwijl je droomt — klinkt aantrekkelijk als controle over nachtmerries. Sommigen vinden het helpend; anderen raken juist overspoeld. Voorzichtig experimenteren en professionele begeleiding bij zware nachtmerries is verstandig.",
     blokken: [
       {
-        tekst: "Het idee: als je weet dat je droomt, kun je misschien de nachtmerrie stoppen, de richting veranderen, of angst overwinnen. Online staan talloze tips. Maar bij trauma is de nacht al geladen — extra experimenteren kan helpen of juist destabiliseren."
+        tekst: "Het idee: als je weet dat je droomt, kun je misschien de nachtmerrie stoppen, de richting veranderen, of angst overwinnen. Online staan talloze tips. Maar bij trauma is de nacht al geladen — extra experimenteren kan helpen of juist uit balans brengen."
       },
       {
         kop: "Controle versus overspoeling",
-        tekst: "Voor sommige mensen geeft luciditeit een gevoel van agency: 'ik hoef niet machteloos te zijn'. Anderen merken dat bewust dromen heftige beelden versterkt, of dat ze moeite hebben om écht te rusten. Trauma-dromen zijn niet 'spelletjes'; ze kunnen lichamelijke reacties uitlokken alsof het echt gebeurt."
+        tekst: "Voor sommige mensen geeft het besef dat ze dromen een gevoel van grip: 'ik hoef niet machteloos te zijn'. Anderen merken dat bewust dromen heftige beelden versterkt, of dat ze moeite hebben om écht te rusten. Trauma-dromen zijn niet 'spelletjes'; ze kunnen lichamelijke reacties uitlokken alsof het echt gebeurt."
       },
       {
         kop: "Voorzichtigheid eerst",
-        tekst: "Bij ernstige nachtmerries of PTSS zijn bewezen methodes — imagery rehearsal, EMDR, somatische therapie — vaak beter startpunten dan lucide-droomtechnieken. Wil je het proberen, doe dat geleidelijk en stop bij meer angst of slechtere slaap. Bespreek het met je therapeut. Lucide dromen is geen vervanging voor traumaverwerking."
+        tekst: "Bij ernstige nachtmerries of PTSS zijn bewezen methodes — imagery rehearsal, EMDR, lichaamsgerichte (somatische) therapie — vaak een beter startpunt dan lucide-droomtechnieken. Wil je het proberen, doe dat geleidelijk en stop bij meer angst of slechtere slaap. Bespreek het met je therapeut. Lucide dromen is geen vervanging voor traumaverwerking."
       }
     ],
     doeDit: [
-      "Stabiliseer eerst je slaap en overdag regulatie vóór je lucide technieken probeert.",
+      "Werk eerst aan rustigere slaap en aan jezelf kalmeren overdag, vóór je lucide technieken probeert.",
       "Stop meteen als lucide dromen je angstiger of minder uitgerust maakt.",
       "Overweeg bewezen nachtmerriebehandeling via een traumatherapeut."
     ],
@@ -622,11 +622,11 @@ const VRAGEN_15 = [
       },
       {
         kop: "Valse rust",
-        tekst: "Alcohol onderdrukt je centrale zenuwstelsel tijdelijk, waardoor inslapen makkelijker lijkt. Maar na enkele uren trekt het rebound-effect: lichtere slaap, meer ontwaken, minder REM in de tweede helft van de nacht. REM is cruciaal voor emotieregulatie en droomverwerking — alcohol ontneemt je juist die laag."
+        tekst: "Alcohol onderdrukt je zenuwstelsel tijdelijk, waardoor inslapen makkelijker lijkt. Maar na enkele uren komt de terugslag: lichtere slaap, vaker wakker worden, minder REM in de tweede helft van de nacht. REM is heel belangrijk voor het kalmeren van emoties en het verwerken van dromen — en juist die laag pakt alcohol je af."
       },
       {
         kop: "Trauma en zelfmedicatie",
-        tekst: "Alcohol wordt soms gebruikt om gevoelens, nachtmerries of hyperalertheid te dempen. Dat werkt kort, maar versterkt op termijn angst, slaap en schaamte — en kan verslaving in de hand werken. Eerlijke hulp (huisarts, verslavingszorg, traumatherapie) is geen zwakte. Sobere slaaphygiëne en zenuwstelselregulatie zijn langduriger vrienden dan het glas voor bed."
+        tekst: "Alcohol wordt soms gebruikt om gevoelens, nachtmerries of het altijd op scherp staan te dempen. Dat werkt kort, maar versterkt op termijn je angst, je slaapproblemen en je schaamte — en kan verslaving in de hand werken. Eerlijke hulp (huisarts, verslavingszorg, traumatherapie) is geen zwakte. Nuchtere, goede slaapgewoontes en je zenuwstelsel leren kalmeren zijn op de lange duur betere vrienden dan het glas voor het slapen."
       }
     ],
     doeDit: [
@@ -650,11 +650,11 @@ const VRAGEN_15 = [
       },
       {
         boek: "body-keeps-score",
-        detail: "Over slaap, substancen en het zenuwstelsel bij trauma."
+        detail: "Over slaap, middelen en het zenuwstelsel bij trauma."
       },
       {
         boek: "when-body-says-no",
-        detail: "Over coping via middelen en de lichamelijke prijs op lange termijn."
+        detail: "Over omgaan met klachten via middelen en de lichamelijke prijs op lange termijn."
       }
     ],
     gerelateerd: [
@@ -688,7 +688,7 @@ const VRAGEN_15 = [
       },
       {
         kop: "Licht en alertheid",
-        tekst: "Blauw licht remt melatonine aan, het hormoon dat slaap opstart. Maar minstens zo belangrijk is de inhoud: confronterend nieuws, conflicten online, of prikkelende video's houden je in mobilisatie — vecht-of-vlucht-modus. Trauma maakt je sowieso gevoeliger voor prikkels; schermen vóór bed zijn dan dubbel zwaar."
+        tekst: "Blauw licht remt melatonine aan, het hormoon dat slaap opstart. Maar minstens zo belangrijk is de inhoud: confronterend nieuws, conflicten online, of prikkelende video's houden je in de actie-stand — vecht-of-vlucht. Trauma maakt je sowieso gevoeliger voor prikkels; schermen vóór bed zijn dan dubbel zwaar."
       },
       {
         kop: "Praktische grenzen",
@@ -709,7 +709,7 @@ const VRAGEN_15 = [
     bronnen: [
       {
         boek: "ptsdreams",
-        detail: "Over slaaphygiëne en prikkelreductie in de avond."
+        detail: "Over goede slaapgewoontes en minder prikkels in de avond."
       },
       {
         boek: "anchored",
@@ -717,7 +717,7 @@ const VRAGEN_15 = [
       },
       {
         boek: "body-keeps-score",
-        detail: "Over hyperalertheid en wat het systeem kalmeert of activeert."
+        detail: "Over altijd op scherp staan en wat het systeem kalmeert of juist aanzet."
       }
     ],
     gerelateerd: [
@@ -744,14 +744,14 @@ const VRAGEN_15 = [
       "emoties",
       "start dag"
     ],
-    kort: "Ochtendangst — wakker worden met een brok in je maag of paniek — komt vaak voor bij trauma en stress. Cortisol piekt 's ochtends; een alert zenuwstelsel interpreteert dat soms als gevaar. Het is real, en er is veel aan te doen.",
+    kort: "Ochtendangst — wakker worden met een brok in je maag of paniek — komt vaak voor bij trauma en stress. Cortisol piekt 's ochtends; een alert zenuwstelsel leest dat soms als gevaar. Het is echt, en er is veel aan te doen.",
     blokken: [
       {
         tekst: "Nog voor je voet de grond raakt, voel je angst: hart bonkt, gedachten racen, soms een gevoel van dreiging zonder duidelijke aanleiding. De dag voelt meteen zwaar. Je bent niet de enige — en het betekent niet dat er per se iets mis is vandaag."
       },
       {
         kop: "Biologie en trauma",
-        tekst: "Cortisol — het stresshormoon — piekt natuurlijk bij het wakker worden om je te mobiliseren. Bij trauma is dat systeem vaak overgevoelig: de piek voelt als paniek in plaats van energie. Slechte nachten, nachtmerries of nachtelijke hyperalertheid maken ochtenden extra zwaar — je start al uitgeput en gespannen."
+        tekst: "Cortisol — het stresshormoon — piekt 's ochtends van nature om je op gang te brengen. Bij trauma is dat systeem vaak overgevoelig: de piek voelt als paniek in plaats van energie. Slechte nachten, nachtmerries of 's nachts altijd op scherp staan maken ochtenden extra zwaar — je start al uitgeput en gespannen."
       },
       {
         kop: "Zacht beginnen",
@@ -779,7 +779,7 @@ const VRAGEN_15 = [
       },
       {
         boek: "anchored",
-        detail: "Over het zenuwstelsel kalmeren na mobilisatie."
+        detail: "Over het zenuwstelsel kalmeren nadat het in de actie-stand stond."
       },
       {
         boek: "cptsd-surviving-thriving",

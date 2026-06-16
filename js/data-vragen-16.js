@@ -158,7 +158,7 @@ const VRAGEN_16 = [
       },
       {
         kop: "Stress zonder verhaal",
-        tekst: "Kleine kinderen registreren gevaar, ruzie, verwaarlozing of plotseling verlies via het lichaam: verhoogde cortisol, moeite met regulatie, slaapproblemen, terugtrekking of clinging. Ouders met eigen onverwerkt trauma kunnen soms moeilijker afstemmen — niet uit onwil, maar omdat hun zenuwstelsel ook op scherp staat."
+        tekst: "Kleine kinderen registreren gevaar, ruzie, verwaarlozing of plotseling verlies via het lichaam: meer cortisol, moeite om te kalmeren, slaapproblemen, terugtrekken of vastklampen. Ouders met eigen onverwerkt trauma kunnen soms moeilijker afstemmen — niet uit onwil, maar omdat hun zenuwstelsel ook op scherp staat."
       },
       {
         kop: "Veiligheid herstellen",
@@ -607,7 +607,7 @@ const VRAGEN_16 = [
       },
       {
         kop: "Het systeem past zich aan",
-        tekst: "Gezinnen zijn systemen: als één persoon hyperalert is, wordt het ritme strakker of juist chaotischer. Kinderen registreren stress ook zonder woorden. Onverwerkt trauma kan zich doorgeven via reacties, niet alleen via verhalen — intergenerationeel trauma is geen veroordeling, wel een patroon om te herkennen."
+        tekst: "Gezinnen zijn systemen: als één persoon altijd op scherp staat, wordt het ritme strakker of juist chaotischer. Kinderen registreren stress ook zonder woorden. Onverwerkt trauma kan zich doorgeven via reacties, niet alleen via verhalen — dat doorgeven (intergenerationeel trauma) is geen veroordeling, wel een patroon om te herkennen."
       },
       {
         kop: "Herstel als gezin",
@@ -743,7 +743,7 @@ const VRAGEN_16 = [
       },
       {
         kop: "Tijdens en na het gesprek",
-        tekst: "Vraag expliciet om doorverwijzing naar GGZ of traumapsycholoog als dat nodig is. Niet elke huisarts kent trauma diep — wees assertief maar rustig. Neem iemand mee als steun als dat helpt. Na afloop: noteer wat besproken is en vervolgafspraken. Geen goede match? Je mag een second opinion of andere huisarts zoeken."
+        tekst: "Vraag duidelijk om doorverwijzing naar de GGZ of een traumapsycholoog als dat nodig is. Niet elke huisarts kent trauma diep — kom rustig voor jezelf op. Neem iemand mee als steun als dat helpt. Na afloop: noteer wat besproken is en de vervolgafspraken. Geen goede klik? Je mag een tweede mening of een andere huisarts zoeken."
       }
     ],
     doeDit: [

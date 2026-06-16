@@ -355,11 +355,11 @@ const VRAGEN_7 = [
     kort: "Parentificatie is wanneer een kind de rol van ouder op zich neemt — voor jongere broers of zussen, of zelfs voor de eigen ouder. Het kind leert zijn eigen behoeften weg te drukken om anderen te dragen. Dat laat vaak diepe sporen na.",
     blokken: [
       {
-        tekst: "Als kind was jij degene die moest zorgen: broers troosten, de keuken opruimen, de dronken ouder naar bed helpen, of de stem van de reden zijn in huis. Volwassenen prezen je 'volwassenheid'. Maar jij miste iets essentieels: het recht om gewoon kind te zijn."
+        tekst: "Als kind was jij degene die moest zorgen: broers troosten, de keuken opruimen, de dronken ouder naar bed helpen, of de stem van de reden zijn in huis. Volwassenen prezen je 'volwassenheid'. Maar jij miste iets belangrijks: het recht om gewoon kind te zijn."
       },
       {
         kop: "Twee vormen",
-        tekst: "Instrumentele parentificatie gaat over taken: koken, oppassen, administratie. Emotionele parentificatie gaat over de innerlijke wereld van de ouder dragen: troosten, bemiddelen, de gevoelens van papa of mama reguleren. Beide zijn te zwaar voor een kind. Het kind leert: mijn waarde = wat ik voor anderen doe."
+        tekst: "Praktische parentificatie gaat over taken: koken, oppassen, administratie. Emotionele parentificatie gaat over het dragen van de gevoelswereld van de ouder: troosten, bemiddelen, de gevoelens van papa of mama kalmeren. Beide zijn te zwaar voor een kind. Het kind leert: mijn waarde = wat ik voor anderen doe."
       },
       {
         kop: "Sporen in volwassen leven",
@@ -551,15 +551,15 @@ const VRAGEN_7 = [
     kort: "Toxic stress is langdurige, intense stress zonder voldoende steun — bijvoorbeeld mishandeling, verwaarlozing of chronische angst. Het overbelast het ontwikkelende zenuwstelsel van kinderen en kan levenslang doorwerken in lichaam, brein en gedrag.",
     blokken: [
       {
-        tekst: "Niet alle stress is schadelijk. Positieve stress (spanning voor een toets, met steun daarna) helpt kinderen groeien. Toxic stress ontstaat wanneer stress langdurig, intens en zonder beschermende relatie is: een kind dat maanden of jaren leeft in angst, zonder iemand die het helpt kalmeren."
+        tekst: "Niet alle stress is schadelijk. Positieve stress (spanning voor een toets, met steun daarna) helpt kinderen groeien. Toxic stress (giftige stress) ontstaat wanneer stress lang duurt, heftig is en er geen beschermende relatie is: een kind dat maanden of jaren in angst leeft, zonder iemand die het helpt kalmeren."
       },
       {
         kop: "Wat het doet met het lichaam",
-        tekst: "Bij toxic stress blijven stresshormonen te lang elevated. Het ontwikkelende brein past zich aan: hyperalert, snel bevriezen, moeite met leren, impulscontrole en emotieregulatie. Later verhoogt het risico op lichamelijke klachten, verslaving, depressie en relatieproblemen. Dat is geen lot — het is biologie die reageerde op een onveilige omgeving."
+        tekst: "Bij toxic stress blijven stresshormonen te lang te hoog. Het brein-in-ontwikkeling past zich aan: altijd op scherp, snel bevriezen, moeite met leren, zelfbeheersing en het kalmeren van emoties. Later verhoogt het de kans op lichamelijke klachten, verslaving, depressie en relatieproblemen. Dat is geen lot — het is biologie die reageerde op een onveilige omgeving."
       },
       {
         kop: "Beschermende factoren",
-        tekst: "Eén stabiele, liefdevolle volwassene kan toxic stress aanzienlijk bufferen. Daarom telt 'wie was er wél veilig?' net zo hard als 'wat gebeurde er?' Herstel is mogelijk: het zenuwstelsel blijft leerbaar. Traumagerichte hulp, veiligheid en regulatie-oefeningen kunnen helpen, ook decennia later."
+        tekst: "Eén stabiele, liefdevolle volwassene kan toxic stress flink opvangen. Daarom telt 'wie was er wél veilig?' net zo hard als 'wat gebeurde er?' Herstel is mogelijk: het zenuwstelsel blijft leerbaar. Traumagerichte hulp, veiligheid en oefeningen om te kalmeren kunnen helpen, ook tientallen jaren later."
       }
     ],
     doeDit: [
@@ -621,14 +621,14 @@ const VRAGEN_7 = [
         tekst: "Freeze komt vaak voor bij onvermijdbare dreiging: geweld waarbij verzet gevaarlijker werd, medische situaties, verlamming door angst, of langdurige machteloosheid. Het zenuwstelsel kiest de enige optie die overblijft: minimaliseren, verdoofd raken, dissociëren. Later kan hetzelfde patroon terugkomen bij stress, conflict of zelfs intimiteit."
       },
       {
-        kop: "Herkennen en ontregelen",
-        tekst: "Freeze voelt vaak als schaamte: 'Ik had iets moeten doen.' Maar je lichaam deed precies wat het moest doen. Herkenning helpt: trage adem, beweging, grounding en somatische therapie kunnen het zenuwstelsel leren dat bewegen en voelen weer veilig mag. Geduld is essentieel — forceren versterkt freeze."
+        kop: "Herkennen en loskomen",
+        tekst: "Freeze voelt vaak als schaamte: 'Ik had iets moeten doen.' Maar je lichaam deed precies wat het moest doen. Herkenning helpt: trage adem, beweging, aarden (grounding) en lichaamsgerichte (somatische) therapie kunnen het zenuwstelsel leren dat bewegen en voelen weer veilig mag. Geduld is heel belangrijk — forceren versterkt freeze."
       }
     ],
     doeDit: [
       "Herken freeze: verdoofd, lam, afwezig, alsof je 'uit' schakelt.",
       "Beweeg klein en langzaam: voeten wiebelen, armen strekken, adem verlengen.",
-      "Zoek somatische of traumagerichte hulp als freeze je dagelijks leven beïnvloedt."
+      "Zoek lichaamsgerichte (somatische) of traumagerichte hulp als freeze je dagelijks leven beïnvloedt."
     ],
     vermijd: [
       "Jezelf verwijten dat je 'niets deed' tijdens dreiging.",
@@ -646,11 +646,11 @@ const VRAGEN_7 = [
       },
       {
         boek: "anchored",
-        detail: "Over het polyvagaal systeem en shutdown-states."
+        detail: "Over het zenuwstelsel (polyvagaal) en dichtklappen (shutdown)."
       },
       {
         boek: "body-keeps-score",
-        detail: "Over dissociatie en freeze als trauma-reacties."
+        detail: "Over afhaken (dissociatie) en bevriezen (freeze) als trauma-reacties."
       }
     ],
     gerelateerd: [
@@ -687,7 +687,7 @@ const VRAGEN_7 = [
         tekst: "Lichamelijk: gespannen kaak, vuisten, snelle ademhaling, warmte in het lichaam, hartkloppingen. Emotioneel: woede, irritatie, het gevoel aangevallen te worden, moeite met luisteren. Gedrag: onderbreken, domineren, blame, controleren. Vaak triggert iets kleins een disproportionele reactie — omdat het oude gevaar activeert."
       },
       {
-        kop: "Van overleven naar regulatie",
+        kop: "Van overleven naar tot rust komen",
         tekst: "Vechten-modus is geen 'slecht karakter'. Het is een alarm dat te gevoelig staat. Herkenning is stap één: pauze nemen vóór je reageert, ademhalen, lichaam bewegen om opgebouwde energie te ontladen. Traumatherapie helpt het alarm minder gevoelig te maken. Je mag leren dat veiligheid niet meer via agressie hoeft."
       }
     ],
@@ -750,7 +750,7 @@ const VRAGEN_7 = [
       },
       {
         kop: "Vormen van flight",
-        tekst: "Fysiek vluchten: weglopen, vermijden van plaatsen of mensen. Mentale vlucht: afleiding, fantasie, dissociatie, eindeloos nadenken ('analysis paralysis'). Gedrag: overwerken, perfectionisme, verslaving, altijd druk zijn — want stilstand voelt gevaarlijk. Emotioneel: intimiteit vermijden, gesprekken afkappen, 'ghosting'."
+        tekst: "Fysiek vluchten: weglopen, vermijden van plaatsen of mensen. Mentale vlucht: afleiding, fantasie, afhaken (dissociatie), eindeloos blijven malen. Gedrag: overwerken, perfectionisme, verslaving, altijd druk zijn — want stilstand voelt gevaarlijk. Emotioneel: intimiteit vermijden, gesprekken afkappen, 'ghosting'."
       },
       {
         kop: "Tussen vluchten en veilig blijven",

@@ -123,7 +123,7 @@ const VRAGEN_4 = [
       },
       {
         boek: "complex-ptsd-workbook",
-        detail: "Over oefeningen om flashbacks te herkennen en te reguleren."
+        detail: "Over oefeningen om flashbacks te herkennen en tot rust te brengen."
       }
     ],
     gerelateerd: [
@@ -279,7 +279,7 @@ const VRAGEN_4 = [
       },
       {
         kop: "Hoe het doorgeeft",
-        tekst: "Trauma wordt doorgegeven via gedrag: een ouder die zelf nooit troost kreeg, kan moeite hebben met troosten. Een ouder die hyperalert was, maakt kinderen hyperalert. Soms via verhalen die verteld worden — of juist verzwegen. Onderzoek suggereert ook dat extreme stress biologische sporen kan nalaten die door generaties heen beïnvloeden, hoewel dat veld nog in ontwikkeling is."
+        tekst: "Trauma wordt doorgegeven via gedrag: een ouder die zelf nooit troost kreeg, kan moeite hebben met troosten. Een ouder die hyperalert was, maakt kinderen hyperalert. Soms via verhalen die verteld worden — of juist verzwegen. Onderzoek wijst er ook op dat zware stress lichamelijke sporen kan nalaten die doorwerken over generaties, al wordt dat nog volop onderzocht."
       },
       {
         kop: "Doorbreken begint bij bewustwording",
@@ -402,11 +402,11 @@ const VRAGEN_4 = [
       },
       {
         kop: "Waar het vandaan komt",
-        tekst: "Kinderen hebben een biologische behoefte aan consistente, betrouwbare verbinding. Wanneer ouders onvoorspelbaar waren — soms liefdevol, soms afwezig of afwijzend — leerde je dat liefde niet veilig is. Het zenuwstelsel associeert nu elke dreiging van afstand met de oorspronkelijke angst: als ik verlaten word, overleef ik het niet."
+        tekst: "Kinderen hebben een biologische behoefte aan consistente, betrouwbare verbinding. Wanneer ouders onvoorspelbaar waren — soms liefdevol, soms afwezig of afwijzend — leerde je dat liefde niet veilig is. Het zenuwstelsel koppelt nu elke dreiging van afstand aan die oude angst: als ik verlaten word, overleef ik het niet."
       },
       {
-        kop: "Herkennen en reguleren",
-        tekst: "Verlatingsangst manifesteert zich op verschillende manieren: excessive behoefte aan bevestiging, jaloezie, moeite met alleen zijn, snel afstand nemen als intimiteit te dichtbij komt, of partners kiezen die onbereikbaar zijn. Bewustwording is de eerste stap. Daarna: leren dat afstand niet altijd verlaten betekent, en opbouwen van innerlijke veiligheid die niet volledig afhangt van anderen."
+        kop: "Herkennen en kalmeren",
+        tekst: "Verlatingsangst laat zich op verschillende manieren zien: een overdreven grote behoefte aan bevestiging, jaloezie, moeite met alleen zijn, snel afstand nemen als iemand te dichtbij komt, of juist partners kiezen die toch onbereikbaar zijn. Bewustwording is de eerste stap. Daarna: leren dat afstand niet altijd verlaten betekent, en innerlijke veiligheid opbouwen die niet helemaal afhangt van anderen."
       }
     ],
     doeDit: [
@@ -549,7 +549,7 @@ const VRAGEN_4 = [
     bronnen: [
       {
         boek: "in-an-unspoken-voice",
-        detail: "Over het lichaam, seksualiteit en trauma vanuit somatisch perspectief."
+        detail: "Over het lichaam, seksualiteit en trauma, bekeken vanuit het lichaam."
       },
       {
         boek: "emotional-incest",

@@ -23,38 +23,38 @@ const VRAGEN_8 = [
       "sympathisch",
       "dorsaal"
     ],
-    kort: "Polyvagaal theorie beschrijft drie zenuwstelsel-states: veilig verbonden (ventraal), alarm (sympathisch: vechten/vluchten) en shutdown (dorsaal: bevriezen). Praktisch: herken je staat, signaleer veiligheid via lichaam en relatie, en ga niet van shutdown direct naar analyse.",
+    kort: "De polyvagaaltheorie beschrijft drie standen van je zenuwstelsel: veilig en verbonden, alarm (vechten of vluchten), en dichtklappen (bevriezen). In de praktijk: herken in welke stand je zit, geef je lichaam signalen van veiligheid, en ga vanuit 'dichtgeklapt' niet meteen analyseren.",
     blokken: [
       {
-        tekst: "Je zenuwstelsel bepaalt grotendeels hoe je je voelt — sneller dan je bewuste brein. Polyvagaal theorie helpt begrijpen waarom je soms niet kunt 'denken' uit paniek, waarom je verdoofd raakt, of waarom een kalme stem je meteen rustiger maakt. Het is geen esoterie — het is neurobiologie vertaald naar dagelijks leven."
+        tekst: "Je zenuwstelsel bepaalt voor een groot deel hoe je je voelt — sneller dan je bewuste brein. De polyvagaaltheorie helpt begrijpen waarom je je soms niet uit paniek kunt 'denken', waarom je verdoofd raakt, of waarom een kalme stem je meteen rustiger maakt. Het is geen zweverig gedoe — het is hoe je zenuwstelsel werkt, vertaald naar het dagelijks leven."
       },
       {
         kop: "Drie standen herkennen",
-        tekst: "Ventraal (veilig): je ademt rustig, voelt verbinding, kunt luisteren en lachen. Sympathisch (alarm): hartkloppingen, snelle adem, woede of angst, willen vechten of vluchten. Dorsaal (shutdown): leeg, moe, dissociatief, niet kunnen bewegen of praten. Je wisselt constant — dat is normaal. Trauma maakt vooral sympathisch en dorsaal te makkelijk bereikbaar."
+        tekst: "Veilig (in vaktaal: ventraal): je ademt rustig, voelt verbinding, kunt luisteren en lachen. Alarm (sympathisch): hartkloppingen, snelle adem, woede of angst, willen vechten of vluchten. Dichtgeklapt (dorsaal): leeg, moe, afwezig, niet kunnen bewegen of praten. Je wisselt steeds tussen die standen — dat is normaal. Trauma maakt vooral 'alarm' en 'dichtgeklapt' te makkelijk bereikbaar."
       },
       {
         kop: "Praktische toepassing",
-        tekst: "Vraag niet 'wat is er mis met mij?' maar 'in welke staat zit mijn zenuwstelsel?' Uit shutdown kom je via kleine beweging, warmte, zachte stemmen — niet via harde analyse. Uit alarm via trage uitademing, voeten voelen, voorspelbaarheid. Veilige relaties zijn de snelste regulator: oogcontact, toon, aanwezigheid. Oefen signalen van veiligheid, niet alleen cognitieve inzichten."
+        tekst: "Vraag niet 'wat is er mis met mij?' maar 'in welke stand zit mijn zenuwstelsel?' Uit 'dichtgeklapt' kom je via kleine beweging, warmte en zachte stemmen — niet via streng analyseren. Uit 'alarm' kom je via traag uitademen, je voeten voelen en voorspelbaarheid. Veilige relaties laten je het snelst kalmeren: oogcontact, een rustige toon, aanwezigheid. Oefen signalen van veiligheid, niet alleen nadenken."
       }
     ],
     doeDit: [
-      "Check regelmatig: ben ik veilig verbonden, in alarm, of in shutdown?",
-      "Gebruik lichaamssignalen — trage adem, beweging, warmte — om staat te verschuiven.",
-      "Zoek mensen en omgevingen waar je ventraal systeem kan oefenen."
+      "Check regelmatig: ben ik veilig verbonden, in alarm, of dichtgeklapt?",
+      "Gebruik lichaamssignalen — traag ademen, beweging, warmte — om naar een rustigere stand te schuiven.",
+      "Zoek mensen en plekken waar je je veilige, verbonden stand kunt oefenen."
     ],
     vermijd: [
-      "Jezelf verwijten dat je 'logisch' had moeten reageren in shutdown.",
-      "Direct van paniek naar diep trauma-praten zonder te reguleren.",
-      "Polyvagaal als excuus gebruiken om nooit uit je comfortzone te komen."
+      "Jezelf verwijten dat je 'logisch' had moeten reageren toen je dichtgeklapt was.",
+      "Direct van paniek naar diep trauma-praten gaan zonder eerst te kalmeren.",
+      "De polyvagaaltheorie als excuus gebruiken om nooit uit je comfortzone te komen."
     ],
     zegDit: [
-      "“Mijn zenuwstelsel zit in alarm — ik heb regulatie nodig, geen analyse.”",
+      "“Mijn zenuwstelsel zit in alarm — ik heb rust nodig, geen analyse.”",
       "“Kleine signalen van veiligheid helpen mijn lichaam kalmeren.”"
     ],
     bronnen: [
       {
         boek: "anchored",
-        detail: "Over polyvagaal theorie en praktische oefeningen voor zenuwstelselregulatie."
+        detail: "Over de polyvagaaltheorie en praktische oefeningen om je zenuwstelsel te kalmeren."
       },
       {
         boek: "body-keeps-score",
@@ -62,7 +62,7 @@ const VRAGEN_8 = [
       },
       {
         boek: "narm-practical-guide",
-        detail: "Over werken met zenuwstelsel-states in traumatherapie."
+        detail: "Over werken met de standen van het zenuwstelsel in traumatherapie."
       }
     ],
     gerelateerd: [
@@ -89,18 +89,18 @@ const VRAGEN_8 = [
       "grounding",
       "techniek"
     ],
-    kort: "Ademhaling is een directe schakelaar naar je zenuwstelsel — vooral langzaam uitademen activeert het kalmerende systeem. Het lost trauma niet op, maar helpt je uit alarm of shutdown terug te komen naar het huidige moment.",
+    kort: "Ademhaling is een directe knop voor je zenuwstelsel — vooral langzaam uitademen zet het kalmerende systeem aan. Het lost trauma niet op, maar helpt je vanuit alarm of dichtklappen terug te komen in het nu.",
     blokken: [
       {
-        tekst: "Bij stress adem je sneller en hoger — dat voedt het alarmsysteem. Omgekeerd: langzaam en diep uitademen stuurt een signaal naar je brein: gevaar voorbij. Ademhaling is daarmee een van de meest toegankelijke regulatie-tools — gratis, altijd beschikbaar, en wetenschappelijk onderbouwd."
+        tekst: "Bij stress adem je sneller en hoger — dat voedt het alarmsysteem. Omgekeerd: langzaam en diep uitademen stuurt een signaal naar je brein: gevaar voorbij. Ademhaling is daarmee een van de makkelijkste manieren om te kalmeren — gratis, altijd beschikbaar, en wetenschappelijk onderbouwd."
       },
       {
         kop: "Wat werkt — en wat niet",
-        tekst: "Langzaam uitademen (bijvoorbeeld 4 seconden in, 6–8 seconden uit) kalmeert vaak effectiever dan geforceerd diep inademen. Bij paniek kan te veel focus op adem juist angst versterken — begin dan klein: voel één rustige uitademing. Box breathing (4-4-4-4) helpt sommigen; anderen prefereren natuurlijk verlengen van de uitademing. Probeer wat bij jou past."
+        tekst: "Langzaam uitademen (bijvoorbeeld 4 seconden in, 6–8 seconden uit) kalmeert vaak effectiever dan geforceerd diep inademen. Bij paniek kan te veel focus op adem juist angst versterken — begin dan klein: voel één rustige uitademing. Box breathing (4-4-4-4) helpt sommigen; anderen kiezen liever voor het natuurlijk verlengen van de uitademing. Probeer wat bij jou past."
       },
       {
         kop: "Adem als brug, niet als oplossing",
-        tekst: "Ademhaling reguliert — het verwerkt geen trauma. Het maakt wel ruimte: je kunt weer denken, praten, keuzes maken. Oefen dagelijks in rustige momenten, zodat het beschikbaar is wanneer je het nodig hebt. Combineer met voeten voelen, een vertrouwde stem, of beweging voor sterker effect."
+        tekst: "Ademhaling kalmeert — het verwerkt geen trauma. Het maakt wel ruimte: je kunt weer denken, praten, keuzes maken. Oefen dagelijks in rustige momenten, zodat het beschikbaar is wanneer je het nodig hebt. Combineer met voeten voelen, een vertrouwde stem, of beweging voor sterker effect."
       }
     ],
     doeDit: [
@@ -120,11 +120,11 @@ const VRAGEN_8 = [
     bronnen: [
       {
         boek: "anchored",
-        detail: "Over ademhaling en het polyvagaal systeem als regulatie-tool."
+        detail: "Over ademhaling en het zenuwstelsel (polyvagaal) als manier om te kalmeren."
       },
       {
         boek: "mindful-somatic-awareness",
-        detail: "Over bewuste ademhaling in somatische oefeningen."
+        detail: "Over bewuste ademhaling in lichaamsgerichte oefeningen."
       },
       {
         boek: "heal-body-heal-mind",
@@ -166,7 +166,7 @@ const VRAGEN_8 = [
       },
       {
         kop: "Wat helpt",
-        tekst: "Langzaam, trauma-informed lichaamswerk: zachte stretching, tremor-oefeningen, somatische therapie, yoga met aandacht voor grenzen. Forceer geen diepe tissue work als dat triggerend is. Combineer met regulatie — spanning loslaten kan emoties vrijgeven. Ga in jouw tempo; je lichaam bepaalt het tempo."
+        tekst: "Langzaam, trauma-informed lichaamswerk: zacht rekken, tril-oefeningen, lichaamsgerichte (somatische) therapie, yoga met aandacht voor je grenzen. Forceer geen diepe massage als dat triggert. Combineer het met kalmeren — spanning loslaten kan emoties losmaken. Ga in jouw tempo; je lichaam bepaalt het tempo."
       }
     ],
     doeDit: [
@@ -228,17 +228,17 @@ const VRAGEN_8 = [
       },
       {
         kop: "De darm als stressmeter",
-        tekst: "Het enterisch zenuwstelsel — je 'buikbrein' — communiceert constant met het brein via de nervus vagus. Bij langdurige stress blijft dat systeem overactief of juist verlamd. Emoties die je niet mag voelen, komen soms via de darm naar buiten. Dat is geen verbeelding — het is fysiologie."
+        tekst: "Je 'buikbrein' (de zenuwen rond je darmen) staat constant in contact met je brein, via een grote zenuw (de nervus vagus). Bij langdurige stress blijft dat systeem overactief of juist verlamd. Emoties die je niet mag voelen, komen soms via je darmen naar buiten. Dat is geen verbeelding — zo werkt je lichaam."
       },
       {
         kop: "Beide kanten aanpakken",
-        tekst: "Laat medische oorzaken uitsluiten. Daarna: regulatie-oefeningen (adem, grounding), traumagerichte therapie, en soms voedingsaanpassingen. Puur symptoombestrijding zonder naar stress en trauma te kijken, mist vaak de kern. Je buik vertelt een verhaal — luister ernaar."
+        tekst: "Laat medische oorzaken uitsluiten. Daarna: kalmeer-oefeningen (adem, aarden), traumagerichte therapie, en soms aanpassingen in je voeding. Alleen de klachten bestrijden zonder naar stress en trauma te kijken, mist vaak de kern. Je buik vertelt een verhaal — luister ernaar."
       }
     ],
     doeDit: [
       "Neem buikklachten serieus — laat medisch onderzoek doen.",
       "Let op verband tussen stress, triggers en spijsvertering.",
-      "Combineer regulatie-oefeningen met traumagerichte hulp bij aanhoudende klachten."
+      "Combineer kalmeer-oefeningen met traumagerichte hulp bij aanhoudende klachten."
     ],
     vermijd: [
       "Klachten afdoen als 'alleen stress' — ze zijn echt.",
@@ -260,7 +260,7 @@ const VRAGEN_8 = [
       },
       {
         boek: "heal-body-heal-mind",
-        detail: "Over geïntegreerde benadering van lichaam en geest."
+        detail: "Over een aanpak die lichaam en geest samen neemt."
       }
     ],
     gerelateerd: [
@@ -297,8 +297,8 @@ const VRAGEN_8 = [
         tekst: "Bij stress spannen kaak-, nek- en schedelspieren zich aan. Stresshormonen veranderen bloedvaten en pijnverwerking. Slaapverstoring — veelvoorkomend bij trauma — triggert hoofdpijn. Migraine en spanningshoofdpijn zijn niet 'in je hoofd' in de zin van verbeelding — ze zijn neurologisch en lichamelijk echt."
       },
       {
-        kop: "Integrale aanpak",
-        tekst: "Medische evaluatie blijft belangrijk. Daarnaast: kaakspanning (nachtknarsen), houding, stressregulatie en traumawerk. Soms vermindert hoofdpijn wanneer het zenuwstelsel kalmer wordt — niet omdat het 'psychisch' was, maar omdat oorzaken samenhangen. Geduld en combinatie van lichaam en geest werken vaak het best."
+        kop: "Aanpak voor lichaam én geest",
+        tekst: "Medisch onderzoek blijft belangrijk. Daarnaast spelen mee: kaakspanning (nachtknarsen), houding, leren omgaan met stress en traumawerk. Soms vermindert hoofdpijn wanneer het zenuwstelsel kalmer wordt — niet omdat het 'psychisch' was, maar omdat de oorzaken samenhangen. Geduld en een combinatie van lichaam en geest werken vaak het best."
       }
     ],
     doeDit: [
@@ -322,7 +322,7 @@ const VRAGEN_8 = [
       },
       {
         boek: "body-keeps-score",
-        detail: "Over lichamelijke manifestaties van trauma."
+        detail: "Over lichamelijke gevolgen van trauma."
       },
       {
         boek: "body-first-healing",
@@ -360,11 +360,11 @@ const VRAGEN_8 = [
       },
       {
         kop: "Waarom trauma uitput",
-        tekst: "Hyperalertheid verbruikt enorm veel energie — ook onbewust. Verdrongen emoties, slechte slaap, spierspanning, ontstekingsprocessen en stresshormonen slurpen reserves. Na langdurige stress kan het lichaam in een soort energiebesparing schakelen (vergelijkbaar met dorsale shutdown). Dat is geen gebrek aan wil — het is biologie."
+        tekst: "Altijd op scherp staan kost enorm veel energie — ook onbewust. Verdrongen emoties, slechte slaap, spierspanning, ontstekingen en stresshormonen slurpen je reserves op. Na langdurige stress kan het lichaam in een soort spaarstand schakelen (lijkt op dichtklappen). Dat is geen gebrek aan wil — het is biologie."
       },
       {
         kop: "Realistisch herstel",
-        tekst: "Pacing is cruciaal: niet pushen tot instorten, maar geleidelijk opbouwen. Slaaphygiëne, regulatie, traumatherapie en soms medisch onderzoek (schildklier, ijzer, etc.) horen erbij. Volledig herstel kost tijd. Vermoeidheid erkennen als symptoom — niet als karakterfout — is de eerste stap."
+        tekst: "Je tempo bewaken is heel belangrijk: niet pushen tot je instort, maar langzaam opbouwen. Goede slaapgewoontes, kalmeren, traumatherapie en soms medisch onderzoek (schildklier, ijzer, enzovoort) horen erbij. Volledig herstel kost tijd. Vermoeidheid erkennen als klacht — niet als karakterfout — is de eerste stap."
       }
     ],
     doeDit: [
@@ -425,11 +425,11 @@ const VRAGEN_8 = [
       },
       {
         kop: "Ontlading na dreiging",
-        tekst: "Dieren trillen na ontsnapping uit gevaar — dat is hoe het zenuwstelsel stresshormonen afvoert. Mensen onderdrukken dat vaak ('niet laten zien dat je bang bent'). Onderdrukte energie blijft hangen in spieren. Wanneer veiligheid terugkeert, kan het lichaam alsnog ontladen via tremor. Dat is biologie, geen zwakte."
+        tekst: "Dieren trillen na ontsnapping uit gevaar — dat is hoe het zenuwstelsel stresshormonen afvoert. Mensen onderdrukken dat vaak ('niet laten zien dat je bang bent'). Onderdrukte energie blijft hangen in spieren. Wanneer veiligheid terugkeert, kan het lichaam alsnog spanning loslaten door te trillen. Dat is biologie, geen zwakte."
       },
       {
         kop: "Wanneer hulp zoeken",
-        tekst: "Incidenteel trillen na stress is meestal normaal. Aanhoudende tremor, trillen zonder duidelijke trigger, of intense angst ervoor — bespreek dat met je huisarts om medische oorzaken uit te sluiten. Traumagerichte somatische therapie leert veilig ontladen. Forceer trillen niet; laat het gebeuren in een veilige omgeving wanneer het vanzelf komt."
+        tekst: "Af en toe trillen na stress is meestal normaal. Blijft het trillen aanhouden, gebeurt het zonder duidelijke trigger, of ben je er erg bang voor — bespreek dat dan met je huisarts om medische oorzaken uit te sluiten. Traumagerichte, lichaamsgerichte (somatische) therapie leert je veilig spanning loslaten. Forceer trillen niet; laat het gebeuren in een veilige omgeving wanneer het vanzelf komt."
       }
     ],
     doeDit: [
@@ -449,7 +449,7 @@ const VRAGEN_8 = [
     bronnen: [
       {
         boek: "waking-the-tiger",
-        detail: "Over tremor en ontlading als natuurlijk onderdeel van trauma-verwerking."
+        detail: "Over trillen en spanning loslaten als natuurlijk onderdeel van traumaverwerking."
       },
       {
         boek: "somatic-ifs",
@@ -487,21 +487,21 @@ const VRAGEN_8 = [
     kort: "Koude en warmte prikkelen je zintuigen direct en kunnen je zenuwstelsel snel terugbrengen naar het heden. IJs in je hand, koud water over polsen, een warme douche of deken — simpele tools bij dissociatie, paniek of shutdown.",
     blokken: [
       {
-        tekst: "Wanneer denken niet werkt — bij dissociatie, paniek of freeze — heb je iets nodig dat je lichaam direct bereikt. Temperatuur is zo'n kanaal. Een ijsblokje in je hand, koud water, of juist een warme kop thee: het lichaam merkt het meteen en krijgt een anker in het nu."
+        tekst: "Wanneer denken niet werkt — bij afhaken (dissociatie), paniek of bevriezen (freeze) — heb je iets nodig dat je lichaam direct bereikt. Temperatuur is zo'n kanaal. Een ijsblokje in je hand, koud water, of juist een warme kop thee: het lichaam merkt het meteen en krijgt een anker in het nu."
       },
       {
         kop: "Koude voor alertheid en terugkeer",
-        tekst: "Koude activeert het lichaam kort en scherp: houd een ijsklontje, dompel gezicht kort in koud water (duikreflex), of drink iets kouds. Dat kan helpen bij dissociatie of wanneer je 'te ver weg' voelt. Niet langdurig — korte prikkel, daarna rust. Let op bij hartproblemen; bespreek extreme methodes met een professional."
+        tekst: "Koude activeert het lichaam kort en scherp: houd een ijsklontje, dompel gezicht kort in koud water (duikreflex), of drink iets kouds. Dat kan helpen bij afhaken (dissociatie) of wanneer je je 'te ver weg' voelt. Niet langdurig — korte prikkel, daarna rust. Let op bij hartproblemen; bespreek extreme methodes met een professional."
       },
       {
         kop: "Warmte voor veiligheid en kalmering",
-        tekst: "Warmte signaleert vaak veiligheid: warme douche, kruik, zwaar dekentje, warme thee in twee handen. Handig bij shutdown, koude rillingen, of na ontlading. Combineer met ademhaling en voeten voelen. Temperatuur is geen vervanging voor therapie — wel een krachtige eerste hulp bij regulatie."
+        tekst: "Warmte betekent voor je lichaam vaak veiligheid: warme douche, kruik, zwaar dekentje, warme thee in twee handen. Handig bij dichtklappen, koude rillingen, of nadat je spanning hebt losgelaten. Combineer met ademhaling en je voeten voelen. Temperatuur vervangt geen therapie — maar het is een krachtige eerste hulp om te kalmeren."
       }
     ],
     doeDit: [
       "Houd koude en warmte paraat: ijs, koud water, warme deken of thee.",
-      "Gebruik korte koude prikkels bij dissociatie; warmte bij shutdown of na stress.",
-      "Combineer met 5-4-3-2-1 grounding voor sterker effect."
+      "Gebruik korte koude prikkels bij afhaken (dissociatie); warmte bij dichtklappen of na stress.",
+      "Combineer met 5-4-3-2-1 aarden (grounding) voor sterker effect."
     ],
     vermijd: [
       "Extreme koude toepassen (lange ijsbaden) zonder begeleiding.",
@@ -515,11 +515,11 @@ const VRAGEN_8 = [
     bronnen: [
       {
         boek: "cptsd-surviving-thriving",
-        detail: "Over grounding-technieken inclusief zintuiglijke ankers."
+        detail: "Over aarden (grounding) met je zintuigen als anker."
       },
       {
         boek: "complex-ptsd-workbook",
-        detail: "Over praktische zelfregulatie bij overspoeling."
+        detail: "Over praktisch jezelf kalmeren bij overspoeling."
       },
       {
         boek: "mindful-somatic-awareness",
@@ -560,18 +560,18 @@ const VRAGEN_8 = [
       },
       {
         kop: "Medisch én trauma",
-        tekst: "Laat aanhoudende of nieuwe hartkloppingen medisch checken — vooral bij pijn op de borst, flauwvallen of risicofactoren. Als de arts niets vindt, kan angst en trauma de drijvende kracht zijn. Regulatie (adem, grounding), traumatherapie en soms medicatie bij paniekstoornis kunnen helpen. Je lichaam liegt niet — het reageert op oude en nieuwe signalen."
+        tekst: "Laat aanhoudende of nieuwe hartkloppingen medisch checken — vooral bij pijn op de borst, flauwvallen of risicofactoren. Als de arts niets vindt, kunnen angst en trauma de drijvende kracht zijn. Kalmeren (adem, aarden), traumatherapie en soms medicatie bij een paniekstoornis kunnen helpen. Je lichaam liegt niet — het reageert op oude en nieuwe signalen."
       }
     ],
     doeDit: [
       "Laat hartkloppingen medisch uitsluiten als ze nieuw of heftig zijn.",
-      "Gebruik trage uitademing en grounding wanneer je hart bonkt.",
+      "Gebruik trage uitademing en aarden (grounding) wanneer je hart bonkt.",
       "Noteer triggers en context — dat helpt patronen te herkennen."
     ],
     vermijd: [
       "Direct denken dat je sterft — check medisch, adem daarna.",
       "Hartkloppingen negeren als ze vaak terugkomen.",
-      "Alleen vermijden van situaties zonder te reguleren."
+      "Alleen situaties vermijden zonder jezelf te leren kalmeren."
     ],
     zegDit: [
       "“Dit is mijn alarmsysteem — ik adem langzaam uit.”",
@@ -580,11 +580,11 @@ const VRAGEN_8 = [
     bronnen: [
       {
         boek: "body-keeps-score",
-        detail: "Over fysiologische alarmreacties bij trauma."
+        detail: "Over lichamelijke alarmreacties bij trauma."
       },
       {
         boek: "anchored",
-        detail: "Over het autonome zenuwstelsel en hartslagregulatie."
+        detail: "Over het automatische zenuwstelsel en het kalmeren van je hartslag."
       },
       {
         boek: "when-body-says-no",
@@ -615,14 +615,14 @@ const VRAGEN_8 = [
       "stretch",
       "regulatie"
     ],
-    kort: "Yoga kan helpen bij trauma — mits trauma-informed: geen gedwongen poses, oogcontact of aanraking, wel keuze en grenzen. Verkeerde yoga kan triggeren; de juiste aanpak kan regulatie en lichaamsbewustzijn opbouwen.",
+    kort: "Yoga kan helpen bij trauma — mits trauma-informed: geen gedwongen houdingen, oogcontact of aanraking, wel keuze en grenzen. Verkeerde yoga kan triggeren; de juiste aanpak kan je helpen kalmeren en je lichaam beter te voelen.",
     blokken: [
       {
-        tekst: "Yoga belooft rust, flexibiliteit en verbinding met je lichaam. Voor sommigen met trauma voelt een les juist bedreigend: de instructeur past je aan zonder te vragen, je moet diep stretchen, iedereen kijkt, of hip-openers triggeren oude herinneringen. Yoga is niet automatisch veilig — de aanpak telt."
+        tekst: "Yoga belooft rust, flexibiliteit en verbinding met je lichaam. Voor sommigen met trauma voelt een les juist bedreigend: de instructeur past je aan zonder te vragen, je moet diep rekken, iedereen kijkt, of bepaalde heupoefeningen roepen oude herinneringen op. Yoga is niet automatisch veilig — de aanpak telt."
       },
       {
         kop: "Trauma-informed yoga",
-        tekst: "Trauma-informed yoga geeft keuze: doe mee of niet, blijf zitten wanneer je wilt, geen fysieke correcties zonder toestemming, geen verplicht oogcontact of 'omhelzende' poses. Focus op adem, voeten voelen, en kleine beweging. De docent begrijpt dat dissociatie, freeze en triggers kunnen opkomen — en normaliseert pauzes."
+        tekst: "Trauma-informed yoga geeft keuze: doe mee of niet, blijf zitten wanneer je wilt, geen fysieke aanpassingen zonder toestemming, geen verplicht oogcontact of 'omhelzende' houdingen. Focus op adem, je voeten voelen, en kleine beweging. De docent begrijpt dat afhaken (dissociatie), bevriezen en triggers kunnen opkomen — en vindt pauzes heel normaal."
       },
       {
         kop: "Begin klein",
@@ -635,7 +635,7 @@ const VRAGEN_8 = [
       "Start thuis of online als groepslessen te overweldigend zijn."
     ],
     vermijd: [
-      "Doorgaan met pijn of dissociatie 'om mee te kunnen'.",
+      "Doorgaan met pijn of afhaken (dissociatie) 'om mee te kunnen'.",
       "Docenten die je fysiek corrigeren zonder te vragen.",
       "Yoga als 'fix alles'-oplossing zonder andere hulp."
     ],
@@ -646,7 +646,7 @@ const VRAGEN_8 = [
     bronnen: [
       {
         boek: "body-keeps-score",
-        detail: "Over yoga en lichaamsgerichte benaderingen bij trauma."
+        detail: "Over yoga en lichaamsgerichte aanpakken bij trauma."
       },
       {
         boek: "mindful-somatic-awareness",
@@ -654,7 +654,7 @@ const VRAGEN_8 = [
       },
       {
         boek: "heal-body-heal-mind",
-        detail: "Over integratie van lichaamsoefeningen en herstel."
+        detail: "Over het samengaan van lichaamsoefeningen en herstel."
       }
     ],
     gerelateerd: [

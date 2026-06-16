@@ -25,7 +25,7 @@
   content: "";
   position: absolute;
   inset: -72px;
-  background: radial-gradient(circle at 40% 40%, var(--terracotta-zacht), var(--papier-diep) 70%);
+  background: url("../img/hero/trauma-en-herstel.jpg") 60% 50% / cover no-repeat;
   border-radius: 52% 20% 28% 58% / 36% 20% 30% 52%;
   filter: blur(52px) saturate(.8) contrast(.9);
   opacity: .78;
@@ -963,6 +963,7 @@
   width: 4px;
   background: var(--accent, var(--terracotta));
   opacity: .85;
+  z-index: 2;
 }
 
 .onderzoek-kaart::after {
@@ -1821,6 +1822,28 @@
 
 /* ---------- Therapie-kaart (bouwt voort op .onderzoek-kaart) ---------- */
 .therapie-kaart .onderzoek-label { margin-bottom: 6px; }
+.therapie-kaart-beeld {
+  display: block;
+  height: 148px;
+  margin: -25px -24px 20px;
+  overflow: hidden;
+  background: var(--papier-diep);
+  border-bottom: 1px solid var(--lijn);
+}
+.therapie-kaart-beeld img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--kaart-beeld-pos, center);
+  filter: saturate(.9) contrast(.98);
+  transform: scale(1.01);
+  transition: transform .55s var(--vlot), filter .3s;
+}
+.therapie-kaart:hover .therapie-kaart-beeld img {
+  filter: saturate(1) contrast(1.02);
+  transform: scale(1.05);
+}
 .therapie-voluit {
   display: block; color: var(--inkt-zacht); font-size: .82rem;
   font-weight: 600; margin: 0 0 14px;
@@ -1845,6 +1868,23 @@
 .therapie-kaart::after { content: none; }
 
 /* Therapie-detail: voor-wie & evidentie-rij */
+.therapie-detail-beeld {
+  margin: 22px 0 22px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: var(--papier-diep);
+  border: 1px solid var(--lijn);
+  border-radius: var(--rond);
+  box-shadow: var(--schaduw-zacht);
+}
+.therapie-detail-beeld img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(.92) contrast(.99);
+}
 .therapie-voorwie {
   display: flex; gap: 12px; align-items: flex-start;
   background: var(--terracotta-zacht);

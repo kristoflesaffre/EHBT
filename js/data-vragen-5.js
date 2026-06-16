@@ -161,11 +161,11 @@ const VRAGEN_5 = [
       },
       {
         kop: "Het lichaam als slagveld",
-        tekst: "Na trauma kan het lichaam voelen als iets dat je verraden heeft, dat zichtbaar maakt wat je liever verbergt, of dat pijn opslaat. Eten wordt dan een manier om dat lichaam te straffen, te troosten of te beheersen. Restrictie kan controle geven; overeten kan leegte vullen; beide kunnen dissociatie of angst dempen."
+        tekst: "Na trauma kan het lichaam voelen als iets dat je verraden heeft, dat zichtbaar maakt wat je liever verbergt, of dat pijn opslaat. Eten wordt dan een manier om dat lichaam te straffen, te troosten of te beheersen. Weinig eten kan controle geven; overeten kan leegte vullen; beide kunnen afhaken (dissociatie) of angst dempen."
       },
       {
         kop: "Meer dan wilskracht",
-        tekst: "Eetproblemen zijn geen simpele keuze. Ze hangen samen met stress, hechting, schaamte en zenuwstelselregulatie. Behandeling die alleen op gewicht of gedrag focust, mist vaak de kern. Traumagerichte en lichaamsgerichte hulp — naast eventueel specialistische eetstoorniszorg — kan helpen om onder de symptomen te werken aan veiligheid en zelfrespect."
+        tekst: "Eetproblemen zijn geen simpele keuze. Ze hangen samen met stress, hechting, schaamte en hoe je zenuwstelsel tot rust komt. Behandeling die alleen op gewicht of gedrag focust, mist vaak de kern. Traumagerichte en lichaamsgerichte hulp — naast eventueel specialistische eetstoorniszorg — kan helpen om onder de symptomen te werken aan veiligheid en zelfrespect."
       }
     ],
     doeDit: [
@@ -185,7 +185,7 @@ const VRAGEN_5 = [
     bronnen: [
       {
         boek: "body-keeps-score",
-        detail: "Over hoe trauma het lichaamsbeeld en zelfregulatie beïnvloedt."
+        detail: "Over hoe trauma je lichaamsbeeld beïnvloedt en het kalmeren van jezelf."
       },
       {
         boek: "healing-shame-binds",
@@ -231,7 +231,7 @@ const VRAGEN_5 = [
       },
       {
         kop: "Beide kanten erkennen",
-        tekst: "Psychosomatisch betekent niet 'niet echt'. Het betekent: je lichaam spreekt een taal die stress, angst en oude ervaringen mee inbouwt. Goede zorg combineert medische uitsluiting met traumagerichte en lichaamsgerichte benaderingen — zodat je niet hoeft te kiezen tussen 'fysiek' of 'psychisch'."
+        tekst: "Psychosomatisch betekent niet 'niet echt'. Het betekent: je lichaam spreekt een taal die stress, angst en oude ervaringen mee inbouwt. Goede zorg combineert medisch onderzoek (om lichamelijke oorzaken uit te sluiten) met traumagerichte en lichaamsgerichte aanpakken — zodat je niet hoeft te kiezen tussen 'lichamelijk' of 'psychisch'."
       }
     ],
     doeDit: [
@@ -292,7 +292,7 @@ const VRAGEN_5 = [
       },
       {
         kop: "Waarom het verwarrend is",
-        tekst: "Hyperalertheid lijkt op hyperactiviteit. Dissociatie lijkt op dagdromen. Overlevingsmodus put uit en lijkt op concentratieverlies. Emotionele dysregulatie komt bij beide voor. Bij vroeg, herhaald trauma kan het moeilijk zijn te weten wat 'van nature' is en wat een aanpassing op stress werd."
+        tekst: "Hyperalertheid lijkt op hyperactiviteit. Dissociatie lijkt op dagdromen. Overlevingsmodus put uit en lijkt op concentratieverlies. Moeite om je emoties te kalmeren komt bij beide voor. Bij vroeg, herhaald trauma kan het moeilijk zijn te weten wat 'van nature' is en wat een aanpassing op stress werd."
       },
       {
         kop: "Diagnose is hulpmiddel, geen identiteit",
@@ -316,7 +316,7 @@ const VRAGEN_5 = [
     bronnen: [
       {
         boek: "body-keeps-score",
-        detail: "Over hoe vroeg trauma aandacht, impulscontrole en regulatie beïnvloedt."
+        detail: "Over hoe vroeg trauma aandacht, zelfbeheersing en het kalmeren van emoties beïnvloedt."
       },
       {
         boek: "deepest-well",
@@ -361,7 +361,7 @@ const VRAGEN_5 = [
       },
       {
         kop: "Medisch trauma is onderbelicht",
-        tekst: "Veel mensen schamen zich: 'anderen overleven erger'. Maar je lichaam weet niet wat 'normaal' hoort. Herkenning is belangrijk: medisch trauma is een erkend fenomeen. EMDR, somatische therapie of gespecialiseerde begeleiding kunnen helpen — naast eventueel contact met het ziekenhuis als dat veilig voelt."
+        tekst: "Veel mensen schamen zich: 'anderen overleven erger'. Maar je lichaam weet niet wat 'normaal' hoort. Herkenning is belangrijk: medisch trauma bestaat echt en wordt erkend. EMDR, lichaamsgerichte (somatische) therapie of gespecialiseerde begeleiding kunnen helpen — naast eventueel contact met het ziekenhuis als dat veilig voelt."
       }
     ],
     doeDit: [
@@ -491,7 +491,7 @@ const VRAGEN_5 = [
       },
       {
         kop: "Herstel is geen luxe maar basis",
-        tekst: "Goed ouderschap betekent niet perfect zijn. Het betekent leren herstellen na fouten, je triggers kennen, en hulp zoeken. Door aan je eigen regulatie te werken, geef je je kind iets wat misschien aan jou ontbrak: een ouder die terugkomt, uitlegt en verbinding herstelt. Dat doorbreekt generaties."
+        tekst: "Goed ouderschap betekent niet perfect zijn. Het betekent leren herstellen na fouten, je triggers kennen, en hulp zoeken. Door te werken aan je eigen rust — jezelf leren kalmeren — geef je je kind iets wat misschien aan jou ontbrak: een ouder die terugkomt, uitlegt en de band herstelt. Dat doorbreekt generaties."
       }
     ],
     doeDit: [
@@ -609,18 +609,18 @@ const VRAGEN_5 = [
       "identiteit",
       "complex trauma"
     ],
-    kort: "Dissociatieve identiteitsstoornis (DIS/DID) is een ernstige vorm van dissociatie waarbij verschillende 'delen' of identiteiten ontstonden om overweldigend trauma te overleven. Het is zeldzaam, vaak verkeerd begrepen, en niet iets wat je via een online checklist diagnoseert.",
+    kort: "Dissociatieve identiteitsstoornis (DIS/DID) is een ernstige vorm van dissociatie waarbij verschillende 'delen' of identiteiten ontstonden om overweldigend trauma te overleven. Het is zeldzaam, vaak verkeerd begrepen, en niet iets wat je via een online checklist vaststelt.",
     blokken: [
       {
         tekst: "Je hoorde over 'meervoudige persoonlijkheid', las over tijdverlies, stemmen, of delen van je leven die je niet herinnert — en vraagt je af: heb ik dat? Die vraag verdient een voorzichtig, respectvol antwoord."
       },
       {
         kop: "Extreme dissociatie als overleving",
-        tekst: "DIS ontstaat meestal na herhaald, vroeg trauma, vaak in situaties waar een kind geen fysieke uitweg had. Het zenuwstelsel splitst ervaringen af in deeltjes — soms met aparte gevoelens, gedragingen of herinneringen — zodat het geheel draagbaar blijft. Dat is geen theatraliteit; het is een extreme bescherming."
+        tekst: "DIS ontstaat meestal na herhaald, vroeg trauma, vaak in situaties waar een kind geen fysieke uitweg had. Het zenuwstelsel splitst ervaringen af in deeltjes — soms met aparte gevoelens, gedragingen of herinneringen — zodat het geheel draaglijk blijft. Dat is geen aanstellerij; het is een extreme bescherming."
       },
       {
         kop: "Niet elke dissociatie is DIS",
-        tekst: "Veel mensen met trauma dissociëren: afwezig zijn, leegte, tijdverlies, 'delen' in de zin van IFS. Dat betekent niet automatisch DIS. Echte DIS kenmerkt zich door duidelijke, aanhoudende identiteitsfragmenten, amnesie tussen toestanden, en grote impact op dagelijks leven. Diagnose hoort bij een gespecialiseerde professional — niet bij films of sensatie."
+        tekst: "Veel mensen met trauma dissociëren: afwezig zijn, leegte, tijdverlies, 'delen' in de zin van IFS. Dat betekent niet automatisch DIS. Echte DIS kenmerkt zich door duidelijke, blijvende aparte identiteiten, geheugengaten tussen die toestanden, en een grote impact op het dagelijks leven. Diagnose hoort bij een gespecialiseerde professional — niet bij films of sensatie."
       }
     ],
     doeDit: [
@@ -640,11 +640,11 @@ const VRAGEN_5 = [
     bronnen: [
       {
         boek: "healing-fragmented-selves",
-        detail: "Over werken met dissociatieve delen en traumatische fragmentatie."
+        detail: "Over werken met dissociatieve delen en het opsplitsen na trauma."
       },
       {
         boek: "no-bad-parts",
-        detail: "Over delenwerk en het begrijpen van beschermende identiteiten — met nuance over ernstige dissociatie."
+        detail: "Over delenwerk en het begrijpen van beschermende identiteiten — met aandacht voor het verschil met ernstige dissociatie."
       },
       {
         boek: "complex-ptsd-workbook",

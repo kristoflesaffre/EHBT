@@ -62,7 +62,7 @@ const VRAGEN_9 = [
       },
       {
         boek: "complex-ptsd-workbook",
-        detail: "Over emotieregulatie en woede bij complex trauma."
+        detail: "Over het kalmeren van emoties en woede bij complex trauma."
       }
     ],
     gerelateerd: [
@@ -155,24 +155,24 @@ const VRAGEN_9 = [
       "gevoelloos",
       "afsluiten"
     ],
-    kort: "Gevoelloosheid is vaak een overlevingsreactie: je zenuwstelsel schakelt naar 'shutdown' wanneer voelen te overweldigend werd. Het is geen bewijs dat je geen gevoelens hebt — ze zitten vaak op afstand, wachtend op veiligheid.",
+    kort: "Gevoelloosheid is vaak een overlevingsreactie: je zenuwstelsel klapt dicht ('shutdown') wanneer voelen te overweldigend werd. Het is geen bewijs dat je geen gevoelens hebt — ze zitten vaak op afstand, wachtend op veiligheid.",
     blokken: [
       {
         tekst: "Je kijkt naar iets dat verdrietig of spannend zou moeten zijn, en voelt… niets. Of je voelt alsof je achter glas zit. Anderen zeggen dat je 'koud' bent, terwijl jij soms denkt: als ik alles zou voelen, zou ik instorten."
       },
       {
-        kop: "Shutdown als bescherming",
+        kop: "Dichtklappen (shutdown) als bescherming",
         tekst: "Naast vechten en vluchten kent het zenuwstelsel een derde reactie: bevriezen of afsluiten. Wanneer gevaar te groot was of hulp ontbrak, kan verdoving de enige optie zijn geweest. Die strategie werkte toen. Nu kan ze ervoor zorgen dat je je afgesneden voelt van vreugde én van pijn."
       },
       {
         kop: "Terug naar voelen, in kleine stappen",
-        tekst: "Gevoelloosheid verdwijnt niet door jezelf te dwingen. Begin met lichaamssignalen: spanning, warmte, vermoeidheid. Somaatische oefeningen, grounding en traumatherapie die dissociatie serieus neemt, helpen je geleidelijk weer contact maken — zonder overspoeling. Voelen is een vaardigheid die je opnieuw kunt leren."
+        tekst: "Gevoelloosheid verdwijnt niet door jezelf te dwingen. Begin met lichaamssignalen: spanning, warmte, vermoeidheid. Lichaamsgerichte oefeningen, aarden (grounding) en traumatherapie die afhaken (dissociatie) serieus neemt, helpen je geleidelijk weer contact maken — zonder overspoeling. Voelen is een vaardigheid die je opnieuw kunt leren."
       }
     ],
     doeDit: [
       "Zie verdoving als bescherming, niet als persoonlijk gebrek.",
       "Oefen korte lichaams-checks: waar voel ik spanning of niets?",
-      "Zoek hulp die dissociatie en shutdown herkent en gefaseerd werkt."
+      "Zoek hulp die afhaken (dissociatie) en dichtklappen herkent en stap voor stap werkt."
     ],
     vermijd: [
       "Jezelf 'emotioneel onbeschikbaar' noemen als karakteroordeel.",
@@ -186,7 +186,7 @@ const VRAGEN_9 = [
     bronnen: [
       {
         boek: "anchored",
-        detail: "Over shutdown en hoe het zenuwstelsel afsluit bij overweldiging."
+        detail: "Over dichtklappen (shutdown) en hoe het zenuwstelsel afsluit bij overweldiging."
       },
       {
         boek: "when-body-speaks",
@@ -194,7 +194,7 @@ const VRAGEN_9 = [
       },
       {
         boek: "healing-fragmented-selves",
-        detail: "Over dissociatie en verdoofde delen die bescherming boden."
+        detail: "Over afhaken (dissociatie) en verdoofde delen die bescherming boden."
       }
     ],
     gerelateerd: [
@@ -228,10 +228,10 @@ const VRAGEN_9 = [
       },
       {
         kop: "Een systeem op het randje",
-        tekst: "Hyperalertheid en chronische stress maken je zenuwstelsel gevoelig voor elke extra prikkel. Irritatie is soms de dunne laag boven angst, verdriet of uitputting. Wanneer je lang in overlevingsmodus hebt geleefd, heeft je systeem weinig buffer — elke kleine storing voelt als een dreiging."
+        tekst: "Altijd op scherp staan en langdurige stress maken je zenuwstelsel gevoelig voor elke extra prikkel. Irritatie is soms de dunne laag boven angst, verdriet of uitputting. Wanneer je lang in overlevingsmodus hebt geleefd, heeft je systeem weinig buffer — elke kleine storing voelt als een dreiging."
       },
       {
-        kop: "Regulatie vóór zelfveroordeling",
+        kop: "Eerst kalmeren, dan pas oordelen",
         tekst: "Meer wilskracht lost dit niet op. Rust, voorspelbaarheid, slaap, beweging en het verlagen van prikkels helpen. Therapie kan onderliggende triggers en emoties aanpakken. Vraag niet alleen 'waarom ben ik zo irritabel', maar 'wat heeft mijn systeem nú nodig om te kalmeren?'"
       }
     ],
@@ -252,11 +252,11 @@ const VRAGEN_9 = [
     bronnen: [
       {
         boek: "cptsd-surviving-thriving",
-        detail: "Over prikkelbaarheid en emotionele ontregeling bij CPTSS."
+        detail: "Over prikkelbaarheid en moeite om je emoties te kalmeren bij CPTSS."
       },
       {
         boek: "neurodivergent-somatics",
-        detail: "Over overprikkeling en zenuwstelselregulatie."
+        detail: "Over overprikkeling en het kalmeren van je zenuwstelsel."
       },
       {
         boek: "when-body-says-no",
@@ -452,11 +452,11 @@ const VRAGEN_9 = [
       },
       {
         boek: "attached",
-        detail: "Over emotieregulatie en het leren van emotionele taal in relaties."
+        detail: "Over het kalmeren van emoties en het leren van een taal voor gevoelens in relaties."
       },
       {
         boek: "narm-practical-guide",
-        detail: "Over het stap voor stap terugbrengen van emotieregulatie."
+        detail: "Over het stap voor stap terugkrijgen van grip op je emoties."
       }
     ],
     gerelateerd: [
@@ -490,7 +490,7 @@ const VRAGEN_9 = [
       },
       {
         kop: "Wanneer emoties te veel kosten",
-        tekst: "Mensen met trauma dragen vaak jarenlang onverwerkte pijn, hyperalertheid en de behoeften van anderen. Emotioneel onderdrukken kost ook energie. Op een gegeven moment is er geen buffer meer — je reageert verdoofd, geïrriteerd of burn-outachtig. Dat is geen zwakte; het is overbelasting."
+        tekst: "Mensen met trauma dragen vaak jarenlang onverwerkte pijn, het altijd op scherp staan, en de behoeften van anderen. Emotioneel onderdrukken kost ook energie. Op een gegeven moment is er geen buffer meer — je reageert verdoofd, geïrriteerd of burn-outachtig. Dat is geen zwakte; het is overbelasting."
       },
       {
         kop: "Herstel begint bij grenzen",
@@ -746,24 +746,24 @@ const VRAGEN_9 = [
       "regulatie",
       "crisis"
     ],
-    kort: "Emotionele overspoeling is wanneer gevoelens je volledig overspoelen en je niet meer kunt denken, praten of kalmeren. Het hoort bij trauma wanneer je 'venster van tolerantie' te smal is geworden — regulatievaardigheden en hulp kunnen het verruimen.",
+    kort: "Emotionele overspoeling is wanneer gevoelens je helemaal overnemen en je niet meer kunt denken, praten of kalmeren. Het hoort bij trauma wanneer de zone waarin je spanning aankunt (je 'window of tolerance') te smal is geworden — vaardigheden om te kalmeren en hulp kunnen die zone weer breder maken.",
     blokken: [
       {
-        tekst: "Het begint als een golf: verdriet, woede, paniek — en plotseling ben je erin. Je kunt niet meer helder nadenken, je zegt dingen die je betreurt, of je verdoofd volledig. Na afloop voel je je uitgeput en beschaamd."
+        tekst: "Het begint als een golf: verdriet, woede, paniek — en plotseling ben je erin. Je kunt niet meer helder nadenken, je zegt dingen die je betreurt, of je verdooft helemaal. Na afloop voel je je uitgeput en beschaamd."
       },
       {
-        kop: "Buiten je venster van tolerantie",
-        tekst: "Iedereen heeft een bandbreedte waarin emoties draaglijk zijn — je 'window of tolerance'. Trauma maakt die band vaak smaller: kleine triggers kunnen je eruit duwen. Boven de bovenkant: hyperarousal (paniek, woede). Onder de onderkant: shutdown (verdoving). Beide voelen als verlies van controle."
+        kop: "Buiten de zone die je aankunt",
+        tekst: "Iedereen heeft een zone waarin emoties te dragen zijn — je 'window of tolerance' (hoeveel spanning je aankunt). Trauma maakt die zone vaak smaller: kleine triggers kunnen je eruit duwen. Schiet je er bovenuit: te veel spanning (paniek, woede). Zak je er onderuit: dichtklappen (verdoving). Beide voelen als verlies van controle."
       },
       {
-        kop: "Terug naar het venster",
-        tekst: "In het moment: verander je omgeving, gebruik koude water, druk met je voeten, adem langzaam uit. Op langere termijn: DBT-vaardigheden, grounding, traumatherapie en veilige relaties verruimen je venster. Overspoeling is geen falen — het is een signaal dat je systeem hulp nodig heeft."
+        kop: "Terug in je zone",
+        tekst: "In het moment: verander je omgeving, gebruik koud water, druk met je voeten, adem langzaam uit. Op langere termijn: DBT-vaardigheden, aarden (grounding), traumatherapie en veilige relaties maken je zone breder. Overspoeling is geen falen — het is een signaal dat je systeem hulp nodig heeft."
       }
     ],
     doeDit: [
       "Herken vroege signalen: hartslag, hete oren, tunnelvisie, drang om weg te gaan.",
-      "Gebruik TIPP-achtige technieken: koude, beweging, intense adem, druk.",
-      "Werk in therapie aan het verruimen van je window of tolerance."
+      "Gebruik snelle kalmeer-technieken: koude, beweging, intens ademen, druk.",
+      "Werk in therapie aan het breder maken van de zone die je aankunt (window of tolerance)."
     ],
     vermijd: [
       "Belangrijke gesprekken voeren wanneer je al bijna overspoeld bent.",
@@ -772,7 +772,7 @@ const VRAGEN_9 = [
     ],
     zegDit: [
       "“Ik ben overspoeld — ik heb even pauze nodig.”",
-      "“Dit gaat voorbij. Ik leer mijn venster te verruimen.”"
+      "“Dit gaat voorbij. Ik leer mijn zone breder te maken.”"
     ],
     bronnen: [
       {
@@ -781,11 +781,11 @@ const VRAGEN_9 = [
       },
       {
         boek: "cptsd-surviving-thriving",
-        detail: "Over het window of tolerance bij complex trauma."
+        detail: "Over hoeveel spanning je aankunt (window of tolerance) bij complex trauma."
       },
       {
         boek: "complex-ptsd-workbook",
-        detail: "Over zelfregulatie en omgaan met overweldigende emoties."
+        detail: "Over jezelf kalmeren en omgaan met overweldigende emoties."
       }
     ],
     gerelateerd: [

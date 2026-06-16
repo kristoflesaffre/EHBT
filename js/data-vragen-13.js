@@ -748,7 +748,7 @@ const VRAGEN_13 = [
       },
       {
         kop: "Wanneer contact beperken",
-        tekst: "Overweeg strikte grenzen wanneer elke interactie je destabiliseert; wanneer de ex grenzen blijft overschrijden; wanneer er geen gedeelde kinderen zijn en contact geen functionele reden heeft; of wanneer je merkt dat je weer gaat pleasen of uitleggen. No contact kan tijdelijk of permanent — beide zijn geldig."
+        tekst: "Overweeg strikte grenzen wanneer elk contact je uit balans brengt; wanneer de ex grenzen blijft overschrijden; wanneer er geen gedeelde kinderen zijn en contact geen praktische reden heeft; of wanneer je merkt dat je weer gaat pleasen of uitleggen. No contact kan tijdelijk of voor altijd — beide zijn oké."
       },
       {
         kop: "Met gedeelde kinderen",

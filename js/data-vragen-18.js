@@ -94,8 +94,8 @@ const VRAGEN_18 = [
         tekst: "EMDR staat bekend als effectief bij enkelvoudig trauma. Bij complex trauma — herhaald, vroeg, relationeel — is het genuanceerder. Het kan werken, maar niet als eerste en snelle stap zonder stabiliteit."
       },
       {
-        kop: "Eerst stabiliseren",
-        tekst: "Bij CPTSS is er vaak dissociatie, een hardnekkige innerlijke criticus, moeite met vertrouwen en een smalle window of tolerance. EMDR vraagt dat je een herinnering kunt ophalen zonder te verdrinken. Daarom bouw je eerst: grounding, veiligheidsanker, coping, een stabiele therapeutische relatie. Soms maanden, soms langer."
+        kop: "Eerst stevig worden",
+        tekst: "Bij CPTSS is er vaak afhaken (dissociatie), een hardnekkige innerlijke criticus, moeite met vertrouwen en een kleine zone die je aankunt. EMDR vraagt dat je een herinnering kunt ophalen zonder te verdrinken. Daarom bouw je eerst: aarden (grounding), een veilig anker, manieren om met klachten om te gaan, en een stabiele band met je therapeut. Soms maanden, soms langer."
       },
       {
         kop: "Gefaseerd en gedoseerd",
@@ -103,13 +103,13 @@ const VRAGEN_18 = [
       }
     ],
     doeDit: [
-      "Zoek een EMDR-therapeut met ervaring in complex trauma en dissociatie.",
-      "Vraag expliciet naar fasering en stabilisatie vóór verwerking.",
-      "Wees eerlijk over dissociatie, zelfbeschadiging of overspoeling."
+      "Zoek een EMDR-therapeut met ervaring in complex trauma en afhaken (dissociatie).",
+      "Vraag duidelijk naar werken in stappen en eerst stevig worden vóór verwerking.",
+      "Wees eerlijk over afhaken (dissociatie), zelfbeschadiging of overspoeling."
     ],
     vermijd: [
       "Diep duiken omdat 'EMDR snel werkt'.",
-      "Therapeuten die stabilisatie overslaan bij CPTSS.",
+      "Therapeuten die het eerst stevig worden overslaan bij CPTSS.",
       "Denken dat EMDR alleen al voldoende is bij jarenlange onveiligheid."
     ],
     zegDit: [
@@ -119,7 +119,7 @@ const VRAGEN_18 = [
     bronnen: [
       {
         boek: "complex-ptsd-workbook",
-        detail: "Over gefaseerd werken en stabilisatie vóór intensieve verwerking."
+        detail: "Over in stappen werken en eerst stevig worden vóór de zware verwerking."
       },
       {
         boek: "cptsd-surviving-thriving",
@@ -127,7 +127,7 @@ const VRAGEN_18 = [
       },
       {
         boek: "healing-fragmented-selves",
-        detail: "Over delen en dissociatie bij EMDR en complex trauma."
+        detail: "Over delen en afhaken (dissociatie) bij EMDR en complex trauma."
       }
     ],
     gerelateerd: [
@@ -165,7 +165,7 @@ const VRAGEN_18 = [
       },
       {
         kop: "Voor wie?",
-        tekst: "SE kan helpen bij flashbacks, chronische spanning, dissociatie, slaapproblemen en het gevoel 'vast' te zitten. Het werkt het best met een opgeleide SE-practitioner — niet als doe-het-zelf bij zware dissociatie of onverwerkte trauma's."
+        tekst: "SE kan helpen bij flashbacks, langdurige spanning, afhaken (dissociatie), slaapproblemen en het gevoel 'vast' te zitten. Het werkt het best met een opgeleide SE-therapeut — niet als doe-het-zelf bij zwaar afhaken (dissociatie) of onverwerkte trauma's."
       }
     ],
     doeDit: [
@@ -193,7 +193,7 @@ const VRAGEN_18 = [
       },
       {
         boek: "nurturing-resilience",
-        detail: "Over somatische benadering van vroeg en complex trauma."
+        detail: "Over een lichaamsgerichte aanpak van vroeg en complex trauma."
       }
     ],
     gerelateerd: [
@@ -220,18 +220,18 @@ const VRAGEN_18 = [
       "coping",
       "werkboek"
     ],
-    kort: "Ja — veel DBT-vaardigheden kun je thuis oefenen: mindfulness, crisis-overbrugging, emotieregulatie en omgaan met stress. Bij complex trauma werkt het het best als aanvulling op therapie, niet als vervanging.",
+    kort: "Ja — veel DBT-vaardigheden kun je thuis oefenen: aandacht (mindfulness), een crisis doorkomen, je emoties kalmeren en omgaan met stress. Bij complex trauma werkt het het best als aanvulling op therapie, niet als vervanging.",
     blokken: [
       {
-        tekst: "DBT (Dialectical Behavior Therapy) leert concrete vaardigheden voor intense emoties, impulsen en relationele stormen. Veel mensen met trauma herkennen zich — en vragen of ze dit zelf kunnen oefenen. Het antwoord is: gedeeltelijk ja, met nuance."
+        tekst: "DBT (Dialectical Behavior Therapy) leert concrete vaardigheden voor intense emoties, impulsen en relationele stormen. Veel mensen met trauma herkennen zich — en vragen of ze dit zelf kunnen oefenen. Het antwoord is: gedeeltelijk ja, met een paar kanttekeningen."
       },
       {
         kop: "Wat je thuis kunt doen",
-        tekst: "Werkboeken en apps bieden oefeningen: de STOP-skill, ijswater of intense beweging bij crisis, emotie benoemen en doseren, 'radical acceptance' van wat je niet kunt veranderen, en communicatievaardigheden voor moeilijke gesprekken. Korte, dagelijkse oefeningen werken beter dan af en toe een marathon."
+        tekst: "Werkboeken en apps bieden oefeningen: de STOP-vaardigheid, ijswater of intense beweging bij crisis, emotie benoemen en temperen, 'radicaal aanvaarden' van wat je niet kunt veranderen, en vaardigheden om moeilijke gesprekken te voeren. Korte, dagelijkse oefeningen werken beter dan af en toe een marathon."
       },
       {
         kop: "Wanneer begeleiding nodig is",
-        tekst: "DBT werd ontwikkeld voor heftige dysregulatie en zelfbeschadiging. Bij complex trauma kan zelfstandig oefenen helpen stabiliseren — maar diepere verwerking vraagt vaak een therapeut. Als je dissocieert, in crisis bent of zelfbeschadiging overweegt, is professionele begeleiding essentieel. Thuis oefenen is aanvulling, geen solo-missie."
+        tekst: "DBT werd ontwikkeld voor heftige, moeilijk te kalmeren emoties en zelfbeschadiging. Bij complex trauma kan zelfstandig oefenen helpen om steviger te worden — maar diepere verwerking vraagt vaak een therapeut. Als je afhaakt (dissocieert), in crisis bent of zelfbeschadiging overweegt, is professionele begeleiding essentieel. Thuis oefenen is aanvulling, geen solo-missie."
       }
     ],
     doeDit: [
@@ -255,7 +255,7 @@ const VRAGEN_18 = [
       },
       {
         boek: "cptsd-coping-workbook",
-        detail: "Concrete copingvaardigheden voor dagelijks leven met CPTSS."
+        detail: "Concrete vaardigheden om met klachten om te gaan in het dagelijks leven met CPTSS."
       },
       {
         boek: "complex-ptsd-workbook",
@@ -285,7 +285,7 @@ const VRAGEN_18 = [
       "oefenen",
       "innerlijk kind"
     ],
-    kort: "Basis-IFS kun je voorzichtig thuis verkennen: delen benoemen, nieuwsgierigheid oefenen, vanuit het Zelf reageren. Bij zware dissociatie, suïcidaliteit of onverwerkt trauma is begeleiding sterk aanbevolen.",
+    kort: "Basis-IFS kun je voorzichtig thuis verkennen: delen benoemen, nieuwsgierigheid oefenen, vanuit het Zelf reageren. Bij zwaar afhaken (dissociatie), gedachten aan zelfdoding of onverwerkt trauma is begeleiding sterk aanbevolen.",
     blokken: [
       {
         tekst: "Internal Family Systems (IFS) leert je om met 'delen' van jezelf te werken — beschermers, een innerlijke criticus, een gekwetst kind — vanuit een kalm 'Zelf'. Veel mensen vragen: kan ik dit alleen?"
@@ -296,7 +296,7 @@ const VRAGEN_18 = [
       },
       {
         kop: "Wanneer je hulp nodig hebt",
-        tekst: "Bij ernstige dissociatie, suïcidale delen, of wanneer delen je overspoelen, is een IFS-therapeut belangrijk. Zelfwerk kan dan destabiliseren. IFS is krachtig precies omdat het diep gaat — dat vraagt soms een veilige ander die mee reguleert. Thuis oefenen is een aanvulling, geen vervanging bij zware trauma's."
+        tekst: "Bij ernstig afhaken (dissociatie), delen met gedachten aan zelfdoding, of wanneer delen je overspoelen, is een IFS-therapeut belangrijk. Zelf werken kan je dan uit balans brengen. IFS is krachtig precies omdat het diep gaat — dat vraagt soms een veilige ander die mee helpt kalmeren. Thuis oefenen is een aanvulling, geen vervanging bij zware trauma's."
       }
     ],
     doeDit: [
@@ -360,8 +360,8 @@ const VRAGEN_18 = [
         tekst: "Een schema is een diepe overtuiging over jezelf of anderen, gevormd door herhaalde jeugdervaringen. Wanneer een schema activeert, schiet je in een 'modus': het gekwetste kind, de straffende ouder, de overlevende. Schematherapie helpt je die modi herkennen en vanuit een gezonde volwassene — of met hulp van de therapeut — te reageren."
       },
       {
-        kop: "Limited reparenting",
-        tekst: "Een uniek element is 'limited reparenting': binnen veilige grenzen biedt de therapeut iets van wat je vroeg miste — erkenning, warmte, consistentie. Dat is geen vervanging van ouders, maar een corrigerende ervaring die oude tekorten gedeeltelijk aanvult. Het vraagt een langdurige, betrouwbare therapeutische relatie."
+        kop: "Alsnog goede zorg (limited reparenting)",
+        tekst: "Een bijzonder element is 'limited reparenting': binnen veilige grenzen geeft de therapeut je iets van wat je vroeg miste — erkenning, warmte, betrouwbaarheid. Dat is geen vervanging van je ouders, maar een nieuwe, goede ervaring die oude tekorten deels aanvult. Het vraagt een langdurige, betrouwbare band met je therapeut."
       }
     ],
     doeDit: [
@@ -415,14 +415,14 @@ const VRAGEN_18 = [
       "zenuwstelsel",
       "behandeling"
     ],
-    kort: "Neurofeedback kan helpen bij hardnekkige regulatieproblemen, dissociatie of hyperalertheid wanneer andere methodes onvoldoende werken. Het is geen doe-het-zelf methode — je hebt een ervaren behandelaar nodig.",
+    kort: "Neurofeedback kan helpen bij hardnekkige moeite om tot rust te komen, afhaken (dissociatie) of altijd op scherp staan, wanneer andere methodes onvoldoende werken. Het is geen doe-het-zelf methode — je hebt een ervaren behandelaar nodig.",
     blokken: [
       {
-        tekst: "Neurofeedback meet hersenactiviteit en geeft realtime feedback, zodat je brein leert flexibeler te reageren op stress. Bij trauma klinkt dat aantrekkelijk — maar voor wie is het echt bedoeld?"
+        tekst: "Neurofeedback meet hersenactiviteit en geeft meteen feedback, zodat je brein leert soepeler te reageren op stress. Bij trauma klinkt dat aantrekkelijk — maar voor wie is het echt bedoeld?"
       },
       {
         kop: "Wanneer het overwogen wordt",
-        tekst: "Neurofeedback wordt soms ingezet bij vroeg of complex trauma wanneer regulatie hardnekkig problematisch blijft: ernstige dissociatie, slaapstoornissen, hyperalertheid of concentratieproblemen die andere behandeling niet voldoende verlichten. Het werkt indirect: je traint het zenuwstelsel via het brein, niet door herinneringen te bespreken."
+        tekst: "Neurofeedback wordt soms ingezet bij vroeg of complex trauma wanneer tot rust komen maar niet lukt: ernstig afhaken (dissociatie), slaapproblemen, altijd op scherp staan of concentratieproblemen die andere behandeling niet voldoende verlicht. Het werkt indirect: je traint het zenuwstelsel via het brein, niet door herinneringen te bespreken."
       },
       {
         kop: "Geen wondermiddel",
@@ -450,11 +450,11 @@ const VRAGEN_18 = [
       },
       {
         boek: "body-keeps-score",
-        detail: "Over neurobiologie en verschillende interventies bij trauma."
+        detail: "Over hoe het brein werkt en verschillende aanpakken bij trauma."
       },
       {
         boek: "anchored",
-        detail: "Over zenuwstelselregulatie als basis voor herstel."
+        detail: "Over het kalmeren van je zenuwstelsel als basis voor herstel."
       }
     ],
     gerelateerd: [
@@ -520,7 +520,7 @@ const VRAGEN_18 = [
       },
       {
         boek: "complex-ptsd-workbook",
-        detail: "Over slaap en coping als onderdeel van stabilisatie."
+        detail: "Over slaap en omgaan met klachten als onderdeel van stevig worden."
       }
     ],
     gerelateerd: [
@@ -558,7 +558,7 @@ const VRAGEN_18 = [
       },
       {
         kop: "Wanneer het past",
-        tekst: "Het kan helpen bij spanning, dissociatie en het leren dat je lichaam weer een thuis kan zijn. Kies een docent met expliciete trauma-training. Begin zacht; als je overspoelt, is dat informatie — geen falen. Yoga vervangt geen traumatherapie, maar kan een waardevolle aanvulling zijn."
+        tekst: "Het kan helpen bij spanning, afhaken (dissociatie) en het leren dat je lichaam weer een thuis kan zijn. Kies een docent met duidelijke trauma-training. Begin zacht; als je overspoeld raakt, is dat informatie — geen falen. Yoga vervangt geen traumatherapie, maar kan een waardevolle aanvulling zijn."
       }
     ],
     doeDit: [
@@ -613,18 +613,18 @@ const VRAGEN_18 = [
       "noodplan",
       "stappen"
     ],
-    kort: "Een veiligheidsplan legt vast wat je doet als je overspoelt: signalen, coping, contactpersonen en noodstappen. Schrijf het op als je relatief stabiel bent — dan hoef je in crisis niet alles te bedenken.",
+    kort: "Een veiligheidsplan legt vast wat je doet als je overspoeld raakt: signalen, manieren om te kalmeren, mensen om te bellen en noodstappen. Schrijf het op als je relatief stabiel bent — dan hoef je in crisis niet alles te bedenken.",
     blokken: [
       {
         tekst: "In een crisis is helder denken moeilijk. Een veiligheidsplan is een concreet document — op papier of in je telefoon — dat je vooraf maakt wanneer het beter met je gaat. Het is geen teken van zwakte; het is verstandig."
       },
       {
         kop: "Wat erin hoort",
-        tekst: "Typisch bevat een plan: (1) vroege waarschuwingssignalen — slechte slaap, prikkelbaarheid, isolatie; (2) interne coping — adem, koud water, bewegen, muziek, grounding; (3) mensen om te bellen of berichten, in volgorde; (4) professionele hulplijnen; (5) stappen om direct gevaar te vermijden — middelen wegleggen, veilige plek zoeken; (6) wat je therapeut of huisarts moet weten."
+        tekst: "Typisch bevat een plan: (1) vroege waarschuwingssignalen — slechte slaap, prikkelbaarheid, je terugtrekken; (2) wat jezelf kalmeert — adem, koud water, bewegen, muziek, aarden; (3) mensen om te bellen of te appen, in volgorde; (4) professionele hulplijnen; (5) stappen om direct gevaar te vermijden — middelen wegleggen, een veilige plek zoeken; (6) wat je therapeut of huisarts moet weten."
       },
       {
         kop: "Maak het persoonlijk",
-        tekst: "Wat voor jou werkt, staat erin — niet wat 'hoort'. Test je plan in lichte momenten: weet je het nummer? Werkt de coping echt? Update het na elke crisis: wat hielp, wat niet? Deel het met iemand die je vertrouwt, of met je therapeut."
+        tekst: "Wat voor jou werkt, staat erin — niet wat 'hoort'. Test je plan in lichte momenten: weet je het nummer? Werkt het kalmeren echt? Pas het aan na elke crisis: wat hielp, wat niet? Deel het met iemand die je vertrouwt, of met je therapeut."
       }
     ],
     doeDit: [
@@ -648,11 +648,11 @@ const VRAGEN_18 = [
       },
       {
         boek: "complex-ptsd-workbook",
-        detail: "Over stabilisatie en voorbereiding op moeilijke momenten."
+        detail: "Over stevig worden en je voorbereiden op moeilijke momenten."
       },
       {
         boek: "dbt-cptsd-workbook",
-        detail: "Over crisis-overbrugging en gestructureerde noodstappen."
+        detail: "Over een crisis doorkomen en duidelijke noodstappen."
       }
     ],
     gerelateerd: [
@@ -679,29 +679,29 @@ const VRAGEN_18 = [
       "oefenen",
       "herstel"
     ],
-    kort: "Je window of tolerance verbreden doe je via herhaalde, kleine ervaringen van veiligheid en regulatie — niet door jezelf te overweldigen. Geduld, grounding en soms therapie vergroten de zone waarin je kunt voelen zonder te dissociëren of panikeren.",
+    kort: "Je 'window of tolerance' — de zone waarin je spanning aankunt — maak je breder via veel kleine ervaringen van veiligheid en kalmte, niet door jezelf te overweldigen. Geduld, aarden (grounding) en soms therapie vergroten de zone waarin je kunt voelen zonder af te haken of in paniek te raken.",
     blokken: [
       {
-        tekst: "Je window of tolerance is de zone waarin je kunt voelen, denken en reageren zonder te hyperarousen (paniek, woede) of te hypoarousen (dissociatie, verdoving). Na trauma is die zone vaak smal. Verbreden is mogelijk — maar niet door hard te pushen."
+        tekst: "Je 'window of tolerance' is de zone waarin je kunt voelen, denken en reageren zonder dat je erbovenuit schiet (paniek, woede) of eronder zakt (afhaken, verdoving). Na trauma is die zone vaak smal. Breder maken kan — maar niet door hard te pushen."
       },
       {
         kop: "Kleine herhalingen",
-        tekst: "Je zenuwstelsel leert via herhaling. Korte dagelijkse oefeningen — adem, grounding, zachte beweging, voorspelbare routines, veilige sociale contacten — tellen op. Elke keer dat je een lichte trigger opvangt en terugkomt in regulatie, leert je systeem: ik kan dit aan. Dat verbredt de window geleidelijk."
+        tekst: "Je zenuwstelsel leert via herhaling. Korte dagelijkse oefeningen — adem, aarden (grounding), zachte beweging, voorspelbare routines, veilige sociale contacten — tellen op. Elke keer dat je een lichte trigger opvangt en weer tot rust komt, leert je systeem: ik kan dit aan. Dat maakt de zone geleidelijk breder."
       },
       {
         kop: "Niet over de rand duwen",
-        tekst: "Blootstelling aan te veel te snel vernauwt de window juist. Werk aan de rand, niet eroverheen. Soms helpt traumatherapie, somatisch werk of medicatie om de basis te verruimen. Verbreden duurt maanden tot jaren — dat is normaal, geen falen."
+        tekst: "Te veel te snel maakt de zone juist smaller. Werk aan de rand, niet eroverheen. Soms helpt traumatherapie, lichaamsgericht werk of medicatie om de basis breder te maken. Breder worden duurt maanden tot jaren — dat is normaal, geen falen."
       }
     ],
     doeDit: [
-      "Oefen dagelijks korte regulatie — ook op goede dagen.",
+      "Oefen dagelijks kort met kalmeren — ook op goede dagen.",
       "Bouw voorspelbaarheid en veiligheid in je week.",
       "Werk met een therapeut als je steeds over de rand gaat."
     ],
     vermijd: [
       "Jezelf confronteren tot je instort 'om sterker te worden'.",
-      "Denken dat regulatie 'lui' is — het is trainen.",
-      "De window verwarren met 'geen emoties meer hebben'."
+      "Denken dat kalmeren 'lui' is — het is trainen.",
+      "De zone verwarren met 'geen emoties meer hebben'."
     ],
     zegDit: [
       "“Ik train mijn zenuwstelsel — kleine stappen, elke dag.”",
@@ -710,7 +710,7 @@ const VRAGEN_18 = [
     bronnen: [
       {
         boek: "anchored",
-        detail: "Over de autonome landkaart en terugkeren naar regulatie."
+        detail: "Over de kaart van het zenuwstelsel en terugkeren naar rust."
       },
       {
         boek: "nurturing-resilience",
@@ -745,14 +745,14 @@ const VRAGEN_18 = [
       "veiligheid",
       "verbinding"
     ],
-    kort: "Co-regulatie is wanneer een kalm zenuwstelsel een ander helpt kalmeren — via aanwezigheid, toon, adem of aanraking. Als kind leerde je het van veilige ouders; als volwassene kun je het opnieuw leren in veilige relaties.",
+    kort: "Co-regulatie (samen kalmeren) is wanneer een kalm zenuwstelsel een ander helpt kalmeren — via aanwezigheid, toon, adem of aanraking. Als kind leerde je het van veilige ouders; als volwassene kun je het opnieuw leren in veilige relaties.",
     blokken: [
       {
-        tekst: "Je bent overspoeld en iemand blijft rustig naast je — niet pratend, niet oplossend — en langzaam zak je mee af. Dat is co-regulatie: twee zenuwstelsels die elkaar helpen reguleren. Het is geen zwakte; het is hoe mensen van nature kalmeren."
+        tekst: "Je bent overspoeld en iemand blijft rustig naast je — niet pratend, niet oplossend — en langzaam zak je mee af. Dat is co-regulatie: twee zenuwstelsels die elkaar helpen kalmeren. Het is geen zwakte; het is hoe mensen van nature kalmeren."
       },
       {
         kop: "Hoe het werkt",
-        tekst: "Het autonome zenuwstelsel spiegelt anderen. Een kalme adem, zachte stem, voorspelbare aanwezigheid en veilige aanraking (als gewenst) activeren het sociale engagement-systeem. Kinderen leren reguleren via ouders; zonder die ervaring blijft zelfregulatie moeilijker. Als volwassene kun je co-regulatie opnieuw opbouwen — in therapie, vriendschap, partnerschap."
+        tekst: "Je automatische zenuwstelsel neemt iets over van anderen. Een kalme adem, een zachte stem, voorspelbare aanwezigheid en veilige aanraking (als je dat wilt) zetten het deel aan dat zich veilig en verbonden voelt. Kinderen leren kalmeren via hun ouders; zonder die ervaring blijft jezelf kalmeren moeilijker. Als volwassene kun je samen kalmeren opnieuw opbouwen — in therapie, vriendschap, een relatie."
       },
       {
         kop: "Co-regulatie is geen redding",
@@ -766,7 +766,7 @@ const VRAGEN_18 = [
     ],
     vermijd: [
       "Denken dat je alles alleen moet reguleren om 'sterk' te zijn.",
-      "Co-regulatie verwachten van mensen die zelf chronisch ontregeld zijn.",
+      "Co-regulatie verwachten van mensen die zelf voortdurend uit balans zijn.",
       "Aanwezigheid van naasten als permanente redding zien — grenzen blijven nodig."
     ],
     zegDit: [
@@ -776,15 +776,15 @@ const VRAGEN_18 = [
     bronnen: [
       {
         boek: "anchored",
-        detail: "Over co-regulatie en het polyvagaal zenuwstelsel."
+        detail: "Over samen kalmeren (co-regulatie) en het zenuwstelsel (polyvagaal)."
       },
       {
         boek: "nurturing-resilience",
-        detail: "Over relationele veiligheid en het kalmeren van het zenuwstelsel."
+        detail: "Over veiligheid in relaties en het kalmeren van het zenuwstelsel."
       },
       {
         boek: "what-happened-to-you",
-        detail: "Over relationele genezing en het belang van veilige verbinding."
+        detail: "Over helen via relaties en het belang van veilige verbinding."
       }
     ],
     gerelateerd: [

@@ -274,7 +274,7 @@ const VRAGEN_3 = [
       },
       {
         kop: "Een zenuwstelsel op volle kracht",
-        tekst: "Hyperalertheid — constant scannen op gevaar — kost enorm veel energie, ook als je het niet bewust merkt. Je brein en lichaam werken overuren om je 'veilig' te houden. Daarnaast kost het onderdrukken of verdragen van emoties veel kracht. Vermoeidheid is hier geen karaktereigenschap, maar een fysiologisch signaal."
+        tekst: "Hyperalertheid — constant scannen op gevaar — kost enorm veel energie, ook als je het niet bewust merkt. Je brein en lichaam werken overuren om je 'veilig' te houden. Daarnaast kost het onderdrukken of verdragen van emoties veel kracht. Vermoeidheid is hier geen karaktereigenschap, maar een lichamelijk signaal."
       },
       {
         kop: "Slaap, lichaam en herstel",
@@ -340,7 +340,7 @@ const VRAGEN_3 = [
       },
       {
         kop: "Langzaam terug naar veiligheid",
-        tekst: "Hyperalertheid verdwijnt niet door je te vertellen dat het veilig is. Je lichaam moet veiligheid ervaren — via voorspelbare routines, veilige relaties, grounding en somatische oefeningen. Met tijd en de juiste hulp kan het alarm minder gevoelig worden. Geduld en zachtheid zijn hier belangrijker dan wilskracht."
+        tekst: "Hyperalertheid verdwijnt niet door je te vertellen dat het veilig is. Je lichaam moet veiligheid ervaren — via voorspelbare routines, veilige relaties, aarden (grounding) en lichaamsgerichte oefeningen. Met tijd en de juiste hulp kan het alarm minder gevoelig worden. Geduld en zachtheid zijn hier belangrijker dan wilskracht."
       }
     ],
     doeDit: [
@@ -360,7 +360,7 @@ const VRAGEN_3 = [
     bronnen: [
       {
         boek: "body-keeps-score",
-        detail: "Over hypervigilantie als kernsymptoom van trauma in het zenuwstelsel."
+        detail: "Over altijd op scherp staan als kernklacht van trauma in het zenuwstelsel."
       },
       {
         boek: "waking-the-tiger",
@@ -402,13 +402,13 @@ const VRAGEN_3 = [
       },
       {
         kop: "Beide kanten serieus nemen",
-        tekst: "Lichamelijke klachten zijn echt — het is geen 'in je hoofd'. Laat medische oorzaken uitsluiten, en overweeg daarnaast dat trauma een rol kan spelen. Somaatische therapie, lichaamsgerichte traumawerk en regulatie-oefeningen kunnen helpen wanneer traditionele behandeling alleen symptomen bestrijdt."
+        tekst: "Lichamelijke klachten zijn echt — het is geen 'in je hoofd'. Laat medische oorzaken uitsluiten, en overweeg daarnaast dat trauma een rol kan spelen. Lichaamsgerichte (somatische) therapie, lichaamsgericht traumawerk en oefeningen om te kalmeren kunnen helpen wanneer een gewone behandeling alleen de symptomen bestrijdt."
       }
     ],
     doeDit: [
       "Laat lichamelijke klachten medisch laten onderzoeken — neem ze serieus.",
       "Overweeg dat stress en trauma fysieke sporen nalaten.",
-      "Zoek hulp die lichaam én geest meeneemt, bijvoorbeeld somatische traumatherapie."
+      "Zoek hulp die lichaam én geest meeneemt, bijvoorbeeld lichaamsgerichte (somatische) traumatherapie."
     ],
     vermijd: [
       "Klachten negeren omdat 'de arts niets vond'.",
@@ -422,7 +422,7 @@ const VRAGEN_3 = [
     bronnen: [
       {
         boek: "body-keeps-score",
-        detail: "Over hoe trauma zich manifesteert in het lichaam, niet alleen in gedachten."
+        detail: "Over hoe trauma zich in het lichaam laat voelen, niet alleen in gedachten."
       },
       {
         boek: "when-body-says-no",
@@ -430,7 +430,7 @@ const VRAGEN_3 = [
       },
       {
         boek: "heal-body-heal-mind",
-        detail: "Over geïntegreerde benaderingen van lichaam en geest bij trauma."
+        detail: "Over aanpakken die lichaam en geest samen nemen bij trauma."
       }
     ],
     gerelateerd: [
@@ -464,7 +464,7 @@ const VRAGEN_3 = [
       },
       {
         kop: "Waar je op let",
-        tekst: "Zoek iemand met aantoonbare ervaring in trauma — niet alleen 'praten over gevoelens', maar specifieke training in traumabehandeling (EMDR, somatisch werk, IFS, schematherapie, en dergelijke). Vraag hoe ze omgaan met overspoeling, of ze gefaseerd werken, en of je het tempo mag bepalen. Een goede therapeut beantwoordt die vragen open en geruststellend."
+        tekst: "Zoek iemand met aantoonbare ervaring in trauma — niet alleen 'praten over gevoelens', maar specifieke training in traumabehandeling (EMDR, lichaamsgericht werk, IFS, schematherapie, en dergelijke). Vraag hoe ze omgaan met overspoeling, of ze gefaseerd werken, en of je het tempo mag bepalen. Een goede therapeut beantwoordt die vragen open en geruststellend."
       },
       {
         kop: "Veiligheid boven alles",
@@ -519,7 +519,7 @@ const VRAGEN_3 = [
       "techniek",
       "zelfregulatie"
     ],
-    kort: "Grounding — aarden — is het terugbrengen van je aandacht naar het huidige moment via je lichaam en zintuigen. Het helpt wanneer je overspoeld raakt, dissocieert, of het verleden het heden overneemt.",
+    kort: "Grounding — aarden — is het terugbrengen van je aandacht naar het nu, via je lichaam en je zintuigen. Het helpt wanneer je overspoeld raakt, afhaakt (dissocieert), of het verleden het heden overneemt.",
     blokken: [
       {
         tekst: "Grounding betekent letterlijk: terug naar de grond, terug naar het nu. Wanneer een trigger, flashback of paniekgolf je meesleurt, helpt grounding je lichaam en brein te herinneren: ik ben hier, nu, en ik ben veilig."
@@ -541,7 +541,7 @@ const VRAGEN_3 = [
     vermijd: [
       "Grounding als enige oplossing zien — bij hardnekkige klachten hoort ook professionele hulp.",
       "Jezelf verwijten als het niet meteen werkt — het is een vaardigheid.",
-      "Grounding gebruiken om gevoelens permanent te vermijden in plaats van te reguleren."
+      "Grounding gebruiken om gevoelens voor altijd te vermijden in plaats van ermee te leren omgaan."
     ],
     zegDit: [
       "“Ik ben hier. Ik voel mijn voeten op de grond.”",
@@ -583,11 +583,11 @@ const VRAGEN_3 = [
     kort: "Innerlijke leegte is een veelvoorkomend trauma-symptoom: je voelt weinig, alsof er een gat is waar gevoelens horen te zitten. Het is vaak een overlevingsstrategie — niet iets wat 'mis' is met jou als persoon.",
     blokken: [
       {
-        tekst: "Je kijkt naar je leven en voelt… niets. Of een vaag gat. Anderen lijken te genieten, te huilen, boos te worden — jij voelt vaak weinig, of alleen een diffuse leegte. Soms mis je zelfs het gevoel dat je echt bestaat."
+        tekst: "Je kijkt naar je leven en voelt… niets. Of een vaag gat. Anderen lijken te genieten, te huilen, boos te worden — jij voelt vaak weinig, of alleen een vage leegte. Soms mis je zelfs het gevoel dat je echt bestaat."
       },
       {
         kop: "Leegte als bescherming",
-        tekst: "Veel mensen met trauma leerden vroeg hun gevoelens af te sluiten. Voelen was te pijnlijk, te gevaarlijk, of er was niemand om je gevoelens te spiegelen. Het zenuwstelsel schakelde naar verdoving — shutdown. Die leegte beschermde je toen. Nu voelt het als verlies: alsof je niet echt leeft."
+        tekst: "Veel mensen met trauma leerden vroeg hun gevoelens af te sluiten. Voelen was te pijnlijk, te gevaarlijk, of er was niemand om je gevoelens te spiegelen. Het zenuwstelsel schakelde naar verdoving — dichtklappen (shutdown). Die leegte beschermde je toen. Nu voelt het als verlies: alsof je niet echt leeft."
       },
       {
         kop: "Langzaam terug naar voelen",

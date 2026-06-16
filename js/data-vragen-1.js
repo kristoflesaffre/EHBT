@@ -205,7 +205,7 @@ const VRAGEN_1 = [
       },
       {
         kop: "De noodrem van het lichaam",
-        tekst: "Als vechten of vluchten niet kan, schakelt het zenuwstelsel naar een soort shutdown: gevoel, pijn en aanwezigheid worden gedempt. Voor een kind dat niet kon ontsnappen, was dat een geniale bescherming. Maar als de noodrem ook nu nog aanslaat bij stress, kan hij je afsnijden van jezelf en van anderen."
+        tekst: "Als vechten of vluchten niet kan, schakelt het zenuwstelsel naar een soort dichtklappen (shutdown): gevoel, pijn en aanwezigheid worden gedempt. Voor een kind dat niet kon ontsnappen, was dat een geniale bescherming. Maar als de noodrem ook nu nog aanslaat bij stress, kan hij je afsnijden van jezelf en van anderen."
       },
       {
         kop: "Zachtjes terugkomen",
@@ -233,7 +233,7 @@ const VRAGEN_1 = [
       },
       {
         boek: "anchored",
-        detail: "Over de shutdown-toestand van het zenuwstelsel en hoe je er weer uitkomt."
+        detail: "Over de toestand waarin je dichtklapt (shutdown) en hoe je er weer uitkomt."
       }
     ],
     gerelateerd: [
@@ -262,15 +262,15 @@ const VRAGEN_1 = [
     kort: "Gaten in je jeugdgeheugen kunnen, maar hoeven niet, met trauma te maken hebben. Belangrijker dan het terughalen van herinneringen is hoe je je nú voelt — daar kun je mee werken.",
     blokken: [
       {
-        tekst: "Veel mensen met een moeilijke jeugd hebben grote lege plekken in hun geheugen. Dat is begrijpelijk: een brein dat onder chronische stress staat, slaat herinneringen anders — fragmentarischer — op, en soms beschermt het je door ervaringen op afstand te houden."
+        tekst: "Veel mensen met een moeilijke jeugd hebben grote lege plekken in hun geheugen. Dat is begrijpelijk: een brein dat lang onder zware stress staat, slaat herinneringen anders op — in meer losse stukjes — en soms beschermt het je door ervaringen op afstand te houden."
       },
       {
         kop: "Herinneren is niet het doel",
-        tekst: "Het is een misverstand dat je eerst alles moet terughalen om te helen. Soms komen herinneringen later vanzelf, soms niet — en jagen op herinneringen kan zelfs destabiliseren. Wat telt is je huidige beleving: je lichaamsreacties, je patronen in relaties, je gevoel van veiligheid. Daar grijpt herstel op aan, ook zonder compleet verhaal."
+        tekst: "Het is een misverstand dat je eerst alles moet terughalen om te helen. Soms komen herinneringen later vanzelf, soms niet — en jagen op herinneringen kan je zelfs uit balans brengen. Wat telt is je huidige beleving: je lichaamsreacties, je patronen in relaties, je gevoel van veiligheid. Daar grijpt herstel op aan, ook zonder compleet verhaal."
       },
       {
         kop: "Wees voorzichtig met 'bewijs'",
-        tekst: "Het geheugen is geen camera. Onder druk kunnen herinneringen vervormen. Een goede traumatherapeut jaagt daarom niet op verdrongen beelden, maar helpt je stabiliteit en zelfregulatie op te bouwen — van daaruit ontstaat ruimte voor wat er werkelijk speelt."
+        tekst: "Het geheugen is geen camera. Onder druk kunnen herinneringen vervormen. Een goede traumatherapeut jaagt daarom niet op verdrongen beelden, maar helpt je rust en stevigheid op te bouwen en jezelf te leren kalmeren — van daaruit ontstaat ruimte voor wat er echt speelt."
       }
     ],
     doeDit: [
@@ -317,7 +317,7 @@ const VRAGEN_1 = [
       "onveilig",
       "herhaling"
     ],
-    kort: "Wat vertrouwd voelt en wat gezond is, zijn niet altijd hetzelfde. Je zenuwstelsel herkent oude dynamieken als 'thuis', ook als ze pijn doen. Dat patroon is te begrijpen — en te veranderen.",
+    kort: "Wat vertrouwd voelt en wat gezond is, zijn niet altijd hetzelfde. Je zenuwstelsel herkent oude patronen als 'thuis', ook als ze pijn doen. Dat patroon is te begrijpen — en te veranderen.",
     blokken: [
       {
         tekst: "Je valt steeds op mensen die afstandelijk, onvoorspelbaar of afwijzend zijn, en het 'klikt' juist daar het sterkst. Dat is geen karakterfout of domme keuze. Je systeem zoekt het bekende, en als liefde vroeger samenging met onzekerheid, voelt onzekerheid later als liefde."
@@ -443,7 +443,7 @@ const VRAGEN_1 = [
         tekst: "Het eerlijke antwoord: het hangt af van wat er gebeurde, hoe lang, hoe vroeg, en van de steun die je nu hebt. Eénmalig trauma op volwassen leeftijd verloopt vaak anders dan trauma dat vroeg en herhaald was. Maar voor bijna iedereen geldt: vooruitgang is mogelijk."
       },
       {
-        kop: "Niet-lineair, met golven",
+        kop: "Met golven, niet in een rechte lijn",
         tekst: "Herstel gaat met pieken en dalen. Een goede periode kan gevolgd worden door een terugval, vaak rond verjaardagen van gebeurtenissen, stress of nieuwe nabijheid. Dat is geen mislukking maar onderdeel van het proces. Veel mensen merken dat de dalen na verloop van tijd minder diep worden en dat ze er sneller uitkomen."
       },
       {
@@ -467,7 +467,7 @@ const VRAGEN_1 = [
     bronnen: [
       {
         boek: "complex-ptsd-workbook",
-        detail: "Over gefaseerd, niet-lineair herstel en realistische verwachtingen."
+        detail: "Over herstel in stappen, met vallen en opstaan, en realistische verwachtingen."
       },
       {
         boek: "body-keeps-score",

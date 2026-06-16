@@ -108,8 +108,8 @@ const BOEKEN = {
     icoon: "⚓",
     kern: "Een toegankelijke vertaling van de polyvagaaltheorie: leren je zenuwstelsel te begrijpen en te kalmeren.",
     bullets: [
-      "Je zenuwstelsel beweegt tussen veiligheid, mobilisatie (vecht/vlucht) en shutdown — vaak buiten je wil om.",
-      "Door je 'autonome landkaart' te leren lezen herken je sneller waar je zit en wat je nodig hebt.",
+      "Je zenuwstelsel beweegt tussen veiligheid, in actie komen (vecht/vlucht) en dichtklappen (shutdown) — vaak buiten je wil om.",
+      "Door je 'innerlijke landkaart' te leren lezen herken je sneller waar je zit en wat je nodig hebt.",
       "Kleine, herhaalde momenten van veiligheid en verbinding helpen het systeem opnieuw te ijken."
     ],
     categorieen: [
@@ -284,7 +284,7 @@ const BOEKEN = {
     kern: "Een praktisch werkboek met oefeningen om stap voor stap met complex trauma aan de slag te gaan.",
     bullets: [
       "Combineert inzichten uit lichaamsgerichte, cognitieve en relationele benaderingen.",
-      "Veel nadruk op gefaseerd werken: eerst stabiliseren en veiligheid, dan pas verwerken.",
+      "Veel nadruk op werken in stappen: eerst stevig worden en veiligheid, dan pas verwerken.",
       "Oefeningen helpen om veerkracht en zelfcompassie te versterken."
     ],
     categorieen: [
@@ -369,8 +369,8 @@ const BOEKEN = {
     icoon: "🫀",
     kern: "Hoe het lichaam trauma opslaat en weer kan genezen — met aandacht voor sensaties, niet alleen verhalen.",
     bullets: [
-      "Trauma is een fysiologische blokkade: overlevingsenergie die niet kon ontladen.",
-      "Heling begint bij lichaamsbewustzijn en gedoseerde contact met sensaties.",
+      "Trauma is een lichamelijke blokkade: overlevingsenergie die niet kon ontladen.",
+      "Heling begint bij lichaamsbewustzijn en voorzichtig contact met je lichaamsgevoelens.",
       "Je hoeft het verhaal niet te kennen om het lichaam te kunnen helpen herstellen."
     ],
     categorieen: [
@@ -396,7 +396,7 @@ const BOEKEN = {
     jaar: 2015,
     kleur: "#4a6b8a",
     icoon: "🧩",
-    kern: "Over hoe traumaherinneringen werken — fragmentarisch, lichamelijk, soms afwezig — en waarom dat normaal is.",
+    kern: "Over hoe traumaherinneringen werken — in losse stukjes, lichamelijk, soms afwezig — en waarom dat normaal is.",
     bullets: [
       "Traumaherinneringen worden anders opgeslagen dan gewone herinneringen: als beelden, sensaties en emoties.",
       "Gaten in het geheugen betekenen niet dat er niets gebeurde.",
@@ -576,7 +576,7 @@ const BOEKEN = {
     kern: "Trauma verbinden met lichaam, gemeenschap en rechtvaardigheid — heling is ook collectief.",
     bullets: [
       "Trauma ontstaat niet alleen individueel maar ook in systemen van onderdrukking en onveiligheid.",
-      "Somatisch werk en gemeenschap versterken elkaar in herstel.",
+      "Lichaamsgericht werk en gemeenschap versterken elkaar in herstel.",
       "Grenzen, veiligheid en verbinding zijn politiek én persoonlijk."
     ],
     categorieen: [
@@ -1045,7 +1045,7 @@ const BOEKEN = {
     kern: "Somatische benadering van vroeg en complex trauma — veerkracht opbouwen via het lichaam.",
     bullets: [
       "Vroeg trauma verstoort het zenuwstelsel; het lichaam is het startpunt voor herstel.",
-      "Co-regulatie en veilige aanraking (waar passend) helpen het systeem kalmeren.",
+      "Samen kalmeren (co-regulatie) en veilige aanraking (waar passend) helpen het systeem kalmeren.",
       "Veerkracht groeit door herhaalde ervaringen van veiligheid."
     ],
     categorieen: [
@@ -1101,9 +1101,9 @@ const BOEKEN = {
     jaar: 2023,
     kleur: "#3f7d72",
     icoon: "🫧",
-    kern: "Embodiment — weer thuiskomen in je lichaam na trauma en dissociatie.",
+    kern: "Weer thuiskomen in je lichaam na trauma en afhaken (dissociatie).",
     bullets: [
-      "Dissociatie is weg zijn uit het lichaam; embodiment is de terugweg.",
+      "Afhaken (dissociatie) is weg zijn uit je lichaam; weer in je lichaam komen is de terugweg.",
       "Zachte sensatie-oefeningen helpen zonder te overspoelen.",
       "Het lichaam is geen vijand maar een bondgenoot in herstel."
     ],
@@ -1245,7 +1245,7 @@ const BOEKEN = {
     jaar: 2022,
     kleur: "#5f7259",
     icoon: "📘",
-    kern: "Toegankelijke NARM-gids met oefeningen voor ontwikkelingstrauma en zelfregulatie.",
+    kern: "Toegankelijke NARM-gids met oefeningen voor ontwikkelingstrauma en jezelf kalmeren.",
     bullets: [
       "Vijf overlevingsstijlen van NARM uitgelegd met praktische voorbeelden.",
       "Werken in het hier-en-nu, niet eindeloos in het verleden graven.",
@@ -1304,9 +1304,9 @@ const BOEKEN = {
     jaar: 2022,
     kleur: "#516b78",
     icoon: "🧰",
-    kern: "Concrete copingvaardigheden voor dagelijks leven met complex trauma.",
+    kern: "Concrete vaardigheden om met klachten om te gaan in het dagelijks leven met complex trauma.",
     bullets: [
-      "Vaardigheden voor emotieregulatie, triggers en relaties.",
+      "Vaardigheden om je emoties te kalmeren en om te gaan met triggers en relaties.",
       "Geschikt als eerste stap of aanvulling op therapie.",
       "Korte, haalbare oefeningen."
     ],
@@ -1334,10 +1334,10 @@ const BOEKEN = {
     jaar: 2024,
     kleur: "#516b78",
     icoon: "📗",
-    kern: "DBT-vaardigheden specifiek afgestemd op complex trauma: reguleren zonder jezelf te verliezen.",
+    kern: "DBT-vaardigheden speciaal afgestemd op complex trauma: jezelf kalmeren zonder jezelf te verliezen.",
     bullets: [
-      "Mindfulness, crisis-overbrugging en emotieregulatie voor CPTSS.",
-      "Stabiliseren vóór diepere verwerking.",
+      "Aandacht (mindfulness), een crisis doorkomen en je emoties kalmeren bij CPTSS.",
+      "Eerst stevig worden vóór diepere verwerking.",
       "Praktisch en stap voor stap."
     ],
     categorieen: [
@@ -1452,7 +1452,7 @@ const BOEKEN = {
     kern: "Hoe neurofeedback het zenuwstelsel kan helpen kalmeren bij vroeg en complex trauma.",
     bullets: [
       "Neurofeedback traint het brein om flexibeler te reageren op stress.",
-      "Vooral nuttig bij hardnekkige regulatieproblemen en dissociatie.",
+      "Vooral nuttig bij hardnekkige moeite om tot rust te komen en afhaken (dissociatie).",
       "Vraag een ervaren behandelaar; het is geen doe-het-zelf methode."
     ],
     categorieen: [
@@ -1652,7 +1652,7 @@ const BOEKEN = {
     jaar: 2026,
     kleur: "#3f7d72",
     icoon: "🗣️",
-    kern: "Leren luisteren naar lichaamssignalen als weg naar begrip en regulatie na stress en trauma.",
+    kern: "Leren luisteren naar lichaamssignalen als weg naar begrip en rust na stress en trauma.",
     bullets: [
       "Het lichaam 'spreekt' via spanning, vermoeidheid en sensaties — niet via woorden.",
       "Aandacht voor signalen helpt triggers vroeg te herkennen.",
@@ -1681,10 +1681,10 @@ const BOEKEN = {
     jaar: 2026,
     kleur: "#516b78",
     icoon: "🧩",
-    kern: "Somatisch werk afgestemd op neurodivergente zenuwstelsels — minder standaard, meer maatwerk.",
+    kern: "Lichaamsgericht werk afgestemd op neurodivergente zenuwstelsels — minder standaard, meer maatwerk.",
     bullets: [
-      "Autisme en ADHD veranderen hoe prikkels en regulatie worden ervaren.",
-      "Somatische aanpak moet rekening houden met sensorische gevoeligheid.",
+      "Autisme en ADHD veranderen hoe prikkels binnenkomen en hoe je kalmeert.",
+      "Een lichaamsgerichte aanpak moet rekening houden met gevoeligheid voor prikkels.",
       "Wat voor de één werkt, kan voor de ander overspoelen — tempo en aanpassing tellen."
     ],
     categorieen: [
@@ -1754,7 +1754,7 @@ const THEMAS = [
     naam: "Herstel & veerkracht",
     icoon: "🌱",
     accent: "#6a8f5e",
-    uitleg: "Wat heling werkelijk is: traag, niet-lineair, mogelijk."
+    uitleg: "Wat heling werkelijk is: traag, met vallen en opstaan, mogelijk."
   },
   {
     id: "grenzen",
@@ -1768,7 +1768,7 @@ const THEMAS = [
     naam: "Slaap & nachtmerries",
     icoon: "🌙",
     accent: "#46566e",
-    uitleg: "Hyperalertheid, nachtmerries en rust opnieuw leren."
+    uitleg: "Altijd op scherp staan, nachtmerries en rust opnieuw leren."
   },
   {
     id: "naasten",
