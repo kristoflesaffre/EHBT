@@ -7,6 +7,7 @@
 const VRAGEN_7 = [
   {
     id: "wat-is-ptss",
+    beeld: { src: "img/vragen/wat-is-ptss.jpg" },
     vraag: "Wat is PTSS?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -73,6 +74,7 @@ const VRAGEN_7 = [
   },
   {
     id: "klein-t-trauma",
+    beeld: { src: "img/vragen/klein-t-trauma.jpg" },
     vraag: "Wat is klein-t trauma?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -139,6 +141,7 @@ const VRAGEN_7 = [
   },
   {
     id: "medisch-ziekenhuis-trauma",
+    beeld: { src: "img/vragen/medisch-ziekenhuis-trauma.jpg" },
     vraag: "Wat is medisch of ziekenhuis trauma?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -205,6 +208,7 @@ const VRAGEN_7 = [
   },
   {
     id: "natuurramp-ongeval-trauma",
+    beeld: { src: "img/vragen/natuurramp-ongeval-trauma.jpg" },
     vraag: "Kan een natuurramp of ongeval trauma veroorzaken?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -271,6 +275,7 @@ const VRAGEN_7 = [
   },
   {
     id: "verlies-van-ouder",
+    beeld: { src: "img/vragen/verlies-van-ouder.jpg" },
     vraag: "Hoe werkt het verlies van een ouder door in je leven?",
     thema: "familie",
     leeftijd: [
@@ -337,6 +342,7 @@ const VRAGEN_7 = [
   },
   {
     id: "wat-is-parentificatie",
+    beeld: { src: "img/vragen/wat-is-parentificatie.jpg" },
     vraag: "Wat is parentificatie?",
     thema: "familie",
     leeftijd: [
@@ -402,6 +408,7 @@ const VRAGEN_7 = [
   },
   {
     id: "gouden-kind-zwart-schaap",
+    beeld: { src: "img/vragen/gouden-kind-zwart-schaap.jpg" },
     vraag: "Wat is het verschil tussen gouden kind en zwart schaap?",
     thema: "familie",
     leeftijd: [
@@ -467,6 +474,7 @@ const VRAGEN_7 = [
   },
   {
     id: "sibling-rivalry-trauma",
+    beeld: { src: "img/vragen/sibling-rivalry-trauma.jpg" },
     vraag: "Kan sibling rivalry trauma veroorzaken?",
     thema: "familie",
     leeftijd: [
@@ -532,6 +540,7 @@ const VRAGEN_7 = [
   },
   {
     id: "toxic-stress-uitgelegd",
+    beeld: { src: "img/vragen/toxic-stress-uitgelegd.jpg" },
     vraag: "Wat is toxic stress?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -595,6 +604,7 @@ const VRAGEN_7 = [
   },
   {
     id: "freeze-response-wat-is",
+    beeld: { src: "img/vragen/freeze-response-wat-is.jpg" },
     vraag: "Wat is een freeze response?",
     thema: "lichaam",
     leeftijd: [
@@ -661,6 +671,7 @@ const VRAGEN_7 = [
   },
   {
     id: "vechten-modus-herkennen",
+    beeld: { src: "img/vragen/vechten-modus-herkennen.jpg" },
     vraag: "Hoe herken ik de vechten-modus?",
     thema: "lichaam",
     leeftijd: [
@@ -727,6 +738,7 @@ const VRAGEN_7 = [
   },
   {
     id: "vluchten-modus-herkennen",
+    beeld: { src: "img/vragen/vluchten-modus-herkennen.jpg" },
     vraag: "Hoe herken ik de vluchten-modus?",
     thema: "lichaam",
     leeftijd: [

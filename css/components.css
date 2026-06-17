@@ -212,6 +212,7 @@
 
 .vraag-kaart::before {
   content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+  z-index: 4;
   background: var(--accent, var(--terracotta));
   transform: scaleY(0); transform-origin: top;
   transition: transform .4s var(--vlot);
@@ -246,29 +247,6 @@
   font-size: .8rem; color: var(--inkt-zacht); font-weight: 600;
 }
 
-.kaart-leeftijden {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  gap: 7px;
-  min-width: 0;
-}
-
-.kaart-leeftijd-pill {
-  display: inline-flex;
-  align-items: center;
-  min-height: 28px;
-  border: 1px solid color-mix(in srgb, var(--lijn) 78%, var(--salie));
-  border-radius: 999px;
-  padding: 5px 10px 6px;
-  background: color-mix(in srgb, var(--papier-diep) 78%, var(--kaart));
-  color: color-mix(in srgb, var(--inkt-zacht) 88%, var(--salie));
-  font-size: .74rem;
-  font-weight: 750;
-  line-height: 1;
-  white-space: nowrap;
-}
-
 .kaart-voet .pijl {
   display: inline-flex; align-items: center; gap: 6px;
   color: var(--accent, var(--terracotta)); font-weight: 700;
@@ -281,6 +259,230 @@
 .kaart-voet .pijl svg { transition: transform .3s var(--vlot); }
 
 .vraag-kaart:hover .pijl svg { transform: translateX(4px); }
+
+.vraag-kaart-met-beeld {
+  background: color-mix(in srgb, var(--kaart) 92%, var(--accent, var(--salie)) 8%);
+  border-color: color-mix(in srgb, var(--accent, var(--salie)) 22%, var(--lijn));
+}
+.vraag-kaart-beeld,
+.vraag-kaart-waslaag {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.vraag-kaart-beeld {
+  z-index: 0;
+  background: var(--papier-diep);
+}
+.vraag-kaart-beeld img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--kaart-beeld-pos, center);
+  opacity: .98;
+  filter: saturate(.64) contrast(.76) brightness(1.2);
+  transform: scale(1.04);
+  transition: transform .65s var(--vlot), opacity .35s, filter .35s;
+}
+.vraag-kaart-met-beeld:hover .vraag-kaart-beeld img {
+  opacity: 1;
+  filter: saturate(.7) contrast(.8) brightness(1.17);
+  transform: scale(1.07);
+}
+.vraag-kaart-waslaag {
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, .6) 0%, rgba(255, 255, 255, .56) 45%, rgba(255, 255, 255, .48) 100%),
+    rgba(255, 253, 247, .22);
+  backdrop-filter: blur(2.7px) saturate(.82) brightness(1.12);
+  -webkit-backdrop-filter: blur(2.7px) saturate(.82) brightness(1.12);
+}
+.vraag-kaart-met-beeld > :not(.vraag-kaart-beeld):not(.vraag-kaart-waslaag) {
+  position: relative;
+  z-index: 2;
+}
+.vraag-kaart-met-beeld .kaart-thema {
+  color: color-mix(in srgb, var(--accent, var(--salie)) 88%, var(--inkt));
+}
+.vraag-kaart-met-beeld .kort {
+  color: color-mix(in srgb, var(--inkt-zacht) 88%, var(--inkt));
+}
+
+.concept-kaart-basis .kaart-thema {
+  color: #5b6a7d;
+}
+
+.concept-kaart .kaart-voet {
+  align-items: center;
+}
+
+.concept-kaart .kaart-voet .pijl {
+  align-self: center;
+}
+
+.concept-kaart.vraag-kaart-met-beeld {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  aspect-ratio: 5 / 4;
+  padding: 20px;
+  color: var(--inkt);
+  border-color: color-mix(in srgb, var(--accent, var(--salie)) 28%, rgba(255, 255, 255, .4));
+}
+
+.concept-kaart.vraag-kaart-met-beeld::before {
+  display: none;
+}
+
+.concept-kaart.vraag-kaart-met-beeld .vraag-kaart-beeld img {
+  filter: saturate(.92) contrast(.94) brightness(1.1);
+  transform: scale(1.01);
+}
+
+.concept-kaart.vraag-kaart-met-beeld:hover .vraag-kaart-beeld img {
+  filter: saturate(.97) contrast(.97) brightness(1.14);
+  transform: scale(1.05);
+}
+
+.concept-kaart.vraag-kaart-met-beeld .vraag-kaart-waslaag {
+  display: none;
+}
+
+.concept-kaart.vraag-kaart-met-beeld .kaart-thema {
+  position: relative;
+  z-index: 4;
+  width: fit-content;
+  max-width: calc(100% - 4px);
+  margin: 0;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255, 255, 255, .3);
+  color: color-mix(in srgb, var(--inkt) 88%, #fff);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: .05em;
+  text-shadow: none;
+  backdrop-filter: blur(14px) saturate(1.6);
+  -webkit-backdrop-filter: blur(14px) saturate(1.6);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, .34),
+    inset 0 1px 0 rgba(255, 255, 255, .42);
+}
+
+.concept-kaart-glas {
+  position: relative;
+  z-index: 3;
+  align-self: stretch;
+  box-sizing: border-box;
+  width: calc(100% + 40px);
+  max-width: none;
+  margin: auto -20px -20px;
+  padding: 68px 20px 22px;
+  isolation: isolate;
+}
+
+.concept-kaart-glas--2-regels {
+  padding-top: 82px;
+}
+
+.concept-kaart-glas--2-regels::before,
+.concept-kaart-glas--2-regels::after {
+  top: -20px;
+}
+
+.concept-kaart-glas--3-regels {
+  padding-top: 96px;
+}
+
+.concept-kaart-glas--3-regels::before,
+.concept-kaart-glas--3-regels::after {
+  top: -52px;
+}
+
+.concept-kaart-glas--3-regels::before {
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .22) 20%, rgba(0, 0, 0, .88) 46%, #000 72%);
+  mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .22) 20%, rgba(0, 0, 0, .88) 46%, #000 72%);
+}
+
+.concept-kaart-glas--3-regels::after {
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .16) 18%, rgba(0, 0, 0, .82) 44%, #000 70%);
+  mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .16) 18%, rgba(0, 0, 0, .82) 44%, #000 70%);
+}
+
+.concept-kaart-glas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  backdrop-filter: blur(30px) saturate(1.9) brightness(1.14);
+  -webkit-backdrop-filter: blur(30px) saturate(1.9) brightness(1.14);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .18) 24%, rgba(0, 0, 0, .82) 52%, #000 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .18) 24%, rgba(0, 0, 0, .82) 52%, #000 100%);
+  pointer-events: none;
+}
+
+.concept-kaart-glas::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, .14) 28%,
+      rgba(255, 255, 255, .34) 58%,
+      rgba(255, 255, 255, .52) 100%);
+  border-top: 1px solid rgba(255, 255, 255, .72);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, .82),
+    inset 0 -20px 36px rgba(255, 255, 255, .1);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .14) 22%, rgba(0, 0, 0, .78) 50%, #000 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .14) 22%, rgba(0, 0, 0, .78) 50%, #000 100%);
+  pointer-events: none;
+}
+
+.concept-kaart.vraag-kaart-met-beeld .concept-kaart-titel {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  color: var(--inkt);
+  line-height: 1.2;
+  text-shadow: none;
+}
+
+.vraag-kaart-vraag .kaart-voet {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.vraag-kaart-vraag .kaart-voet .pijl {
+  align-self: center;
+}
+
+.vraag-kaart-vraag {
+  height: 306px;
+}
+
+.vraag-kaart-vraag h3 {
+  min-height: 3.36em;
+  line-height: 1.12;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.vraag-kaart-vraag .kort {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 .kaart-groot { grid-column: span 2; }
 
@@ -840,7 +1042,8 @@
 /* ---------- Onderzoeken ---------- */
 
 .bron-notitie {
-  max-width: 760px;
+  width: 100%;
+  box-sizing: border-box;
   margin: -18px 0 28px;
   padding: 16px 18px;
   border: 1px solid var(--lijn);
@@ -1638,10 +1841,12 @@
 .leeg-melding { text-align: center; padding: 60px 20px; color: var(--inkt-zacht); }
 
 .detail-nav-rij {
-  display: flex; align-items: center; gap: 20px; margin-bottom: 20px;
+  display: flex; align-items: center; flex-wrap: wrap; gap: 12px 20px; margin-bottom: 20px;
 }
 
 .detail-nav-rij .bovenlabel { margin-bottom: 0; }
+
+.detail-nav-rij .terug-link { line-height: 1; }
 
 .terug-link {
   display: inline-flex; align-items: center; gap: 8px;
@@ -1796,6 +2001,8 @@
 /* ---------- Disclaimer ---------- */
 .disclaimer-blok {
   display: flex; gap: 12px; align-items: flex-start;
+  box-sizing: border-box;
+  width: 100%;
   background: var(--goud-zacht);
   border: 1px solid color-mix(in srgb, var(--goud) 40%, var(--lijn));
   border-radius: var(--rond-klein);
@@ -1821,7 +2028,6 @@
 .evidentie-badge::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
 
 /* ---------- Therapie-kaart (bouwt voort op .onderzoek-kaart) ---------- */
-.therapie-kaart .onderzoek-label { margin-bottom: 6px; }
 .therapie-kaart-beeld {
   display: block;
   height: 148px;
@@ -1848,12 +2054,15 @@
   display: block; color: var(--inkt-zacht); font-size: .82rem;
   font-weight: 600; margin: 0 0 14px;
 }
-.therapie-pastbij {
-  display: inline-flex;
-  width: fit-content;
-  align-items: center;
-  gap: 6px;
+.therapie-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
   margin: -4px 0 14px;
+}
+.therapie-label {
+  display: inline-flex;
+  align-items: center;
   padding: 4px 9px;
   border-radius: 999px;
   background: color-mix(in srgb, var(--accent, var(--terracotta)) 11%, var(--kaart));
@@ -1864,7 +2073,6 @@
   letter-spacing: .07em;
   text-transform: uppercase;
 }
-.therapie-kaart .evidentie-badge { margin-top: auto; align-self: flex-start; }
 .therapie-kaart::after { content: none; }
 
 /* Therapie-detail: voor-wie & evidentie-rij */
@@ -1882,7 +2090,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: var(--beeld-pos, center);
   filter: saturate(.92) contrast(.99);
 }
 .therapie-voorwie {
@@ -1899,9 +2107,33 @@
 }
 .evidentie-rij p { margin: 0; color: var(--inkt-zacht); font-size: .9rem; flex: 1; min-width: 220px; }
 
+/* Concept-detail: optionele headerfoto */
+.concept-detail-beeld {
+  width: 100%;
+  margin: 24px 0 30px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: var(--papier-diep);
+  border: 1px solid var(--lijn);
+  border-radius: var(--rond);
+  box-shadow: var(--schaduw-zacht);
+}
+.concept-detail-beeld img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--beeld-pos, center);
+  filter: saturate(.92) contrast(.98) brightness(1.02);
+}
+
 /* ---------- Trauma uitgelegd: categorie-koppen ---------- */
 .uitgelegd-categorie { margin-top: 52px; }
 .uitgelegd-categorie:first-of-type { margin-top: 34px; }
+.uitgelegd-categorie .sectie-intro,
+.uitgelegd-categorie .disclaimer-blok {
+  max-width: none;
+}
 .uitgelegd-categorie-titel {
   font-family: var(--display); font-size: 1.45rem; font-weight: 560;
   display: flex; align-items: center; gap: 10px; margin-bottom: 20px;
@@ -1909,32 +2141,25 @@
 }
 .uitgelegd-categorie-titel .uc-icoon { font-size: 1.3rem; }
 
-/* ---------- Hechtingsstijlen: vergelijkraster ---------- */
-.hechting-raster {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
-  gap: 16px;
-}
-.hechting-kaart {
-  position: relative; display: flex; flex-direction: column;
-  background: var(--tint, var(--kaart));
+/* ---------- Hechtingsstijlen: detailbeeld ---------- */
+.hechting-detail-beeld {
+  width: 100%;
+  margin: 24px 0 30px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: var(--papier-diep);
   border: 1px solid var(--lijn);
-  border-top: 4px solid var(--accent, var(--terracotta));
-  border-radius: var(--rond); padding: 22px 22px 20px; color: var(--inkt);
-  transition: transform .35s var(--vlot), box-shadow .35s, border-color .35s;
+  border-radius: var(--rond);
+  box-shadow: var(--schaduw-zacht);
 }
-.hechting-kaart:hover {
-  transform: translateY(-5px); box-shadow: var(--schaduw-zweef);
-  border-color: color-mix(in srgb, var(--accent, var(--terracotta)) 45%, var(--lijn));
+.hechting-detail-beeld img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--beeld-pos, center);
+  filter: saturate(.96) contrast(.99);
 }
-.hechting-kaart .h-icoon { font-size: 1.9rem; }
-.hechting-kaart h3 { font-size: 1.22rem; margin: 10px 0 6px; }
-.hechting-kaart .h-zin { color: var(--inkt-zacht); font-size: .92rem; flex: 1; margin: 0 0 16px; }
-.hechting-kaart .pijl {
-  display: inline-flex; align-items: center; gap: 5px; margin-top: auto;
-  color: var(--accent, var(--terracotta)); font-weight: 700; font-size: .82rem;
-}
-.hechting-kaart:hover .pijl svg { transform: translateX(4px); }
-.hechting-kaart .pijl svg { transition: transform .3s var(--vlot); }
 
 /* ---------- Stoornissen: niet-stigmatiserende kaart ---------- */
 .stoornis-banner { margin-bottom: 30px; }

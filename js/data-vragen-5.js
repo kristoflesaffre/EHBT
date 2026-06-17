@@ -7,6 +7,7 @@
 const VRAGEN_5 = [
   {
     id: "trauma-werk-burnout",
+    beeld: { src: "img/vragen/trauma-werk-burnout.jpg" },
     vraag: "Heeft trauma te maken met mijn burn-out of problemen op het werk?",
     thema: "lichaam",
     leeftijd: [
@@ -73,6 +74,7 @@ const VRAGEN_5 = [
   },
   {
     id: "trauma-verslaving",
+    beeld: { src: "img/vragen/trauma-verslaving.jpg" },
     vraag: "Heeft mijn verslaving te maken met trauma?",
     thema: "cptss",
     leeftijd: [
@@ -139,6 +141,7 @@ const VRAGEN_5 = [
   },
   {
     id: "trauma-eetproblemen",
+    beeld: { src: "img/vragen/trauma-eetproblemen.jpg" },
     vraag: "Kan trauma te maken hebben met mijn eetproblemen?",
     thema: "lichaam",
     leeftijd: [
@@ -204,6 +207,7 @@ const VRAGEN_5 = [
   },
   {
     id: "trauma-chronische-pijn",
+    beeld: { src: "img/vragen/trauma-chronische-pijn.jpg" },
     vraag: "Kan trauma chronische pijn veroorzaken of verergeren?",
     thema: "lichaam",
     leeftijd: [
@@ -270,6 +274,7 @@ const VRAGEN_5 = [
   },
   {
     id: "adhd-of-trauma",
+    beeld: { src: "img/vragen/adhd-of-trauma.jpg" },
     vraag: "Heb ik ADHD of is het trauma? Hoe onderscheid je dat?",
     thema: "cptss",
     leeftijd: [
@@ -335,6 +340,7 @@ const VRAGEN_5 = [
   },
   {
     id: "medische-ingreep-trauma",
+    beeld: { src: "img/vragen/medische-ingreep-trauma.jpg" },
     vraag: "Kan een medische ingreep trauma veroorzaken?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -400,6 +406,7 @@ const VRAGEN_5 = [
   },
   {
     id: "verlies-rouw-vs-trauma",
+    beeld: { src: "img/vragen/verlies-rouw-vs-trauma.jpg" },
     vraag: "Wat is het verschil tussen rouw en trauma?",
     thema: "emoties",
     leeftijd: [
@@ -465,6 +472,7 @@ const VRAGEN_5 = [
   },
   {
     id: "opvoeden-met-eigen-trauma",
+    beeld: { src: "img/vragen/opvoeden-met-eigen-trauma.jpg" },
     vraag: "Hoe kan ik opvoeden terwijl ik zelf trauma heb?",
     thema: "familie",
     leeftijd: [
@@ -530,6 +538,7 @@ const VRAGEN_5 = [
   },
   {
     id: "secondary-trauma",
+    beeld: { src: "img/vragen/secondary-trauma.jpg" },
     vraag: "Wat is secondary trauma — en kan ik dat als naaste of hulpverlener krijgen?",
     thema: "naasten",
     leeftijd: [
@@ -594,6 +603,7 @@ const VRAGEN_5 = [
   },
   {
     id: "dissociatieve-identiteit",
+    beeld: { src: "img/vragen/dissociatieve-identiteit.jpg" },
     vraag: "Wat is dissociatieve identiteit — en heb ik dat?",
     thema: "emoties",
     leeftijd: [

@@ -7,6 +7,7 @@
 const VRAGEN_14 = [
   {
     id: "alcoholische-ouder-impact",
+    beeld: { src: "img/vragen/alcoholische-ouder-impact.jpg" },
     vraag: "Wat doet een alcoholische ouder met een kind?",
     thema: "familie",
     leeftijd: [
@@ -72,6 +73,7 @@ const VRAGEN_14 = [
   },
   {
     id: "narcistische-vader-impact",
+    beeld: { src: "img/vragen/narcistische-vader-impact.jpg" },
     vraag: "Wat betekent opgroeien met een narcistische vader?",
     thema: "familie",
     leeftijd: [
@@ -137,6 +139,7 @@ const VRAGEN_14 = [
   },
   {
     id: "borderline-moeder-als-kind",
+    beeld: { src: "img/vragen/borderline-moeder-als-kind.jpg" },
     vraag: "Hoe is het om op te groeien met een borderline moeder?",
     thema: "cptss",
     leeftijd: [
@@ -202,6 +205,7 @@ const VRAGEN_14 = [
   },
   {
     id: "emotioneel-incest-herkennen",
+    beeld: { src: "img/vragen/emotioneel-incest-herkennen.jpg" },
     vraag: "Hoe herken ik emotioneel incest?",
     thema: "familie",
     leeftijd: [
@@ -267,6 +271,7 @@ const VRAGEN_14 = [
   },
   {
     id: "verwaarlozing-vs-misbruik",
+    beeld: { src: "img/vragen/verwaarlozing-vs-misbruik.jpg" },
     vraag: "Wat is het verschil tussen verwaarlozing en misbruik?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -337,6 +342,7 @@ const VRAGEN_14 = [
   },
   {
     id: "adoptie-en-hechting",
+    beeld: { src: "img/vragen/adoptie-en-hechting.jpg" },
     vraag: "Hoe hangen adoptie en hechtingstrauma samen?",
     thema: "hechting",
     leeftijd: [
@@ -402,6 +408,7 @@ const VRAGEN_14 = [
   },
   {
     id: "pleegkind-trauma",
+    beeld: { src: "img/vragen/pleegkind-trauma.jpg" },
     vraag: "Wat is pleegkind-trauma?",
     thema: "hechting",
     leeftijd: [
@@ -468,6 +475,7 @@ const VRAGEN_14 = [
   },
   {
     id: "echtscheiding-impact-kind",
+    beeld: { src: "img/vragen/echtscheiding-impact-kind.jpg" },
     vraag: "Hoe beïnvloedt echtscheiding een kind?",
     thema: "familie",
     leeftijd: [
@@ -534,6 +542,7 @@ const VRAGEN_14 = [
   },
   {
     id: "stiefouder-dynamiek",
+    beeld: { src: "img/vragen/stiefouder-dynamiek.jpg" },
     vraag: "Hoe werkt stiefouder-dynamiek bij trauma?",
     thema: "familie",
     leeftijd: [
@@ -600,6 +609,7 @@ const VRAGEN_14 = [
   },
   {
     id: "oma-opa-generatiepatronen",
+    beeld: { src: "img/vragen/oma-opa-generatiepatronen.jpg" },
     vraag: "Hoe beïnvloeden oma en opa generatiepatronen?",
     thema: "familie",
     leeftijd: [
@@ -665,6 +675,7 @@ const VRAGEN_14 = [
   },
   {
     id: "intergenerationeel-doorgeven-stoppen",
+    beeld: { src: "img/vragen/intergenerationeel-doorgeven-stoppen.jpg" },
     vraag: "Hoe stop ik met intergenerationeel trauma doorgeven?",
     thema: "herstel",
     leeftijd: [
@@ -730,6 +741,7 @@ const VRAGEN_14 = [
   },
   {
     id: "familiegeheimen-breken",
+    beeld: { src: "img/vragen/familiegeheimen-breken.jpg" },
     vraag: "Hoe breek ik familiegeheimen?",
     thema: "wat-is-trauma",
     leeftijd: [

@@ -7,6 +7,7 @@
 const VRAGEN_18 = [
   {
     id: "emdr-hoe-voelt-dat",
+    beeld: { src: "img/vragen/emdr-hoe-voelt-dat.jpg" },
     vraag: "Hoe voelt EMDR — wat gebeurt er in je lichaam?",
     thema: "herstel",
     leeftijd: [
@@ -73,6 +74,7 @@ const VRAGEN_18 = [
   },
   {
     id: "emdr-complex-trauma",
+    beeld: { src: "img/vragen/emdr-complex-trauma.jpg" },
     vraag: "Werkt EMDR bij complex trauma?",
     thema: "herstel",
     leeftijd: [
@@ -138,6 +140,7 @@ const VRAGEN_18 = [
   },
   {
     id: "somatic-experiencing-intro",
+    beeld: { src: "img/vragen/somatic-experiencing-intro.jpg" },
     vraag: "Wat is Somatic Experiencing — een korte introductie?",
     thema: "lichaam",
     leeftijd: [
@@ -204,6 +207,7 @@ const VRAGEN_18 = [
   },
   {
     id: "dbt-skills-thuis",
+    beeld: { src: "img/vragen/dbt-skills-thuis.jpg" },
     vraag: "Kan ik DBT-vaardigheden thuis oefenen?",
     thema: "herstel",
     leeftijd: [
@@ -270,6 +274,7 @@ const VRAGEN_18 = [
   },
   {
     id: "ifs-zelf-oefenen",
+    beeld: { src: "img/vragen/ifs-zelf-oefenen.jpg" },
     vraag: "Kan ik IFS zelf oefenen — delenwerk thuis?",
     thema: "innerlijk",
     leeftijd: [
@@ -335,6 +340,7 @@ const VRAGEN_18 = [
   },
   {
     id: "schematherapie-wat-is",
+    beeld: { src: "img/vragen/schematherapie-wat-is.jpg" },
     vraag: "Wat is schematherapie?",
     thema: "herstel",
     leeftijd: [
@@ -400,6 +406,7 @@ const VRAGEN_18 = [
   },
   {
     id: "neurofeedback-wie",
+    beeld: { src: "img/vragen/neurofeedback-wie.jpg" },
     vraag: "Voor wie is neurofeedback bij trauma?",
     thema: "lichaam",
     leeftijd: [
@@ -465,6 +472,7 @@ const VRAGEN_18 = [
   },
   {
     id: "imagery-rehearsal-nachtmerries",
+    beeld: { src: "img/vragen/imagery-rehearsal-nachtmerries.jpg" },
     vraag: "Wat is imagery rehearsal bij nachtmerries?",
     thema: "slaap",
     leeftijd: [
@@ -531,6 +539,7 @@ const VRAGEN_18 = [
   },
   {
     id: "trauma-informed-yoga",
+    beeld: { src: "img/vragen/trauma-informed-yoga.jpg" },
     vraag: "Wat is trauma-informed yoga?",
     thema: "lichaam",
     leeftijd: [
@@ -597,6 +606,7 @@ const VRAGEN_18 = [
   },
   {
     id: "veiligheidsplan-maken",
+    beeld: { src: "img/vragen/veiligheidsplan-maken.jpg" },
     vraag: "Hoe maak ik een veiligheidsplan?",
     thema: "herstel",
     leeftijd: [
@@ -663,6 +673,7 @@ const VRAGEN_18 = [
   },
   {
     id: "window-of-tolerance-verbreden",
+    beeld: { src: "img/vragen/window-of-tolerance-verbreden.jpg" },
     vraag: "Hoe verbreed ik mijn window of tolerance?",
     thema: "emoties",
     leeftijd: [
@@ -729,6 +740,7 @@ const VRAGEN_18 = [
   },
   {
     id: "co-regulatie-uitleg",
+    beeld: { src: "img/vragen/co-regulatie-uitleg.jpg" },
     vraag: "Wat is co-regulatie — en hoe werkt het?",
     thema: "emoties",
     leeftijd: [

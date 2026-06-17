@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" preserveAspectRatio="none">
+  <defs>
+    <filter id="soften" x="-18%" y="-18%" width="136%" height="136%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+  </defs>
+  <g filter="url(#soften)">
+    <path fill="white" d="M180 94C292 18 450 27 592 42C734 56 845 82 981 84C1082 85 1168 121 1185 208C1201 294 1177 370 1183 458C1190 562 1142 663 994 681C850 699 725 633 592 634C450 635 316 710 190 658C85 614 40 528 52 435C63 341 131 269 120 196C114 149 138 118 180 94Z"/>
+  </g>
+</svg>

@@ -7,6 +7,7 @@
 const VRAGEN_12 = [
   {
     id: "eerste-jaar-herstel",
+    beeld: { src: "img/vragen/eerste-jaar-herstel.jpg" },
     vraag: "Wat kan ik verwachten in het eerste jaar van herstel?",
     thema: "herstel",
     leeftijd: [
@@ -73,6 +74,7 @@ const VRAGEN_12 = [
   },
   {
     id: "online-therapie-goed",
+    beeld: { src: "img/vragen/online-therapie-goed.jpg" },
     vraag: "Is online therapie goed genoeg voor trauma?",
     thema: "herstel",
     leeftijd: [
@@ -139,6 +141,7 @@ const VRAGEN_12 = [
   },
   {
     id: "groepstherapie-zinvol",
+    beeld: { src: "img/vragen/groepstherapie-zinvol.jpg" },
     vraag: "Is groepstherapie zinvol bij trauma?",
     thema: "herstel",
     leeftijd: [
@@ -205,6 +208,7 @@ const VRAGEN_12 = [
   },
   {
     id: "peer-support-trauma",
+    beeld: { src: "img/vragen/peer-support-trauma.jpg" },
     vraag: "Wat is peer support en helpt dat bij trauma?",
     thema: "herstel",
     leeftijd: [
@@ -271,6 +275,7 @@ const VRAGEN_12 = [
   },
   {
     id: "dagboeken-trauma",
+    beeld: { src: "img/vragen/dagboeken-trauma.jpg" },
     vraag: "Helpt dagboekschrijven bij trauma?",
     thema: "herstel",
     leeftijd: [
@@ -337,6 +342,7 @@ const VRAGEN_12 = [
   },
   {
     id: "creatief-herstel",
+    beeld: { src: "img/vragen/creatief-herstel.jpg" },
     vraag: "Kan creativiteit helpen bij traumaherstel?",
     thema: "herstel",
     leeftijd: [
@@ -403,6 +409,7 @@ const VRAGEN_12 = [
   },
   {
     id: "natuur-en-herstel",
+    beeld: { src: "img/vragen/natuur-en-herstel.jpg" },
     vraag: "Helpt natuur bij traumaherstel?",
     thema: "herstel",
     leeftijd: [
@@ -469,6 +476,7 @@ const VRAGEN_12 = [
   },
   {
     id: "post-traumatische-groei",
+    beeld: { src: "img/vragen/post-traumatische-groei.jpg" },
     vraag: "Wat is post-traumatische groei?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -535,6 +543,7 @@ const VRAGEN_12 = [
   },
   {
     id: "therapie-afbreken-wanneer",
+    beeld: { src: "img/vragen/therapie-afbreken-wanneer.jpg" },
     vraag: "Wanneer mag ik therapie afbreken of pauzeren?",
     thema: "herstel",
     leeftijd: [
@@ -601,6 +610,7 @@ const VRAGEN_12 = [
   },
   {
     id: "tweede-therapie-zoeken",
+    beeld: { src: "img/vragen/tweede-therapie-zoeken.jpg" },
     vraag: "Hoe zoek ik een tweede therapeut of andere aanpak?",
     thema: "herstel",
     leeftijd: [
@@ -667,6 +677,7 @@ const VRAGEN_12 = [
   },
   {
     id: "herstel-werk-hervatten",
+    beeld: { src: "img/vragen/herstel-werk-hervatten.jpg" },
     vraag: "Hoe pak ik werk weer op tijdens herstel?",
     thema: "herstel",
     leeftijd: [
@@ -733,6 +744,7 @@ const VRAGEN_12 = [
   },
   {
     id: "wanneer-doorverwijzen-specialist",
+    beeld: { src: "img/vragen/wanneer-doorverwijzen-specialist.jpg" },
     vraag: "Wanneer moet ik doorverwezen worden naar een specialist?",
     thema: "wat-is-trauma",
     leeftijd: [

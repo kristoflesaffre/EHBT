@@ -7,6 +7,7 @@
 const VRAGEN_4 = [
   {
     id: "narcistische-ouder-betekenis",
+    beeld: { src: "img/vragen/narcistische-ouder-betekenis.jpg" },
     vraag: "Mijn ouder was narcistisch — wat betekent dat voor mij?",
     thema: "familie",
     leeftijd: [
@@ -72,6 +73,7 @@ const VRAGEN_4 = [
   },
   {
     id: "emotionele-flashback-vs-herinnering",
+    beeld: { src: "img/vragen/emotionele-flashback-vs-herinnering.jpg" },
     vraag: "Wat is een emotionele flashback vs een gewone herinnering?",
     thema: "emoties",
     leeftijd: [
@@ -134,6 +136,7 @@ const VRAGEN_4 = [
   },
   {
     id: "waarom-zoveel-schaamte",
+    beeld: { src: "img/vragen/waarom-zoveel-schaamte.jpg" },
     vraag: "Waarom heb ik zo veel schaamte?",
     thema: "innerlijk",
     leeftijd: [
@@ -195,6 +198,7 @@ const VRAGEN_4 = [
   },
   {
     id: "boos-en-liefde-ouders",
+    beeld: { src: "img/vragen/boos-en-liefde-ouders.jpg" },
     vraag: "Kan ik boos zijn op mijn ouders en ze toch liefhebben?",
     thema: "familie",
     leeftijd: [
@@ -256,6 +260,7 @@ const VRAGEN_4 = [
   },
   {
     id: "intergenerationeel-trauma",
+    beeld: { src: "img/vragen/intergenerationeel-trauma.jpg" },
     vraag: "Wat is intergenerationeel trauma?",
     thema: "familie",
     leeftijd: [
@@ -319,6 +324,7 @@ const VRAGEN_4 = [
   },
   {
     id: "waarom-vertrouw-ik-niemand",
+    beeld: { src: "img/vragen/waarom-vertrouw-ik-niemand.jpg" },
     vraag: "Waarom vertrouw ik niemand?",
     thema: "hechting",
     leeftijd: [
@@ -380,6 +386,7 @@ const VRAGEN_4 = [
   },
   {
     id: "wat-is-verlatingsangst",
+    beeld: { src: "img/vragen/wat-is-verlatingsangst.jpg" },
     vraag: "Wat is verlatingsangst?",
     thema: "hechting",
     leeftijd: [
@@ -441,6 +448,7 @@ const VRAGEN_4 = [
   },
   {
     id: "people-pleasing-herkennen",
+    beeld: { src: "img/vragen/people-pleasing-herkennen.jpg" },
     vraag: "Hoe herken ik people-pleasing?",
     thema: "grenzen",
     leeftijd: [
@@ -502,6 +510,7 @@ const VRAGEN_4 = [
   },
   {
     id: "trauma-seksualiteit-intimiteit",
+    beeld: { src: "img/vragen/trauma-seksualiteit-intimiteit.jpg" },
     vraag: "Trauma en seksualiteit/intimiteit — wat moet ik weten?",
     thema: "lichaam",
     leeftijd: [
@@ -568,6 +577,7 @@ const VRAGEN_4 = [
   },
   {
     id: "vergeven-om-te-helen",
+    beeld: { src: "img/vragen/vergeven-om-te-helen.jpg" },
     vraag: "Moet ik mijn ouders vergeven om te helen?",
     thema: "herstel",
     leeftijd: [

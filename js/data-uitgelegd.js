@@ -2,7 +2,6 @@
 // EHBT — Trauma uitgelegd: concepten, hechtingsstijlen, stoornissen
 // Onafhankelijk geschreven, educatief en niet-stigmatiserend.
 // Geen diagnose-instrument. Geen overgenomen boektekst.
-// Taalniveau: B1 — korte zinnen, gewone woorden, vakwoorden uitgelegd.
 // ============================================================
 const CONCEPTEN = [
   {
@@ -12,6 +11,12 @@ const CONCEPTEN = [
     accent: "#5b6a7d",
     categorie: "basis",
     leeswijzer: "5 min lezen",
+    beeld: {
+      src: "img/concepten/trauma-basis.jpg",
+      alt: "Een rustige matte hoofdvorm met subtiele barstlijnen in een zachte therapieruimte.",
+      kaartPos: "57% center",
+      detailPos: "center center"
+    },
     kort: "Trauma is niet de gebeurtenis zelf. Het is wat er achterblijft in je lichaam en je hoofd, nadat iets je te veel werd en je geen uitweg had.",
     blokken: [
       {
@@ -55,7 +60,7 @@ const CONCEPTEN = [
   },
   {
     id: "trauma-vs-complex",
-    titel: "Trauma vs. complex trauma (CPTSS)",
+    titel: "Trauma vs. complex trauma (PTSS vs. CPTSS)",
     icoon: "🕸️",
     accent: "#516b78",
     categorie: "basis",
@@ -98,8 +103,12 @@ const CONCEPTEN = [
     ],
     gerelateerd: [
       "trauma-basis",
-      "schaamte"
-    ]
+      "lichaam-onthoudt"
+    ],
+    _index: 1,
+    beeld: {
+      src: "img/concepten/trauma-vs-complex.png"
+    }
   },
   {
     id: "zenuwstelsel-overleving",
@@ -141,16 +150,20 @@ const CONCEPTEN = [
     gerelateerd: [
       "window-uitleg",
       "trauma-basis"
-    ]
+    ],
+    _index: 2,
+    beeld: {
+      src: "img/concepten/zenuwstelsel-overleving.png"
+    }
   },
   {
     id: "window-uitleg",
-    titel: "Hoeveel spanning je aankunt",
+    titel: "Stressvenster: hoeveel spanning je aankunt",
     icoon: "🎯",
     accent: "#46566e",
     categorie: "zenuwstelsel",
     leeswijzer: "4 min lezen",
-    kort: "Dit is de zone waarin je stress aankunt zonder in paniek te raken of helemaal dicht te klappen. Trauma maakt die zone smaller. Je kunt hem weer breder maken.",
+    kort: "De 'window of tolerance' is de zone waarin je stress aankunt zonder in paniek te raken of helemaal dicht te klappen. Trauma maakt die zone smaller. Je kunt hem weer breder maken.",
     blokken: [
       {
         kop: "Binnen of buiten je zone",
@@ -179,49 +192,57 @@ const CONCEPTEN = [
     gerelateerd: [
       "zenuwstelsel-overleving",
       "herstel-niet-lineair"
-    ]
+    ],
+    _index: 3,
+    beeld: {
+      src: "img/concepten/window-uitleg.png"
+    }
   },
   {
-    id: "schaamte",
-    titel: "Schaamte: de stille kern van veel trauma",
-    icoon: "🫥",
-    accent: "#7c6f8f",
+    id: "lichaam-onthoudt",
+    titel: "Trauma zit in je lichaam, niet in je hoofd",
+    icoon: "🫀",
+    accent: "#9a6a5e",
     categorie: "basis",
     leeswijzer: "5 min lezen",
-    kort: "Schaamte zegt niet 'ik deed iets fout', maar 'ik bén fout'. Bij trauma zit die stem vaak heel diep. En juist mildheid maakt hem zwakker.",
+    kort: "Trauma is meer dan een nare herinnering. Je lichaam onthoudt de dreiging en blijft reageren — ook als je verstand allang weet dat het voorbij is.",
     blokken: [
       {
-        kop: "Schaamte of schuld",
-        tekst: "Schuld gaat over iets wat je deed ('ik deed iets verkeerd'). Schaamte gaat over jezelf als geheel ('ik deug niet'). Schuld kan je aanzetten om iets goed te maken. Maar schaamte verlamt je en zet je alleen — ze fluistert dat je je moet verstoppen."
+        kop: "Het lichaam houdt de score bij",
+        tekst: "We denken bij trauma vaak aan het hoofd: een herinnering, een gedachte. Maar onderzoek laat zien dat trauma zich juist vastzet in je lichaam en je zenuwstelsel. Bessel van der Kolk vatte dat samen in één bekende zin: 'the body keeps the score' — je lichaam houdt de score bij. Het onthoudt de spanning, het alarm en de overlevingsstand, ook als je hoofd het verhaal niet meer scherp heeft."
       },
       {
-        kop: "Waarom trauma schaamte kweekt",
-        tekst: "Een kind dat zich onveilig voelt, geeft vaak zichzelf de schuld. 'Het ligt aan mij' voelt namelijk veiliger dan 'de mensen van wie ik afhankelijk ben, kan ik niet vertrouwen'. Zo ontstaat een diep gevoel dat je tekortschiet. Dat gevoel blijft soms je hele leven hangen, ook zonder duidelijke herinnering."
+        kop: "Wat je lichaam onthoudt",
+        tekst: "Daardoor reageert je lijf soms uit zichzelf: een bonkend hart, gespannen spieren, een knoop in je maag, slecht slapen, of het gevoel altijd op scherp te staan. Dat gebeurt ook zonder duidelijke herinnering, en zelfs als je verstand weet dat er nú geen gevaar is. Het is geen aanstellerij — het is je lichaam dat nog in de overlevingsstand staat."
       },
       {
-        kop: "Verbinding is het tegengif",
-        tekst: "Schaamte groeit in stilte en eenzaamheid. Ze verliest haar kracht zodra iemand je verhaal ziet en aanvaardt — een veilig iemand, een therapeut, of je eigen mildheid. Niet door streng tegen jezelf te zijn, maar door zachter te worden, smelt die harde kern langzaam."
+        kop: "Daarom is praten alleen niet altijd genoeg",
+        tekst: "Omdat trauma in je lichaam zit, kun je het er niet altijd 'uit denken' of 'uit praten'. Je lichaam moet zelf ervaren dat het nú veilig is. Ademhaling, beweging, aarden (grounding) en lichaamsgerichte (somatische) therapie helpen daarbij. Heling gaat dus niet alleen via woorden, maar ook via je lijf."
       }
     ],
     kernpunten: [
-      "Schaamte raakt je hele zelf; schuld alleen wat je deed.",
-      "Kinderen geven zichzelf vaak de schuld, omdat dat veiliger voelt.",
-      "Mildheid en gezien worden maken schaamte zwakker; strengheid voedt haar."
+      "Trauma zit niet alleen in je hoofd, maar ook in je lichaam en je zenuwstelsel.",
+      "Je lichaam kan blijven reageren met spanning en alarm, ook zonder duidelijke herinnering.",
+      "Herstel werkt vaak via het lichaam, niet alleen via praten."
     ],
     bronnen: [
       {
-        boek: "cptsd-surviving-thriving",
-        detail: "Over de rol van diepe schaamte bij complex trauma."
+        boek: "body-keeps-score",
+        detail: "Het kernidee van dit boek: trauma leeft in het lichaam, niet alleen in het hoofd."
       },
       {
-        boek: "no-bad-parts",
-        detail: "Over mild zijn voor de delen van jezelf die schaamte dragen."
+        boek: "waking-the-tiger",
+        detail: "Over trauma als vastgelopen overlevingsenergie in het lichaam."
       }
     ],
     gerelateerd: [
-      "trauma-vs-complex",
-      "herstel-niet-lineair"
-    ]
+      "zenuwstelsel-overleving",
+      "trauma-basis"
+    ],
+    _index: 4,
+    beeld: {
+      src: "img/concepten/lichaam-onthoudt.png"
+    }
   },
   {
     id: "herstel-niet-lineair",
@@ -230,7 +251,7 @@ const CONCEPTEN = [
     accent: "#6a8f5e",
     categorie: "basis",
     leeswijzer: "4 min lezen",
-    kort: "Herstel gaat in golven, met goede en slechte periodes. Een slechte week wist je vooruitgang niet uit — het hoort erbij.",
+    kort: "Herstel gaat in golven, met ups en downs. Een slechte week wist je vooruitgang niet uit — het hoort erbij.",
     blokken: [
       {
         kop: "Geen rechte lijn",
@@ -262,8 +283,12 @@ const CONCEPTEN = [
     ],
     gerelateerd: [
       "window-uitleg",
-      "schaamte"
-    ]
+      "lichaam-onthoudt"
+    ],
+    _index: 5,
+    beeld: {
+      src: "img/concepten/herstel-niet-lineair.png"
+    }
   },
   {
     id: "aces-uitgelegd",
@@ -276,7 +301,7 @@ const CONCEPTEN = [
     blokken: [
       {
         kop: "Wat zijn ACE's?",
-        tekst: "ACE's (een Engelse afkorting voor 'nare jeugdervaringen') zijn negen veelvoorkomende vormen van tegenslag vóór je achttiende. Denk aan mishandeling, verwaarlozing, geweld thuis, een ouder met een verslaving of psychische problemen, of een scheiding. Onderzoekers gebruikten ze om te meten hoe vroege stress later doorwerkt in je gezondheid."
+        tekst: "ACE's (Adverse Childhood Experiences) zijn negen veelvoorkomende vormen van tegenslag vóór je achttiende. Denk aan mishandeling, verwaarlozing, geweld thuis, een ouder met een verslaving of psychische problemen, of een scheiding. Onderzoekers gebruikten ze om te meten hoe vroege stress later doorwerkt in je gezondheid."
       },
       {
         kop: "Een score is geen oordeel",
@@ -312,7 +337,11 @@ const CONCEPTEN = [
       "emotionele-verwaarlozing",
       "trauma-basis",
       "intergenerationeel-trauma"
-    ]
+    ],
+    _index: 6,
+    beeld: {
+      src: "img/concepten/aces-uitgelegd.png"
+    }
   },
   {
     id: "emotionele-verwaarlozing",
@@ -359,13 +388,17 @@ const CONCEPTEN = [
     ],
     gerelateerd: [
       "aces-uitgelegd",
-      "schaamte",
+      "lichaam-onthoudt",
       "fawn-response"
-    ]
+    ],
+    _index: 7,
+    beeld: {
+      src: "img/concepten/emotionele-verwaarlozing.png"
+    }
   },
   {
     id: "triggers-cues",
-    titel: "Triggers en de kleine signalen vooraf",
+    titel: "Emotionele triggers",
     icoon: "⚡",
     accent: "#4a6b8a",
     categorie: "zenuwstelsel",
@@ -410,11 +443,15 @@ const CONCEPTEN = [
       "hypervigilantie",
       "window-uitleg",
       "zenuwstelsel-overleving"
-    ]
+    ],
+    _index: 8,
+    beeld: {
+      src: "img/concepten/triggers-cues.png"
+    }
   },
   {
     id: "intergenerationeel-trauma",
-    titel: "Trauma dat doorgegeven wordt",
+    titel: "Trauma wordt doorgegeven van generatie op generatie",
     icoon: "🌳",
     accent: "#5f7259",
     categorie: "basis",
@@ -459,11 +496,15 @@ const CONCEPTEN = [
       "aces-uitgelegd",
       "emotionele-verwaarlozing",
       "trauma-vs-complex"
-    ]
+    ],
+    _index: 9,
+    beeld: {
+      src: "img/concepten/intergenerationeel-trauma.png"
+    }
   },
   {
     id: "toxisch-schaamte-schuld",
-    titel: "Giftige schaamte vs. gewone schuld",
+    titel: "Giftige schaamte (toxic shame) vs. gewone schuld",
     icoon: "🪨",
     accent: "#7c6f8f",
     categorie: "basis",
@@ -505,10 +546,14 @@ const CONCEPTEN = [
       }
     ],
     gerelateerd: [
-      "schaamte",
+      "lichaam-onthoudt",
       "emotionele-verwaarlozing",
       "herstel-niet-lineair"
-    ]
+    ],
+    _index: 10,
+    beeld: {
+      src: "img/concepten/toxisch-schaamte-schuld.png"
+    }
   },
   {
     id: "hypervigilantie",
@@ -557,11 +602,15 @@ const CONCEPTEN = [
       "triggers-cues",
       "window-uitleg",
       "zenuwstelsel-overleving"
-    ]
+    ],
+    _index: 11,
+    beeld: {
+      src: "img/concepten/hypervigilantie.png"
+    }
   },
   {
     id: "emotionele-incest-metafoor",
-    titel: "Emotionele incest (een beeldspraak)",
+    titel: "Emotionele incest ",
     icoon: "🪞",
     accent: "#8f6a9b",
     categorie: "basis",
@@ -606,11 +655,15 @@ const CONCEPTEN = [
       "emotionele-verwaarlozing",
       "fawn-response",
       "intergenerationeel-trauma"
-    ]
+    ],
+    _index: 12,
+    beeld: {
+      src: "img/concepten/emotionele-incest-metafoor.png"
+    }
   },
   {
     id: "fawn-response",
-    titel: "Pleasen als overlevingsreactie (fawn)",
+    titel: "People-pleasen als overlevingsreactie (fawning)",
     icoon: "🤝",
     accent: "#9a7b4f",
     categorie: "zenuwstelsel",
@@ -655,7 +708,11 @@ const CONCEPTEN = [
       "zenuwstelsel-overleving",
       "emotionele-verwaarlozing",
       "emotionele-incest-metafoor"
-    ]
+    ],
+    _index: 13,
+    beeld: {
+      src: "img/concepten/fawn-response.png"
+    }
   }
 ];
 
@@ -666,6 +723,13 @@ const HECHTINGSSTIJLEN = [
     icoon: "🪺",
     accent: "#5f7259",
     kleur: "#e3eadf",
+    beeld: {
+      src: "img/hechting/veilig.jpg",
+      alt: "Twee volwassenen zitten dicht tegen elkaar aan; de ene leunt ontspannen tegen de ander in een warme kamer.",
+      kaartPos: "center center",
+      detailPos: "center 38%"
+    },
+    kaartZin: "Nabijheid voelt veilig, en afstand ook.",
     inEenZin: "Dichtbij zijn voelt veilig, en op jezelf staan ook — je kunt dichtbij komen én jezelf blijven.",
     herkenbaar: [
       "Je kunt om steun vragen én alleen zijn, zonder dat het bedreigend voelt.",
@@ -692,6 +756,13 @@ const HECHTINGSSTIJLEN = [
     icoon: "🌊",
     accent: "#4a6b8a",
     kleur: "#dde6ee",
+    beeld: {
+      src: "img/hechting/angstig.jpg",
+      alt: "Een volwassene zit alleen bij het raam met een hand bij de mond en een bezorgde blik.",
+      kaartPos: "center center",
+      detailPos: "center 36%"
+    },
+    kaartZin: "Je zoekt nabijheid en schrikt snel van afstand.",
     inEenZin: "Je verlangt sterk naar nabijheid en voelt snel of er afstand of afwijzing dreigt.",
     herkenbaar: [
       "Je piekert snel of de ander nog wel van je houdt.",
@@ -722,6 +793,13 @@ const HECHTINGSSTIJLEN = [
     icoon: "🏔️",
     accent: "#9a7b4f",
     kleur: "#ece3d6",
+    beeld: {
+      src: "img/hechting/vermijdend.jpg",
+      alt: "Een man zit met gekruiste armen afgewend terwijl een vrouw naast hem voorzichtig contact zoekt.",
+      kaartPos: "center center",
+      detailPos: "center 42%"
+    },
+    kaartZin: "Je houdt graag ruimte en regie bij nabijheid.",
     inEenZin: "Je vindt onafhankelijkheid belangrijk en voelt je ongemakkelijk bij te veel nabijheid of afhankelijkheid.",
     herkenbaar: [
       "Je redt jezelf liever en vindt hulp vragen lastig.",
@@ -748,6 +826,13 @@ const HECHTINGSSTIJLEN = [
     icoon: "🌀",
     accent: "#7c6f8f",
     kleur: "#e6e0ec",
+    beeld: {
+      src: "img/hechting/gedesorganiseerd.jpg",
+      alt: "Een volwassene zit alleen met beide handen bij het hoofd en een gespannen, zoekende blik.",
+      kaartPos: "center center",
+      detailPos: "center 36%"
+    },
+    kaartZin: "Nabijheid trekt én schrikt tegelijk af.",
     inEenZin: "Je verlangt naar nabijheid én bent er bang voor — die twee botsen, vaak na vroege onveiligheid.",
     herkenbaar: [
       "Je trekt mensen naar je toe en duwt ze weer weg, soms snel achter elkaar.",
@@ -818,7 +903,11 @@ const STOORNISSEN = [
     gerelateerd: [
       "narcistisch",
       "vermijdend"
-    ]
+    ],
+    _index: 0,
+    beeld: {
+      src: "img/stoornissen/borderline.png"
+    }
   },
   {
     id: "narcistisch",
@@ -859,7 +948,11 @@ const STOORNISSEN = [
     gerelateerd: [
       "borderline",
       "vermijdend"
-    ]
+    ],
+    _index: 1,
+    beeld: {
+      src: "img/stoornissen/narcistisch.png"
+    }
   },
   {
     id: "vermijdend",
@@ -900,7 +993,11 @@ const STOORNISSEN = [
     gerelateerd: [
       "borderline",
       "narcistisch"
-    ]
+    ],
+    _index: 2,
+    beeld: {
+      src: "img/stoornissen/vermijdend.png"
+    }
   }
 ];
 

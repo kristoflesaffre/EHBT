@@ -7,6 +7,7 @@
 const VRAGEN_6 = [
   {
     id: "wat-verwacht-van-emdr",
+    beeld: { src: "img/vragen/wat-verwacht-van-emdr.jpg" },
     vraag: "Wat kan ik verwachten van EMDR?",
     thema: "herstel",
     leeftijd: [
@@ -73,6 +74,7 @@ const VRAGEN_6 = [
   },
   {
     id: "wat-is-somatische-therapie",
+    beeld: { src: "img/vragen/wat-is-somatische-therapie.jpg" },
     vraag: "Wat is lichaamsgerichte (somatische) therapie — en wanneer helpt het?",
     thema: "lichaam",
     leeftijd: [
@@ -139,6 +141,7 @@ const VRAGEN_6 = [
   },
   {
     id: "medicatie-bij-trauma",
+    beeld: { src: "img/vragen/medicatie-bij-trauma.jpg" },
     vraag: "Helpt medicatie bij trauma — en wanneer?",
     thema: "herstel",
     leeftijd: [
@@ -205,6 +208,7 @@ const VRAGEN_6 = [
   },
   {
     id: "wat-is-veiligheidsplan",
+    beeld: { src: "img/vragen/wat-is-veiligheidsplan.jpg" },
     vraag: "Wat is een veiligheidsplan — en heb ik dat nodig?",
     thema: "herstel",
     leeftijd: [
@@ -271,6 +275,7 @@ const VRAGEN_6 = [
   },
   {
     id: "ondersteunend-netwerk-opbouwen",
+    beeld: { src: "img/vragen/ondersteunend-netwerk-opbouwen.jpg" },
     vraag: "Hoe bouw ik een ondersteunend netwerk op na trauma?",
     thema: "hechting",
     leeftijd: [
@@ -337,6 +342,7 @@ const VRAGEN_6 = [
   },
   {
     id: "trauma-eenzaamheid",
+    beeld: { src: "img/vragen/trauma-eenzaamheid.jpg" },
     vraag: "Waarom voel ik me zo eenzaam na trauma?",
     thema: "hechting",
     leeftijd: [
@@ -403,6 +409,7 @@ const VRAGEN_6 = [
   },
   {
     id: "saboteren-goede-dingen",
+    beeld: { src: "img/vragen/saboteren-goede-dingen.jpg" },
     vraag: "Waarom saboteer ik goede dingen in mijn leven?",
     thema: "innerlijk",
     leeftijd: [
@@ -468,6 +475,7 @@ const VRAGEN_6 = [
   },
   {
     id: "perfectionisme-trauma",
+    beeld: { src: "img/vragen/perfectionisme-trauma.jpg" },
     vraag: "Heeft mijn perfectionisme te maken met trauma?",
     thema: "innerlijk",
     leeftijd: [
@@ -533,6 +541,7 @@ const VRAGEN_6 = [
   },
   {
     id: "zelfcompassie-hoe-begin",
+    beeld: { src: "img/vragen/zelfcompassie-hoe-begin.jpg" },
     vraag: "Hoe leer ik zelfcompassie — waar begin ik?",
     thema: "innerlijk",
     leeftijd: [
@@ -599,6 +608,7 @@ const VRAGEN_6 = [
   },
   {
     id: "wanneer-genoeg-hersteld",
+    beeld: { src: "img/vragen/wanneer-genoeg-hersteld.jpg" },
     vraag: "Wanneer is traumaherstel 'genoeg'?",
     thema: "herstel",
     leeftijd: [

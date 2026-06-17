@@ -34,10 +34,6 @@ const conceptVan = id => CONCEPTEN.find(c => c.id === id);
 const hechtingVan = id => HECHTINGSSTIJLEN.find(h => h.id === id);
 const stoornisVan = id => STOORNISSEN.find(s => s.id === id);
 const leeftijdNaam = id => (LEEFTIJDEN.find(l => l.id === id) || {}).naam || id;
-const leeftijdPillsHTML = leeftijden => (leeftijden || [])
-  .map(id => `<span class="kaart-leeftijd-pill">${leeftijdNaam(id)}</span>`)
-  .join("");
-
 /* ---------- crisis ---------- */
 
 function crisisBalkHTML() {
@@ -53,16 +49,23 @@ function crisisBalkHTML() {
 
 /* ---------- bouwstenen ---------- */
 
+function kaartBeeldHTML(beeld) {
+  if (!beeld || !beeld.src) return "";
+  return `<span class="vraag-kaart-beeld" aria-hidden="true"><img src="${beeld.src}" alt="" loading="lazy"></span><span class="vraag-kaart-waslaag" aria-hidden="true"></span>`;
+}
+
 function vraagKaartHTML(v, i = 0, groot = false) {
   const t = themaVan(v.thema);
+  const heeftBeeld = Boolean(v.beeld && v.beeld.src);
+  const kaartBeeldPos = (v.beeld && v.beeld.kaartPos) || "center";
   return `
-  <a class="vraag-kaart verschijn ${groot ? "kaart-groot" : ""}" href="#/vraag/${v.id}"
-     style="--accent:${t.accent}; --wacht:${Math.min(i * 0.07, 0.5)}s">
+  <a class="vraag-kaart vraag-kaart-vraag${heeftBeeld ? " vraag-kaart-met-beeld" : ""} verschijn ${groot ? "kaart-groot" : ""}" href="#/vraag/${v.id}"
+     style="--accent:${t.accent}; --kaart-beeld-pos:${kaartBeeldPos}; --wacht:${Math.min(i * 0.07, 0.5)}s">
+    ${kaartBeeldHTML(v.beeld)}
     <span class="kaart-thema">${t.icoon} ${t.naam}</span>
     <h3>${v.vraag}</h3>
     <p class="kort">${v.kort}</p>
     <span class="kaart-voet">
-      <span class="kaart-leeftijden" aria-label="Voor wie">${leeftijdPillsHTML(v.leeftijd)}</span>
       <span class="pijl">Lees <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </span>
   </a>`;
@@ -243,13 +246,15 @@ function sectieKop(label, titel, intro = "", beeldId = "", naLink = null) {
   const titelRij = naLink
     ? `<div class="sectie-kop-rij"><h2>${titel}</h2><a class="sectie-alle-link" href="${naLink.href}">${naLink.label}<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>`
     : `<h2>${titel}</h2>`;
+  const introHTML = intro ? `<p class="sectie-intro${beeld ? " sectie-kop-intro" : ""}">${intro}</p>` : "";
   return `<div class="sectie-kop${beeld ? " sectie-kop-met-beeld" : ""} verschijn">
     <div class="sectie-kop-tekst">
       <span class="bovenlabel">${label}</span>
       ${titelRij}
-      ${intro ? `<p class="sectie-intro">${intro}</p>` : ""}
+      ${!beeld ? introHTML : ""}
     </div>
     ${beeld}
+    ${beeld ? introHTML : ""}
   </div>`;
 }
 
@@ -452,19 +457,61 @@ function evidentieBadgeHTML(niveau, eigenLabel = "") {
   return `<span class="evidentie-badge" style="--ev:${kleur}">${label}</span>`;
 }
 
+function therapieLabelTeksten(t) {
+  const basis = (t.pastBij || "")
+    .replace(/^vooral\s+/i, "")
+    .replace(/^tot rust komen$/i, "Rust");
+
+  const labels = basis
+    .split(/\s*(?:\/|\+|&|,)\s*/)
+    .map(label => label.trim())
+    .filter(Boolean)
+    .map(label => {
+      const key = label.toLowerCase();
+      const netteLabels = {
+        ptss: "PTSS",
+        cptss: "CPTSS",
+        slaap: "Slaap",
+        lichaam: "Lichaam",
+        delen: "Delen",
+        patronen: "Patronen",
+        hechting: "Hechting",
+        relatie: "Relatie",
+        rust: "Rust",
+        stevigheid: "Stevigheid",
+        ontwikkelingstrauma: "Ontwikkelingstrauma"
+      };
+      return netteLabels[key] || label;
+    });
+
+  return [...new Set(labels)];
+}
+
+function therapieLabelsHTML(t) {
+  const labels = therapieLabelTeksten(t);
+  if (!labels.length) return "";
+  return `<span class="therapie-labels">${labels.map(label => `<span class="therapie-label">${label}</span>`).join("")}</span>`;
+}
+
 function therapieKaartHTML(t, i = 0) {
   const heeftBeeld = Boolean(t.beeld && t.beeld.src);
   const kaartBeeldPos = (t.beeld && t.beeld.kaartPos) || "center";
   return `
   <a class="onderzoek-kaart therapie-kaart${heeftBeeld ? " therapie-kaart-met-beeld" : ""} verschijn" href="#/therapie/${t.id}" style="--accent:${t.accent}; --wacht:${Math.min(i * 0.05, 0.45)}s">
     ${heeftBeeld ? `<span class="therapie-kaart-beeld" aria-hidden="true" style="--kaart-beeld-pos:${kaartBeeldPos}"><img src="${t.beeld.src}" alt="" loading="lazy"></span>` : ""}
-    <span class="onderzoek-label">${t.icoon} Therapie</span>
     <h3>${t.naam}</h3>
     <span class="therapie-voluit">${t.voluit}</span>
-    ${t.pastBij ? `<span class="therapie-pastbij">${t.pastBij}</span>` : ""}
+    ${therapieLabelsHTML(t)}
     <p class="onderzoek-haakje">${t.kort}</p>
-    ${evidentieBadgeHTML(t.evidentieNiveau, t.evidentieLabel)}
   </a>`;
+}
+
+function detailBeeldHTML(beeld, cssClass, { wait = ".14s" } = {}) {
+  if (!beeld || !beeld.src) return "";
+  const beeldPos = beeld.detailPos || beeld.kaartPos || "center";
+  return `<figure class="${cssClass} verschijn" style="--beeld-pos:${beeldPos}; --wacht:${wait}">
+    <img src="${beeld.src}" alt="${beeld.alt || ""}" loading="eager">
+  </figure>`;
 }
 
 function therapieGroepHTML(groep, groepIndex = 0) {
@@ -483,37 +530,48 @@ function therapieGroepHTML(groep, groepIndex = 0) {
 }
 
 function conceptKaartHTML(c, i = 0) {
+  const heeftBeeld = Boolean(c.beeld && c.beeld.src);
+  const kaartBeeldPos = (c.beeld && c.beeld.kaartPos) || "center";
+  const categorieMeta = UITGELEGD_CATEGORIEEN.find(x => x.id === c.categorie);
+  const labelIcoon = categorieMeta?.icoon || c.icoon || "";
+  const isBasisbegrip = c.categorie === "basis";
+  const kaartLabel = {
+    basis: "Basisbegrip",
+    zenuwstelsel: "Lichaam",
+  }[c.categorie] || "Uitgelegd";
   return `
-  <a class="vraag-kaart verschijn" href="#/concept/${c.id}" style="--accent:${c.accent}; --wacht:${Math.min(i * 0.07, 0.5)}s">
-    <span class="kaart-thema">${c.icoon} Uitgelegd</span>
-    <h3>${c.titel}</h3>
-    <p class="kort">${c.kort}</p>
-    <span class="kaart-voet">
-      <span>${c.leeswijzer || "Lees"}</span>
-      <span class="pijl">Lees <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  <a class="vraag-kaart concept-kaart${heeftBeeld ? " vraag-kaart-met-beeld" : ""}${isBasisbegrip ? " concept-kaart-basis" : ""} verschijn" href="#/concept/${c.id}" style="--accent:${c.accent}; --kaart-beeld-pos:${kaartBeeldPos}; --wacht:${Math.min(i * 0.07, 0.5)}s">
+    ${kaartBeeldHTML(c.beeld)}
+    <span class="kaart-thema">${labelIcoon ? `${labelIcoon} ` : ""}${kaartLabel}</span>
+    <span class="concept-kaart-glas">
+      <h3 class="concept-kaart-titel">${c.titel}</h3>
     </span>
   </a>`;
 }
 
 function hechtingKaartHTML(h, i = 0) {
+  const heeftBeeld = Boolean(h.beeld && h.beeld.src);
+  const kaartBeeldPos = (h.beeld && h.beeld.kaartPos) || "center";
   return `
-  <a class="hechting-kaart verschijn" href="#/hechting/${h.id}" style="--accent:${h.accent}; --tint:${h.kleur}; --wacht:${Math.min(i * 0.07, 0.4)}s">
-    <span class="h-icoon" aria-hidden="true">${h.icoon}</span>
-    <h3>${h.naam}</h3>
-    <p class="h-zin">${h.inEenZin}</p>
-    <span class="pijl">Lees <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  <a class="vraag-kaart concept-kaart${heeftBeeld ? " vraag-kaart-met-beeld" : ""} verschijn" href="#/hechting/${h.id}" style="--accent:${h.accent}; --kaart-beeld-pos:${kaartBeeldPos}; --wacht:${Math.min(i * 0.07, 0.4)}s">
+    ${kaartBeeldHTML(h.beeld)}
+    <span class="kaart-thema">🪢 Hechting</span>
+    <span class="concept-kaart-glas">
+      <h3 class="concept-kaart-titel">${h.naam}</h3>
+    </span>
   </a>`;
 }
 
 function stoornisKaartHTML(s, i = 0) {
+  const heeftBeeld = Boolean(s.beeld && s.beeld.src);
+  const kaartBeeldPos = (s.beeld && s.beeld.kaartPos) || "center";
+  const persoonlijkheidIcoon = UITGELEGD_CATEGORIEEN.find(x => x.id === "stoornissen")?.icoon || "🪞";
   return `
-  <a class="vraag-kaart verschijn" href="#/stoornis/${s.id}" style="--accent:${s.accent}; --wacht:${Math.min(i * 0.07, 0.5)}s">
-    <span class="kaart-thema">${s.icoon} Persoonlijkheid</span>
-    <h3>${s.naam}</h3>
-    <p class="kort">${s.inEenZin}</p>
-    <span class="kaart-voet">
-      <span>Educatief</span>
-      <span class="pijl">Lees <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  <a class="vraag-kaart concept-kaart${heeftBeeld ? " vraag-kaart-met-beeld" : ""} verschijn" href="#/stoornis/${s.id}" style="--accent:${s.accent}; --kaart-beeld-pos:${kaartBeeldPos}; --wacht:${Math.min(i * 0.07, 0.5)}s">
+    ${kaartBeeldHTML(s.beeld)}
+    <span class="kaart-thema">${persoonlijkheidIcoon} Persoonlijkheid</span>
+    <span class="concept-kaart-glas">
+      <h3 class="concept-kaart-titel">${s.naam}</h3>
     </span>
   </a>`;
 }
@@ -609,6 +667,7 @@ function renderVraag(id) {
   const v = vraagVan(id);
   if (!v) return renderHome();
   const t = themaVan(v.thema);
+  const vraagBeeld = detailBeeldHTML(v.beeld, "concept-detail-beeld");
 
   app.innerHTML = `
   <article class="sectie sectie-smal">
@@ -619,6 +678,7 @@ function renderVraag(id) {
     </nav>
     <h1 class="vraag-titel verschijn" style="--wacht:.05s">${v.vraag}</h1>
     <div class="tldr verschijn" style="--wacht:.12s"><p>${v.kort}</p></div>
+    ${vraagBeeld}
     <div class="antwoord-blok">
       ${v.blokken.map((b, i) => `
         ${b.kop ? `<h2 class="verschijn">${b.kop}</h2>` : ""}
@@ -764,15 +824,13 @@ function renderTherapie(id) {
   const t = therapieVan(id);
   if (!t) return renderTherapieen();
   const verwant = (t.gerelateerd || []).map(therapieVan).filter(Boolean);
-  const therapieBeeld = t.beeld && t.beeld.src
-    ? `<figure class="therapie-detail-beeld verschijn" style="--wacht:.16s">
-        <img src="${t.beeld.src}" alt="${t.beeld.alt || ""}" loading="eager">
-      </figure>`
-    : "";
+  const therapieBeeld = detailBeeldHTML(t.beeld, "therapie-detail-beeld", { wait: ".16s" });
   app.innerHTML = `
   <article class="sectie sectie-smal">
-    <a class="terug-link" href="#/therapieen"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Alle therapieën</a>
-    <span class="bovenlabel verschijn" style="color:${t.accent}">${t.icoon} Therapie</span>
+    <div class="detail-nav-rij">
+      <a class="terug-link" href="#/therapieen"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Alle therapieën</a>
+      <span class="bovenlabel verschijn" style="color:${t.accent}">${t.icoon} Therapie</span>
+    </div>
     <h1 class="vraag-titel verschijn" style="--wacht:.05s">${t.naam}</h1>
     <p class="sectie-intro verschijn" style="--wacht:.08s">${t.voluit}</p>
     <div class="tldr verschijn" style="--wacht:.12s"><p>${t.kort}</p></div>
@@ -815,7 +873,7 @@ function renderTherapie(id) {
 /* ---------- trauma uitgelegd (hub) ---------- */
 
 const UITGELEGD_CATEGORIEEN = [
-  { id: "basis",      naam: "De basis",                icoon: "🌑" },
+  { id: "basis",      naam: "Basisbegrippen",          icoon: "🌑" },
   { id: "zenuwstelsel", naam: "Lichaam & zenuwstelsel", icoon: "🫁" },
   { id: "hechting",   naam: "Hechting",                icoon: "🪢" },
   { id: "stoornissen", naam: "Persoonlijkheid",        icoon: "🪞" }
@@ -840,7 +898,7 @@ function renderUitgelegd() {
     <div class="uitgelegd-categorie">
       <h2 class="uitgelegd-categorie-titel verschijn"><span class="uc-icoon">🪢</span> Hechtingsstijlen</h2>
       <p class="sectie-intro verschijn" style="margin-bottom:20px">Hoe je vroege banden je gevoel van veiligheid, nabijheid en vertrouwen kleuren — en hoe stijlen kunnen verschuiven richting meer veiligheid.</p>
-      <div class="hechting-raster">${HECHTINGSSTIJLEN.map((h, i) => hechtingKaartHTML(h, i)).join("")}</div>
+      <div class="kaart-raster">${HECHTINGSSTIJLEN.map((h, i) => hechtingKaartHTML(h, i)).join("")}</div>
     </div>
 
     <div class="uitgelegd-categorie">
@@ -856,6 +914,7 @@ function renderConcept(id) {
   if (!c) return renderUitgelegd();
   const cat = UITGELEGD_CATEGORIEEN.find(x => x.id === c.categorie);
   const verwant = (c.gerelateerd || []).map(conceptVan).filter(Boolean);
+  const conceptBeeld = detailBeeldHTML(c.beeld, "concept-detail-beeld");
   app.innerHTML = `
   <article class="sectie sectie-smal">
     <nav class="kruimels verschijn" aria-label="Kruimelpad">
@@ -865,6 +924,7 @@ function renderConcept(id) {
     <h1 class="vraag-titel verschijn" style="--wacht:.05s">${c.titel}</h1>
     ${c.leeswijzer ? `<p class="sectie-intro verschijn" style="--wacht:.08s">${c.leeswijzer}</p>` : ""}
     <div class="tldr verschijn" style="--wacht:.12s"><p>${c.kort}</p></div>
+    ${conceptBeeld}
     <div class="antwoord-blok">
       ${c.blokken.map((b, i) => `
         ${b.kop ? `<h2 class="verschijn">${b.kop}</h2>` : ""}
@@ -899,7 +959,7 @@ function renderHechting() {
   <section class="sectie">
     <a class="terug-link" href="#/uitgelegd"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Trauma uitgelegd</a>
     ${sectieKop("🪢 Hechting", "De vier hechtingsstijlen", "Hoe je als kind leerde of nabijheid veilig was, werkt door in je latere relaties. Het is geen vast etiket: stijlen kunnen verschuiven naar meer veiligheid.", "hechting")}
-    <div class="hechting-raster">${HECHTINGSSTIJLEN.map((h, i) => hechtingKaartHTML(h, i)).join("")}</div>
+    <div class="kaart-raster">${HECHTINGSSTIJLEN.map((h, i) => hechtingKaartHTML(h, i)).join("")}</div>
   </section>`;
 }
 
@@ -907,12 +967,16 @@ function renderHechtingsstijl(id) {
   const h = hechtingVan(id);
   if (!h) return renderHechting();
   const verwant = (h.gerelateerd || []).map(hechtingVan).filter(Boolean);
+  const hechtingBeeld = detailBeeldHTML(h.beeld, "hechting-detail-beeld");
   app.innerHTML = `
   <article class="sectie sectie-smal">
-    <a class="terug-link" href="#/uitgelegd"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Trauma uitgelegd</a>
-    <span class="bovenlabel verschijn" style="color:${h.accent}">${h.icoon} Hechtingsstijl</span>
+    <div class="detail-nav-rij">
+      <a class="terug-link" href="#/uitgelegd"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Trauma uitgelegd</a>
+      <span class="bovenlabel verschijn" style="color:${h.accent}">${h.icoon} Hechtingsstijl</span>
+    </div>
     <h1 class="vraag-titel verschijn" style="--wacht:.05s">${h.naam}</h1>
     <div class="tldr verschijn" style="--wacht:.12s"><p>${h.inEenZin}</p></div>
+    ${hechtingBeeld}
     <div class="antwoord-blok">
       <h2 class="verschijn">Hoe het eruit kan zien</h2>
       <ul class="kern-lijst">${h.herkenbaar.map((k, i) => `<li class="verschijn" style="--wacht:${i * 0.06}s">${k}</li>`).join("")}</ul>
@@ -932,7 +996,7 @@ function renderHechtingsstijl(id) {
     ${verwant.length ? `
     <div class="gerelateerd">
       <h2 class="verschijn" style="font-size:1.4rem">Andere stijlen</h2>
-      <div class="hechting-raster" style="margin-top:20px">
+      <div class="kaart-raster" style="margin-top:20px">
         ${verwant.map((g, i) => hechtingKaartHTML(g, i)).join("")}
       </div>
     </div>` : ""}
@@ -953,14 +1017,18 @@ function renderStoornis(id) {
   const s = stoornisVan(id);
   if (!s) return renderStoornissen();
   const verwant = (s.gerelateerd || []).map(stoornisVan).filter(Boolean);
+  const stoornisBeeld = detailBeeldHTML(s.beeld, "concept-detail-beeld");
   app.innerHTML = `
   <article class="sectie sectie-smal">
-    <a class="terug-link" href="#/uitgelegd"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Trauma uitgelegd</a>
-    <span class="bovenlabel verschijn" style="color:${s.accent}">${s.icoon} Persoonlijkheid</span>
+    <div class="detail-nav-rij">
+      <a class="terug-link" href="#/uitgelegd"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Trauma uitgelegd</a>
+      <span class="bovenlabel verschijn" style="color:${s.accent}">${s.icoon} Persoonlijkheid</span>
+    </div>
     <h1 class="vraag-titel verschijn" style="--wacht:.05s">${s.naam}</h1>
     ${s.ookGenoemd ? `<p class="sectie-intro verschijn" style="--wacht:.08s">Ook wel: ${s.ookGenoemd}</p>` : ""}
     <div class="disclaimer-blok stoornis-banner verschijn"><span><strong>${s.disclaimer}</strong></span></div>
     <div class="tldr verschijn" style="--wacht:.12s"><p>${s.inEenZin}</p></div>
+    ${stoornisBeeld}
     <div class="antwoord-blok">
       ${s.watHetIs.map((b, i) => `
         ${b.kop ? `<h2 class="verschijn">${b.kop}</h2>` : ""}
@@ -1166,6 +1234,7 @@ function navigeer() {
   markeerNav(hash);
   koppelMythes();
   animaties();
+  kalibreerConceptKaartGlas();
   kalibreerLopendeBand();
   document.getElementById("mobielMenu").hidden = true;
   document.getElementById("menuKnop").setAttribute("aria-expanded", "false");
@@ -1212,6 +1281,30 @@ function animaties() {
     });
   }, { threshold: 0.08, rootMargin: "0px 0px -4% 0px" });
   document.querySelectorAll(".verschijn").forEach(el => kijker.observe(el));
+}
+
+/* ---------- conceptkaart-glas op titellengte ---------- */
+
+function telTitelRegels(titel) {
+  const stijl = getComputedStyle(titel);
+  const regelhoogte = stijl.lineHeight === "normal"
+    ? parseFloat(stijl.fontSize) * 1.2
+    : parseFloat(stijl.lineHeight);
+  return Math.max(1, Math.round(titel.scrollHeight / regelhoogte));
+}
+
+function kalibreerConceptKaartGlas() {
+  requestAnimationFrame(() => {
+    document.querySelectorAll(".concept-kaart-glas").forEach(glas => {
+      const titel = glas.querySelector(".concept-kaart-titel");
+      if (!titel) return;
+
+      glas.classList.remove("concept-kaart-glas--2-regels", "concept-kaart-glas--3-regels");
+      const regels = telTitelRegels(titel);
+      if (regels >= 3) glas.classList.add("concept-kaart-glas--3-regels");
+      else if (regels === 2) glas.classList.add("concept-kaart-glas--2-regels");
+    });
+  });
 }
 
 /* ---------- lopende band ---------- */
@@ -1384,11 +1477,17 @@ menuKnop.addEventListener("click", () => {
 let bandResizeTimer = null;
 window.addEventListener("resize", () => {
   clearTimeout(bandResizeTimer);
-  bandResizeTimer = setTimeout(kalibreerLopendeBand, 120);
+  bandResizeTimer = setTimeout(() => {
+    kalibreerConceptKaartGlas();
+    kalibreerLopendeBand();
+  }, 120);
 }, { passive: true });
 
 if (document.fonts && document.fonts.ready) {
-  document.fonts.ready.then(kalibreerLopendeBand);
+  document.fonts.ready.then(() => {
+    kalibreerConceptKaartGlas();
+    kalibreerLopendeBand();
+  });
 }
 
 /* ---------- start ---------- */

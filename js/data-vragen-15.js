@@ -7,6 +7,7 @@
 const VRAGEN_15 = [
   {
     id: "nachtmerries-kinderen",
+    beeld: { src: "img/vragen/nachtmerries-kinderen.jpg" },
     vraag: "Mijn kind heeft nachtmerries. Wat kan ik doen?",
     thema: "slaap",
     leeftijd: [
@@ -72,6 +73,7 @@ const VRAGEN_15 = [
   },
   {
     id: "nachtelijk-wakker-schrikken",
+    beeld: { src: "img/vragen/nachtelijk-wakker-schrikken.jpg" },
     vraag: "Ik schrik 's nachts wakker zonder duidelijke reden. Wat gebeurt er?",
     thema: "slaap",
     leeftijd: [
@@ -138,6 +140,7 @@ const VRAGEN_15 = [
   },
   {
     id: "slaapritme-herstellen",
+    beeld: { src: "img/vragen/slaapritme-herstellen.jpg" },
     vraag: "Hoe herstel ik mijn slaapritme na trauma?",
     thema: "slaap",
     leeftijd: [
@@ -204,6 +207,7 @@ const VRAGEN_15 = [
   },
   {
     id: "bed-voelt-onveilig",
+    beeld: { src: "img/vragen/bed-voelt-onveilig.jpg" },
     vraag: "Mijn bed voelt onveilig. Hoe kan dat?",
     thema: "slaap",
     leeftijd: [
@@ -270,6 +274,7 @@ const VRAGEN_15 = [
   },
   {
     id: "partner-snurken-triggers",
+    beeld: { src: "img/vragen/partner-snurken-triggers.jpg" },
     vraag: "Het snurken of ademen van mijn partner triggert me. Wat kan ik doen?",
     thema: "slaap",
     leeftijd: [
@@ -336,6 +341,7 @@ const VRAGEN_15 = [
   },
   {
     id: "slaapmiddelen-trauma",
+    beeld: { src: "img/vragen/slaapmiddelen-trauma.jpg" },
     vraag: "Zijn slaapmiddelen veilig bij trauma — en wanneer overweeg je ze?",
     thema: "slaap",
     leeftijd: [
@@ -402,6 +408,7 @@ const VRAGEN_15 = [
   },
   {
     id: "nachtelijke-hyperalertheid",
+    beeld: { src: "img/vragen/nachtelijke-hyperalertheid.jpg" },
     vraag: "Wat is nachtelijke hyperalertheid?",
     thema: "lichaam",
     leeftijd: [
@@ -468,6 +475,7 @@ const VRAGEN_15 = [
   },
   {
     id: "dromen-dagboek",
+    beeld: { src: "img/vragen/dromen-dagboek.jpg" },
     vraag: "Helpt een dromendagboek bij trauma — en hoe begin ik?",
     thema: "emoties",
     leeftijd: [
@@ -534,6 +542,7 @@ const VRAGEN_15 = [
   },
   {
     id: "lucide-dromen-trauma",
+    beeld: { src: "img/vragen/lucide-dromen-trauma.jpg" },
     vraag: "Zijn lucide dromen nuttig of riskant bij trauma?",
     thema: "emoties",
     leeftijd: [
@@ -599,6 +608,7 @@ const VRAGEN_15 = [
   },
   {
     id: "slaap-alcohol",
+    beeld: { src: "img/vragen/slaap-alcohol.jpg" },
     vraag: "Waarom helpt alcohol mijn slaap niet echt — en maakt het soms erger?",
     thema: "slaap",
     leeftijd: [
@@ -665,6 +675,7 @@ const VRAGEN_15 = [
   },
   {
     id: "slaap-schermen",
+    beeld: { src: "img/vragen/slaap-schermen.jpg" },
     vraag: "Hoe beïnvloeden schermen mijn slaap na trauma?",
     thema: "slaap",
     leeftijd: [
@@ -728,6 +739,7 @@ const VRAGEN_15 = [
   },
   {
     id: "ochtendangst",
+    beeld: { src: "img/vragen/ochtendangst.jpg" },
     vraag: "Waarom voel ik 's ochtends meteen angst?",
     thema: "emoties",
     leeftijd: [

@@ -7,6 +7,7 @@
 const VRAGEN_8 = [
   {
     id: "polyvagaal-praktisch",
+    beeld: { src: "img/vragen/polyvagaal-praktisch.jpg" },
     vraag: "Hoe pas ik polyvagaal theorie praktisch toe?",
     thema: "lichaam",
     leeftijd: [
@@ -73,6 +74,7 @@ const VRAGEN_8 = [
   },
   {
     id: "ademhaling-kalmeren",
+    beeld: { src: "img/vragen/ademhaling-kalmeren.jpg" },
     vraag: "Hoe kan ademhaling mijn zenuwstelsel kalmeren?",
     thema: "herstel",
     leeftijd: [
@@ -139,6 +141,7 @@ const VRAGEN_8 = [
   },
   {
     id: "spierspanning-trauma",
+    beeld: { src: "img/vragen/spierspanning-trauma.jpg" },
     vraag: "Waarom houd ik zoveel spierspanning vast na trauma?",
     thema: "lichaam",
     leeftijd: [
@@ -205,6 +208,7 @@ const VRAGEN_8 = [
   },
   {
     id: "maag-darm-stress",
+    beeld: { src: "img/vragen/maag-darm-stress.jpg" },
     vraag: "Waarom reageert mijn maag-darmkanaal zo op stress en trauma?",
     thema: "lichaam",
     leeftijd: [
@@ -271,6 +275,7 @@ const VRAGEN_8 = [
   },
   {
     id: "hoofdpijn-spanning-trauma",
+    beeld: { src: "img/vragen/hoofdpijn-spanning-trauma.jpg" },
     vraag: "Kan trauma hoofdpijn en spanning veroorzaken?",
     thema: "lichaam",
     leeftijd: [
@@ -337,6 +342,7 @@ const VRAGEN_8 = [
   },
   {
     id: "chronische-vermoeidheid-trauma",
+    beeld: { src: "img/vragen/chronische-vermoeidheid-trauma.jpg" },
     vraag: "Waarom houd ik chronische vermoeidheid over na trauma?",
     thema: "lichaam",
     leeftijd: [
@@ -403,6 +409,7 @@ const VRAGEN_8 = [
   },
   {
     id: "tremor-schudden-stress",
+    beeld: { src: "img/vragen/tremor-schudden-stress.jpg" },
     vraag: "Waarom tril of schud ik soms na stress?",
     thema: "lichaam",
     leeftijd: [
@@ -468,6 +475,7 @@ const VRAGEN_8 = [
   },
   {
     id: "koude-warmte-grounding",
+    beeld: { src: "img/vragen/koude-warmte-grounding.jpg" },
     vraag: "Hoe gebruik ik koude en warmte voor grounding?",
     thema: "herstel",
     leeftijd: [
@@ -534,6 +542,7 @@ const VRAGEN_8 = [
   },
   {
     id: "trauma-hartkloppingen",
+    beeld: { src: "img/vragen/trauma-hartkloppingen.jpg" },
     vraag: "Waarom krijg ik hartkloppingen bij trauma en stress?",
     thema: "lichaam",
     leeftijd: [
@@ -599,6 +608,7 @@ const VRAGEN_8 = [
   },
   {
     id: "yoga-en-trauma",
+    beeld: { src: "img/vragen/yoga-en-trauma.jpg" },
     vraag: "Is yoga veilig en nuttig bij trauma?",
     thema: "herstel",
     leeftijd: [
@@ -665,6 +675,7 @@ const VRAGEN_8 = [
   },
   {
     id: "bewegen-helpt-trauma",
+    beeld: { src: "img/vragen/bewegen-helpt-trauma.jpg" },
     vraag: "Hoe helpt bewegen bij trauma — en hoe begin ik?",
     thema: "herstel",
     leeftijd: [
@@ -731,6 +742,7 @@ const VRAGEN_8 = [
   },
   {
     id: "massage-aanraking-grenzen",
+    beeld: { src: "img/vragen/massage-aanraking-grenzen.jpg" },
     vraag: "Hoe ga ik om met massage en aanraking na trauma?",
     thema: "grenzen",
     leeftijd: [

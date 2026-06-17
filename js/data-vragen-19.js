@@ -7,6 +7,7 @@
 const VRAGEN_19 = [
   {
     id: "trauma-spiritualiteit-geloven",
+    beeld: { src: "img/vragen/trauma-spiritualiteit-geloven.jpg" },
     vraag: "Hoe verhouden trauma en spiritualiteit of geloof zich?",
     thema: "innerlijk",
     leeftijd: [
@@ -72,6 +73,7 @@ const VRAGEN_19 = [
   },
   {
     id: "hoop-behouden-herstel",
+    beeld: { src: "img/vragen/hoop-behouden-herstel.jpg" },
     vraag: "Hoe houd ik hoop vast tijdens herstel?",
     thema: "herstel",
     leeftijd: [

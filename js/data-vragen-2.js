@@ -6,6 +6,7 @@
 const VRAGEN_2 = [
   {
     id: "kan-ik-geen-nee-zeggen",
+    beeld: { src: "img/vragen/kan-ik-geen-nee-zeggen.jpg" },
     vraag: "Waarom kan ik geen nee zeggen?",
     thema: "grenzen",
     leeftijd: [
@@ -67,6 +68,7 @@ const VRAGEN_2 = [
   },
   {
     id: "slaap-nachtmerries",
+    beeld: { src: "img/vragen/slaap-nachtmerries.jpg" },
     vraag: "Ik slaap slecht en heb nachtmerries. Wat kan helpen?",
     thema: "slaap",
     leeftijd: [
@@ -125,6 +127,7 @@ const VRAGEN_2 = [
   },
   {
     id: "partner-trauma-steunen",
+    beeld: { src: "img/vragen/partner-trauma-steunen.jpg" },
     vraag: "Mijn partner heeft trauma. Hoe steun ik zonder mezelf te verliezen?",
     thema: "naasten",
     leeftijd: [
@@ -185,6 +188,7 @@ const VRAGEN_2 = [
   },
   {
     id: "moet-ik-herbeleven",
+    beeld: { src: "img/vragen/moet-ik-herbeleven.jpg" },
     vraag: "Moet ik mijn trauma opnieuw beleven om te helen?",
     thema: "herstel",
     leeftijd: [
@@ -244,6 +248,7 @@ const VRAGEN_2 = [
   },
   {
     id: "window-of-tolerance",
+    beeld: { src: "img/vragen/window-of-tolerance.jpg" },
     vraag: "Wat is de 'window of tolerance' en hoe blijf ik erin?",
     thema: "lichaam",
     leeftijd: [
@@ -305,6 +310,7 @@ const VRAGEN_2 = [
   },
   {
     id: "therapie-erger-maken",
+    beeld: { src: "img/vragen/therapie-erger-maken.jpg" },
     vraag: "Kan therapie oude wonden niet juist erger maken?",
     thema: "wat-is-trauma",
     leeftijd: [

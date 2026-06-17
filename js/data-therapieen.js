@@ -1,9 +1,8 @@
 // ============================================================
 // EHBT — Therapieën
 // Onafhankelijk geschreven, geïnspireerd door de vakliteratuur.
-// De inschatting van het bewijs is algemeen en oriënterend — geen
+// Evidentieniveaus zijn algemene, oriënterende inschattingen — geen
 // behandeladvies. Bespreek de keuze altijd met een professional.
-// Taalniveau: B1 — korte zinnen, gewone woorden, vakwoorden uitgelegd.
 // ============================================================
 const THERAPIEEN = [
   {
@@ -92,22 +91,26 @@ const THERAPIEEN = [
     hoeWerkt: [
       {
         kop: "Uitleg over hoe het werkt",
-        tekst: "Je leert hoe PTSS, vermijden, herbeleven en alarmreacties werken."
+        tekst: "Je leert hoe PTSS, vermijden, herbeleven en alarmreacties werken.",
+        zeg: null
       },
       {
         kop: "De herinnering opzoeken",
-        tekst: "Je werkt stap voor stap met de herinnering of met dingen die je vermijdt, zonder jezelf te overspoelen."
+        tekst: "Je werkt stap voor stap met de herinnering of met dingen die je vermijdt, zonder jezelf te overspoelen.",
+        zeg: null
       },
       {
         kop: "Betekenis onderzoeken",
-        tekst: "Vastzittende gedachten over schuld, schaamte, machteloosheid of gevaar bekijk je rustig en eerlijk."
+        tekst: "Vastzittende gedachten over schuld, schaamte, machteloosheid of gevaar bekijk je rustig en eerlijk.",
+        zeg: null
       },
       {
         kop: "Nieuwe veiligheid oefenen",
-        tekst: "Je merkt dat je herinneringen en triggers kunt dragen, zonder dat het oude gevaar terugkomt."
+        tekst: "Je merkt dat je herinneringen en triggers kunt dragen, zonder dat het oude gevaar terugkomt.",
+        zeg: null
       }
     ],
-    evidentie: "Traumagerichte CBT, CPT en exposure horen bij de best onderzochte behandelingen voor PTSS, en worden in richtlijnen aanbevolen. Bij complex trauma kunnen ze nuttig zijn, maar zelden als snelle standaardroute. Dan wegen veiligheid, tempo en een goede band met de therapeut zwaarder.",
+    evidentie: "Traumagerichte CBT (Cognitive Behavioral Therapy), CPT en exposure horen bij de best onderzochte behandelingen voor PTSS, en worden in richtlijnen aanbevolen. Bij complex trauma kunnen ze nuttig zijn, maar zelden als snelle standaardroute. Dan wegen veiligheid, tempo en een goede band met de therapeut zwaarder.",
     evidentieNiveau: "sterk",
     evidentieLabel: "Aanbevolen bij PTSS",
     overzichtGroep: "ptss",
@@ -130,7 +133,8 @@ const THERAPIEEN = [
       "emdr",
       "dbt",
       "schematherapie"
-    ]
+    ],
+    _index: 1
   },
   {
     id: "somatic-experiencing",
@@ -575,7 +579,8 @@ const THERAPIEEN = [
     beeld: {
       src: "img/therapieen/imagery-rehearsal.jpg",
       alt: "Imagery Rehearsal-sessie waarin een cliënt een nieuwe droomversie opschrijft met kaartjes op tafel.",
-      kaartPos: "center bottom"
+      kaartPos: "68% 22%",
+      detailPos: "center 38%"
     },
     kort: "Je schrijft je nachtmerrie op en oefent overdag een nieuw, veiliger einde. Zo speelt je brein 's nachts minder vaak de oude versie af.",
     voorWie: "Mensen met terugkerende nachtmerries na trauma of PTSS. Ook nuttig als slaapproblemen andere behandeling in de weg zitten.",
@@ -828,3 +833,4 @@ const THERAPIEEN = [
     ]
   }
 ];
+
