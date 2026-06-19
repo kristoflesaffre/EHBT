@@ -7,7 +7,9 @@
 const VRAGEN_3 = [
   {
     id: "waar-begin-ik-met-trauma",
-    beeld: { src: "img/vragen/waar-begin-ik-met-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/waar-begin-ik-met-trauma.jpg"
+    },
     vraag: "Waar begin ik als ik denk dat ik trauma heb?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -70,7 +72,9 @@ const VRAGEN_3 = [
   },
   {
     id: "wat-is-emotionele-verwaarlozing",
-    beeld: { src: "img/vragen/wat-is-emotionele-verwaarlozing.jpg" },
+    beeld: {
+      src: "img/vragen/wat-is-emotionele-verwaarlozing.jpg"
+    },
     vraag: "Wat is emotionele verwaarlozing?",
     thema: "familie",
     leeftijd: [
@@ -132,7 +136,9 @@ const VRAGEN_3 = [
   },
   {
     id: "wat-zijn-aces",
-    beeld: { src: "img/vragen/wat-zijn-aces.jpg" },
+    beeld: {
+      src: "img/vragen/wat-zijn-aces.jpg"
+    },
     vraag: "Wat zijn ACE's?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -192,7 +198,9 @@ const VRAGEN_3 = [
   },
   {
     id: "wat-is-een-trigger",
-    beeld: { src: "img/vragen/wat-is-een-trigger.jpg" },
+    beeld: {
+      src: "img/vragen/wat-is-een-trigger.jpg"
+    },
     vraag: "Wat is een trigger?",
     thema: "emoties",
     leeftijd: [
@@ -255,7 +263,9 @@ const VRAGEN_3 = [
   },
   {
     id: "waarom-ben-ik-altijd-moe",
-    beeld: { src: "img/vragen/waarom-ben-ik-altijd-moe.jpg" },
+    beeld: {
+      src: "img/vragen/waarom-ben-ik-altijd-moe.jpg"
+    },
     vraag: "Waarom ben ik altijd zo moe?",
     thema: "lichaam",
     leeftijd: [
@@ -318,7 +328,9 @@ const VRAGEN_3 = [
   },
   {
     id: "wat-is-hyperalertheid",
-    beeld: { src: "img/vragen/wat-is-hyperalertheid.jpg" },
+    beeld: {
+      src: "img/vragen/wat-is-hyperalertheid.jpg"
+    },
     vraag: "Wat is hyperalertheid?",
     thema: "lichaam",
     leeftijd: [
@@ -381,7 +393,9 @@ const VRAGEN_3 = [
   },
   {
     id: "trauma-lichamelijke-klachten",
-    beeld: { src: "img/vragen/trauma-lichamelijke-klachten.jpg" },
+    beeld: {
+      src: "img/vragen/trauma-lichamelijke-klachten.jpg"
+    },
     vraag: "Kan trauma lichamelijke klachten geven?",
     thema: "lichaam",
     leeftijd: [
@@ -448,7 +462,9 @@ const VRAGEN_3 = [
   },
   {
     id: "goede-therapeut-kiezen",
-    beeld: { src: "img/vragen/goede-therapeut-kiezen.jpg" },
+    beeld: {
+      src: "img/vragen/goede-therapeut-kiezen.jpg"
+    },
     vraag: "Hoe kies ik een goede therapeut?",
     thema: "herstel",
     leeftijd: [
@@ -511,7 +527,9 @@ const VRAGEN_3 = [
   },
   {
     id: "wat-is-grounding",
-    beeld: { src: "img/vragen/wat-is-grounding.jpg" },
+    beeld: {
+      src: "img/vragen/wat-is-grounding.jpg"
+    },
     vraag: "Wat is grounding en hoe doe ik dat?",
     thema: "herstel",
     leeftijd: [
@@ -574,7 +592,9 @@ const VRAGEN_3 = [
   },
   {
     id: "waarom-voel-ik-me-leeg",
-    beeld: { src: "img/vragen/waarom-voel-ik-me-leeg.jpg" },
+    beeld: {
+      src: "img/vragen/waarom-voel-ik-me-leeg.jpg"
+    },
     vraag: "Waarom voel ik me zo leeg?",
     thema: "emoties",
     leeftijd: [

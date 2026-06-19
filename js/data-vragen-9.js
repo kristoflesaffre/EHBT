@@ -7,7 +7,9 @@
 const VRAGEN_9 = [
   {
     id: "woede-trauma-herkennen",
-    beeld: { src: "img/vragen/woede-trauma-herkennen.jpg" },
+    beeld: {
+      src: "img/vragen/woede-trauma-herkennen.jpg"
+    },
     vraag: "Waarom voel ik zoveel woede — en hoort dat bij trauma?",
     thema: "emoties",
     leeftijd: [
@@ -74,7 +76,9 @@ const VRAGEN_9 = [
   },
   {
     id: "verdriet-blijft-hangen",
-    beeld: { src: "img/vragen/verdriet-blijft-hangen.jpg" },
+    beeld: {
+      src: "img/vragen/verdriet-blijft-hangen.jpg"
+    },
     vraag: "Waarom blijft mijn verdriet maar hangen?",
     thema: "emoties",
     leeftijd: [
@@ -141,7 +145,9 @@ const VRAGEN_9 = [
   },
   {
     id: "gevoelloosheid-na-trauma",
-    beeld: { src: "img/vragen/gevoelloosheid-na-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/gevoelloosheid-na-trauma.jpg"
+    },
     vraag: "Waarom voel ik me gevoelloos of verdoofd?",
     thema: "emoties",
     leeftijd: [
@@ -208,7 +214,9 @@ const VRAGEN_9 = [
   },
   {
     id: "constante-irritatie-oorzaak",
-    beeld: { src: "img/vragen/constante-irritatie-oorzaak.jpg" },
+    beeld: {
+      src: "img/vragen/constante-irritatie-oorzaak.jpg"
+    },
     vraag: "Waarom ben ik constant geïrriteerd?",
     thema: "emoties",
     leeftijd: [
@@ -275,7 +283,9 @@ const VRAGEN_9 = [
   },
   {
     id: "angst-zonder-duidelijke-oorzaak",
-    beeld: { src: "img/vragen/angst-zonder-duidelijke-oorzaak.jpg" },
+    beeld: {
+      src: "img/vragen/angst-zonder-duidelijke-oorzaak.jpg"
+    },
     vraag: "Waarom heb ik angst zonder duidelijke reden?",
     thema: "emoties",
     leeftijd: [
@@ -342,7 +352,9 @@ const VRAGEN_9 = [
   },
   {
     id: "paniek-versus-trauma",
-    beeld: { src: "img/vragen/paniek-versus-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/paniek-versus-trauma.jpg"
+    },
     vraag: "Wat is het verschil tussen paniek en trauma-reacties?",
     thema: "emoties",
     leeftijd: [
@@ -408,7 +420,9 @@ const VRAGEN_9 = [
   },
   {
     id: "emoties-benomen-leren",
-    beeld: { src: "img/vragen/emoties-benomen-leren.jpg" },
+    beeld: {
+      src: "img/vragen/emoties-benomen-leren.jpg"
+    },
     vraag: "Hoe leer ik mijn emoties benoemen?",
     thema: "emoties",
     leeftijd: [
@@ -474,7 +488,9 @@ const VRAGEN_9 = [
   },
   {
     id: "emotionele-uitputting",
-    beeld: { src: "img/vragen/emotionele-uitputting.jpg" },
+    beeld: {
+      src: "img/vragen/emotionele-uitputting.jpg"
+    },
     vraag: "Wat is emotionele uitputting?",
     thema: "emoties",
     leeftijd: [
@@ -541,7 +557,9 @@ const VRAGEN_9 = [
   },
   {
     id: "jaloezie-hechting-trauma",
-    beeld: { src: "img/vragen/jaloezie-hechting-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/jaloezie-hechting-trauma.jpg"
+    },
     vraag: "Waarom voel ik zoveel jaloezie — en wat zegt dat over hechting?",
     thema: "hechting",
     leeftijd: [
@@ -608,7 +626,9 @@ const VRAGEN_9 = [
   },
   {
     id: "schaamte-na-grensoverschrijding",
-    beeld: { src: "img/vragen/schaamte-na-grensoverschrijding.jpg" },
+    beeld: {
+      src: "img/vragen/schaamte-na-grensoverschrijding.jpg"
+    },
     vraag: "Waarom schaam ik me zo na grensoverschrijding?",
     thema: "emoties",
     leeftijd: [
@@ -675,7 +695,9 @@ const VRAGEN_9 = [
   },
   {
     id: "schuldgevoel-na-misbruik",
-    beeld: { src: "img/vragen/schuldgevoel-na-misbruik.jpg" },
+    beeld: {
+      src: "img/vragen/schuldgevoel-na-misbruik.jpg"
+    },
     vraag: "Waarom voel ik schuld na misbruik?",
     thema: "emoties",
     leeftijd: [
@@ -741,7 +763,9 @@ const VRAGEN_9 = [
   },
   {
     id: "emotionele-overspoeling",
-    beeld: { src: "img/vragen/emotionele-overspoeling.jpg" },
+    beeld: {
+      src: "img/vragen/emotionele-overspoeling.jpg"
+    },
     vraag: "Wat is emotionele overspoeling en wat kan ik doen?",
     thema: "emoties",
     leeftijd: [

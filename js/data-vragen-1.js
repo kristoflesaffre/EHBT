@@ -7,7 +7,9 @@
 const VRAGEN_1 = [
   {
     id: "wat-is-trauma-erg-genoeg",
-    beeld: { src: "img/vragen/wat-is-trauma-erg-genoeg.jpg" },
+    beeld: {
+      src: "img/vragen/wat-is-trauma-erg-genoeg.jpg"
+    },
     vraag: "Wat is trauma eigenlijk — en is mijn trauma wel 'erg genoeg'?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -62,7 +64,9 @@ const VRAGEN_1 = [
   },
   {
     id: "lichaam-reageert-zonder-gevaar",
-    beeld: { src: "img/vragen/lichaam-reageert-zonder-gevaar.jpg" },
+    beeld: {
+      src: "img/vragen/lichaam-reageert-zonder-gevaar.jpg"
+    },
     vraag: "Mijn lichaam reageert terwijl er geen gevaar is. Word ik gek?",
     thema: "lichaam",
     leeftijd: [
@@ -124,7 +128,9 @@ const VRAGEN_1 = [
   },
   {
     id: "flashback-wat-doe-ik",
-    beeld: { src: "img/vragen/flashback-wat-doe-ik.jpg" },
+    beeld: {
+      src: "img/vragen/flashback-wat-doe-ik.jpg"
+    },
     vraag: "Wat is een flashback en wat doe ik op dat moment?",
     thema: "emoties",
     leeftijd: [
@@ -186,7 +192,9 @@ const VRAGEN_1 = [
   },
   {
     id: "dissociatie-naast-mezelf",
-    beeld: { src: "img/vragen/dissociatie-naast-mezelf.jpg" },
+    beeld: {
+      src: "img/vragen/dissociatie-naast-mezelf.jpg"
+    },
     vraag: "Ik voel soms niets meer of sta 'naast mezelf'. Wat is dat?",
     thema: "emoties",
     leeftijd: [
@@ -248,7 +256,9 @@ const VRAGEN_1 = [
   },
   {
     id: "weinig-jeugdherinneringen",
-    beeld: { src: "img/vragen/weinig-jeugdherinneringen.jpg" },
+    beeld: {
+      src: "img/vragen/weinig-jeugdherinneringen.jpg"
+    },
     vraag: "Ik herinner me weinig van mijn jeugd. Betekent dat iets?",
     thema: "cptss",
     leeftijd: [
@@ -307,7 +317,9 @@ const VRAGEN_1 = [
   },
   {
     id: "steeds-onveilige-relaties",
-    beeld: { src: "img/vragen/steeds-onveilige-relaties.jpg" },
+    beeld: {
+      src: "img/vragen/steeds-onveilige-relaties.jpg"
+    },
     vraag: "Waarom kies ik steeds dezelfde onveilige relaties?",
     thema: "hechting",
     leeftijd: [
@@ -366,7 +378,9 @@ const VRAGEN_1 = [
   },
   {
     id: "innerlijke-criticus",
-    beeld: { src: "img/vragen/innerlijke-criticus.jpg" },
+    beeld: {
+      src: "img/vragen/innerlijke-criticus.jpg"
+    },
     vraag: "Hoe ga ik om met die harde, kritische stem in mijn hoofd?",
     thema: "innerlijk",
     leeftijd: [
@@ -428,7 +442,9 @@ const VRAGEN_1 = [
   },
   {
     id: "hoe-lang-duurt-herstel",
-    beeld: { src: "img/vragen/hoe-lang-duurt-herstel.jpg" },
+    beeld: {
+      src: "img/vragen/hoe-lang-duurt-herstel.jpg"
+    },
     vraag: "Hoe lang duurt herstel van trauma?",
     thema: "herstel",
     leeftijd: [

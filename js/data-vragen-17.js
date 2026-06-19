@@ -7,7 +7,9 @@
 const VRAGEN_17 = [
   {
     id: "cptss-vs-depressie",
-    beeld: { src: "img/vragen/cptss-vs-depressie.jpg" },
+    beeld: {
+      src: "img/vragen/cptss-vs-depressie.jpg"
+    },
     vraag: "Wat is het verschil tussen CPTSS en depressie?",
     thema: "cptss",
     leeftijd: [
@@ -73,7 +75,9 @@ const VRAGEN_17 = [
   },
   {
     id: "cptss-vs-angststoornis",
-    beeld: { src: "img/vragen/cptss-vs-angststoornis.jpg" },
+    beeld: {
+      src: "img/vragen/cptss-vs-angststoornis.jpg"
+    },
     vraag: "Wat is het verschil tussen CPTSS en een angststoornis?",
     thema: "cptss",
     leeftijd: [
@@ -140,7 +144,9 @@ const VRAGEN_17 = [
   },
   {
     id: "cptss-vs-bipolaire",
-    beeld: { src: "img/vragen/cptss-vs-bipolaire.jpg" },
+    beeld: {
+      src: "img/vragen/cptss-vs-bipolaire.jpg"
+    },
     vraag: "Kan CPTSS lijken op een bipolaire stoornis?",
     thema: "cptss",
     leeftijd: [
@@ -206,7 +212,9 @@ const VRAGEN_17 = [
   },
   {
     id: "trauma-adhd-overlap",
-    beeld: { src: "img/vragen/trauma-adhd-overlap.jpg" },
+    beeld: {
+      src: "img/vragen/trauma-adhd-overlap.jpg"
+    },
     vraag: "Hoe overlappen trauma en ADHD?",
     thema: "cptss",
     leeftijd: [
@@ -272,7 +280,9 @@ const VRAGEN_17 = [
   },
   {
     id: "trauma-autisme-overlap",
-    beeld: { src: "img/vragen/trauma-autisme-overlap.jpg" },
+    beeld: {
+      src: "img/vragen/trauma-autisme-overlap.jpg"
+    },
     vraag: "Hoe overlappen trauma en autisme?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -338,7 +348,9 @@ const VRAGEN_17 = [
   },
   {
     id: "trauma-persoonlijkheidsstoornis",
-    beeld: { src: "img/vragen/trauma-persoonlijkheidsstoornis.jpg" },
+    beeld: {
+      src: "img/vragen/trauma-persoonlijkheidsstoornis.jpg"
+    },
     vraag: "Wat is de link tussen trauma en persoonlijkheidsstoornissen?",
     thema: "cptss",
     leeftijd: [
@@ -404,7 +416,9 @@ const VRAGEN_17 = [
   },
   {
     id: "collectief-trauma",
-    beeld: { src: "img/vragen/collectief-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/collectief-trauma.jpg"
+    },
     vraag: "Wat is collectief of gemeenschapstrauma?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -471,7 +485,9 @@ const VRAGEN_17 = [
   },
   {
     id: "institutioneel-trauma",
-    beeld: { src: "img/vragen/institutioneel-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/institutioneel-trauma.jpg"
+    },
     vraag: "Wat is institutioneel trauma?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -538,7 +554,9 @@ const VRAGEN_17 = [
   },
   {
     id: "armoede-trauma",
-    beeld: { src: "img/vragen/armoede-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/armoede-trauma.jpg"
+    },
     vraag: "Hoe hangen armoede en trauma samen?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -604,7 +622,9 @@ const VRAGEN_17 = [
   },
   {
     id: "racisme-trauma",
-    beeld: { src: "img/vragen/racisme-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/racisme-trauma.jpg"
+    },
     vraag: "Wat is racisme als trauma?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -671,7 +691,9 @@ const VRAGEN_17 = [
   },
   {
     id: "seksueel-misbruik-eerste-stap",
-    beeld: { src: "img/vragen/seksueel-misbruik-eerste-stap.jpg" },
+    beeld: {
+      src: "img/vragen/seksueel-misbruik-eerste-stap.jpg"
+    },
     vraag: "Wat is een eerste stap na seksueel misbruik?",
     thema: "herstel",
     leeftijd: [
@@ -738,7 +760,9 @@ const VRAGEN_17 = [
   },
   {
     id: "mishandeling-herkennen-volwassene",
-    beeld: { src: "img/vragen/mishandeling-herkennen-volwassene.jpg" },
+    beeld: {
+      src: "img/vragen/mishandeling-herkennen-volwassene.jpg"
+    },
     vraag: "Hoe herken ik mishandeling als volwassene?",
     thema: "herstel",
     leeftijd: [

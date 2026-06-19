@@ -7,7 +7,9 @@
 const VRAGEN_13 = [
   {
     id: "grenzen-met-ouders-zetten",
-    beeld: { src: "img/vragen/grenzen-met-ouders-zetten.jpg" },
+    beeld: {
+      src: "img/vragen/grenzen-met-ouders-zetten.jpg"
+    },
     vraag: "Hoe zet ik grenzen met mijn ouders?",
     thema: "grenzen",
     leeftijd: [
@@ -73,7 +75,9 @@ const VRAGEN_13 = [
   },
   {
     id: "no-contact-met-familie",
-    beeld: { src: "img/vragen/no-contact-met-familie.jpg" },
+    beeld: {
+      src: "img/vragen/no-contact-met-familie.jpg"
+    },
     vraag: "Wanneer is no contact met familie gerechtvaardigd?",
     thema: "familie",
     leeftijd: [
@@ -139,7 +143,9 @@ const VRAGEN_13 = [
   },
   {
     id: "low-contact-familie-uitleg",
-    beeld: { src: "img/vragen/low-contact-familie-uitleg.jpg" },
+    beeld: {
+      src: "img/vragen/low-contact-familie-uitleg.jpg"
+    },
     vraag: "Wat is low contact met familie — en hoe werkt dat?",
     thema: "naasten",
     leeftijd: [
@@ -205,7 +211,9 @@ const VRAGEN_13 = [
   },
   {
     id: "grenzen-op-werk",
-    beeld: { src: "img/vragen/grenzen-op-werk.jpg" },
+    beeld: {
+      src: "img/vragen/grenzen-op-werk.jpg"
+    },
     vraag: "Hoe stel ik grenzen op het werk?",
     thema: "grenzen",
     leeftijd: [
@@ -272,7 +280,9 @@ const VRAGEN_13 = [
   },
   {
     id: "mensen-die-energie-zuigen",
-    beeld: { src: "img/vragen/mensen-die-energie-zuigen.jpg" },
+    beeld: {
+      src: "img/vragen/mensen-die-energie-zuigen.jpg"
+    },
     vraag: "Hoe ga ik om met mensen die mijn energie zuigen?",
     thema: "naasten",
     leeftijd: [
@@ -338,7 +348,9 @@ const VRAGEN_13 = [
   },
   {
     id: "assertiviteit-leren",
-    beeld: { src: "img/vragen/assertiviteit-leren.jpg" },
+    beeld: {
+      src: "img/vragen/assertiviteit-leren.jpg"
+    },
     vraag: "Hoe leer ik assertief te zijn?",
     thema: "grenzen",
     leeftijd: [
@@ -405,7 +417,9 @@ const VRAGEN_13 = [
   },
   {
     id: "nee-zeggen-zonder-schuld",
-    beeld: { src: "img/vragen/nee-zeggen-zonder-schuld.jpg" },
+    beeld: {
+      src: "img/vragen/nee-zeggen-zonder-schuld.jpg"
+    },
     vraag: "Hoe zeg ik nee zonder schuldgevoel?",
     thema: "grenzen",
     leeftijd: [
@@ -472,7 +486,9 @@ const VRAGEN_13 = [
   },
   {
     id: "grenzen-met-vrienden",
-    beeld: { src: "img/vragen/grenzen-met-vrienden.jpg" },
+    beeld: {
+      src: "img/vragen/grenzen-met-vrienden.jpg"
+    },
     vraag: "Hoe stel ik grenzen met vrienden?",
     thema: "naasten",
     leeftijd: [
@@ -538,7 +554,9 @@ const VRAGEN_13 = [
   },
   {
     id: "familiefeesten-overleven",
-    beeld: { src: "img/vragen/familiefeesten-overleven.jpg" },
+    beeld: {
+      src: "img/vragen/familiefeesten-overleven.jpg"
+    },
     vraag: "Hoe overleef ik familiefeesten?",
     thema: "familie",
     leeftijd: [
@@ -605,7 +623,9 @@ const VRAGEN_13 = [
   },
   {
     id: "loyaliteit-vs-zelfbescherming",
-    beeld: { src: "img/vragen/loyaliteit-vs-zelfbescherming.jpg" },
+    beeld: {
+      src: "img/vragen/loyaliteit-vs-zelfbescherming.jpg"
+    },
     vraag: "Loyaliteit versus zelfbescherming — hoe kies ik?",
     thema: "familie",
     leeftijd: [
@@ -671,7 +691,9 @@ const VRAGEN_13 = [
   },
   {
     id: "siblings-contact-houden",
-    beeld: { src: "img/vragen/siblings-contact-houden.jpg" },
+    beeld: {
+      src: "img/vragen/siblings-contact-houden.jpg"
+    },
     vraag: "Moet ik contact houden met mijn broers of zussen?",
     thema: "familie",
     leeftijd: [
@@ -737,7 +759,9 @@ const VRAGEN_13 = [
   },
   {
     id: "grenzen-met-ex-partner",
-    beeld: { src: "img/vragen/grenzen-met-ex-partner.jpg" },
+    beeld: {
+      src: "img/vragen/grenzen-met-ex-partner.jpg"
+    },
     vraag: "Hoe stel ik grenzen met mijn ex-partner?",
     thema: "naasten",
     leeftijd: [

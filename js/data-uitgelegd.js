@@ -107,7 +107,7 @@ const CONCEPTEN = [
     ],
     _index: 1,
     beeld: {
-      src: "img/concepten/trauma-vs-complex.png"
+      src: "img/concepten/trauma-vs-complex.jpg"
     }
   },
   {
@@ -153,7 +153,7 @@ const CONCEPTEN = [
     ],
     _index: 2,
     beeld: {
-      src: "img/concepten/zenuwstelsel-overleving.png"
+      src: "img/concepten/zenuwstelsel-overleving.jpg"
     }
   },
   {
@@ -195,7 +195,7 @@ const CONCEPTEN = [
     ],
     _index: 3,
     beeld: {
-      src: "img/concepten/window-uitleg.png"
+      src: "img/concepten/window-uitleg.jpg"
     }
   },
   {
@@ -241,7 +241,7 @@ const CONCEPTEN = [
     ],
     _index: 4,
     beeld: {
-      src: "img/concepten/lichaam-onthoudt.png"
+      src: "img/concepten/lichaam-onthoudt.jpg"
     }
   },
   {
@@ -287,7 +287,7 @@ const CONCEPTEN = [
     ],
     _index: 5,
     beeld: {
-      src: "img/concepten/herstel-niet-lineair.png"
+      src: "img/concepten/herstel-niet-lineair.jpg"
     }
   },
   {
@@ -340,7 +340,7 @@ const CONCEPTEN = [
     ],
     _index: 6,
     beeld: {
-      src: "img/concepten/aces-uitgelegd.png"
+      src: "img/concepten/aces-uitgelegd.jpg"
     }
   },
   {
@@ -393,7 +393,7 @@ const CONCEPTEN = [
     ],
     _index: 7,
     beeld: {
-      src: "img/concepten/emotionele-verwaarlozing.png"
+      src: "img/concepten/emotionele-verwaarlozing.jpg"
     }
   },
   {
@@ -446,7 +446,7 @@ const CONCEPTEN = [
     ],
     _index: 8,
     beeld: {
-      src: "img/concepten/triggers-cues.png"
+      src: "img/concepten/triggers-cues.jpg"
     }
   },
   {
@@ -499,7 +499,7 @@ const CONCEPTEN = [
     ],
     _index: 9,
     beeld: {
-      src: "img/concepten/intergenerationeel-trauma.png"
+      src: "img/concepten/intergenerationeel-trauma.jpg"
     }
   },
   {
@@ -552,7 +552,7 @@ const CONCEPTEN = [
     ],
     _index: 10,
     beeld: {
-      src: "img/concepten/toxisch-schaamte-schuld.png"
+      src: "img/concepten/toxisch-schaamte-schuld.jpg"
     }
   },
   {
@@ -605,7 +605,7 @@ const CONCEPTEN = [
     ],
     _index: 11,
     beeld: {
-      src: "img/concepten/hypervigilantie.png"
+      src: "img/concepten/hypervigilantie.jpg"
     }
   },
   {
@@ -658,7 +658,7 @@ const CONCEPTEN = [
     ],
     _index: 12,
     beeld: {
-      src: "img/concepten/emotionele-incest-metafoor.png"
+      src: "img/concepten/emotionele-incest-metafoor.jpg"
     }
   },
   {
@@ -711,7 +711,7 @@ const CONCEPTEN = [
     ],
     _index: 13,
     beeld: {
-      src: "img/concepten/fawn-response.png"
+      src: "img/concepten/fawn-response.jpg"
     }
   }
 ];
@@ -906,7 +906,7 @@ const STOORNISSEN = [
     ],
     _index: 0,
     beeld: {
-      src: "img/stoornissen/borderline.png"
+      src: "img/stoornissen/borderline.jpg"
     }
   },
   {
@@ -951,7 +951,7 @@ const STOORNISSEN = [
     ],
     _index: 1,
     beeld: {
-      src: "img/stoornissen/narcistisch.png"
+      src: "img/stoornissen/narcistisch.jpg"
     }
   },
   {
@@ -996,7 +996,7 @@ const STOORNISSEN = [
     ],
     _index: 2,
     beeld: {
-      src: "img/stoornissen/vermijdend.png"
+      src: "img/stoornissen/vermijdend.jpg"
     }
   }
 ];

@@ -7,7 +7,9 @@
 const VRAGEN_7 = [
   {
     id: "wat-is-ptss",
-    beeld: { src: "img/vragen/wat-is-ptss.jpg" },
+    beeld: {
+      src: "img/vragen/wat-is-ptss.jpg"
+    },
     vraag: "Wat is PTSS?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -74,8 +76,10 @@ const VRAGEN_7 = [
   },
   {
     id: "klein-t-trauma",
-    beeld: { src: "img/vragen/klein-t-trauma.jpg" },
-    vraag: "Wat is klein-t trauma?",
+    beeld: {
+      src: "img/vragen/klein-t-trauma.jpg"
+    },
+    vraag: "Wat is kleine-t trauma? (tiny trauma)",
     thema: "wat-is-trauma",
     leeftijd: [
       "zelf",
@@ -91,7 +95,7 @@ const VRAGEN_7 = [
       "verwaarlozing",
       "impact"
     ],
-    kort: "Klein-t trauma zijn herhaalde, chronische stressvolle ervaringen zonder één grote 'shock' — denk aan constante kritiek, verwaarlozing of instabiliteit. Opeenstapelen ze zich en kunnen ze net zo diep ingrijpen als één groot trauma.",
+    kort: "Kleine-t trauma of tiny trauma's zijn herhaalde, chronische stressvolle ervaringen zonder één grote 'shock' — denk aan constante kritiek, verwaarlozing of instabiliteit. Opeenstapelen ze zich en kunnen ze net zo diep ingrijpen als één groot trauma.",
     blokken: [
       {
         tekst: "Niet iedereen herkent zich in één dramatisch moment. Sommigen groeien op met constante spanning: een kritische ouder, onvoorspelbare ruzies, emotionele afwezigheid, pesten jaar na jaar. Geen enkel incident voelt 'erg genoeg' — maar samen vormen ze een zware last."
@@ -115,10 +119,7 @@ const VRAGEN_7 = [
       "Denken dat klein-t trauma 'minder ernstig' betekent dat het niet telt.",
       "Alles bagatelliseren omdat er geen enkel duidelijk keerpunt was."
     ],
-    zegDit: [
-      "“Wat herhaaldelijk gebeurde, telt ook — ook zonder één grote gebeurtenis.”",
-      "“Chronische stress laat echte sporen na.”"
-    ],
+    zegDit: "“Wat herhaaldelijk gebeurde, telt ook — ook zonder één grote gebeurtenis.”,“Chronische stress laat echte sporen na.”",
     bronnen: [
       {
         boek: "tiny-traumas",
@@ -137,11 +138,14 @@ const VRAGEN_7 = [
       "wat-is-emotionele-verwaarlozing",
       "wat-zijn-aces",
       "toxic-stress-uitgelegd"
-    ]
+    ],
+    _index: 55
   },
   {
     id: "medisch-ziekenhuis-trauma",
-    beeld: { src: "img/vragen/medisch-ziekenhuis-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/medisch-ziekenhuis-trauma.jpg"
+    },
     vraag: "Wat is medisch of ziekenhuis trauma?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -208,7 +212,9 @@ const VRAGEN_7 = [
   },
   {
     id: "natuurramp-ongeval-trauma",
-    beeld: { src: "img/vragen/natuurramp-ongeval-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/natuurramp-ongeval-trauma.jpg"
+    },
     vraag: "Kan een natuurramp of ongeval trauma veroorzaken?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -275,7 +281,9 @@ const VRAGEN_7 = [
   },
   {
     id: "verlies-van-ouder",
-    beeld: { src: "img/vragen/verlies-van-ouder.jpg" },
+    beeld: {
+      src: "img/vragen/verlies-van-ouder.jpg"
+    },
     vraag: "Hoe werkt het verlies van een ouder door in je leven?",
     thema: "familie",
     leeftijd: [
@@ -342,7 +350,9 @@ const VRAGEN_7 = [
   },
   {
     id: "wat-is-parentificatie",
-    beeld: { src: "img/vragen/wat-is-parentificatie.jpg" },
+    beeld: {
+      src: "img/vragen/wat-is-parentificatie.jpg"
+    },
     vraag: "Wat is parentificatie?",
     thema: "familie",
     leeftijd: [
@@ -408,7 +418,9 @@ const VRAGEN_7 = [
   },
   {
     id: "gouden-kind-zwart-schaap",
-    beeld: { src: "img/vragen/gouden-kind-zwart-schaap.jpg" },
+    beeld: {
+      src: "img/vragen/gouden-kind-zwart-schaap.jpg"
+    },
     vraag: "Wat is het verschil tussen gouden kind en zwart schaap?",
     thema: "familie",
     leeftijd: [
@@ -474,7 +486,9 @@ const VRAGEN_7 = [
   },
   {
     id: "sibling-rivalry-trauma",
-    beeld: { src: "img/vragen/sibling-rivalry-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/sibling-rivalry-trauma.jpg"
+    },
     vraag: "Kan sibling rivalry trauma veroorzaken?",
     thema: "familie",
     leeftijd: [
@@ -540,7 +554,9 @@ const VRAGEN_7 = [
   },
   {
     id: "toxic-stress-uitgelegd",
-    beeld: { src: "img/vragen/toxic-stress-uitgelegd.jpg" },
+    beeld: {
+      src: "img/vragen/toxic-stress-uitgelegd.jpg"
+    },
     vraag: "Wat is toxic stress?",
     thema: "wat-is-trauma",
     leeftijd: [
@@ -604,7 +620,9 @@ const VRAGEN_7 = [
   },
   {
     id: "freeze-response-wat-is",
-    beeld: { src: "img/vragen/freeze-response-wat-is.jpg" },
+    beeld: {
+      src: "img/vragen/freeze-response-wat-is.jpg"
+    },
     vraag: "Wat is een freeze response?",
     thema: "lichaam",
     leeftijd: [
@@ -671,7 +689,9 @@ const VRAGEN_7 = [
   },
   {
     id: "vechten-modus-herkennen",
-    beeld: { src: "img/vragen/vechten-modus-herkennen.jpg" },
+    beeld: {
+      src: "img/vragen/vechten-modus-herkennen.jpg"
+    },
     vraag: "Hoe herken ik de vechten-modus?",
     thema: "lichaam",
     leeftijd: [
@@ -688,7 +708,7 @@ const VRAGEN_7 = [
       "overlevingsmodus",
       "reactief"
     ],
-    kort: "De vechten-modus is een overlevingsreactie: snel boos, defensief, controlerend of agressief — ook wanneer er objectief geen gevaar is. Het beschermde je ooit; nu kan het relaties en rust beschadigen.",
+    kort: "De vechten-modus (fight modus van fight-or-flight) is een overlevingsreactie: snel boos, defensief, controlerend of agressief — ook wanneer er objectief geen gevaar is. Het beschermde je ooit; nu kan het relaties en rust beschadigen.",
     blokken: [
       {
         tekst: "Je reageert sneller dan je wilt: schreeuwen, sarcastisch worden, de controle grijpen, dreigen met weggaan, of fysiek opspringen. Daarna spijt het je — maar in het moment voelt het als overleven. Dat is de vechten-modus: het zenuwstelsel dat denkt dat aanvallen de enige manier is om veilig te blijven."
@@ -712,10 +732,7 @@ const VRAGEN_7 = [
       "Vechten rechtvaardigen als 'wie ik ben'.",
       "Boze reacties analyseren midden in de storm — wacht tot je kalmer bent."
     ],
-    zegDit: [
-      "“Dit is mijn vecht-modus — ik heb een pauze nodig.”",
-      "“Mijn woede beschermde me vroeger. Nu zoek ik veiligere manieren.”"
-    ],
+    zegDit: "“Dit is mijn vecht-modus — ik heb een pauze nodig.”,“Mijn woede beschermde me vroeger. Nu zoek ik veiligere manieren.”",
     bronnen: [
       {
         boek: "waking-the-tiger",
@@ -734,11 +751,14 @@ const VRAGEN_7 = [
       "freeze-response-wat-is",
       "vluchten-modus-herkennen",
       "wat-is-een-trigger"
-    ]
+    ],
+    _index: 64
   },
   {
     id: "vluchten-modus-herkennen",
-    beeld: { src: "img/vragen/vluchten-modus-herkennen.jpg" },
+    beeld: {
+      src: "img/vragen/vluchten-modus-herkennen.jpg"
+    },
     vraag: "Hoe herken ik de vluchten-modus?",
     thema: "lichaam",
     leeftijd: [

@@ -7,7 +7,9 @@
 const VRAGEN_11 = [
   {
     id: "innerlijk-kind-wat-is-dat",
-    beeld: { src: "img/vragen/innerlijk-kind-wat-is-dat.jpg" },
+    beeld: {
+      src: "img/vragen/innerlijk-kind-wat-is-dat.jpg"
+    },
     vraag: "Wat is het innerlijke kind?",
     thema: "innerlijk",
     leeftijd: [
@@ -73,7 +75,9 @@ const VRAGEN_11 = [
   },
   {
     id: "beschermende-delen-ifs",
-    beeld: { src: "img/vragen/beschermende-delen-ifs.jpg" },
+    beeld: {
+      src: "img/vragen/beschermende-delen-ifs.jpg"
+    },
     vraag: "Wat zijn beschermende delen in IFS?",
     thema: "innerlijk",
     leeftijd: [
@@ -140,7 +144,9 @@ const VRAGEN_11 = [
   },
   {
     id: "zelfhaat-begrijpen",
-    beeld: { src: "img/vragen/zelfhaat-begrijpen.jpg" },
+    beeld: {
+      src: "img/vragen/zelfhaat-begrijpen.jpg"
+    },
     vraag: "Hoe kan ik zelfhaat begrijpen?",
     thema: "innerlijk",
     leeftijd: [
@@ -206,7 +212,9 @@ const VRAGEN_11 = [
   },
   {
     id: "imposter-syndrome-trauma",
-    beeld: { src: "img/vragen/imposter-syndrome-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/imposter-syndrome-trauma.jpg"
+    },
     vraag: "Heeft imposter syndrome te maken met trauma?",
     thema: "innerlijk",
     leeftijd: [
@@ -272,7 +280,9 @@ const VRAGEN_11 = [
   },
   {
     id: "automutilatie-waarom",
-    beeld: { src: "img/vragen/automutilatie-waarom.jpg" },
+    beeld: {
+      src: "img/vragen/automutilatie-waarom.jpg"
+    },
     vraag: "Waarom automutileren sommige mensen met trauma?",
     thema: "cptss",
     leeftijd: [
@@ -339,7 +349,9 @@ const VRAGEN_11 = [
   },
   {
     id: "suicidale-gedachten-begrijpen",
-    beeld: { src: "img/vragen/suicidale-gedachten-begrijpen.jpg" },
+    beeld: {
+      src: "img/vragen/suicidale-gedachten-begrijpen.jpg"
+    },
     vraag: "Hoe kan ik suïcidale gedachten begrijpen?",
     thema: "cptss",
     leeftijd: [
@@ -406,7 +418,9 @@ const VRAGEN_11 = [
   },
   {
     id: "perfectionisme-als-schild",
-    beeld: { src: "img/vragen/perfectionisme-als-schild.jpg" },
+    beeld: {
+      src: "img/vragen/perfectionisme-als-schild.jpg"
+    },
     vraag: "Is perfectionisme een schild na trauma?",
     thema: "innerlijk",
     leeftijd: [
@@ -472,7 +486,9 @@ const VRAGEN_11 = [
   },
   {
     id: "innerlijke-leegte",
-    beeld: { src: "img/vragen/innerlijke-leegte.jpg" },
+    beeld: {
+      src: "img/vragen/innerlijke-leegte.jpg"
+    },
     vraag: "Wat betekent innerlijke leegte bij trauma?",
     thema: "innerlijk",
     leeftijd: [
@@ -538,7 +554,9 @@ const VRAGEN_11 = [
   },
   {
     id: "delen-die-conflicteren",
-    beeld: { src: "img/vragen/delen-die-conflicteren.jpg" },
+    beeld: {
+      src: "img/vragen/delen-die-conflicteren.jpg"
+    },
     vraag: "Wat als mijn innerlijke delen met elkaar vechten?",
     thema: "innerlijk",
     leeftijd: [
@@ -604,7 +622,9 @@ const VRAGEN_11 = [
   },
   {
     id: "zelfverachting",
-    beeld: { src: "img/vragen/zelfverachting.jpg" },
+    beeld: {
+      src: "img/vragen/zelfverachting.jpg"
+    },
     vraag: "Waar komt zelfverachting vandaan?",
     thema: "innerlijk",
     leeftijd: [
@@ -670,7 +690,9 @@ const VRAGEN_11 = [
   },
   {
     id: "identiteit-na-trauma",
-    beeld: { src: "img/vragen/identiteit-na-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/identiteit-na-trauma.jpg"
+    },
     vraag: "Wie ben ik na trauma — hoe vind ik mijn identiteit terug?",
     thema: "herstel",
     leeftijd: [
@@ -737,7 +759,9 @@ const VRAGEN_11 = [
   },
   {
     id: "wie-ben-ik-zonder-overleven",
-    beeld: { src: "img/vragen/wie-ben-ik-zonder-overleven.jpg" },
+    beeld: {
+      src: "img/vragen/wie-ben-ik-zonder-overleven.jpg"
+    },
     vraag: "Wie ben ik als ik niet meer alleen hoef te overleven?",
     thema: "herstel",
     leeftijd: [

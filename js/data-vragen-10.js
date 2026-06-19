@@ -7,7 +7,9 @@
 const VRAGEN_10 = [
   {
     id: "veilige-hechting-opbouwen",
-    beeld: { src: "img/vragen/veilige-hechting-opbouwen.jpg" },
+    beeld: {
+      src: "img/vragen/veilige-hechting-opbouwen.jpg"
+    },
     vraag: "Kan ik als volwassene nog veilige hechting opbouwen?",
     thema: "hechting",
     leeftijd: [
@@ -74,7 +76,9 @@ const VRAGEN_10 = [
   },
   {
     id: "anxious-avoidant-dans",
-    beeld: { src: "img/vragen/anxious-avoidant-dans.jpg" },
+    beeld: {
+      src: "img/vragen/anxious-avoidant-dans.jpg"
+    },
     vraag: "Wat is de anxious-avoidant dans in relaties?",
     thema: "hechting",
     leeftijd: [
@@ -140,7 +144,9 @@ const VRAGEN_10 = [
   },
   {
     id: "vriendschappen-en-trauma",
-    beeld: { src: "img/vragen/vriendschappen-en-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/vriendschappen-en-trauma.jpg"
+    },
     vraag: "Hoe beïnvloedt trauma mijn vriendschappen?",
     thema: "naasten",
     leeftijd: [
@@ -207,7 +213,9 @@ const VRAGEN_10 = [
   },
   {
     id: "collegas-en-wantrouwen",
-    beeld: { src: "img/vragen/collegas-en-wantrouwen.jpg" },
+    beeld: {
+      src: "img/vragen/collegas-en-wantrouwen.jpg"
+    },
     vraag: "Waarom vertrouw ik collega's niet?",
     thema: "naasten",
     leeftijd: [
@@ -273,7 +281,9 @@ const VRAGEN_10 = [
   },
   {
     id: "dating-met-trauma",
-    beeld: { src: "img/vragen/dating-met-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/dating-met-trauma.jpg"
+    },
     vraag: "Hoe date ik met een trauma-achtergrond?",
     thema: "hechting",
     leeftijd: [
@@ -339,7 +349,9 @@ const VRAGEN_10 = [
   },
   {
     id: "intimiteit-en-angst",
-    beeld: { src: "img/vragen/intimiteit-en-angst.jpg" },
+    beeld: {
+      src: "img/vragen/intimiteit-en-angst.jpg"
+    },
     vraag: "Waarom is intimiteit zo eng voor mij?",
     thema: "hechting",
     leeftijd: [
@@ -406,7 +418,9 @@ const VRAGEN_10 = [
   },
   {
     id: "seks-na-trauma",
-    beeld: { src: "img/vragen/seks-na-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/seks-na-trauma.jpg"
+    },
     vraag: "Hoe ga ik om met seks na trauma?",
     thema: "hechting",
     leeftijd: [
@@ -473,7 +487,9 @@ const VRAGEN_10 = [
   },
   {
     id: "grenzen-liefdesrelatie",
-    beeld: { src: "img/vragen/grenzen-liefdesrelatie.jpg" },
+    beeld: {
+      src: "img/vragen/grenzen-liefdesrelatie.jpg"
+    },
     vraag: "Hoe stel ik grenzen in een liefdesrelatie?",
     thema: "grenzen",
     leeftijd: [
@@ -539,7 +555,9 @@ const VRAGEN_10 = [
   },
   {
     id: "jaloezie-partnerrelatie",
-    beeld: { src: "img/vragen/jaloezie-partnerrelatie.jpg" },
+    beeld: {
+      src: "img/vragen/jaloezie-partnerrelatie.jpg"
+    },
     vraag: "Hoe ga ik om met jaloezie in mijn partnerrelatie?",
     thema: "hechting",
     leeftijd: [
@@ -605,7 +623,9 @@ const VRAGEN_10 = [
   },
   {
     id: "verlaten-worden-vrezen",
-    beeld: { src: "img/vragen/verlaten-worden-vrezen.jpg" },
+    beeld: {
+      src: "img/vragen/verlaten-worden-vrezen.jpg"
+    },
     vraag: "Waarom ben ik zo bang om verlaten te worden?",
     thema: "hechting",
     leeftijd: [
@@ -672,7 +692,9 @@ const VRAGEN_10 = [
   },
   {
     id: "vertrouwen-opnieuw-leren",
-    beeld: { src: "img/vragen/vertrouwen-opnieuw-leren.jpg" },
+    beeld: {
+      src: "img/vragen/vertrouwen-opnieuw-leren.jpg"
+    },
     vraag: "Hoe leer ik opnieuw vertrouwen?",
     thema: "hechting",
     leeftijd: [
@@ -739,7 +761,9 @@ const VRAGEN_10 = [
   },
   {
     id: "nabijheid-zonder-paniek",
-    beeld: { src: "img/vragen/nabijheid-zonder-paniek.jpg" },
+    beeld: {
+      src: "img/vragen/nabijheid-zonder-paniek.jpg"
+    },
     vraag: "Hoe kan ik nabijheid ervaren zonder in paniek te raken?",
     thema: "hechting",
     leeftijd: [

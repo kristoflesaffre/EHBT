@@ -59,14 +59,12 @@ function vraagKaartHTML(v, i = 0, groot = false) {
   const heeftBeeld = Boolean(v.beeld && v.beeld.src);
   const kaartBeeldPos = (v.beeld && v.beeld.kaartPos) || "center";
   return `
-  <a class="vraag-kaart vraag-kaart-vraag${heeftBeeld ? " vraag-kaart-met-beeld" : ""} verschijn ${groot ? "kaart-groot" : ""}" href="#/vraag/${v.id}"
+  <a class="vraag-kaart concept-kaart${heeftBeeld ? " vraag-kaart-met-beeld" : ""} verschijn ${groot ? "kaart-groot" : ""}" href="#/vraag/${v.id}"
      style="--accent:${t.accent}; --kaart-beeld-pos:${kaartBeeldPos}; --wacht:${Math.min(i * 0.07, 0.5)}s">
     ${kaartBeeldHTML(v.beeld)}
     <span class="kaart-thema">${t.icoon} ${t.naam}</span>
-    <h3>${v.vraag}</h3>
-    <p class="kort">${v.kort}</p>
-    <span class="kaart-voet">
-      <span class="pijl">Lees <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    <span class="concept-kaart-glas">
+      <h3 class="concept-kaart-titel">${v.vraag}</h3>
     </span>
   </a>`;
 }
@@ -553,7 +551,7 @@ function hechtingKaartHTML(h, i = 0) {
   const heeftBeeld = Boolean(h.beeld && h.beeld.src);
   const kaartBeeldPos = (h.beeld && h.beeld.kaartPos) || "center";
   return `
-  <a class="vraag-kaart concept-kaart${heeftBeeld ? " vraag-kaart-met-beeld" : ""} verschijn" href="#/hechting/${h.id}" style="--accent:${h.accent}; --kaart-beeld-pos:${kaartBeeldPos}; --wacht:${Math.min(i * 0.07, 0.4)}s">
+  <a class="vraag-kaart concept-kaart hechting-kaart${heeftBeeld ? " vraag-kaart-met-beeld" : ""} verschijn" href="#/hechting/${h.id}" style="--accent:${h.accent}; --kaart-beeld-pos:${kaartBeeldPos}; --wacht:${Math.min(i * 0.07, 0.4)}s">
     ${kaartBeeldHTML(h.beeld)}
     <span class="kaart-thema">🪢 Hechting</span>
     <span class="concept-kaart-glas">
@@ -644,6 +642,7 @@ function renderThemas() {
         ? swimLanesHTML(gefilterd)
         : `<p class="leeg-melding">Nog geen vragen voor deze invalshoek.</p>`;
       animaties();
+      kalibreerConceptKaartGlas();
     });
   });
 }
@@ -694,7 +693,7 @@ function renderVraag(id) {
         <ul>${v.vermijd.map(d => `<li>${d}</li>`).join("")}</ul>
       </div>
     </div>
-    ${v.zegDit ? `
+    ${Array.isArray(v.zegDit) && v.zegDit.length ? `
     <div class="zeg-dit verschijn">
       <h3>💬 Zinnen die kunnen helpen</h3>
       <ul>${v.zegDit.map(z => `<li>${z}</li>`).join("")}</ul>
@@ -898,7 +897,7 @@ function renderUitgelegd() {
     <div class="uitgelegd-categorie">
       <h2 class="uitgelegd-categorie-titel verschijn"><span class="uc-icoon">🪢</span> Hechtingsstijlen</h2>
       <p class="sectie-intro verschijn" style="margin-bottom:20px">Hoe je vroege banden je gevoel van veiligheid, nabijheid en vertrouwen kleuren — en hoe stijlen kunnen verschuiven richting meer veiligheid.</p>
-      <div class="kaart-raster">${HECHTINGSSTIJLEN.map((h, i) => hechtingKaartHTML(h, i)).join("")}</div>
+      <div class="kaart-raster hechting-raster">${HECHTINGSSTIJLEN.map((h, i) => hechtingKaartHTML(h, i)).join("")}</div>
     </div>
 
     <div class="uitgelegd-categorie">
@@ -959,7 +958,7 @@ function renderHechting() {
   <section class="sectie">
     <a class="terug-link" href="#/uitgelegd"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Trauma uitgelegd</a>
     ${sectieKop("🪢 Hechting", "De vier hechtingsstijlen", "Hoe je als kind leerde of nabijheid veilig was, werkt door in je latere relaties. Het is geen vast etiket: stijlen kunnen verschuiven naar meer veiligheid.", "hechting")}
-    <div class="kaart-raster">${HECHTINGSSTIJLEN.map((h, i) => hechtingKaartHTML(h, i)).join("")}</div>
+    <div class="kaart-raster hechting-raster">${HECHTINGSSTIJLEN.map((h, i) => hechtingKaartHTML(h, i)).join("")}</div>
   </section>`;
 }
 
@@ -1300,9 +1299,9 @@ function kalibreerConceptKaartGlas() {
       if (!titel) return;
 
       glas.classList.remove("concept-kaart-glas--2-regels", "concept-kaart-glas--3-regels");
-      const regels = telTitelRegels(titel);
-      if (regels >= 3) glas.classList.add("concept-kaart-glas--3-regels");
-      else if (regels === 2) glas.classList.add("concept-kaart-glas--2-regels");
+      // titels zijn op max 2 regels geklemd, dus nooit hoger dan 2 tellen
+      const regels = Math.min(2, telTitelRegels(titel));
+      if (regels === 2) glas.classList.add("concept-kaart-glas--2-regels");
     });
   });
 }

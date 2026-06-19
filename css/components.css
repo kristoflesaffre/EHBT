@@ -335,6 +335,12 @@
   display: none;
 }
 
+@media (min-width: 721px) {
+  .concept-kaart.vraag-kaart-met-beeld.kaart-groot {
+    aspect-ratio: 16 / 9;
+  }
+}
+
 .concept-kaart.vraag-kaart-met-beeld .vraag-kaart-beeld img {
   filter: saturate(.92) contrast(.94) brightness(1.1);
   transform: scale(1.01);
@@ -358,18 +364,18 @@
   padding: 6px 10px;
   border-radius: 999px;
   border: none;
-  background: rgba(255, 255, 255, .3);
-  color: color-mix(in srgb, var(--inkt) 88%, #fff);
+  background: rgba(255, 255, 255, .52);
+  color: var(--inkt);
   font-size: 10px;
   font-weight: 700;
   text-transform: none;
   letter-spacing: .05em;
-  text-shadow: none;
-  backdrop-filter: blur(14px) saturate(1.6);
-  -webkit-backdrop-filter: blur(14px) saturate(1.6);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
+  backdrop-filter: blur(16px) saturate(1.5) brightness(1.4);
+  -webkit-backdrop-filter: blur(16px) saturate(1.5) brightness(1.4);
   box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, .34),
-    inset 0 1px 0 rgba(255, 255, 255, .42);
+    inset 0 0 0 1px rgba(255, 255, 255, .5),
+    inset 0 1px 0 rgba(255, 255, 255, .55);
 }
 
 .concept-kaart-glas {
@@ -380,12 +386,12 @@
   width: calc(100% + 40px);
   max-width: none;
   margin: auto -20px -20px;
-  padding: 68px 20px 22px;
+  padding: 52px 20px 18px;
   isolation: isolate;
 }
 
 .concept-kaart-glas--2-regels {
-  padding-top: 82px;
+  padding-top: 64px;
 }
 
 .concept-kaart-glas--2-regels::before,
@@ -417,10 +423,10 @@
   position: absolute;
   inset: 0;
   z-index: -2;
-  backdrop-filter: blur(30px) saturate(1.9) brightness(1.14);
-  -webkit-backdrop-filter: blur(30px) saturate(1.9) brightness(1.14);
-  -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .18) 24%, rgba(0, 0, 0, .82) 52%, #000 100%);
-  mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .18) 24%, rgba(0, 0, 0, .82) 52%, #000 100%);
+  backdrop-filter: blur(34px) saturate(1.5) brightness(1.5);
+  -webkit-backdrop-filter: blur(34px) saturate(1.5) brightness(1.5);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .28) 20%, rgba(0, 0, 0, .9) 44%, #000 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .28) 20%, rgba(0, 0, 0, .9) 44%, #000 100%);
   pointer-events: none;
 }
 
@@ -432,13 +438,13 @@
   background:
     linear-gradient(180deg,
       rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, .14) 28%,
-      rgba(255, 255, 255, .34) 58%,
-      rgba(255, 255, 255, .52) 100%);
-  border-top: 1px solid rgba(255, 255, 255, .72);
+      rgba(255, 255, 255, .4) 26%,
+      rgba(255, 255, 255, .68) 56%,
+      rgba(255, 255, 255, .86) 100%);
+  border-top: 1px solid rgba(255, 255, 255, .82);
   box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, .82),
-    inset 0 -20px 36px rgba(255, 255, 255, .1);
+    inset 0 1px 1px rgba(255, 255, 255, .9),
+    inset 0 -26px 44px rgba(255, 255, 255, .42);
   -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .14) 22%, rgba(0, 0, 0, .78) 50%, #000 100%);
   mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .14) 22%, rgba(0, 0, 0, .78) 50%, #000 100%);
   pointer-events: none;
@@ -450,38 +456,57 @@
   margin: 0;
   padding: 0;
   color: var(--inkt);
-  line-height: 1.2;
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.22;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, .6);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Hechtingsstijlen: portret-kaart, donker glas, witte tekst */
+.hechting-raster {
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+}
+
+
+.hechting-kaart.vraag-kaart-met-beeld {
+  aspect-ratio: 4 / 5;
+}
+
+.hechting-kaart.vraag-kaart-met-beeld .kaart-thema {
+  background: rgba(0, 0, 0, .38);
+  color: #fff;
+  border: none;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, .18),
+    inset 0 1px 0 rgba(255, 255, 255, .22);
   text-shadow: none;
 }
 
-.vraag-kaart-vraag .kaart-voet {
-  justify-content: flex-end;
-  align-items: center;
+.hechting-kaart.vraag-kaart-met-beeld .concept-kaart-glas::before {
+  backdrop-filter: blur(30px) saturate(1.3) brightness(.55);
+  -webkit-backdrop-filter: blur(30px) saturate(1.3) brightness(.55);
 }
 
-.vraag-kaart-vraag .kaart-voet .pijl {
-  align-self: center;
+.hechting-kaart.vraag-kaart-met-beeld .concept-kaart-glas::after {
+  background:
+    linear-gradient(180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, .22) 30%,
+      rgba(0, 0, 0, .52) 62%,
+      rgba(0, 0, 0, .68) 100%);
+  border-top: 1px solid rgba(255, 255, 255, .14);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, .12),
+    inset 0 -20px 36px rgba(0, 0, 0, .1);
 }
 
-.vraag-kaart-vraag {
-  height: 306px;
-}
-
-.vraag-kaart-vraag h3 {
-  min-height: 3.36em;
-  line-height: 1.12;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.vraag-kaart-vraag .kort {
-  margin-bottom: 16px;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+.hechting-kaart.vraag-kaart-met-beeld .concept-kaart-titel {
+  color: #fff;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, .45);
 }
 
 .kaart-groot { grid-column: span 2; }

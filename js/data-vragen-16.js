@@ -7,7 +7,9 @@
 const VRAGEN_16 = [
   {
     id: "kind-trauma-herkennen",
-    beeld: { src: "img/vragen/kind-trauma-herkennen.jpg" },
+    beeld: {
+      src: "img/vragen/kind-trauma-herkennen.jpg"
+    },
     vraag: "Hoe herken ik trauma bij een kind?",
     thema: "naasten",
     leeftijd: [
@@ -73,7 +75,9 @@ const VRAGEN_16 = [
   },
   {
     id: "tiener-trauma-steunen",
-    beeld: { src: "img/vragen/tiener-trauma-steunen.jpg" },
+    beeld: {
+      src: "img/vragen/tiener-trauma-steunen.jpg"
+    },
     vraag: "Hoe steun ik een tiener met trauma?",
     thema: "naasten",
     leeftijd: [
@@ -138,7 +142,9 @@ const VRAGEN_16 = [
   },
   {
     id: "baby-peuter-hechting",
-    beeld: { src: "img/vragen/baby-peuter-hechting.jpg" },
+    beeld: {
+      src: "img/vragen/baby-peuter-hechting.jpg"
+    },
     vraag: "Hoe beïnvloedt trauma de hechting bij baby's en peuters?",
     thema: "naasten",
     leeftijd: [
@@ -204,7 +210,9 @@ const VRAGEN_16 = [
   },
   {
     id: "ouder-ptss-helpen",
-    beeld: { src: "img/vragen/ouder-ptss-helpen.jpg" },
+    beeld: {
+      src: "img/vragen/ouder-ptss-helpen.jpg"
+    },
     vraag: "Hoe help ik mijn ouder met PTSS zonder mezelf te verliezen?",
     thema: "naasten",
     leeftijd: [
@@ -269,7 +277,9 @@ const VRAGEN_16 = [
   },
   {
     id: "vriend-discloseert-trauma",
-    beeld: { src: "img/vragen/vriend-discloseert-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/vriend-discloseert-trauma.jpg"
+    },
     vraag: "Mijn vriend(in) vertelt over trauma. Hoe reageer ik goed?",
     thema: "naasten",
     leeftijd: [
@@ -334,7 +344,9 @@ const VRAGEN_16 = [
   },
   {
     id: "collega-met-trauma",
-    beeld: { src: "img/vragen/collega-met-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/collega-met-trauma.jpg"
+    },
     vraag: "Hoe ga ik respectvol om met een collega die trauma heeft?",
     thema: "naasten",
     leeftijd: [
@@ -399,7 +411,9 @@ const VRAGEN_16 = [
   },
   {
     id: "niet-zeggen-bij-trauma",
-    beeld: { src: "img/vragen/niet-zeggen-bij-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/niet-zeggen-bij-trauma.jpg"
+    },
     vraag: "Wat moet ik níet zeggen tegen iemand met trauma?",
     thema: "naasten",
     leeftijd: [
@@ -464,7 +478,9 @@ const VRAGEN_16 = [
   },
   {
     id: "hulp-weigeren-respecteren",
-    beeld: { src: "img/vragen/hulp-weigeren-respecteren.jpg" },
+    beeld: {
+      src: "img/vragen/hulp-weigeren-respecteren.jpg"
+    },
     vraag: "Iemand die ik liefheb weigert hulp. Hoe respecteer ik dat?",
     thema: "herstel",
     leeftijd: [
@@ -529,7 +545,9 @@ const VRAGEN_16 = [
   },
   {
     id: "naaste-uitgeput",
-    beeld: { src: "img/vragen/naaste-uitgeput.jpg" },
+    beeld: {
+      src: "img/vragen/naaste-uitgeput.jpg"
+    },
     vraag: "Ik raak uitgeput door iemand met trauma te steunen. Wat nu?",
     thema: "naasten",
     leeftijd: [
@@ -594,7 +612,9 @@ const VRAGEN_16 = [
   },
   {
     id: "gezin-en-trauma",
-    beeld: { src: "img/vragen/gezin-en-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/gezin-en-trauma.jpg"
+    },
     vraag: "Hoe beïnvloedt trauma een heel gezin?",
     thema: "familie",
     leeftijd: [
@@ -660,7 +680,9 @@ const VRAGEN_16 = [
   },
   {
     id: "school-melden-trauma",
-    beeld: { src: "img/vragen/school-melden-trauma.jpg" },
+    beeld: {
+      src: "img/vragen/school-melden-trauma.jpg"
+    },
     vraag: "Moet ik de school informeren over trauma van mijn kind?",
     thema: "naasten",
     leeftijd: [
@@ -726,7 +748,9 @@ const VRAGEN_16 = [
   },
   {
     id: "huisarts-gesprek-begeleiden",
-    beeld: { src: "img/vragen/huisarts-gesprek-begeleiden.jpg" },
+    beeld: {
+      src: "img/vragen/huisarts-gesprek-begeleiden.jpg"
+    },
     vraag: "Hoe bereid ik een huisartsgesprek over trauma voor — voor mezelf of een naaste?",
     thema: "herstel",
     leeftijd: [
