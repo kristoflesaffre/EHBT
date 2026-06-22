@@ -833,5 +833,347 @@ const VRAGEN_12 = [
       "tweede-therapie-zoeken",
       "waar-begin-ik-met-trauma"
     ]
+  },
+  {
+    id: "krijgt-iedereen-ptss",
+    beeld: {
+      src: "img/vragen/krijgt-iedereen-ptss.jpg"
+    },
+    vraag: "Krijgt iedereen PTSS na een schokkende gebeurtenis?",
+    thema: "wat-is-trauma",
+    leeftijd: [
+      "zelf",
+      "recent",
+      "naaste"
+    ],
+    uitgelicht: false,
+    tags: [
+      "ptss",
+      "veerkracht",
+      "herstel",
+      "schok",
+      "verwerking",
+      "normaal"
+    ],
+    kort: "Nee. De meeste mensen krijgen na een schokkende gebeurtenis géén blijvende PTSS. Heftige reacties in de eerste weken zijn normaal en zakken meestal vanzelf. Veerkracht is de regel — maar wie wél klachten houdt, verdient goede hulp.",
+    blokken: [
+      {
+        tekst: "Na een ongeval, geweld of verlies denken veel mensen dat PTSS bijna zeker volgt. Dat beeld klopt niet. In de eerste dagen en weken zijn heftige reacties — slecht slapen, schrikachtig zijn, beelden herbeleven, je verdoofd voelen — heel normaal. Bij de meeste mensen nemen die reacties vanzelf weer af."
+      },
+      {
+        kop: "Veerkracht is de regel, niet de uitzondering",
+        tekst: "Onderzoek bij grote groepen mensen na een schok laat steeds hetzelfde zien: het grootste deel herstelt op eigen kracht, vaak met steun van naasten. Een kleinere groep heeft meer tijd of hulp nodig om te herstellen. En een nog kleinere groep houdt langdurige klachten die we PTSS noemen. Er zijn dus meerdere wegen — en veerkracht komt het vaakst voor."
+      },
+      {
+        kop: "Waarom de een wel en de ander niet",
+        tekst: "Of je langdurig klachten houdt, zegt niets over 'sterk' of 'zwak' zijn. Het speelt mee of je eerder trauma meemaakte, of er steun om je heen is, of het gevaar echt voorbij is, hoe ernstig de gebeurtenis was en of je lichaam de stress kon ontladen. Houd je na enkele weken nog veel last, of wordt het erger? Dan is dat geen falen, maar een teken om hulp te zoeken."
+      }
+    ],
+    doeDit: [
+      "Geef jezelf de eerste weken rust en tijd; acute reacties horen bij een schok.",
+      "Zoek steun bij mensen die je vertrouwt — verbinding helpt het herstel.",
+      "Houden klachten na ongeveer een maand aan of worden ze erger? Bespreek het met je huisarts."
+    ],
+    vermijd: [
+      "Jezelf onder druk zetten omdat je het 'nu toch wel verwerkt zou moeten hebben'.",
+      "Elke heftige reactie meteen als PTSS bestempelen.",
+      "Wachten met hulp zoeken bij aanhoudende klachten, uit angst om aan te stellen."
+    ],
+    zegDit: [
+      "“Wat ik nu voel hoort bij een schok — het hoeft niet blijvend te zijn.”",
+      "“Hulp zoeken mag, ook als anderen sneller lijken te herstellen.”"
+    ],
+    bronnen: [
+      {
+        boek: "end-of-trauma",
+        detail: "Over hoe veerkracht de meest voorkomende uitkomst is na een schokkende gebeurtenis."
+      },
+      {
+        boek: "nurturing-resilience",
+        detail: "Over wat veerkracht ondersteunt en herstel mogelijk maakt."
+      },
+      {
+        boek: "body-keeps-score",
+        detail: "Over de verschillende manieren waarop mensen op schokkende gebeurtenissen reageren."
+      }
+    ],
+    gerelateerd: [
+      "wat-is-ptss",
+      "post-traumatische-groei",
+      "wat-is-trauma-erg-genoeg"
+    ]
+  },
+  {
+    id: "wat-is-felt-sense",
+    beeld: {
+      src: "img/vragen/wat-is-felt-sense.jpg"
+    },
+    vraag: "Wat is de 'felt sense' — en hoe gebruik ik die?",
+    thema: "lichaam",
+    leeftijd: [
+      "zelf",
+      "recent",
+      "vroeg"
+    ],
+    uitgelicht: false,
+    tags: [
+      "felt sense",
+      "lichaamsgevoel",
+      "somatisch",
+      "gewaarwording",
+      "lichaamsbewustzijn",
+      "signaal"
+    ],
+    kort: "De felt sense is het directe, lichamelijke gevoel van binnenuit — nog vóór je het in woorden vat. Leren dit op te merken (een knoop in je maag, warmte in je borst) is de basis van somatisch traumawerk: je lichaam vertelt iets wat je hoofd nog niet weet.",
+    blokken: [
+      {
+        tekst: "Soms 'weet' je iets aan je lijf voordat je het kunt uitleggen: een onrustig gevoel, een knoop in je buik, je schouders die optrekken. Peter Levine noemt dat de felt sense — de levende, lichamelijke ervaring van dit moment, nog vóór gedachten of woorden."
+      },
+      {
+        kop: "Waarom dit belangrijk is bij trauma",
+        tekst: "Bij trauma raken hoofd en lichaam vaak los van elkaar. Je kunt 'het is oké' denken terwijl je lijf in alarm staat. De felt sense brengt die twee weer samen. Door rustig te voelen wat er ín je gebeurt, krijg je toegang tot signalen die je anders wegdrukt — en kan je zenuwstelsel stap voor stap ontladen."
+      },
+      {
+        kop: "Hoe je ermee begint",
+        tekst: "Begin klein en zonder oordeel. Vraag jezelf: 'Wat voel ik nú in mijn lichaam?' Merk plek, temperatuur, spanning of beweging op. Je hoeft niets te veranderen of te verklaren — alleen opmerken en benoemen ('mijn keel zit dicht'). Voelt het te veel? Richt je dan even op iets neutraals of fijns in je lijf en kom later terug."
+      }
+    ],
+    doeDit: [
+      "Neem dagelijks even tijd om te scannen: wat voel ik nú, en wáár?",
+      "Gebruik simpele woorden voor sensaties: druk, warmte, trilling, leegte.",
+      "Werk in kleine stukjes; pauzeer zodra het te intens wordt."
+    ],
+    vermijd: [
+      "Sensaties meteen willen wegdenken of 'oplossen'.",
+      "Jezelf dwingen om bij overweldigende gevoelens te blijven.",
+      "Denken dat je het 'fout' voelt — er is geen juiste uitkomst."
+    ],
+    zegDit: [
+      "“Ik mag voelen wat er is, zonder het meteen te begrijpen.”",
+      "“Mijn lichaam geeft me informatie, geen bevel.”"
+    ],
+    bronnen: [
+      {
+        boek: "waking-the-tiger",
+        detail: "Over de felt sense als sleutel om vastgezette trauma-energie te ontladen."
+      },
+      {
+        boek: "in-an-unspoken-voice",
+        detail: "Over hoe lichamelijk gewaarworden het lichaam helpt trauma los te laten."
+      },
+      {
+        boek: "body-keeps-score",
+        detail: "Over het herstellen van het contact tussen lichaam en geest na trauma."
+      }
+    ],
+    gerelateerd: [
+      "wat-is-grounding",
+      "window-of-tolerance",
+      "wat-is-somatische-therapie"
+    ]
+  },
+  {
+    id: "mezelf-herouderen",
+    beeld: {
+      src: "img/vragen/mezelf-herouderen.jpg"
+    },
+    vraag: "Hoe herouder ik mezelf (reparenting)?",
+    thema: "innerlijk",
+    leeftijd: [
+      "zelf",
+      "vroeg"
+    ],
+    uitgelicht: false,
+    tags: [
+      "reparenting",
+      "herouderen",
+      "innerlijk kind",
+      "zelfzorg",
+      "zelfcompassie",
+      "herstel"
+    ],
+    kort: "Herouderen (reparenting) betekent: jezelf nu alsnog geven wat je als kind miste — veiligheid, troost, structuur en waardering. Niet door te doen alsof je weer kind bent, maar door als volwassene goed voor je jongere delen te zorgen.",
+    blokken: [
+      {
+        tekst: "Als je opgroeide zonder genoeg veiligheid, troost of erkenning, draag je dat gemis vaak nog mee. Herouderen — ook wel reparenting — is het idee dat jij als volwassene alsnog die zorgende ouderrol op je kunt nemen voor je jongere, gekwetste delen."
+      },
+      {
+        kop: "Wat het wél en niet is",
+        tekst: "Herouderen is niet je ouders vervangen of doen alsof het verleden niet telt. Het is: opmerken wat je jongere zelf nodig had (gezien worden, getroost worden, grenzen), en dat nu bewust geven. Dat gaat van vriendelijk tegen jezelf praten tot structuur en rust in je dagelijks leven brengen."
+      },
+      {
+        kop: "Hoe je begint",
+        tekst: "Let op momenten waarop je je klein, bang of waardeloos voelt — dat is vaak een jonger deel. Reageer dan zoals een warme ouder zou doen: erken het gevoel ('het is logisch dat dit pijn doet'), bied geruststelling, en zorg voor je basis (slaap, eten, veiligheid). Klein en herhaald werkt beter dan groots."
+      }
+    ],
+    doeDit: [
+      "Spreek tegen jezelf zoals je tegen een bang kind zou praten.",
+      "Geef jezelf structuur en rust — de basis die een kind nodig heeft.",
+      "Erken een gevoel eerst, vóór je het wilt oplossen."
+    ],
+    vermijd: [
+      "Jezelf hard toespreken als 'herouderen niet snel genoeg werkt'.",
+      "Denken dat je je ouders moet vergeven om voor jezelf te mogen zorgen.",
+      "Het alleen willen doen als het te zwaar wordt — steun mag."
+    ],
+    zegDit: [
+      "“Wat je voelt mag er zijn — ik ben er nu voor je.”",
+      "“Ik zorg vandaag voor mezelf zoals niemand dat vroeger deed.”"
+    ],
+    bronnen: [
+      {
+        boek: "carefrontation",
+        detail: "Over jezelf met zorg én eerlijkheid opnieuw opvoeden na een moeilijke jeugd."
+      },
+      {
+        boek: "wounded-inner-child",
+        detail: "Over het helen van het gekwetste innerlijke kind."
+      },
+      {
+        boek: "cptsd-surviving-thriving",
+        detail: "Over herouderen als kernonderdeel van herstel bij complex trauma."
+      }
+    ],
+    gerelateerd: [
+      "innerlijk-kind-wat-is-dat",
+      "innerlijke-criticus",
+      "zelfcompassie-hoe-begin"
+    ]
+  },
+  {
+    id: "onderdrukte-emoties-ziek",
+    beeld: {
+      src: "img/vragen/onderdrukte-emoties-ziek.jpg"
+    },
+    vraag: "Kunnen onderdrukte emoties me ziek maken?",
+    thema: "lichaam",
+    leeftijd: [
+      "zelf",
+      "vroeg"
+    ],
+    uitgelicht: false,
+    tags: [
+      "emoties",
+      "stress",
+      "ziekte",
+      "auto-immuun",
+      "onderdrukken",
+      "lichaam"
+    ],
+    kort: "Langdurig je emoties wegstoppen en 'altijd sterk of lief' zijn vraagt veel van je lichaam. Chronische stress kan op den duur bijdragen aan klachten en ziekten. Het is geen schuld of bewijs van zwakte — wél een reden om emoties weer ruimte te geven.",
+    blokken: [
+      {
+        tekst: "Gabor Maté beschrijft hoe mensen die hun gevoelens stelselmatig wegstoppen — vaak uit zorg voor anderen — daar lichamelijk een prijs voor kunnen betalen. Niet omdat ze het 'verkeerd' doen, maar omdat het lijf chronische spanning niet eindeloos kan dragen."
+      },
+      {
+        kop: "Hoe stress doorwerkt in je lichaam",
+        tekst: "Als je voortdurend boosheid, verdriet of behoeften onderdrukt, blijft je stresssysteem aanstaan. Langdurige stress beïnvloedt onder meer je afweer, hormonen en ontstekingen. Dat kan bijdragen aan vermoeidheid, pijn en bij sommige mensen aan auto-immuun- of andere klachten. Emoties veroorzaken niet 'zomaar' ziekte, maar wegstoppen heeft wél effect."
+      },
+      {
+        kop: "Wat helpt",
+        tekst: "De uitweg is niet 'positiever denken', maar eerlijker voelen. Leren je grenzen aan te geven, boosheid en verdriet ruimte te geven en hulp te vragen, haalt druk van je systeem. Lichaam en emoties horen bij elkaar — naar beide luisteren is een vorm van zorg, geen egoïsme."
+      }
+    ],
+    doeDit: [
+      "Geef boosheid en verdriet ruimte in plaats van ze weg te lachen.",
+      "Oefen met nee zeggen en grenzen — dat ontlast je lichaam.",
+      "Neem aanhoudende lichamelijke klachten serieus en bespreek ze medisch."
+    ],
+    vermijd: [
+      "Jezelf de schuld geven van ziekte ('het komt door mijn emoties').",
+      "Altijd de sterke of aardige zijn ten koste van jezelf.",
+      "Lichamelijke klachten enkel psychisch verklaren zonder medische check."
+    ],
+    zegDit: [
+      "“Mijn gevoelens mogen er zijn — wegstoppen kost me te veel.”",
+      "“Voor mezelf zorgen is geen egoïsme.”"
+    ],
+    bronnen: [
+      {
+        boek: "when-body-says-no",
+        detail: "Over de prijs van verborgen stress en onderdrukte emoties voor het lichaam."
+      },
+      {
+        boek: "disease-to-please",
+        detail: "Over hoe altijd 'lief' en pleasend zijn je gezondheid kan ondermijnen."
+      },
+      {
+        boek: "myth-of-normal",
+        detail: "Over de band tussen emotioneel wegstoppen, cultuur en ziekte."
+      }
+    ],
+    gerelateerd: [
+      "trauma-lichamelijke-klachten",
+      "kan-ik-geen-nee-zeggen",
+      "people-pleasing-herkennen"
+    ]
+  },
+  {
+    id: "relatie-herstellen-na-breuk",
+    beeld: {
+      src: "img/vragen/relatie-herstellen-na-breuk.jpg"
+    },
+    vraag: "Hoe herstel ik een relatie na een ruzie of breuk (rupture & repair)?",
+    thema: "hechting",
+    leeftijd: [
+      "zelf",
+      "naaste"
+    ],
+    uitgelicht: false,
+    tags: [
+      "relaties",
+      "herstel",
+      "conflict",
+      "hechting",
+      "verbinding",
+      "vertrouwen"
+    ],
+    kort: "Geen enkele relatie verloopt zonder breuken. Wat een band veilig maakt, is niet het uitblijven van ruzie, maar het hérstel erna: terugkomen, erkennen wat er misging en de verbinding opnieuw maken. Dat 'rupture & repair' is een vaardigheid die je kunt leren.",
+    blokken: [
+      {
+        tekst: "Veel mensen met trauma denken dat een goede relatie betekent: nooit botsen. Toch is dat onmogelijk. In elke band ontstaan breukjes — een misverstand, een snauw, je niet gehoord voelen. Sue Johnson laat zien dat veilige relaties niet de breuk vermijden, maar het herstel goed doen."
+      },
+      {
+        kop: "Waarom herstel zo belangrijk is",
+        tekst: "Als een breuk blijft hangen, stapelt afstand zich op en groeit wantrouwen. Word je na een conflict weer gezien en toegelaten, dan leert je zenuwstelsel: 'conflict is niet het einde, we komen er samen uit.' Juist dat herstel bouwt vertrouwen — vaak méér dan wanneer er nooit iets misgaat."
+      },
+      {
+        kop: "Hoe je herstelt",
+        tekst: "Wacht tot je allebei weer wat rustiger bent. Benoem je eigen aandeel zonder de ander aan te vallen ('ik reageerde fel, dat spijt me'). Luister naar wat de ander voelde, zonder meteen te verdedigen. En zoek weer toenadering — een gebaar, een blik, een woord. Bij trauma kan dit eng zijn; klein beginnen mag."
+      }
+    ],
+    doeDit: [
+      "Kom op een conflict terug als je allebei gekalmeerd bent.",
+      "Benoem je eigen aandeel vóór je naar de ander wijst.",
+      "Luister eerst naar het gevoel van de ander, los daarna pas op."
+    ],
+    vermijd: [
+      "Doen alsof er niets gebeurde en de breuk laten liggen.",
+      "Herstel forceren terwijl een van beiden nog overspoeld is.",
+      "Winnen belangrijker maken dan de verbinding terugvinden."
+    ],
+    zegDit: [
+      "“Ik wil dit goedmaken — onze band is me meer waard dan gelijk hebben.”",
+      "“Het spijt me; vertel me hoe het voor jou was.”"
+    ],
+    bronnen: [
+      {
+        boek: "hold-me-tight",
+        detail: "Over breuken herstellen en veilige verbinding opnieuw opbouwen."
+      },
+      {
+        boek: "attached",
+        detail: "Over hoe hechtingsstijlen conflict en herstel in relaties kleuren."
+      },
+      {
+        boek: "anchored",
+        detail: "Over co-regulatie: samen terugkeren naar rust en veiligheid."
+      }
+    ],
+    gerelateerd: [
+      "grenzen-liefdesrelatie",
+      "veilige-hechting-opbouwen",
+      "vertrouwen-opnieuw-leren"
+    ]
   }
 ];

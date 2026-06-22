@@ -207,7 +207,7 @@ const VRAGEN_4 = [
     beeld: {
       src: "img/vragen/boos-en-liefde-ouders.jpg"
     },
-    vraag: "Kan ik boos zijn op mijn ouders en ze toch liefhebben?",
+    vraag: "Kan ik boos zijn op mijn ouders en ze toch graag zien?",
     thema: "familie",
     leeftijd: [
       "zelf",
@@ -264,7 +264,8 @@ const VRAGEN_4 = [
       "narcistische-ouder-betekenis",
       "vergeven-om-te-helen",
       "wat-is-emotionele-verwaarlozing"
-    ]
+    ],
+    _index: 27
   },
   {
     id: "intergenerationeel-trauma",

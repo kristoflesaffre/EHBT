@@ -147,7 +147,7 @@ const VRAGEN_18 = [
     beeld: {
       src: "img/vragen/somatic-experiencing-intro.jpg"
     },
-    vraag: "Wat is Somatic Experiencing — een korte introductie?",
+    vraag: "Wat is Somatic Experiencing — een korte introductie",
     thema: "lichaam",
     leeftijd: [
       "zelf",
@@ -209,7 +209,8 @@ const VRAGEN_18 = [
       "wat-is-somatische-therapie",
       "lichaam-reageert-zonder-gevaar",
       "dissociatie-naast-mezelf"
-    ]
+    ],
+    _index: 188
   },
   {
     id: "dbt-skills-thuis",
@@ -232,7 +233,7 @@ const VRAGEN_18 = [
       "coping",
       "werkboek"
     ],
-    kort: "Ja — veel DBT-vaardigheden kun je thuis oefenen: aandacht (mindfulness), een crisis doorkomen, je emoties kalmeren en omgaan met stress. Bij complex trauma werkt het het best als aanvulling op therapie, niet als vervanging.",
+    kort: "Ja — veel DBT-vaardigheden (Dialectical Behavior Therapy) kun je thuis oefenen: aandacht (mindfulness), een crisis doorkomen, je emoties kalmeren en omgaan met stress. Bij complex trauma werkt het het best als aanvulling op therapie, niet als vervanging.",
     blokken: [
       {
         tekst: "DBT (Dialectical Behavior Therapy) leert concrete vaardigheden voor intense emoties, impulsen en relationele stormen. Veel mensen met trauma herkennen zich — en vragen of ze dit zelf kunnen oefenen. Het antwoord is: gedeeltelijk ja, met een paar kanttekeningen."
@@ -278,7 +279,8 @@ const VRAGEN_18 = [
       "window-of-tolerance-verbreden",
       "wat-is-grounding",
       "flashback-wat-doe-ik"
-    ]
+    ],
+    _index: 194
   },
   {
     id: "ifs-zelf-oefenen",
