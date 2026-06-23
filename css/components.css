@@ -201,6 +201,12 @@
   align-items: stretch;
 }
 
+.responsive-media {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .vraag-kaart {
   position: relative; display: flex; flex-direction: column;
   background: var(--kaart); border: 1px solid var(--lijn);
@@ -597,6 +603,7 @@
   scrollbar-width: none;
   margin-top: -8px;
   padding: 8px 0 16px;
+  overscroll-behavior-x: contain;
 }
 
 .swim-lane-rij::-webkit-scrollbar { display: none; }
@@ -1080,37 +1087,39 @@
 
 .bron-notitie strong { color: var(--inkt); }
 
-.therapie-context-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  max-width: 980px;
+.therapie-wijzer-sectie {
   margin: 0 0 30px;
 }
 
-.therapie-context-kaart {
-  padding: 20px 22px;
-  border: 1px solid var(--lijn);
-  border-radius: 14px;
-  background: color-mix(in srgb, var(--kaart) 84%, var(--papier-diep));
-  box-shadow: var(--schaduw-zacht);
+.therapie-wijzer-kop {
+  max-width: 760px;
+  margin-bottom: 18px;
 }
 
-.therapie-context-kaart h2 {
-  font-family: var(--tekst);
-  font-size: .86rem;
-  line-height: 1.25;
-  letter-spacing: .09em;
-  text-transform: uppercase;
-  color: var(--terracotta-diep);
-  margin: 0 0 8px;
+.therapie-wijzer-kop h2 {
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
+  margin-bottom: 8px;
 }
 
-.therapie-context-kaart p {
+.therapie-wijzer-kop p {
   margin: 0;
   color: var(--inkt-zacht);
-  font-size: .92rem;
-  line-height: 1.62;
+  max-width: 720px;
+}
+
+.therapie-wijzer-raster {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 980px;
+}
+
+.therapie-wijzer-kaart.vraag-kaart-met-beeld {
+  aspect-ratio: 16 / 9;
+}
+
+.therapie-wijzer-kaart .concept-kaart-titel {
+  font-size: 1.14rem;
 }
 
 .therapie-groep {
@@ -1134,8 +1143,12 @@
 }
 
 @media (max-width: 760px) {
-  .therapie-context-grid {
+  .therapie-wijzer-raster {
     grid-template-columns: 1fr;
+  }
+
+  .therapie-wijzer-kaart.vraag-kaart-met-beeld {
+    aspect-ratio: 5 / 4;
   }
 }
 
@@ -1643,7 +1656,7 @@
 
 .leeftijd-strip {
   display: grid;
-  grid-template-columns: repeat(5, minmax(132px, 1fr));
+  grid-template-columns: repeat(3, minmax(132px, 1fr));
   gap: 14px;
   margin: 28px 0 0;
   align-items: stretch;

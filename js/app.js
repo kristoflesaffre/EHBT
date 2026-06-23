@@ -30,10 +30,42 @@ const themaVan = id => THEMAS.find(t => t.id === id);
 const boekVan = id => BOEKEN[id];
 const vraagVan = id => VRAGEN.find(v => v.id === id);
 const therapieVan = id => THERAPIEEN.find(t => t.id === id);
+const therapieWegwijzerVan = id => THERAPIE_WEGWIJZERS.find(w => w.id === id);
 const conceptVan = id => CONCEPTEN.find(c => c.id === id);
 const hechtingVan = id => HECHTINGSSTIJLEN.find(h => h.id === id);
 const stoornisVan = id => STOORNISSEN.find(s => s.id === id);
 const leeftijdNaam = id => (LEEFTIJDEN.find(l => l.id === id) || {}).naam || id;
+
+const RESPONSIVE_PRESETS = {
+  card: {
+    widths: [360, 720, 1200],
+    sizes: "(max-width: 640px) 272px, (max-width: 1100px) calc(50vw - 32px), 360px"
+  },
+  therapieCard: {
+    widths: [360, 720, 1200],
+    sizes: "(max-width: 640px) 272px, (max-width: 1100px) calc(50vw - 34px), 360px"
+  },
+  detail: {
+    widths: [360, 720, 1200],
+    sizes: "(max-width: 720px) calc(100vw - 40px), 760px"
+  },
+  pageHeader: {
+    widths: [640, 960, 1440],
+    sizes: "(max-width: 1159px) 100vw, 50vw"
+  },
+  hero: {
+    widths: [768, 1280, 1920],
+    sizes: "100vw"
+  },
+  coverThumb: {
+    widths: [160, 320, 480],
+    sizes: "34px"
+  },
+  bookCover: {
+    widths: [160, 320, 480],
+    sizes: "(max-width: 720px) 120px, 160px"
+  }
+};
 /* ---------- crisis ---------- */
 
 function crisisBalkHTML() {
@@ -49,9 +81,67 @@ function crisisBalkHTML() {
 
 /* ---------- bouwstenen ---------- */
 
+function imageParts(src) {
+  if (!src || !src.startsWith("img/")) return null;
+  const match = src.match(/^(.*)\/([^/]+)\.([a-zA-Z0-9]+)$/);
+  if (!match) return null;
+  return {
+    dir: match[1],
+    name: match[2],
+    ext: match[3].toLowerCase()
+  };
+}
+
+function variantBase(src) {
+  const parts = imageParts(src);
+  if (!parts) return "";
+  return `${parts.dir}/_responsive/${parts.name}`;
+}
+
+function variantPath(src, width, format) {
+  const base = variantBase(src);
+  return base ? `${base}-${width}.${format}` : src;
+}
+
+function fallbackVariantExt(ext) {
+  if (ext === "png") return "png";
+  if (ext === "gif") return "gif";
+  return "jpg";
+}
+
+function responsivePictureHTML(src, alt = "", {
+  preset = "card",
+  loading = "lazy",
+  fetchpriority = "",
+  imgClass = ""
+} = {}) {
+  const config = RESPONSIVE_PRESETS[preset];
+  const parts = imageParts(src);
+  const attrs = [
+    `alt="${alt}"`,
+    `loading="${loading}"`,
+    `decoding="async"`,
+    fetchpriority ? `fetchpriority="${fetchpriority}"` : "",
+    imgClass ? `class="${imgClass}"` : ""
+  ].filter(Boolean).join(" ");
+
+  if (!config || !parts) {
+    return `<img src="${src}" ${attrs}>`;
+  }
+
+  const fallbackExt = fallbackVariantExt(parts.ext);
+  const webpSrcset = config.widths.map(width => `${variantPath(src, width, "webp")} ${width}w`).join(", ");
+  const fallbackSrcset = config.widths.map(width => `${variantPath(src, width, fallbackExt)} ${width}w`).join(", ");
+
+  return `<picture class="responsive-media">
+    <source type="image/webp" srcset="${webpSrcset}" sizes="${config.sizes}">
+    <img src="${src}" srcset="${fallbackSrcset}" sizes="${config.sizes}" ${attrs}>
+  </picture>`;
+}
+
 function kaartBeeldHTML(beeld) {
   if (!beeld || !beeld.src) return "";
-  return `<span class="vraag-kaart-beeld" aria-hidden="true"><img src="${beeld.src}" alt="" loading="lazy"></span><span class="vraag-kaart-waslaag" aria-hidden="true"></span>`;
+  return `<span class="vraag-kaart-beeld" aria-hidden="true">${responsivePictureHTML(beeld.src, "", { preset: "card", loading: "lazy" })}</span><span class="vraag-kaart-waslaag" aria-hidden="true"></span>`;
 }
 
 function vraagKaartHTML(v, i = 0, groot = false) {
@@ -84,7 +174,7 @@ function bronHTML(b) {
 
 function bronThumbHTML(id, boek) {
   if (!boek.cover) return `<span class="bron-rug" aria-hidden="true"></span>`;
-  return `<span class="bron-rug bron-cover-wrap" aria-hidden="true"><img src="${boek.cover}" alt="" loading="lazy"></span>`;
+  return `<span class="bron-rug bron-cover-wrap" aria-hidden="true">${responsivePictureHTML(boek.cover, "", { preset: "coverThumb", loading: "lazy" })}</span>`;
 }
 
 function boekCoverHTML(id, boek, decoratief = true) {
@@ -93,7 +183,7 @@ function boekCoverHTML(id, boek, decoratief = true) {
   }
   const alt = decoratief ? "" : `Boekomslag van ${boek.titel}`;
   return `<span class="boek-rug boek-cover-wrap" style="--boekkleur:${boek.kleur}" ${decoratief ? `aria-hidden="true"` : ""}>
-    <img class="boek-cover" src="${boek.cover}" alt="${alt}" loading="lazy">
+    ${responsivePictureHTML(boek.cover, alt, { preset: "bookCover", loading: "lazy", imgClass: "boek-cover" })}
   </span>`;
 }
 
@@ -235,7 +325,7 @@ function kopBeeldHTML(id) {
   const src = PAGINA_BEELDEN[id];
   if (!src) return "";
   return `<figure class="kopbeeld kopbeeld-${id}" aria-hidden="true">
-    <img src="${src}" alt="" loading="lazy">
+    ${responsivePictureHTML(src, "", { preset: "pageHeader", loading: "eager", fetchpriority: "high" })}
   </figure>`;
 }
 
@@ -273,7 +363,7 @@ function renderHome() {
       <div class="vorm vorm-1"></div><div class="vorm vorm-2"></div><div class="vorm vorm-3"></div>
     </div>
     <figure class="held-foto" aria-hidden="true">
-      <img src="img/hero/trauma-en-herstel.jpg" alt="" loading="eager" fetchpriority="high">
+      ${responsivePictureHTML("img/hero/trauma-en-herstel.jpg", "", { preset: "hero", loading: "eager", fetchpriority: "high" })}
     </figure>
     <div class="held-binnen">
       <h1 class="verschijn" style="--wacht:.22s">Rustige uitleg over <em>trauma en herstel</em></h1>
@@ -496,7 +586,7 @@ function therapieKaartHTML(t, i = 0) {
   const kaartBeeldPos = (t.beeld && t.beeld.kaartPos) || "center";
   return `
   <a class="onderzoek-kaart therapie-kaart${heeftBeeld ? " therapie-kaart-met-beeld" : ""} verschijn" href="#/therapie/${t.id}" style="--accent:${t.accent}; --wacht:${Math.min(i * 0.05, 0.45)}s">
-    ${heeftBeeld ? `<span class="therapie-kaart-beeld" aria-hidden="true" style="--kaart-beeld-pos:${kaartBeeldPos}"><img src="${t.beeld.src}" alt="" loading="lazy"></span>` : ""}
+    ${heeftBeeld ? `<span class="therapie-kaart-beeld" aria-hidden="true" style="--kaart-beeld-pos:${kaartBeeldPos}">${responsivePictureHTML(t.beeld.src, "", { preset: "therapieCard", loading: "lazy" })}</span>` : ""}
     <h3>${t.naam}</h3>
     <span class="therapie-voluit">${t.voluit}</span>
     ${therapieLabelsHTML(t)}
@@ -508,7 +598,7 @@ function detailBeeldHTML(beeld, cssClass, { wait = ".14s" } = {}) {
   if (!beeld || !beeld.src) return "";
   const beeldPos = beeld.detailPos || beeld.kaartPos || "center";
   return `<figure class="${cssClass} verschijn" style="--beeld-pos:${beeldPos}; --wacht:${wait}">
-    <img src="${beeld.src}" alt="${beeld.alt || ""}" loading="eager">
+    ${responsivePictureHTML(beeld.src, beeld.alt || "", { preset: "detail", loading: "eager", fetchpriority: "high" })}
   </figure>`;
 }
 
@@ -525,6 +615,19 @@ function therapieGroepHTML(groep, groepIndex = 0) {
         ${items.map((t, i) => therapieKaartHTML(t, i)).join("")}
       </div>
     </section>`;
+}
+
+function therapieWijzerKaartHTML(item, i = 0) {
+  const heeftBeeld = Boolean(item.beeld && item.beeld.src);
+  const kaartBeeldPos = (item.beeld && item.beeld.kaartPos) || "center";
+  return `
+  <a class="vraag-kaart concept-kaart therapie-wijzer-kaart${heeftBeeld ? " vraag-kaart-met-beeld" : ""} verschijn" href="#/therapie-wijzer/${item.id}" style="--accent:${item.accent}; --kaart-beeld-pos:${kaartBeeldPos}; --wacht:${Math.min(i * 0.07, 0.25)}s">
+    ${kaartBeeldHTML(item.beeld)}
+    <span class="kaart-thema">${item.label || "Therapiewijzer"}</span>
+    <span class="concept-kaart-glas">
+      <h3 class="concept-kaart-titel">${item.titel}</h3>
+    </span>
+  </a>`;
 }
 
 function conceptKaartHTML(c, i = 0) {
@@ -579,11 +682,9 @@ function stoornisKaartHTML(s, i = 0) {
 function leeftijdStripHTML() {
   const filterAccent = "#3f7d72";
   const opties = [
-    { id: "alle",   icoon: "🌗", kort: "Alles",  naam: "Alle invalshoeken", actief: true },
-    { id: "zelf",   icoon: "🫀", kort: "Jij",    naam: "Voor jezelf",       actief: false },
-    { id: "naaste", icoon: "🤝", kort: "Samen",  naam: "Voor een naaste",   actief: false },
-    { id: "recent", icoon: "⚡", kort: "Recent", naam: "Recent trauma",     actief: false },
-    { id: "vroeg",  icoon: "🕰", kort: "Vroeg",  naam: "Vroeg / complex",   actief: false }
+    { id: "zelf",   icoon: "🫀", kort: "Jij",    naam: "Voor jezelf",   actief: false },
+    { id: "recent", icoon: "⚡", kort: "Recent", naam: "Recent trauma", actief: false },
+    { id: "vroeg",  icoon: "🕰", kort: "Vroeg",  naam: "Vroeg / complex", actief: false }
   ];
   return opties.map(opt => `<button class="leeftijd-card${opt.actief ? " actief" : ""}" data-leeftijd="${opt.id}" style="--ls-k:${filterAccent}" aria-pressed="${opt.actief}">
     <span class="leeftijd-card-beeld" aria-hidden="true">
@@ -621,30 +722,12 @@ function swimLanesHTML(vragen) {
 function renderThemas() {
   app.innerHTML = `
   <section class="sectie">
-    ${sectieKop("Alle vragen", "Waar zit jij mee?", "Kies een thema of filter op invalshoek. Elk antwoord: eerst kort, dan onderbouwd, altijd met bronnen.", "vragen")}
+    ${sectieKop("Alle vragen", "Waar zit jij mee?", "Kies een thema of verken per onderwerp. Elk antwoord: eerst kort, dan onderbouwd, altijd met bronnen.", "vragen")}
     <div class="chip-rij verschijn">${chipRijHTML()}</div>
-    <div class="leeftijd-strip verschijn" role="group" aria-label="Filter op invalshoek">
-      ${leeftijdStripHTML()}
-    </div>
     <div id="vragenRaster" style="margin-top:34px">
       ${swimLanesHTML(VRAGEN)}
     </div>
   </section>`;
-
-  app.querySelectorAll("[data-leeftijd]").forEach(knop => {
-    knop.addEventListener("click", () => {
-      app.querySelectorAll("[data-leeftijd]").forEach(k => { k.classList.remove("actief"); k.setAttribute("aria-pressed", "false"); });
-      knop.classList.add("actief"); knop.setAttribute("aria-pressed", "true");
-      const keuze = knop.dataset.leeftijd;
-      const gefilterd = keuze === "alle" ? VRAGEN : VRAGEN.filter(v => (v.leeftijd || []).includes(keuze));
-      const raster = document.getElementById("vragenRaster");
-      raster.innerHTML = gefilterd.length
-        ? swimLanesHTML(gefilterd)
-        : `<p class="leeg-melding">Nog geen vragen voor deze invalshoek.</p>`;
-      animaties();
-      kalibreerConceptKaartGlas();
-    });
-  });
 }
 
 function renderThema(id) {
@@ -774,26 +857,8 @@ function renderMythes() {
   app.innerHTML = `
   <section class="sectie">
     ${sectieKop("Mythbusters", "Veelgehoorde mythes over trauma", "Halve waarheden die vaak worden doorgegeven, maar die het onderzoek en de gebruikte bronnen stevig tegenspreken. Klik open voor wat er wél klopt.", "mythes")}
-    <div class="leeftijd-strip mythe-filter verschijn" role="group" aria-label="Filter mythes op invalshoek">
-      ${leeftijdStripHTML()}
-    </div>
     <div id="mytheLijst" style="margin-top:34px">${MYTHES.map(mytheHTML).join("")}</div>
   </section>`;
-
-  app.querySelectorAll("[data-leeftijd]").forEach(knop => {
-    knop.addEventListener("click", () => {
-      app.querySelectorAll("[data-leeftijd]").forEach(k => { k.classList.remove("actief"); k.setAttribute("aria-pressed", "false"); });
-      knop.classList.add("actief"); knop.setAttribute("aria-pressed", "true");
-      const keuze = knop.dataset.leeftijd;
-      const lijst = keuze === "alle" ? MYTHES : MYTHES.filter(m => (m.leeftijd || []).includes(keuze));
-      const doel = document.getElementById("mytheLijst");
-      doel.innerHTML = lijst.length
-        ? lijst.map(mytheHTML).join("")
-        : `<p class="leeg-melding">Nog geen mythes voor deze invalshoek.</p>`;
-      koppelMythes();
-      animaties();
-    });
-  });
 }
 
 /* ---------- therapieën ---------- */
@@ -805,16 +870,15 @@ function renderTherapieen() {
     <div class="bron-notitie verschijn">
       <strong>Lees dit eerst:</strong> richtlijnen geven vooral sterke steun aan traumagerichte behandelingen zoals EMDR en trauma-focused CBT bij PTSS. Bij complex trauma of vroeg trauma in relaties is vaak meer nodig: eerst stevig worden, lichaamswerk, hechting en relaties, schaamte en delenwerk. Deze pagina's helpen je het gesprek met een hulpverlener voor te bereiden — ze vervangen dat gesprek niet.
     </div>
-    <div class="therapie-context-grid verschijn">
-      <article class="therapie-context-kaart">
-        <h2>PTSS of complex trauma?</h2>
-        <p>Bij één duidelijke schokkende gebeurtenis staat vaak de herinnering centraal: herbeleven, vermijden en alarm. Bij complex trauma gaat het meestal om onveiligheid die zich herhaalde of vroeg begon, vaak in relaties. Dan spelen ook je zelfbeeld, je emoties kalmeren, schaamte, afhaken (dissociatie) en vertrouwen mee.</p>
-      </article>
-      <article class="therapie-context-kaart">
-        <h2>Waar past DBT dan?</h2>
-        <p>DBT is sterk voor crisisvaardigheden, je emoties kalmeren en zelfbeschadiging. Meestal is het op zichzelf geen volledige traumaverwerking. Bij complex trauma kan DBT wel een belangrijke eerste laag zijn: stevig genoeg worden om daarna lichaamsgericht, in relaties of traumagericht te kunnen werken.</p>
-      </article>
-    </div>
+    <section class="therapie-wijzer-sectie verschijn" style="--wacht:.06s">
+      <div class="therapie-wijzer-kop">
+        <h2>PTSS, complex trauma en waar DBT past</h2>
+        <p>Twee korte wegwijzers vóór je naar losse therapieën kijkt: gaat het vooral om één afgebakende traumaherinnering, of om bredere sporen van herhaalde onveiligheid? En heb je eerst meer stabiliteit nodig voor je dieper werkt?</p>
+      </div>
+      <div class="therapie-wijzer-raster">
+        ${THERAPIE_WEGWIJZERS.map((item, i) => therapieWijzerKaartHTML(item, i)).join("")}
+      </div>
+    </section>
     ${THERAPIE_GROEPEN.map(therapieGroepHTML).join("")}
   </section>`;
 }
@@ -864,6 +928,47 @@ function renderTherapie(id) {
       <h2 class="verschijn" style="font-size:1.4rem">Verwante therapieën</h2>
       <div class="onderzoek-raster" style="margin-top:20px">
         ${verwant.map((g, i) => therapieKaartHTML(g, i)).join("")}
+      </div>
+    </div>` : ""}
+  </article>`;
+}
+
+function renderTherapieWegwijzer(id) {
+  const item = therapieWegwijzerVan(id);
+  if (!item) return renderTherapieen();
+  const verwant = (item.gerelateerdeTherapieen || []).map(therapieVan).filter(Boolean);
+  const detailBeeld = detailBeeldHTML(item.beeld, "concept-detail-beeld", { wait: ".16s" });
+  app.innerHTML = `
+  <article class="sectie sectie-smal">
+    <div class="detail-nav-rij">
+      <a class="terug-link" href="#/therapieen"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Alle therapieën</a>
+      <span class="bovenlabel verschijn" style="color:${item.accent}">${item.label || "Therapiewijzer"}</span>
+    </div>
+    <h1 class="vraag-titel verschijn" style="--wacht:.05s">${item.titel}</h1>
+    ${item.leeswijzer ? `<p class="sectie-intro verschijn" style="--wacht:.08s">${item.leeswijzer}</p>` : ""}
+    <div class="tldr verschijn" style="--wacht:.12s"><p>${item.kort}</p></div>
+    ${detailBeeld}
+    <div class="antwoord-blok">
+      ${(item.blokken || []).map((blok, i) => `
+        ${blok.kop ? `<h2 class="verschijn">${blok.kop}</h2>` : ""}
+        <p class="verschijn" style="--wacht:${Math.min(i * 0.04, 0.2)}s">${blok.tekst}</p>`).join("")}
+    </div>
+    ${item.kernpunten && item.kernpunten.length ? `
+    <h2 class="verschijn" style="font-size:1.35rem">In het kort</h2>
+    <ul class="kern-lijst">
+      ${item.kernpunten.map((punt, i) => `<li class="verschijn" style="--wacht:${i * 0.07}s">${punt}</li>`).join("")}
+    </ul>` : ""}
+    ${item.bronnen && item.bronnen.length ? `
+    <div class="bronnen verschijn">
+      <h2>Waar dit vandaan komt</h2>
+      <div class="bron-lijst">${item.bronnen.map(bronHTML).join("")}</div>
+    </div>` : ""}
+    <p class="disclaimer-blok"><span>Informatief — geen vervanging voor professioneel advies. Gebruik dit als wegwijzer voor het gesprek met een erkende hulpverlener.</span></p>
+    ${verwant.length ? `
+    <div class="gerelateerd">
+      <h2 class="verschijn" style="font-size:1.4rem">Past hier vaak naast</h2>
+      <div class="onderzoek-raster" style="margin-top:20px">
+        ${verwant.map((therapie, i) => therapieKaartHTML(therapie, i)).join("")}
       </div>
     </div>` : ""}
   </article>`;
@@ -1193,6 +1298,7 @@ const routes = [
   [/^#\/mythes$/, () => { renderMythes(); return "Mythes ontkracht"; }],
   [/^#\/therapieen$/, () => { renderTherapieen(); return "Therapieën"; }],
   [/^#\/therapie\/(.+)$/, m => { renderTherapie(m[1]); return (therapieVan(m[1]) || {}).naam; }],
+  [/^#\/therapie-wijzer\/(.+)$/, m => { renderTherapieWegwijzer(m[1]); return (therapieWegwijzerVan(m[1]) || {}).titel; }],
   [/^#\/uitgelegd$/, () => { renderUitgelegd(); return "Trauma uitgelegd"; }],
   [/^#\/concept\/(.+)$/, m => { renderConcept(m[1]); return (conceptVan(m[1]) || {}).titel; }],
   [/^#\/hechting$/, () => { renderHechting(); return "Hechtingsstijlen"; }],
@@ -1339,6 +1445,10 @@ function zoekIndex() {
   THERAPIEEN.forEach(t => items.push({
     soort: "Therapie", titel: t.naam, kort: t.kort, url: `#/therapie/${t.id}`,
     tekst: `${t.naam} ${t.voluit} ${t.kort} ${t.voorWie} ${(t.geschiktBij || []).join(" ")}`.toLowerCase()
+  }));
+  THERAPIE_WEGWIJZERS.forEach(item => items.push({
+    soort: "Therapiewijzer", titel: item.titel, kort: item.kort, url: `#/therapie-wijzer/${item.id}`,
+    tekst: `${item.titel} ${item.kort} ${(item.blokken || []).map(blok => blok.tekst).join(" ")}`.toLowerCase()
   }));
   CONCEPTEN.forEach(c => items.push({
     soort: "Uitgelegd", titel: c.titel, kort: c.kort, url: `#/concept/${c.id}`,

@@ -834,3 +834,115 @@ const THERAPIEEN = [
   }
 ];
 
+const THERAPIE_WEGWIJZERS = [
+  {
+    id: "ptss-of-complex-trauma",
+    titel: "PTSS of complex trauma?",
+    label: "Therapiewijzer",
+    accent: "#4a6b8a",
+    leeswijzer: "5 min lezen",
+    beeld: {
+      src: "img/therapieen/ptss-of-complex-trauma.jpg",
+      alt: "Therapeut die twee beeldkaarten toont om het verschil tussen een afgebakende traumaherinnering en relationeel complex trauma uit te leggen.",
+      kaartPos: "54% center",
+      detailPos: "54% center"
+    },
+    kort: "Bij PTSS staat vaak één schokkende herinnering centraal. Bij complex trauma gaat het vaker om herhaalde of vroege onveiligheid, met extra impact op zelfbeeld, emotieregulatie, afhaken (dissociatie) en vertrouwen.",
+    blokken: [
+      {
+        kop: "Wanneer PTSS vaak op de voorgrond staat",
+        tekst: "Bij PTSS draait het meestal om één duidelijke gebeurtenis of een afgebakende reeks gebeurtenissen. De kernklachten zijn vaak herbeleven, vermijden en een zenuwstelsel dat nog steeds alarm slaat. Dan staan traumagerichte behandelingen zoals EMDR of trauma-focused CBT vaak sneller centraal, omdat de herinnering zelf nog 'te heet' is opgeslagen."
+      },
+      {
+        kop: "Wat er bij complex trauma bijkomt",
+        tekst: "Bij complex trauma gaat het vaker om onveiligheid die zich herhaalde of al vroeg begon, vaak juist in relaties. Daardoor blijft niet alleen een herinnering hangen, maar raakt ook je gevoel over jezelf, je vermogen om je emoties te kalmeren, je vertrouwen in anderen en soms je contact met je lichaam beschadigd. Schaamte, leegte, een harde innerlijke criticus en afhaken (dissociatie) komen dan vaker mee op de voorgrond."
+      },
+      {
+        kop: "Waarom dit de therapiekeuze verandert",
+        tekst: "Het onderscheid zegt niet welke vorm 'erger' is, maar wel waar je best begint. Bij klassieke PTSS kun je vaak sneller naar het verwerken van de herinnering zelf. Bij complex trauma is meestal meer gefaseerd werk nodig: eerst meer veiligheid, meer draagkracht en meer regulatie, en pas daarna dieper werken met herinneringen. Vaak hoort daar ook lichaamsgericht werk, delenwerk of hechtingsgericht werken bij."
+      }
+    ],
+    kernpunten: [
+      "PTSS draait vaak om herbeleven, vermijden en alarm rond een afgebakende gebeurtenis.",
+      "Complex trauma raakt breder: zelfbeeld, emotieregulatie, relaties en soms dissociatie.",
+      "Bij complex trauma telt de volgorde extra: eerst stevigheid, dan pas dieper verwerken."
+    ],
+    bronnen: [
+      {
+        boek: "body-keeps-score",
+        detail: "Over klassieke PTSS, traumaherinneringen en waarom het lichaam in alarm kan blijven."
+      },
+      {
+        boek: "cptsd-surviving-thriving",
+        detail: "Over emotionele flashbacks, schaamte en relationele sporen van complex trauma."
+      },
+      {
+        boek: "healing-developmental-trauma",
+        detail: "Over vroeg en relationeel ontwikkelingstrauma en de gevolgen voor identiteit en contact."
+      },
+      {
+        boek: "complex-ptsd-workbook",
+        detail: "Over gefaseerd werken: eerst stabiliteit, daarna pas dieper verwerken."
+      }
+    ],
+    gerelateerdeTherapieen: [
+      "emdr",
+      "trauma-focused-cbt",
+      "somatic-experiencing",
+      "narm"
+    ]
+  },
+  {
+    id: "waar-past-dbt-dan",
+    titel: "Waar past DBT dan?",
+    label: "Therapiewijzer",
+    accent: "#516b78",
+    leeswijzer: "4 min lezen",
+    beeld: {
+      src: "img/therapieen/waar-past-dbt-dan.jpg",
+      alt: "Therapeut en client die samen een werkblad en vaardigheidskaartjes gebruiken als voorbereiding op emotieregulatie en stabilisatie.",
+      kaartPos: "center center",
+      detailPos: "center center"
+    },
+    kort: "DBT is meestal geen volledige traumaverwerking op zich. Wel is het vaak een sterke eerste laag: crisis verminderen, emoties leren dragen, zelfbeschadiging opvangen en genoeg stabiliteit opbouwen om later dieper te kunnen werken.",
+    blokken: [
+      {
+        kop: "Waar DBT sterk in is",
+        tekst: "DBT leert heel concrete vaardigheden: aandacht (mindfulness), crisis doorkomen zonder extra schade, emoties beter reguleren en relaties minder ontwrichtend laten verlopen. Voor mensen die snel overspoeld raken, zichzelf verwonden, vaak in crisis schieten of helemaal dichtklappen, kan dat een enorme eerste winst zijn."
+      },
+      {
+        kop: "Wat DBT meestal niet alleen doet",
+        tekst: "DBT verwerkt op zichzelf meestal niet de volle lading van oude traumaherinneringen, hechtingswonden of giftige schaamte. Het helpt je vooral om steviger te worden, zodat je niet telkens overspoeld raakt door wat er in je omgaat. Voor veel mensen is dat geen eindpunt maar een fundament: het maakt later ruimte voor traumagericht, lichaamsgericht of relationeel werk."
+      },
+      {
+        kop: "Wanneer DBT juist heel passend is",
+        tekst: "Bij complex trauma kan DBT bijzonder passend zijn als er veel crisis is: zelfbeschadiging, suïcidale gedachten, heftige emotiestormen, impulsief gedrag, of een zenuwstelsel dat nauwelijks binnen zijn stressvenster blijft. Dan is eerst leren kalmeren geen omweg, maar precies de voorwaarde om later veilig dieper te kunnen gaan."
+      }
+    ],
+    kernpunten: [
+      "DBT is sterk voor crisisvaardigheden, emotieregulatie en minder impulsief reageren.",
+      "Bij complex trauma is DBT vaak een stevige eerste laag, geen volledige eindbehandeling.",
+      "Meer aankunnen is vaak precies wat later traumaverwerking mogelijk maakt."
+    ],
+    bronnen: [
+      {
+        boek: "dbt-cptsd-workbook",
+        detail: "Over DBT-vaardigheden speciaal afgestemd op complex trauma."
+      },
+      {
+        boek: "complex-ptsd-workbook",
+        detail: "Over stabilisatie en dagelijks houvast opbouwen voor je dieper werkt."
+      },
+      {
+        boek: "anchored",
+        detail: "Over je zenuwstelsel eerst leren kalmeren en je stressvenster verbreden."
+      }
+    ],
+    gerelateerdeTherapieen: [
+      "dbt",
+      "schematherapie",
+      "somatic-experiencing",
+      "trauma-focused-cbt"
+    ]
+  }
+];
