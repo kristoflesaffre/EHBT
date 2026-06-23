@@ -598,6 +598,12 @@
 .swim-lane-rij {
   display: flex;
   overflow-x: auto;
+  /* clip (not hidden) keeps the Y-axis from becoming an implicit scroll
+     container, so vertical trackpad/wheel gestures pass through to the page
+     with no elastic capture and no main-thread jank. */
+  overflow-y: clip;
+  /* extend the clip region so hover box-shadows (~44px below cards) survive. */
+  overflow-clip-margin: 48px;
   flex-wrap: nowrap;
   gap: 18px;
   scrollbar-width: none;
@@ -1956,7 +1962,8 @@
   .onderzoek-raster-home,
   .chip-rij,
   .leeftijd-strip {
-    overflow-y: hidden;
+    overflow-y: clip;
+    overflow-clip-margin: 48px;
     overscroll-behavior-y: auto;
     touch-action: pan-x pan-y;
   }

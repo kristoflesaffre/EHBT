@@ -66,6 +66,7 @@ const RESPONSIVE_PRESETS = {
     sizes: "(max-width: 720px) 120px, 160px"
   }
 };
+const LAZY_PLACEHOLDER_SRC = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 /* ---------- crisis ---------- */
 
 function crisisBalkHTML() {
@@ -113,15 +114,17 @@ function responsivePictureHTML(src, alt = "", {
   preset = "card",
   loading = "lazy",
   fetchpriority = "",
-  imgClass = ""
+  imgClass = "",
+  defer = false
 } = {}) {
   const config = RESPONSIVE_PRESETS[preset];
   const parts = imageParts(src);
+  const finalFetchPriority = fetchpriority || (defer ? "low" : "");
   const attrs = [
     `alt="${alt}"`,
     `loading="${loading}"`,
     `decoding="async"`,
-    fetchpriority ? `fetchpriority="${fetchpriority}"` : "",
+    finalFetchPriority ? `fetchpriority="${finalFetchPriority}"` : "",
     imgClass ? `class="${imgClass}"` : ""
   ].filter(Boolean).join(" ");
 
@@ -133,6 +136,13 @@ function responsivePictureHTML(src, alt = "", {
   const webpSrcset = config.widths.map(width => `${variantPath(src, width, "webp")} ${width}w`).join(", ");
   const fallbackSrcset = config.widths.map(width => `${variantPath(src, width, fallbackExt)} ${width}w`).join(", ");
 
+  if (defer) {
+    return `<picture class="responsive-media js-lazy-picture">
+      <source type="image/webp" data-srcset="${webpSrcset}" sizes="${config.sizes}">
+      <img src="${LAZY_PLACEHOLDER_SRC}" data-src="${src}" data-srcset="${fallbackSrcset}" sizes="${config.sizes}" ${attrs}>
+    </picture>`;
+  }
+
   return `<picture class="responsive-media">
     <source type="image/webp" srcset="${webpSrcset}" sizes="${config.sizes}">
     <img src="${src}" srcset="${fallbackSrcset}" sizes="${config.sizes}" ${attrs}>
@@ -141,7 +151,7 @@ function responsivePictureHTML(src, alt = "", {
 
 function kaartBeeldHTML(beeld) {
   if (!beeld || !beeld.src) return "";
-  return `<span class="vraag-kaart-beeld" aria-hidden="true">${responsivePictureHTML(beeld.src, "", { preset: "card", loading: "lazy" })}</span><span class="vraag-kaart-waslaag" aria-hidden="true"></span>`;
+  return `<span class="vraag-kaart-beeld" aria-hidden="true">${responsivePictureHTML(beeld.src, "", { preset: "card", loading: "lazy", defer: true })}</span><span class="vraag-kaart-waslaag" aria-hidden="true"></span>`;
 }
 
 function vraagKaartHTML(v, i = 0, groot = false) {
@@ -174,7 +184,7 @@ function bronHTML(b) {
 
 function bronThumbHTML(id, boek) {
   if (!boek.cover) return `<span class="bron-rug" aria-hidden="true"></span>`;
-  return `<span class="bron-rug bron-cover-wrap" aria-hidden="true">${responsivePictureHTML(boek.cover, "", { preset: "coverThumb", loading: "lazy" })}</span>`;
+  return `<span class="bron-rug bron-cover-wrap" aria-hidden="true">${responsivePictureHTML(boek.cover, "", { preset: "coverThumb", loading: "lazy", defer: true })}</span>`;
 }
 
 function boekCoverHTML(id, boek, decoratief = true) {
@@ -183,7 +193,7 @@ function boekCoverHTML(id, boek, decoratief = true) {
   }
   const alt = decoratief ? "" : `Boekomslag van ${boek.titel}`;
   return `<span class="boek-rug boek-cover-wrap" style="--boekkleur:${boek.kleur}" ${decoratief ? `aria-hidden="true"` : ""}>
-    ${responsivePictureHTML(boek.cover, alt, { preset: "bookCover", loading: "lazy", imgClass: "boek-cover" })}
+    ${responsivePictureHTML(boek.cover, alt, { preset: "bookCover", loading: "lazy", imgClass: "boek-cover", defer: true })}
   </span>`;
 }
 
@@ -586,7 +596,7 @@ function therapieKaartHTML(t, i = 0) {
   const kaartBeeldPos = (t.beeld && t.beeld.kaartPos) || "center";
   return `
   <a class="onderzoek-kaart therapie-kaart${heeftBeeld ? " therapie-kaart-met-beeld" : ""} verschijn" href="#/therapie/${t.id}" style="--accent:${t.accent}; --wacht:${Math.min(i * 0.05, 0.45)}s">
-    ${heeftBeeld ? `<span class="therapie-kaart-beeld" aria-hidden="true" style="--kaart-beeld-pos:${kaartBeeldPos}">${responsivePictureHTML(t.beeld.src, "", { preset: "therapieCard", loading: "lazy" })}</span>` : ""}
+    ${heeftBeeld ? `<span class="therapie-kaart-beeld" aria-hidden="true" style="--kaart-beeld-pos:${kaartBeeldPos}">${responsivePictureHTML(t.beeld.src, "", { preset: "therapieCard", loading: "lazy", defer: true })}</span>` : ""}
     <h3>${t.naam}</h3>
     <span class="therapie-voluit">${t.voluit}</span>
     ${therapieLabelsHTML(t)}
@@ -1337,6 +1347,7 @@ function navigeer() {
 
   navigeer._huidig = hash;
   markeerNav(hash);
+  koppelLazyBeelden();
   koppelMythes();
   animaties();
   kalibreerConceptKaartGlas();
@@ -1374,6 +1385,7 @@ function koppelMythes() {
 /* ---------- scroll-animaties ---------- */
 
 let kijker = null;
+let mediaKijker = null;
 
 function animaties() {
   if (kijker) kijker.disconnect();
@@ -1386,6 +1398,52 @@ function animaties() {
     });
   }, { threshold: 0.08, rootMargin: "0px 0px -4% 0px" });
   document.querySelectorAll(".verschijn").forEach(el => kijker.observe(el));
+}
+
+function laadLazyPicture(picture) {
+  if (!picture || picture.dataset.lazyLoaded === "true") return;
+
+  picture.querySelectorAll("source[data-srcset]").forEach(source => {
+    source.setAttribute("srcset", source.dataset.srcset || "");
+    source.removeAttribute("data-srcset");
+  });
+
+  const img = picture.querySelector("img");
+  if (img?.dataset.srcset) {
+    img.setAttribute("srcset", img.dataset.srcset);
+    img.removeAttribute("data-srcset");
+  }
+  if (img?.dataset.src) {
+    img.setAttribute("src", img.dataset.src);
+    img.removeAttribute("data-src");
+  }
+
+  picture.dataset.lazyLoaded = "true";
+}
+
+function koppelLazyBeelden() {
+  if (mediaKijker) mediaKijker.disconnect();
+
+  const pictures = [...document.querySelectorAll(".js-lazy-picture")];
+  if (!pictures.length) return;
+
+  if (!("IntersectionObserver" in window)) {
+    pictures.forEach(laadLazyPicture);
+    return;
+  }
+
+  mediaKijker = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      laadLazyPicture(entry.target);
+      mediaKijker.unobserve(entry.target);
+    });
+  }, {
+    rootMargin: "280px 0px",
+    threshold: 0.01
+  });
+
+  pictures.forEach(picture => mediaKijker.observe(picture));
 }
 
 /* ---------- conceptkaart-glas op titellengte ---------- */
