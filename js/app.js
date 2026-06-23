@@ -250,6 +250,64 @@ function chipRijHTML(actiefId = null) {
   }).join("");
 }
 
+const HOME_UITLEG_IDS = null; // alle basisbegrippen tonen
+
+function homeUitlegBlokkenHTML() {
+  return `
+  <div class="basis-overzicht basis-overzicht--compact">
+    <div class="basis-paneel verschijn" style="--wacht:.02s">
+      <span class="basis-paneel-label">Eerst dit</span>
+      <h3>Niet elke stressreactie is meteen PTSS</h3>
+      <p>Na iets schokkends kun je dagen of weken ontregeld zijn. Dat is vaak een normale acute stressreactie. Denk eerder aan PTSS als herbelevingen, vermijden of altijd op scherp staan na een maand nog duidelijk aanwezig zijn en je dagelijks leven blijven raken.</p>
+    </div>
+    <div class="basis-paneel verschijn" style="--wacht:.08s">
+      <span class="basis-paneel-label">Herken vaak</span>
+      <h3>Signalen die vaak terugkomen</h3>
+      <ul class="basis-punten">
+        <li>herbelevingen, flashbacks of nachtmerries</li>
+        <li>vermijden, verdoven of afhaken</li>
+        <li>snel schrikken, slecht slapen of voortdurend alert zijn</li>
+        <li>moeilijk kunnen ontspannen, voelen of concentreren</li>
+      </ul>
+      <div class="basis-links">
+        <a href="#/vraag/flashback-wat-doe-ik">Flashbacks begrijpen</a>
+        <a href="#/concept/hypervigilantie">Altijd op scherp</a>
+      </div>
+    </div>
+  </div>`;
+}
+
+function uitgelegdOverzichtHTML() {
+  return `
+  <div class="basis-overzicht basis-overzicht--volledig">
+    <div class="basis-paneel verschijn" style="--wacht:.02s">
+      <span class="basis-paneel-label">Na iets schokkends</span>
+      <h3>Een acute stressreactie kan normaal zijn</h3>
+      <p>Na een traumatische gebeurtenis kun je tijdelijk overspoeld zijn: slecht slapen, snel schrikken, veel huilen, beelden blijven zien of moeilijk kunnen nadenken. Dat hoeft niet meteen te betekenen dat er PTSS is. Bij veel mensen zakt zo'n eerste stressreactie in de dagen of weken daarna langzaam weer.</p>
+    </div>
+    <div class="basis-paneel verschijn" style="--wacht:.08s">
+      <span class="basis-paneel-label">PTSS herken je vaak aan</span>
+      <h3>Niet één klacht, maar een patroon</h3>
+      <ul class="basis-punten">
+        <li>herbelevingen, nachtmerries of lichamelijk alarm alsof het weer gebeurt</li>
+        <li>vermijden van plekken, gesprekken, gevoelens of herinneringen</li>
+        <li>altijd op de uitkijk zijn, snel schrikken, slecht slapen of niet kunnen landen</li>
+        <li>verdoving, somberte, dissociatie of het gevoel jezelf kwijt te raken</li>
+      </ul>
+    </div>
+    <div class="basis-paneel verschijn" style="--wacht:.14s">
+      <span class="basis-paneel-label">Zoek hulp eerder</span>
+      <h3>Wacht niet te lang als klachten blijven hangen</h3>
+      <p>Als klachten langer dan ongeveer een maand blijven duren, je werk, slaap, relaties of gevoel van veiligheid duidelijk verstoren, of je steeds meer gaat vermijden om de dag door te komen, is het verstandig om traumagerichte hulp te zoeken. Zie dit als een wegwijzer, niet als een zelfdiagnose.</p>
+      <div class="basis-links">
+        <a href="#/vraag/wat-is-trauma-erg-genoeg">Is het erg genoeg?</a>
+        <a href="#/noodhulp">Acute hulp nu</a>
+      </div>
+    </div>
+  </div>
+  <p class="basis-noot verschijn" style="--wacht:.18s">Alleen een professional kan PTSS vaststellen. Deze site helpt je vooral om signalen te herkennen en gerichter woorden te vinden voor wat er met je gebeurt.</p>`;
+}
+
 function schud(lijst) {
   const kopie = [...lijst];
   for (let i = kopie.length - 1; i > 0; i--) {
@@ -361,6 +419,7 @@ function sectieKop(label, titel, intro = "", beeldId = "", naLink = null) {
 function renderHome() {
   const uitgelicht = VRAGEN.filter(v => v.uitgelicht);
   const rest = VRAGEN.filter(v => !v.uitgelicht).slice(0, 3);
+  const homeUitlegCards = CONCEPTEN.filter(c => c.categorie === "basis");
   const bandItems = gemengdeLichtkrantVragen(VRAGEN).map(v => {
     const t = themaVan(v.thema);
     return `<a class="band-item" href="#/vraag/${v.id}"><span class="b-icoon">${t.icoon}</span>${v.vraag}</a>`;
@@ -377,7 +436,7 @@ function renderHome() {
     </figure>
     <div class="held-binnen">
       <h1 class="verschijn" style="--wacht:.22s">Rustige uitleg over <em>trauma en herstel</em></h1>
-      <p class="held-intro verschijn" style="--wacht:.44s">Begrijpelijke, onderbouwde antwoorden over wat trauma met lichaam, brein en relaties doet — en welke wegen naar herstel er zijn. Geschreven in gewone taal, geïnspireerd door traumawetenschap en hechtingsonderzoek. Geen diagnose, geen oordeel: richting, op je eigen tempo.</p>
+      <p class="held-intro verschijn" style="--wacht:.44s">Begrijpelijke, onderbouwde antwoorden over wat trauma met lichaam, brein en relaties doet, hoe PTSS zich vaak laat herkennen, en wanneer een gewone stressreactie blijft hangen. Geschreven in gewone taal, zonder oordeel en zonder zelfdiagnoses op te dringen.</p>
       <div class="held-acties verschijn" style="--wacht:.66s">
         <a class="knop knop-vol" href="#/uitgelegd">Begin bij de basis <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <a class="knop knop-nood" href="#/noodhulp">🆘 Acute hulp — het overspoelt nú</a>
@@ -396,9 +455,9 @@ function renderHome() {
   </div>
 
   <section class="sectie home-sectie">
-    ${sectieKop("Begin hier", "Trauma uitgelegd, stap voor stap", "Geen jargon: rustige uitleg over wat trauma is, het verschil met complex trauma, hechtingsstijlen en hoe je zenuwstelsel reageert.", "", { href: "#/uitgelegd", label: "Naar Trauma uitgelegd" })}
+    ${sectieKop("Begin hier", "Trauma uitgelegd, stap voor stap", "Wat trauma is, hoe PTSS zich vaak laat herkennen, wanneer een stressreactie blijft hangen en waarom complex trauma net iets anders werkt.", "", { href: "#/uitgelegd", label: "Naar Trauma uitgelegd" })}
     <div class="kaart-raster">
-      ${CONCEPTEN.slice(0, 3).map((c, i) => conceptKaartHTML(c, i)).join("")}
+      ${homeUitlegCards.map((c, i) => conceptKaartHTML(c, i)).join("")}
     </div>
   </section>
 
@@ -529,13 +588,13 @@ const EVIDENTIE_KLEUR = {
 const THERAPIE_GROEPEN = [
   {
     id: "ptss",
-    titel: "PTSS: traumaherinneringen verwerken",
-    tekst: "Bij één duidelijke schokkende gebeurtenis staan traumagerichte behandelingen centraal. De herinnering, het vermijden en de alarmreactie verliezen hun lading."
+    titel: "Enkelvoudig trauma: herinneringen verwerken",
+    tekst: "Bij één duidelijke schokkende gebeurtenis (enkelvoudig trauma of PTSS) staan traumagerichte behandelingen centraal. De herinnering, het vermijden en de alarmreactie verliezen hun lading."
   },
   {
     id: "cptss",
-    titel: "CPTSS: lichaam, delen en ontwikkeling",
-    tekst: "Bij complex trauma of vroeg trauma in relaties gaat het vaak niet om één herinnering. Het gaat om een zenuwstelsel, een zelfbeeld en relatiepatronen die jarenlang zijn gevormd."
+    titel: "Meervoudig of complex trauma: lichaam, delen en ontwikkeling",
+    tekst: "Bij meervoudig of complex trauma (CPTSS) — vroeg of herhaald in relaties — gaat het vaak niet om één herinnering, maar om een zenuwstelsel, een zelfbeeld en relatiepatronen die jarenlang zijn gevormd."
   },
   {
     id: "stabilisatie",
@@ -874,13 +933,22 @@ function renderMythes() {
 
 /* ---------- therapieën ---------- */
 
+const therapieGidsVan = id => THERAPIE_GIDSEN.find(g => g.id === id);
+
+const THERAPIE_GROEP_KORT = {
+  ptss: "Enkelvoudig trauma",
+  cptss: "Meervoudig of complex trauma",
+  stabilisatie: "Eerst tot rust komen",
+  relationeel: "Hechting en relaties"
+};
+
 function therapieJumpNavHTML() {
   const iconen = { ptss: "⚡", cptss: "🕸", stabilisatie: "⚓", relationeel: "🫂" };
   const zichtbaar = THERAPIE_GROEPEN.filter(g => THERAPIEEN.some(t => (t.overzichtGroep || "stabilisatie") === g.id));
   return `<nav class="therapie-jumpnav verschijn" aria-label="Ga naar therapiegroep">
-    ${zichtbaar.map(g => `<a class="therapie-jumpnav-item" href="#therapie-groep-${g.id}">
+    ${zichtbaar.map(g => `<a class="therapie-jumpnav-item" href="#/therapie-gids/${g.id}">
       <span class="tji-icoon">${iconen[g.id] || "✦"}</span>
-      <span class="tji-label">${g.titel}</span>
+      <span class="tji-label">${THERAPIE_GROEP_KORT[g.id] || g.titel}</span>
     </a>`).join("")}
   </nav>`;
 }
@@ -891,12 +959,12 @@ function renderTherapieen() {
     ${sectieKop("Therapieën", "Welke behandelingen helpen bij trauma?", "Er bestaat geen enkele 'beste' traumatherapie. Welke aanpak past, hangt sterk af van het soort trauma, je klachten, en hoeveel veiligheid en rust er eerst nodig zijn.", "therapieen")}
     ${therapieJumpNavHTML()}
     <div class="bron-notitie verschijn" style="--wacht:.05s">
-      <strong>Lees dit eerst:</strong> richtlijnen geven vooral sterke steun aan traumagerichte behandelingen zoals EMDR en trauma-focused CBT bij PTSS. Bij complex trauma of vroeg trauma in relaties is vaak meer nodig: eerst stevig worden, lichaamswerk, hechting en relaties, schaamte en delenwerk. Deze pagina's helpen je het gesprek met een hulpverlener voor te bereiden — ze vervangen dat gesprek niet.
+      <strong>Lees dit eerst:</strong> richtlijnen geven sterke steun aan traumagerichte behandelingen bij enkelvoudig trauma (PTSS). Bij meervoudig of complex trauma (CPTSS) is vaak meer nodig: eerst stevigheid, lichaamswerk, hechting en delenwerk. Deze pagina's helpen je het gesprek met een hulpverlener voor te bereiden — ze vervangen dat gesprek niet.
     </div>
     <section class="therapie-wijzer-sectie verschijn" style="--wacht:.08s">
       <div class="therapie-wijzer-kop">
-        <h2>PTSS, complex trauma en waar DBT past</h2>
-        <p>Twee korte wegwijzers vóór je naar losse therapieën kijkt: gaat het vooral om één afgebakende traumaherinnering, of om bredere sporen van herhaalde onveiligheid? En heb je eerst meer stabiliteit nodig voor je dieper werkt?</p>
+        <h2>Enkelvoudig of meervoudig trauma — en waar DBT past</h2>
+        <p>Twee korte wegwijzers vóór je naar losse therapieën kijkt: gaat het om één afgebakende traumaherinnering (enkelvoudig), of om bredere sporen van herhaalde onveiligheid (meervoudig of complex)? En heb je eerst meer stabiliteit nodig voor je dieper werkt?</p>
       </div>
       <div class="therapie-wijzer-raster">
         ${THERAPIE_WEGWIJZERS.map((item, i) => therapieWijzerKaartHTML(item, i)).join("")}
@@ -997,6 +1065,55 @@ function renderTherapieWegwijzer(id) {
   </article>`;
 }
 
+function renderTherapieGids(id) {
+  const gids = therapieGidsVan(id);
+  if (!gids) return renderTherapieen();
+  const therapieen = THERAPIEEN.filter(t => (t.overzichtGroep || "stabilisatie") === gids.therapieGroep);
+  const verwant = (gids.verwanteGidsen || []).map(therapieGidsVan).filter(Boolean);
+  app.innerHTML = `
+  <article class="sectie sectie-smal">
+    <div class="detail-nav-rij">
+      <a class="terug-link" href="#/therapieen"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Alle therapieën</a>
+      <span class="bovenlabel verschijn" style="color:${gids.accent}">${gids.icoon} Therapiegids</span>
+    </div>
+    <h1 class="vraag-titel verschijn" style="--wacht:.05s">${gids.titel}</h1>
+    <div class="tldr verschijn" style="--wacht:.08s"><p>${gids.kort}</p></div>
+    <p class="sectie-intro verschijn" style="--wacht:.1s">${gids.intro}</p>
+    <div class="antwoord-blok">
+      ${(gids.blokken || []).map((b, i) => `
+        ${b.kop ? `<h2 class="verschijn">${b.kop}</h2>` : ""}
+        <p class="verschijn" style="--wacht:${Math.min(i * 0.04, 0.18)}s">${b.tekst}</p>`).join("")}
+    </div>
+    ${gids.kernpunten && gids.kernpunten.length ? `
+    <ul class="kernpunten-lijst verschijn">
+      ${gids.kernpunten.map(p => `<li>${p}</li>`).join("")}
+    </ul>` : ""}
+    ${therapieen.length ? `
+    <h2 class="verschijn" style="margin-top:48px">Therapieën in deze groep</h2>
+    <div class="onderzoek-raster" style="margin-top:20px">
+      ${therapieen.map((t, i) => therapieKaartHTML(t, i)).join("")}
+    </div>` : ""}
+    ${gids.bronnen && gids.bronnen.length ? `
+    <div class="bronnen verschijn">
+      <h2>Waar dit vandaan komt</h2>
+      <div class="bron-lijst">${gids.bronnen.map(bronHTML).join("")}</div>
+    </div>` : ""}
+    <p class="disclaimer-blok"><span>Informatief — geen vervanging voor professioneel advies. Gebruik dit als wegwijzer voor het gesprek met een erkende hulpverlener.</span></p>
+    ${verwant.length ? `
+    <div class="gerelateerd">
+      <h2 class="verschijn" style="font-size:1.4rem">Verwante gidsen</h2>
+      <div class="therapie-wijzer-raster" style="margin-top:20px">
+        ${verwant.map((g, i) => `
+        <a class="vraag-kaart verschijn" href="#/therapie-gids/${g.id}" style="--accent:${g.accent};--wacht:${i * 0.06}s">
+          <span class="kaart-thema">${g.icoon} Therapiegids</span>
+          <h3>${g.titel}</h3>
+          <p class="kort">${g.kort.slice(0, 100)}…</p>
+        </a>`).join("")}
+      </div>
+    </div>` : ""}
+  </article>`;
+}
+
 /* ---------- trauma uitgelegd (hub) ---------- */
 
 const UITGELEGD_CATEGORIEEN = [
@@ -1019,7 +1136,8 @@ function renderUitgelegd() {
 
   app.innerHTML = `
   <section class="sectie">
-    ${sectieKop("Trauma uitgelegd", "Begrijpen wat er gebeurt", "Rustige, jargonvrije uitleg over trauma en herstel. Begin bovenaan of spring naar wat je nu nodig hebt.", "uitgelegd")}
+    ${sectieKop("Trauma uitgelegd", "Begrijpen wat er gebeurt", "Rustige, jargonvrije uitleg over trauma en herstel — met extra houvast rond PTSS-signalen, gewone stressreacties en wanneer hulp zinvol wordt.", "uitgelegd")}
+    ${uitgelegdOverzichtHTML()}
     ${perCat}
 
     <div class="uitgelegd-categorie">
@@ -1055,7 +1173,9 @@ function renderConcept(id) {
     <div class="antwoord-blok">
       ${c.blokken.map((b, i) => `
         ${b.kop ? `<h2 class="verschijn">${b.kop}</h2>` : ""}
-        <p class="verschijn" style="--wacht:${Math.min(i * 0.04, 0.2)}s">${b.tekst}</p>`).join("")}
+        ${b.lijst
+          ? `<ul class="symptomen-lijst verschijn" style="--wacht:${Math.min(i * 0.04, 0.2)}s">${b.lijst.map(item => `<li><strong>${item.term}</strong>: ${item.beschrijving}</li>`).join("")}</ul>`
+          : b.tekst ? `<p class="verschijn" style="--wacht:${Math.min(i * 0.04, 0.2)}s">${b.tekst}</p>` : ""}`).join("")}
     </div>
     ${c.kernpunten && c.kernpunten.length ? `
     <h2 class="verschijn" style="font-size:1.35rem">In het kort</h2>
@@ -1322,6 +1442,7 @@ const routes = [
   [/^#\/therapieen$/, () => { renderTherapieen(); return "Therapieën"; }],
   [/^#\/therapie\/(.+)$/, m => { renderTherapie(m[1]); return (therapieVan(m[1]) || {}).naam; }],
   [/^#\/therapie-wijzer\/(.+)$/, m => { renderTherapieWegwijzer(m[1]); return (therapieWegwijzerVan(m[1]) || {}).titel; }],
+  [/^#\/therapie-gids\/(.+)$/, m => { renderTherapieGids(m[1]); return (therapieGidsVan(m[1]) || {}).titel; }],
   [/^#\/uitgelegd$/, () => { renderUitgelegd(); return "Trauma uitgelegd"; }],
   [/^#\/concept\/(.+)$/, m => { renderConcept(m[1]); return (conceptVan(m[1]) || {}).titel; }],
   [/^#\/hechting$/, () => { renderHechting(); return "Hechtingsstijlen"; }],
@@ -1415,8 +1536,38 @@ function navigeer() {
   animaties();
   kalibreerConceptKaartGlas();
   kalibreerLopendeBand();
+  paginaOvergang();
+  scrollBalkBijwerken(hash);
   document.getElementById("mobielMenu").hidden = true;
   document.getElementById("menuKnop").setAttribute("aria-expanded", "false");
+}
+
+function paginaOvergang() {
+  app.classList.remove("pagina-in");
+  void app.offsetWidth;
+  app.classList.add("pagina-in");
+}
+
+const lesBalk = () => document.getElementById("leetsBalk");
+
+function scrollBalkBijwerken(hash) {
+  const balk = lesBalk();
+  if (!balk) return;
+  const isArtikel = hash.startsWith("#/vraag/") || hash.startsWith("#/nood/") || hash.startsWith("#/uitgelegd/");
+  if (!isArtikel) {
+    balk.classList.remove("zichtbaar");
+    balk.style.width = "0%";
+    return;
+  }
+  balk.classList.add("zichtbaar");
+  const bijwerken = () => {
+    const hoogte = document.documentElement.scrollHeight - window.innerHeight;
+    balk.style.width = hoogte > 0 ? (window.scrollY / hoogte * 100).toFixed(1) + "%" : "0%";
+  };
+  window.addEventListener("scroll", bijwerken, { passive: true });
+  scrollBalkBijwerken._stop?.();
+  scrollBalkBijwerken._stop = () => window.removeEventListener("scroll", bijwerken);
+  bijwerken();
 }
 
 function markeerNav(hash) {

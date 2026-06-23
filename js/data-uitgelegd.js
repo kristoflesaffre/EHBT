@@ -54,9 +54,87 @@ const CONCEPTEN = [
       }
     ],
     gerelateerd: [
+      "trauma-symptomen",
       "trauma-vs-complex",
       "zenuwstelsel-overleving"
     ]
+  },
+  {
+    id: "trauma-symptomen",
+    titel: "Wat zijn de symptomen van trauma?",
+    icoon: "🌊",
+    accent: "#5a6e7f",
+    categorie: "basis",
+    leeswijzer: "10 min lezen",
+    kort: "Trauma laat zich op veel verschillende manieren voelen — van gejaagdheid en herbelevingen tot chronische lichamelijke klachten en het gevoel niet te weten wie je bent. Bij meervoudig of complex trauma komen er lagen bij die dieper gaan dan de herinnering zelf.",
+    blokken: [
+      {
+        kop: "Klachten die bij elk trauma kunnen voorkomen"
+      },
+      {
+        kop: "Wanneer klachten aanhouden: enkelvoudig trauma (PTSS)",
+        tekst: "Als bovenstaande klachten langer dan een maand duidelijk aanwezig blijven en je dagelijks leven raken, kan er sprake zijn van PTSS. Dan komen er vaak nog extra signalen bij:"
+      },
+      {
+        kop: "Specifiek bij meervoudig of complex trauma (CPTSS)",
+        tekst: "Bij onveiligheid die zich herhaalde — vaak al vroeg in je leven, door mensen op wie je had moeten kunnen vertrouwen — raken de klachten dieper. Ze gaan niet alleen over de herinnering, maar over wie je bent geworden om te overleven."
+      },
+      {
+        kop: "Lichamelijke klachten"
+      },
+      {
+        kop: "Identiteit en zelfbeeld"
+      },
+      {
+        kop: "Emoties en relaties"
+      },
+      {
+        tekst: "De klachten in het CPTSS-gedeelte zijn geen persoonlijkheidskenmerken of tekortkomingen. Ze zijn aanpassingen — ooit noodzakelijk om te overleven. Dat onderscheid zien is al een begin van herstel."
+      }
+    ],
+    kernpunten: [
+      "Traumaklachten zijn divers: van gejaagdheid en herbelevingen tot isolement, concentratieproblemen en woede.",
+      "Je lichaam blijft reageren alsof het gevaar er nog is — ook als dat allang voorbij is.",
+      "Bij meervoudig of complex trauma komen diepere lagen bij: chronische lichamelijke klachten, geen stabiel zelfgevoel, emoties die ontregelen en relatieproblemen.",
+      "Diepe schaamte, dissociatie en oververantwoordelijkheid zijn aanpassingen aan vroege onveiligheid — geen karaktertrekken."
+    ],
+    feitVsFabel: [
+      {
+        mythe: "Als je de klachten lang genoeg negeert, verdwijnen ze vanzelf.",
+        feit: "Zonder verwerking kunnen traumaklachten juist verankerd raken. Ze verminderen als je zenuwstelsel de kans krijgt om het verleden te onderscheiden van het heden — en dat vraagt aandacht, geen doorzetten."
+      },
+      {
+        mythe: "Als je zo reageert, is er iets fundamenteel mis met jou.",
+        feit: "Wat complex trauma achterlaat in je lichaam, zelfbeeld en relaties zijn aanpassingen aan een situatie die te zwaar was. Dat vertelt iets over wat je hebt meegemaakt — niet over wie je bent."
+      }
+    ],
+    bronnen: [
+      {
+        boek: "body-keeps-score",
+        detail: "Over hoe trauma lichaam en brein blijft beïnvloeden via het zenuwstelsel."
+      },
+      {
+        boek: "cptsd-surviving-thriving",
+        detail: "Pete Walker over de vier overlevingsstijlen, innerlijke criticus en het herstel van identiteit bij complex trauma."
+      },
+      {
+        boek: "healing-fragmented-selves",
+        detail: "Over dissociatie, innerlijke delen en hoe vroeg trauma het zelfgevoel versnippert."
+      },
+      {
+        boek: "healing-developmental-trauma",
+        detail: "Over hoe vroeg trauma zich nestelt in het lichaam en hoe dat de identiteitsontwikkeling verstoort."
+      }
+    ],
+    gerelateerd: [
+      "trauma-basis",
+      "trauma-vs-complex",
+      "zenuwstelsel-overleving"
+    ],
+    _index: 1,
+    beeld: {
+      src: "img/concepten/trauma-symptomen.png"
+    }
   },
   {
     id: "trauma-vs-complex",

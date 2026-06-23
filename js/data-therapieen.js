@@ -837,7 +837,7 @@ const THERAPIEEN = [
 const THERAPIE_WEGWIJZERS = [
   {
     id: "ptss-of-complex-trauma",
-    titel: "PTSS of complex trauma?",
+    titel: "Enkelvoudig of meervoudig trauma?",
     label: "Therapiewijzer",
     accent: "#4a6b8a",
     leeswijzer: "5 min lezen",
@@ -847,7 +847,7 @@ const THERAPIE_WEGWIJZERS = [
       kaartPos: "54% center",
       detailPos: "54% center"
     },
-    kort: "Bij PTSS staat vaak één schokkende herinnering centraal. Bij complex trauma gaat het vaker om herhaalde of vroege onveiligheid, met extra impact op zelfbeeld, emotieregulatie, afhaken (dissociatie) en vertrouwen.",
+    kort: "Bij enkelvoudig trauma (PTSS) staat vaak één schokkende herinnering centraal. Bij meervoudig of complex trauma (CPTSS) gaat het vaker om herhaalde of vroege onveiligheid, met extra impact op zelfbeeld, emotieregulatie, afhaken (dissociatie) en vertrouwen.",
     blokken: [
       {
         kop: "Wanneer PTSS vaak op de voorgrond staat",
@@ -946,3 +946,4 @@ const THERAPIE_WEGWIJZERS = [
     ]
   }
 ];
+

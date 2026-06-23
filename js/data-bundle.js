@@ -16698,7 +16698,7 @@ const THERAPIEEN = [
 const THERAPIE_WEGWIJZERS = [
   {
     id: "ptss-of-complex-trauma",
-    titel: "PTSS of complex trauma?",
+    titel: "Enkelvoudig of meervoudig trauma?",
     label: "Therapiewijzer",
     accent: "#4a6b8a",
     leeswijzer: "5 min lezen",
@@ -16708,7 +16708,7 @@ const THERAPIE_WEGWIJZERS = [
       kaartPos: "54% center",
       detailPos: "54% center"
     },
-    kort: "Bij PTSS staat vaak één schokkende herinnering centraal. Bij complex trauma gaat het vaker om herhaalde of vroege onveiligheid, met extra impact op zelfbeeld, emotieregulatie, afhaken (dissociatie) en vertrouwen.",
+    kort: "Bij enkelvoudig trauma (PTSS) staat vaak één schokkende herinnering centraal. Bij meervoudig of complex trauma (CPTSS) gaat het vaker om herhaalde of vroege onveiligheid, met extra impact op zelfbeeld, emotieregulatie, afhaken (dissociatie) en vertrouwen.",
     blokken: [
       {
         kop: "Wanneer PTSS vaak op de voorgrond staat",
@@ -16807,6 +16807,7 @@ const THERAPIE_WEGWIJZERS = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Trauma uitgelegd: concepten, hechtingsstijlen, stoornissen
 // Onafhankelijk geschreven, educatief en niet-stigmatiserend.
@@ -16863,9 +16864,134 @@ const CONCEPTEN = [
       }
     ],
     gerelateerd: [
+      "trauma-symptomen",
       "trauma-vs-complex",
       "zenuwstelsel-overleving"
     ]
+  },
+  {
+    id: "trauma-symptomen",
+    titel: "Wat zijn de symptomen van trauma?",
+    icoon: "🌊",
+    accent: "#5a6e7f",
+    categorie: "basis",
+    leeswijzer: "10 min lezen",
+    kort: "Trauma laat zich op veel verschillende manieren voelen — van gejaagdheid en herbelevingen tot chronische lichamelijke klachten en het gevoel niet te weten wie je bent. Bij meervoudig of complex trauma komen er lagen bij die dieper gaan dan de herinnering zelf.",
+    blokken: [
+      {
+        kop: "Klachten die bij elk trauma kunnen voorkomen",
+        lijst: [
+          { term: "Spanning en prikkelbaarheid", beschrijving: "Een aanhoudend gevoel van gespannenheid of geïrriteerdheid dat niet weggaat, ook als er geen directe aanleiding is." },
+          { term: "Angst voor de angst", beschrijving: "Je bent niet alleen bang voor gevaar van buitenaf, maar ook voor je eigen angstreacties. Je gaat dingen vermijden om maar niet opnieuw die beklemmende angst te voelen." },
+          { term: "Herbeleven", beschrijving: "De heftige ervaring keert steeds terug in je hoofd — als indringende beelden, gedachten of flashbacks — alsof het opnieuw gebeurt." },
+          { term: "Nachtmerries", beschrijving: "Ook 's nachts kan de herinnering zich opdringen: je beleeft de gebeurtenis opnieuw in dromen en wordt ontregeld wakker." },
+          { term: "Vermijdingsgedrag", beschrijving: "Je gaat bewust plekken, mensen of voorwerpen uit de weg die je aan de gebeurtenis herinneren. De vermijding groeit soms zo groot dat ze je dagelijks leven beperkt." },
+          { term: "Terugtrekken en isolement", beschrijving: "Je trekt je terug uit je omgeving, ziet anderen minder en voelt je steeds eenzamer — vaak zonder dat je goed kunt uitleggen waarom." },
+          { term: "Gevoel van controle verliezen", beschrijving: "Je hebt het gevoel dat je het roer over je eigen leven kwijt bent. Dingen voelen onbeheersbaar." },
+          { term: "Somberheid en negatieve gedachten", beschrijving: "Je stemming wordt donkerder. Negatieve overtuigingen over jezelf of de wereld dringen zich op." },
+          { term: "Voortdurend waakzaam en gejaagd", beschrijving: "Je staat continu 'aan': altijd alert, altijd in paraatheid. Je lichaam en geest kalmeren nauwelijks, ook als er geen gevaar is." },
+          { term: "Schrikken en paniek", beschrijving: "Kleine prikkels — een geluid, een aanraking — kunnen een overdreven schrikreactie uitlokken. Paniekaanvallen kunnen voorkomen." },
+          { term: "Concentratieproblemen", beschrijving: "Je aandacht is moeilijker vast te houden. Gedachten dwalen af of je hoofd voelt vol en wazig." },
+          { term: "Lichamelijke klachten", beschrijving: "Duizeligheid, hoofdpijn, spierspanning of vermoeidheid kunnen opduiken als lichamelijke uitdrukking van het trauma." },
+          { term: "Woedeaanvallen", beschrijving: "Hevige boosheid of agressieve reacties die je zelf ook vreemd vindt — niet van jezelf herkent, maar toch overkomt." }
+        ]
+      },
+      {
+        kop: "Wanneer klachten aanhouden: enkelvoudig trauma (PTSS)",
+        tekst: "Als bovenstaande klachten langer dan een maand duidelijk aanwezig blijven en je dagelijks leven raken, kan er sprake zijn van PTSS. Dan komen er vaak nog extra signalen bij:"
+      },
+      {
+        lijst: [
+          { term: "Laag zelfvertrouwen", beschrijving: "Je kijkt negatiever naar jezelf: je twijfelt aan je eigen waarde, voelt je een mislukkeling of denkt slecht over wie je bent." },
+          { term: "Problemen in dagelijks functioneren", beschrijving: "Relaties, werk of gezinsleven lopen schade op doordat je minder kunt dan vroeger." },
+          { term: "Moeilijk omgaan met emoties", beschrijving: "Je kunt slecht voelen wat je emoties zijn, wisselt snel tussen te veel en te weinig voelen, of verliest de controle over je reacties." },
+          { term: "Grijpen naar verdovende middelen", beschrijving: "Alcohol, drugs of andere middelen worden soms gebruikt om de pijn, de spanning of de leegte te dempen." },
+          { term: "Zelfbeschadiging of roekeloos gedrag", beschrijving: "Soms uit de pijn zich in automutilatie of in gedrag waarbij je bewust te veel risico neemt — alsof het er niet meer toe doet." }
+        ]
+      },
+      {
+        kop: "Specifiek bij meervoudig of complex trauma (CPTSS)",
+        tekst: "Bij onveiligheid die zich herhaalde — vaak al vroeg in je leven, door mensen op wie je had moeten kunnen vertrouwen — raken de klachten dieper. Ze gaan niet alleen over de herinnering, maar over wie je bent geworden om te overleven."
+      },
+      {
+        kop: "Lichamelijke klachten",
+        lijst: [
+          { term: "Chronische pijn en lichamelijke spanningen", beschrijving: "Pijn zonder duidelijke medische oorzaak, terugkerende hoofdpijn, darmklachten of een voortdurend gespannen lijf. Het lichaam slaat trauma op als spanning in spieren, organen en zenuwstelsel — niet als herinnering, maar als toestand." },
+          { term: "Chronische vermoeidheid", beschrijving: "Constant waakzaam zijn kost energie. Veel mensen met complex trauma zijn uitgeput, ook na een volle nacht slapen." },
+          { term: "Dissociatie", beschrijving: "Je voelt jezelf verdwijnen, kijkt van een afstand naar jezelf, of ervaart gaten in je geheugen. Dissociatie is hoe een jong zenuwstelsel zich beschermde tegen iets wat te overweldigend was om te voelen." },
+          { term: "Verdoofd of leeg voelen", beschrijving: "Geen verdriet, geen vreugde — gewoon niets. De emotionele verdoving die ooit beschermde, staat nu altijd aan." },
+          { term: "Snel overweldigd door prikkels", beschrijving: "Geuren, aanraking, geluid of drukte kunnen een intense reactie uitlokken die van buitenaf onbegrijpelijk lijkt, maar inwendig heel logisch is." }
+        ]
+      },
+      {
+        kop: "Identiteit en zelfbeeld",
+        lijst: [
+          { term: "Geen stabiel gevoel van wie je bent", beschrijving: "Je weet niet goed wat je wilt, wat je voelt, wat je vindt. Je zelf verschuift afhankelijk van wie erbij is. Dit is geen karakterzwakte — het is wat er gebeurt als je vroeg leerde dat jezelf zijn gevaarlijk was." },
+          { term: "Diepe schaamte", beschrijving: "Niet schaamte over iets wat je deed, maar over wie je bent. Een onderhuids gevoel dat je fundamenteel fout bent, te veel bent, of er niet bij hoort." },
+          { term: "Vernietigende innerlijke stem", beschrijving: "Een stem die voortdurend veroordeelt of kleineert. Vaak een geïnternaliseerde versie van iemand die dat vroeger deed van buitenaf." },
+          { term: "Gevoel nergens bij te horen", beschrijving: "Ook in vertrouwde omgevingen het gevoel een buitenstaander te zijn. Alsof anderen een handleiding voor het leven hebben die jou ontbreekt." },
+          { term: "Moeite om eigen wensen en grenzen te kennen", beschrijving: "Je weet niet wat je nodig hebt, of je durft het niet te voelen. Grenzen stellen voelt gevaarlijk of onmogelijk." }
+        ]
+      },
+      {
+        kop: "Emoties en relaties",
+        lijst: [
+          { term: "Emoties die overspoelen of verdwijnen", beschrijving: "Soms schiet een emotie als een vloed door je heen zonder aanleiding; soms voel je helemaal niets. De regulatie zit vast, niet de emoties zelf." },
+          { term: "Moeite om te vertrouwen", beschrijving: "Als de onveiligheid vroeg was en van mensen op wie je moest vertrouwen, leert je zenuwstelsel dat nabijheid gevaarlijk is. Dat patroon activeert later in elke relatie." },
+          { term: "Wisselende afstand en nabijheid", beschrijving: "Je verlangt naar verbinding maar schrikt als iemand dichterbij komt. Of je klemt je vast uit angst voor verlating. Soms allebei, bij dezelfde persoon." },
+          { term: "Herhalen van pijnlijke relatiepatronen", beschrijving: "Onbewust kom je terecht in situaties die lijken op vroeger — niet omdat je het wilt, maar omdat je zenuwstelsel het herkenbare als veilig registreert." },
+          { term: "Oververantwoordelijkheid voor anderen", beschrijving: "Je voelt je verantwoordelijk voor de stemming en het welzijn van mensen om je heen. Grenzen trekken voelt als iemand beschadigen." }
+        ]
+      },
+      {
+        tekst: "De klachten in het CPTSS-gedeelte zijn geen persoonlijkheidskenmerken of tekortkomingen. Ze zijn aanpassingen — ooit noodzakelijk om te overleven. Dat onderscheid zien is al een begin van herstel."
+      }
+    ],
+    kernpunten: [
+      "Traumaklachten zijn divers: van gejaagdheid en herbelevingen tot isolement, concentratieproblemen en woede.",
+      "Je lichaam blijft reageren alsof het gevaar er nog is — ook als dat allang voorbij is.",
+      "Bij meervoudig of complex trauma komen diepere lagen bij: chronische lichamelijke klachten, geen stabiel zelfgevoel, emoties die ontregelen en relatieproblemen.",
+      "Diepe schaamte, dissociatie en oververantwoordelijkheid zijn aanpassingen aan vroege onveiligheid — geen karaktertrekken."
+    ],
+    feitVsFabel: [
+      {
+        mythe: "Als je de klachten lang genoeg negeert, verdwijnen ze vanzelf.",
+        feit: "Zonder verwerking kunnen traumaklachten juist verankerd raken. Ze verminderen als je zenuwstelsel de kans krijgt om het verleden te onderscheiden van het heden — en dat vraagt aandacht, geen doorzetten."
+      },
+      {
+        mythe: "Als je zo reageert, is er iets fundamenteel mis met jou.",
+        feit: "Wat complex trauma achterlaat in je lichaam, zelfbeeld en relaties zijn aanpassingen aan een situatie die te zwaar was. Dat vertelt iets over wat je hebt meegemaakt — niet over wie je bent."
+      }
+    ],
+    bronnen: [
+      {
+        boek: "body-keeps-score",
+        detail: "Over hoe trauma lichaam en brein blijft beïnvloeden via het zenuwstelsel."
+      },
+      {
+        boek: "cptsd-surviving-thriving",
+        detail: "Pete Walker over de vier overlevingsstijlen, innerlijke criticus en het herstel van identiteit bij complex trauma."
+      },
+      {
+        boek: "healing-fragmented-selves",
+        detail: "Over dissociatie, innerlijke delen en hoe vroeg trauma het zelfgevoel versnippert."
+      },
+      {
+        boek: "healing-developmental-trauma",
+        detail: "Over hoe vroeg trauma zich nestelt in het lichaam en hoe dat de identiteitsontwikkeling verstoort."
+      }
+    ],
+    gerelateerd: [
+      "trauma-basis",
+      "trauma-vs-complex",
+      "zenuwstelsel-overleving"
+    ],
+    beeld: {
+      src: "img/concepten/trauma-symptomen.png",
+      alt: "Een foto die alertheid en lichamelijke prikkels uitdrukt.",
+      kaartPos: "center center",
+      detailPos: "center 30%"
+    }
   },
   {
     id: "trauma-vs-complex",

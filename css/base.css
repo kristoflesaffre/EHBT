@@ -140,6 +140,42 @@ button { font-family: inherit; cursor: pointer; }
   color: var(--inkt-zacht); font-weight: 600;
 }
 
+.zuster-link {
+  display: inline-flex; align-items: center; gap: 5px;
+  margin-top: 6px;
+  padding: 3px 8px 3px 6px;
+  font-size: .62rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--inkt-zacht);
+  text-decoration: none;
+  border: 1px solid var(--lijn);
+  border-radius: 100px;
+  background: transparent;
+  transition: background .25s var(--vlot), border-color .25s var(--vlot), color .2s, transform .25s var(--vlot);
+  animation: zusterIn .6s var(--vlot) .4s both;
+  width: fit-content;
+}
+@keyframes zusterIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: none; }
+}
+.zuster-ehb { font-weight: 800; }
+.zuster-o {
+  color: var(--terracotta);
+  display: inline-block;
+  transition: transform .4s var(--vlot);
+}
+.zuster-label { color: var(--inkt-zacht); }
+.zuster-pijl { opacity: .5; transition: transform .25s var(--vlot), opacity .2s; flex-shrink: 0; }
+
+.zuster-link:hover {
+  background: color-mix(in srgb, var(--terracotta) 8%, transparent);
+  border-color: color-mix(in srgb, var(--terracotta) 40%, var(--lijn));
+  color: var(--inkt);
+  transform: translateY(-1px);
+}
+.zuster-link:hover .zuster-o { transform: rotate(180deg); }
+.zuster-link:hover .zuster-pijl { transform: translate(2px, -2px); opacity: 1; }
+
 .logo-wissel {
   position: relative;
   display: inline-grid;
@@ -154,9 +190,9 @@ button { font-family: inherit; cursor: pointer; }
 .logo-wissel-woord {
   grid-area: 1 / 1;
   display: inline-block;
-  will-change: transform, opacity;
-  animation-duration: 6.4s;
-  animation-timing-function: cubic-bezier(.7, 0, .2, 1);
+  will-change: transform, opacity, filter;
+  animation-duration: 7s;
+  animation-timing-function: cubic-bezier(.65, 0, .25, 1);
   animation-iteration-count: infinite;
 }
 
@@ -170,16 +206,16 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 @keyframes logoWisselTrauma {
-  0%, 39% { opacity: 1; transform: translateY(0); }
-  47%, 86% { opacity: 0; transform: translateY(-95%); }
-  87% { opacity: 0; transform: translateY(95%); }
-  100% { opacity: 1; transform: translateY(0); }
+  0%, 38%  { opacity: 1; transform: translateY(0);     filter: blur(0px); }
+  44%, 85% { opacity: 0; transform: translateY(-80%);  filter: blur(6px); }
+  86%      { opacity: 0; transform: translateY(80%);   filter: blur(6px); }
+  100%     { opacity: 1; transform: translateY(0);     filter: blur(0px); }
 }
 
 @keyframes logoWisselHerstel {
-  0%, 39% { opacity: 0; transform: translateY(95%); }
-  47%, 86% { opacity: 1; transform: translateY(0); }
-  94%, 100% { opacity: 0; transform: translateY(-95%); }
+  0%, 38%  { opacity: 0; transform: translateY(80%);   filter: blur(6px); }
+  44%, 85% { opacity: 1; transform: translateY(0);     filter: blur(0px); }
+  91%, 100%{ opacity: 0; transform: translateY(-80%);  filter: blur(6px); }
 }
 
 .visueel-verborgen {
@@ -495,19 +531,43 @@ button { font-family: inherit; cursor: pointer; }
   padding-top: 22px; font-size: .82rem; color: #9aa097; margin: 0;
 }
 
+/* ---------- Scroll-voortgangsbalk ---------- */
+
+.lees-balk {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--terracotta), color-mix(in srgb, var(--terracotta) 60%, var(--teal)));
+  z-index: 2000;
+  opacity: 0;
+  transition: opacity .3s, width .08s linear;
+  pointer-events: none;
+  border-radius: 0 2px 2px 0;
+}
+.lees-balk.zichtbaar { opacity: 1; }
+
+/* ---------- Paginatransitie ---------- */
+
+@keyframes paginaIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+#app.pagina-in { animation: paginaIn .28s ease-out both; }
+
 /* ---------- Animatiebasis ---------- */
 
 .verschijn {
   opacity: 0;
-  transform: translateY(22px);
-  transition: opacity 1.15s var(--vlot), transform 1.15s var(--vlot);
+  transform: translateY(18px);
+  transition: opacity .9s var(--vlot), transform .9s var(--vlot);
   transition-delay: var(--wacht, 0s);
 }
 
 .verschijn.zichtbaar { opacity: 1; transform: none; }
 
 @keyframes opduiken {
-  from { opacity: 0; transform: translateY(18px); }
+  from { opacity: 0; transform: translateY(14px); }
   to { opacity: 1; transform: none; }
 }
 

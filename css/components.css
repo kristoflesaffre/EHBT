@@ -201,6 +201,92 @@
   align-items: stretch;
 }
 
+.basis-overzicht {
+  display: grid;
+  gap: 18px;
+  margin: 0 0 26px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.basis-overzicht--compact {
+  margin-top: 2px;
+}
+
+.basis-paneel {
+  position: relative;
+  padding: 22px 24px;
+  border-radius: 28px;
+  border: 1px solid color-mix(in srgb, var(--lijn) 82%, white);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.94), rgba(255,255,255,.9)),
+    radial-gradient(circle at top right, rgba(107, 151, 141, .08), transparent 42%);
+  box-shadow: 0 20px 44px -30px rgba(31, 39, 48, .22);
+}
+
+.basis-paneel-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  color: var(--groen);
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.basis-paneel-label::before {
+  content: "";
+  width: 22px;
+  height: 2px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--groen) 78%, white);
+}
+
+.basis-paneel h3 {
+  margin: 0 0 10px;
+  font-size: clamp(1.2rem, 1rem + .65vw, 1.6rem);
+  line-height: 1.1;
+}
+
+.basis-paneel p {
+  margin: 0;
+  color: var(--inkt-zacht);
+}
+
+.basis-punten {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--inkt-zacht);
+}
+
+.basis-punten li + li {
+  margin-top: 8px;
+}
+
+.basis-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+  margin-top: 16px;
+}
+
+.basis-links a {
+  color: var(--groen);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.basis-links a:hover {
+  text-decoration: underline;
+}
+
+.basis-noot {
+  margin: 6px 0 28px;
+  color: var(--inkt-zacht);
+  font-size: .98rem;
+}
+
 .responsive-media {
   display: block;
   width: 100%;
@@ -212,7 +298,8 @@
   background: var(--kaart); border: 1px solid var(--lijn);
   border-radius: var(--rond); padding: 26px 26px 22px;
   color: var(--inkt);
-  transition: transform .35s var(--vlot), box-shadow .35s, border-color .35s;
+  will-change: transform;
+  transition: transform .45s var(--vlot), box-shadow .45s var(--vlot), border-color .3s;
   overflow: hidden;
 }
 
@@ -221,13 +308,13 @@
   z-index: 4;
   background: var(--accent, var(--terracotta));
   transform: scaleY(0); transform-origin: top;
-  transition: transform .4s var(--vlot);
+  transition: transform .5s var(--vlot);
 }
 
 .vraag-kaart:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--schaduw-zweef);
-  border-color: color-mix(in srgb, var(--accent, var(--terracotta)) 45%, var(--lijn));
+  transform: translateY(-6px) scale(1.005);
+  box-shadow: 0 14px 40px -8px rgba(0,0,0,.13), 0 2px 8px -2px rgba(0,0,0,.07);
+  border-color: color-mix(in srgb, var(--accent, var(--terracotta)) 40%, var(--lijn));
 }
 
 .vraag-kaart:hover::before { transform: scaleY(1); }
@@ -1651,6 +1738,10 @@
 }
 
 .kern-lijst { margin: 20px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+
+.symptomen-lijst { margin: 16px 0 24px; padding: 0 0 0 1.2em; list-style: disc; display: grid; gap: 10px; }
+.symptomen-lijst li { max-width: 68ch; line-height: 1.6; }
+.symptomen-lijst li strong { font-weight: 700; }
 
 .kern-lijst li {
   position: relative; padding-left: 30px; max-width: 64ch;
