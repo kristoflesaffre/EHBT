@@ -384,7 +384,6 @@ const VRAGEN_2 = [
       "moet-ik-herbeleven",
       "hoe-lang-duurt-herstel",
       "weinig-jeugdherinneringen"
-    ],
-    _index: 13
+    ]
   }
 ];

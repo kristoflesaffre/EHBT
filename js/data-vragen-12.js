@@ -837,9 +837,9 @@ const VRAGEN_12 = [
   {
     id: "krijgt-iedereen-ptss",
     beeld: {
-      src: "img/vragen/krijgt-iedereen-ptss.jpg"
+      src: "img/vragen/krijgt-iedereen-ptss.png"
     },
-    vraag: "Krijgt iedereen PTSS na een schokkende gebeurtenis?",
+    vraag: "Krijgt iedereen trauma na een schokkende gebeurtenis?",
     thema: "wat-is-trauma",
     leeftijd: [
       "zelf",

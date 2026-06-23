@@ -1805,6 +1805,7 @@ const LEEFTIJDEN = [
   }
 ];
 
+
 // ============================================================
 // EHBT — Vragen, deel 1
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -1866,8 +1867,7 @@ const VRAGEN_1 = [
       "lichaam-reageert-zonder-gevaar",
       "trauma-vs-complex",
       "hoe-lang-duurt-herstel"
-    ],
-    _index: 0
+    ]
   },
   {
     id: "lichaam-reageert-zonder-gevaar",
@@ -2312,6 +2312,7 @@ const VRAGEN_1 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 2
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -2698,10 +2699,10 @@ const VRAGEN_2 = [
       "moet-ik-herbeleven",
       "hoe-lang-duurt-herstel",
       "weinig-jeugdherinneringen"
-    ],
-    _index: 13
+    ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 3
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -3359,6 +3360,7 @@ const VRAGEN_3 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 4
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -3625,8 +3627,7 @@ const VRAGEN_4 = [
       "narcistische-ouder-betekenis",
       "vergeven-om-te-helen",
       "wat-is-emotionele-verwaarlozing"
-    ],
-    _index: 27
+    ]
   },
   {
     id: "intergenerationeel-trauma",
@@ -4024,6 +4025,7 @@ const VRAGEN_4 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 5
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -4714,6 +4716,7 @@ const VRAGEN_5 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 6
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -5410,6 +5413,7 @@ const VRAGEN_6 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 7
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -5550,8 +5554,7 @@ const VRAGEN_7 = [
       "wat-is-emotionele-verwaarlozing",
       "wat-zijn-aces",
       "toxic-stress-uitgelegd"
-    ],
-    _index: 55
+    ]
   },
   {
     id: "medisch-ziekenhuis-trauma",
@@ -6163,8 +6166,7 @@ const VRAGEN_7 = [
       "freeze-response-wat-is",
       "vluchten-modus-herkennen",
       "wat-is-een-trigger"
-    ],
-    _index: 64
+    ]
   },
   {
     id: "vluchten-modus-herkennen",
@@ -6236,6 +6238,7 @@ const VRAGEN_7 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 8
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -7070,6 +7073,7 @@ const VRAGEN_8 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 9
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -7903,6 +7907,7 @@ const VRAGEN_9 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 10
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -8733,6 +8738,7 @@ const VRAGEN_10 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 11
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -9562,6 +9568,7 @@ const VRAGEN_11 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 12
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -10401,9 +10408,9 @@ const VRAGEN_12 = [
   {
     id: "krijgt-iedereen-ptss",
     beeld: {
-      src: "img/vragen/krijgt-iedereen-ptss.jpg"
+      src: "img/vragen/krijgt-iedereen-ptss.png"
     },
-    vraag: "Krijgt iedereen PTSS na een schokkende gebeurtenis?",
+    vraag: "Krijgt iedereen trauma na een schokkende gebeurtenis?",
     thema: "wat-is-trauma",
     leeftijd: [
       "zelf",
@@ -10741,6 +10748,7 @@ const VRAGEN_12 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 13
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -11569,6 +11577,7 @@ const VRAGEN_13 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 14
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -12401,6 +12410,7 @@ const VRAGEN_14 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 15
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -13232,6 +13242,7 @@ const VRAGEN_15 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 16
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -14051,6 +14062,7 @@ const VRAGEN_16 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 17
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -14880,6 +14892,7 @@ const VRAGEN_17 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 18
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -15091,8 +15104,7 @@ const VRAGEN_18 = [
       "wat-is-somatische-therapie",
       "lichaam-reageert-zonder-gevaar",
       "dissociatie-naast-mezelf"
-    ],
-    _index: 188
+    ]
   },
   {
     id: "dbt-skills-thuis",
@@ -15161,8 +15173,7 @@ const VRAGEN_18 = [
       "window-of-tolerance-verbreden",
       "wat-is-grounding",
       "flashback-wat-doe-ik"
-    ],
-    _index: 194
+    ]
   },
   {
     id: "ifs-zelf-oefenen",
@@ -15714,6 +15725,7 @@ const VRAGEN_18 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Vragen, deel 19
 // Onafhankelijk geschreven, geïnspireerd door traumawetenschap.
@@ -15859,6 +15871,7 @@ const VRAGEN_19 = [
     ]
   }
 ];
+
 // ============================================================
 // EHBT — Therapieën
 // Onafhankelijk geschreven, geïnspireerd door de vakliteratuur.
@@ -16808,6 +16821,7 @@ const THERAPIE_WEGWIJZERS = [
   }
 ];
 
+
 // ============================================================
 // EHBT — Trauma uitgelegd: concepten, hechtingsstijlen, stoornissen
 // Onafhankelijk geschreven, educatief en niet-stigmatiserend.
@@ -16879,69 +16893,24 @@ const CONCEPTEN = [
     kort: "Trauma laat zich op veel verschillende manieren voelen — van gejaagdheid en herbelevingen tot chronische lichamelijke klachten en het gevoel niet te weten wie je bent. Bij meervoudig of complex trauma komen er lagen bij die dieper gaan dan de herinnering zelf.",
     blokken: [
       {
-        kop: "Klachten die bij elk trauma kunnen voorkomen",
-        lijst: [
-          { term: "Spanning en prikkelbaarheid", beschrijving: "Een aanhoudend gevoel van gespannenheid of geïrriteerdheid dat niet weggaat, ook als er geen directe aanleiding is." },
-          { term: "Angst voor de angst", beschrijving: "Je bent niet alleen bang voor gevaar van buitenaf, maar ook voor je eigen angstreacties. Je gaat dingen vermijden om maar niet opnieuw die beklemmende angst te voelen." },
-          { term: "Herbeleven", beschrijving: "De heftige ervaring keert steeds terug in je hoofd — als indringende beelden, gedachten of flashbacks — alsof het opnieuw gebeurt." },
-          { term: "Nachtmerries", beschrijving: "Ook 's nachts kan de herinnering zich opdringen: je beleeft de gebeurtenis opnieuw in dromen en wordt ontregeld wakker." },
-          { term: "Vermijdingsgedrag", beschrijving: "Je gaat bewust plekken, mensen of voorwerpen uit de weg die je aan de gebeurtenis herinneren. De vermijding groeit soms zo groot dat ze je dagelijks leven beperkt." },
-          { term: "Terugtrekken en isolement", beschrijving: "Je trekt je terug uit je omgeving, ziet anderen minder en voelt je steeds eenzamer — vaak zonder dat je goed kunt uitleggen waarom." },
-          { term: "Gevoel van controle verliezen", beschrijving: "Je hebt het gevoel dat je het roer over je eigen leven kwijt bent. Dingen voelen onbeheersbaar." },
-          { term: "Somberheid en negatieve gedachten", beschrijving: "Je stemming wordt donkerder. Negatieve overtuigingen over jezelf of de wereld dringen zich op." },
-          { term: "Voortdurend waakzaam en gejaagd", beschrijving: "Je staat continu 'aan': altijd alert, altijd in paraatheid. Je lichaam en geest kalmeren nauwelijks, ook als er geen gevaar is." },
-          { term: "Schrikken en paniek", beschrijving: "Kleine prikkels — een geluid, een aanraking — kunnen een overdreven schrikreactie uitlokken. Paniekaanvallen kunnen voorkomen." },
-          { term: "Concentratieproblemen", beschrijving: "Je aandacht is moeilijker vast te houden. Gedachten dwalen af of je hoofd voelt vol en wazig." },
-          { term: "Lichamelijke klachten", beschrijving: "Duizeligheid, hoofdpijn, spierspanning of vermoeidheid kunnen opduiken als lichamelijke uitdrukking van het trauma." },
-          { term: "Woedeaanvallen", beschrijving: "Hevige boosheid of agressieve reacties die je zelf ook vreemd vindt — niet van jezelf herkent, maar toch overkomt." }
-        ]
+        kop: "Klachten die bij elk trauma kunnen voorkomen"
       },
       {
         kop: "Wanneer klachten aanhouden: enkelvoudig trauma (PTSS)",
         tekst: "Als bovenstaande klachten langer dan een maand duidelijk aanwezig blijven en je dagelijks leven raken, kan er sprake zijn van PTSS. Dan komen er vaak nog extra signalen bij:"
       },
       {
-        lijst: [
-          { term: "Laag zelfvertrouwen", beschrijving: "Je kijkt negatiever naar jezelf: je twijfelt aan je eigen waarde, voelt je een mislukkeling of denkt slecht over wie je bent." },
-          { term: "Problemen in dagelijks functioneren", beschrijving: "Relaties, werk of gezinsleven lopen schade op doordat je minder kunt dan vroeger." },
-          { term: "Moeilijk omgaan met emoties", beschrijving: "Je kunt slecht voelen wat je emoties zijn, wisselt snel tussen te veel en te weinig voelen, of verliest de controle over je reacties." },
-          { term: "Grijpen naar verdovende middelen", beschrijving: "Alcohol, drugs of andere middelen worden soms gebruikt om de pijn, de spanning of de leegte te dempen." },
-          { term: "Zelfbeschadiging of roekeloos gedrag", beschrijving: "Soms uit de pijn zich in automutilatie of in gedrag waarbij je bewust te veel risico neemt — alsof het er niet meer toe doet." }
-        ]
-      },
-      {
         kop: "Specifiek bij meervoudig of complex trauma (CPTSS)",
         tekst: "Bij onveiligheid die zich herhaalde — vaak al vroeg in je leven, door mensen op wie je had moeten kunnen vertrouwen — raken de klachten dieper. Ze gaan niet alleen over de herinnering, maar over wie je bent geworden om te overleven."
       },
       {
-        kop: "Lichamelijke klachten",
-        lijst: [
-          { term: "Chronische pijn en lichamelijke spanningen", beschrijving: "Pijn zonder duidelijke medische oorzaak, terugkerende hoofdpijn, darmklachten of een voortdurend gespannen lijf. Het lichaam slaat trauma op als spanning in spieren, organen en zenuwstelsel — niet als herinnering, maar als toestand." },
-          { term: "Chronische vermoeidheid", beschrijving: "Constant waakzaam zijn kost energie. Veel mensen met complex trauma zijn uitgeput, ook na een volle nacht slapen." },
-          { term: "Dissociatie", beschrijving: "Je voelt jezelf verdwijnen, kijkt van een afstand naar jezelf, of ervaart gaten in je geheugen. Dissociatie is hoe een jong zenuwstelsel zich beschermde tegen iets wat te overweldigend was om te voelen." },
-          { term: "Verdoofd of leeg voelen", beschrijving: "Geen verdriet, geen vreugde — gewoon niets. De emotionele verdoving die ooit beschermde, staat nu altijd aan." },
-          { term: "Snel overweldigd door prikkels", beschrijving: "Geuren, aanraking, geluid of drukte kunnen een intense reactie uitlokken die van buitenaf onbegrijpelijk lijkt, maar inwendig heel logisch is." }
-        ]
+        kop: "Lichamelijke klachten"
       },
       {
-        kop: "Identiteit en zelfbeeld",
-        lijst: [
-          { term: "Geen stabiel gevoel van wie je bent", beschrijving: "Je weet niet goed wat je wilt, wat je voelt, wat je vindt. Je zelf verschuift afhankelijk van wie erbij is. Dit is geen karakterzwakte — het is wat er gebeurt als je vroeg leerde dat jezelf zijn gevaarlijk was." },
-          { term: "Diepe schaamte", beschrijving: "Niet schaamte over iets wat je deed, maar over wie je bent. Een onderhuids gevoel dat je fundamenteel fout bent, te veel bent, of er niet bij hoort." },
-          { term: "Vernietigende innerlijke stem", beschrijving: "Een stem die voortdurend veroordeelt of kleineert. Vaak een geïnternaliseerde versie van iemand die dat vroeger deed van buitenaf." },
-          { term: "Gevoel nergens bij te horen", beschrijving: "Ook in vertrouwde omgevingen het gevoel een buitenstaander te zijn. Alsof anderen een handleiding voor het leven hebben die jou ontbreekt." },
-          { term: "Moeite om eigen wensen en grenzen te kennen", beschrijving: "Je weet niet wat je nodig hebt, of je durft het niet te voelen. Grenzen stellen voelt gevaarlijk of onmogelijk." }
-        ]
+        kop: "Identiteit en zelfbeeld"
       },
       {
-        kop: "Emoties en relaties",
-        lijst: [
-          { term: "Emoties die overspoelen of verdwijnen", beschrijving: "Soms schiet een emotie als een vloed door je heen zonder aanleiding; soms voel je helemaal niets. De regulatie zit vast, niet de emoties zelf." },
-          { term: "Moeite om te vertrouwen", beschrijving: "Als de onveiligheid vroeg was en van mensen op wie je moest vertrouwen, leert je zenuwstelsel dat nabijheid gevaarlijk is. Dat patroon activeert later in elke relatie." },
-          { term: "Wisselende afstand en nabijheid", beschrijving: "Je verlangt naar verbinding maar schrikt als iemand dichterbij komt. Of je klemt je vast uit angst voor verlating. Soms allebei, bij dezelfde persoon." },
-          { term: "Herhalen van pijnlijke relatiepatronen", beschrijving: "Onbewust kom je terecht in situaties die lijken op vroeger — niet omdat je het wilt, maar omdat je zenuwstelsel het herkenbare als veilig registreert." },
-          { term: "Oververantwoordelijkheid voor anderen", beschrijving: "Je voelt je verantwoordelijk voor de stemming en het welzijn van mensen om je heen. Grenzen trekken voelt als iemand beschadigen." }
-        ]
+        kop: "Emoties en relaties"
       },
       {
         tekst: "De klachten in het CPTSS-gedeelte zijn geen persoonlijkheidskenmerken of tekortkomingen. Ze zijn aanpassingen — ooit noodzakelijk om te overleven. Dat onderscheid zien is al een begin van herstel."
@@ -16986,11 +16955,9 @@ const CONCEPTEN = [
       "trauma-vs-complex",
       "zenuwstelsel-overleving"
     ],
+    _index: 1,
     beeld: {
-      src: "img/concepten/trauma-symptomen.png",
-      alt: "Een foto die alertheid en lichamelijke prikkels uitdrukt.",
-      kaartPos: "center center",
-      detailPos: "center 30%"
+      src: "img/concepten/trauma-symptomen.png"
     }
   },
   {
@@ -17935,6 +17902,7 @@ const STOORNISSEN = [
     }
   }
 ];
+
 
 // ============================================================
 // EHBT — Crisislijnen, acute plannen, mythes & grondbeginselen

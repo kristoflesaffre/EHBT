@@ -138,8 +138,7 @@ const VRAGEN_7 = [
       "wat-is-emotionele-verwaarlozing",
       "wat-zijn-aces",
       "toxic-stress-uitgelegd"
-    ],
-    _index: 55
+    ]
   },
   {
     id: "medisch-ziekenhuis-trauma",
@@ -751,8 +750,7 @@ const VRAGEN_7 = [
       "freeze-response-wat-is",
       "vluchten-modus-herkennen",
       "wat-is-een-trigger"
-    ],
-    _index: 64
+    ]
   },
   {
     id: "vluchten-modus-herkennen",

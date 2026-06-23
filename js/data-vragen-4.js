@@ -264,8 +264,7 @@ const VRAGEN_4 = [
       "narcistische-ouder-betekenis",
       "vergeven-om-te-helen",
       "wat-is-emotionele-verwaarlozing"
-    ],
-    _index: 27
+    ]
   },
   {
     id: "intergenerationeel-trauma",

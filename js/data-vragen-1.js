@@ -59,8 +59,7 @@ const VRAGEN_1 = [
       "lichaam-reageert-zonder-gevaar",
       "trauma-vs-complex",
       "hoe-lang-duurt-herstel"
-    ],
-    _index: 0
+    ]
   },
   {
     id: "lichaam-reageert-zonder-gevaar",

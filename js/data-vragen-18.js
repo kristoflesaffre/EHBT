@@ -209,8 +209,7 @@ const VRAGEN_18 = [
       "wat-is-somatische-therapie",
       "lichaam-reageert-zonder-gevaar",
       "dissociatie-naast-mezelf"
-    ],
-    _index: 188
+    ]
   },
   {
     id: "dbt-skills-thuis",
@@ -279,8 +278,7 @@ const VRAGEN_18 = [
       "window-of-tolerance-verbreden",
       "wat-is-grounding",
       "flashback-wat-doe-ik"
-    ],
-    _index: 194
+    ]
   },
   {
     id: "ifs-zelf-oefenen",
