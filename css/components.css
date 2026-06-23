@@ -635,20 +635,23 @@
 /* ---------- Themachips ---------- */
 
 .chip-rij {
-  display: flex; flex-wrap: wrap; gap: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: clip;
+  gap: 10px;
+  scrollbar-width: none;
+  padding: 4px 2px 8px;
+  margin: -4px -2px 0;
+  overscroll-behavior-x: contain;
 }
+.chip-rij::-webkit-scrollbar { display: none; }
 
 @media (max-width: 640px) {
   .chip-rij {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    /* padding geeft ruimte zodat hover-border en box-shadow niet worden afgeknipt */
     padding: 4px clamp(20px, 4vw, 48px) 8px 4px;
     margin: -4px calc(-1 * clamp(20px, 4vw, 48px)) 0 -4px;
   }
-  .chip-rij::-webkit-scrollbar { display: none; }
 }
 
 .chip {
@@ -2224,3 +2227,52 @@
 }
 .leeftijd-card:hover .lc-emoji,
 .leeftijd-card.actief .lc-emoji { transform: scale(1.12); }
+
+@media (max-width: 640px) {
+  .uitgelegd-categorie { margin-top: 32px; }
+  .uitgelegd-categorie:first-of-type { margin-top: 24px; }
+}
+
+/* ---------- Therapieën: jump-nav ---------- */
+.therapie-jumpnav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 28px 0 32px;
+}
+
+.therapie-jumpnav-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px;
+  background: var(--kaart);
+  border: 1px solid var(--lijn);
+  border-radius: var(--rond-klein);
+  text-decoration: none;
+  color: var(--inkt);
+  font-size: .88rem;
+  font-weight: 600;
+  line-height: 1.35;
+  transition: background .2s, border-color .2s, transform .2s var(--vlot);
+}
+
+.therapie-jumpnav-item:hover {
+  background: var(--salie-zacht);
+  border-color: var(--salie);
+  transform: translateY(-2px);
+}
+
+.tji-icoon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.tji-label { flex: 1; }
+
+@media (min-width: 641px) {
+  .therapie-jumpnav {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

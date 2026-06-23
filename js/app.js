@@ -616,7 +616,7 @@ function therapieGroepHTML(groep, groepIndex = 0) {
   const items = THERAPIEEN.filter(t => (t.overzichtGroep || "stabilisatie") === groep.id);
   if (!items.length) return "";
   return `
-    <section class="therapie-groep verschijn" style="--wacht:${Math.min(groepIndex * 0.08, 0.28)}s">
+    <section class="therapie-groep verschijn" id="therapie-groep-${groep.id}" style="--wacht:${Math.min(groepIndex * 0.08, 0.28)}s">
       <div class="therapie-groep-kop">
         <h2>${groep.titel}</h2>
         <p>${groep.tekst}</p>
@@ -804,6 +804,7 @@ function renderVraag(id) {
       </div>
     </div>` : ""}
   </article>`;
+  voegVraagSchemaIn(v);
 }
 
 /* ---------- acute hulp ---------- */
@@ -873,14 +874,26 @@ function renderMythes() {
 
 /* ---------- therapieën ---------- */
 
+function therapieJumpNavHTML() {
+  const iconen = { ptss: "⚡", cptss: "🕸", stabilisatie: "⚓", relationeel: "🫂" };
+  const zichtbaar = THERAPIE_GROEPEN.filter(g => THERAPIEEN.some(t => (t.overzichtGroep || "stabilisatie") === g.id));
+  return `<nav class="therapie-jumpnav verschijn" aria-label="Ga naar therapiegroep">
+    ${zichtbaar.map(g => `<a class="therapie-jumpnav-item" href="#therapie-groep-${g.id}">
+      <span class="tji-icoon">${iconen[g.id] || "✦"}</span>
+      <span class="tji-label">${g.titel}</span>
+    </a>`).join("")}
+  </nav>`;
+}
+
 function renderTherapieen() {
   app.innerHTML = `
   <section class="sectie">
     ${sectieKop("Therapieën", "Welke behandelingen helpen bij trauma?", "Er bestaat geen enkele 'beste' traumatherapie. Welke aanpak past, hangt sterk af van het soort trauma, je klachten, en hoeveel veiligheid en rust er eerst nodig zijn.", "therapieen")}
-    <div class="bron-notitie verschijn">
+    ${therapieJumpNavHTML()}
+    <div class="bron-notitie verschijn" style="--wacht:.05s">
       <strong>Lees dit eerst:</strong> richtlijnen geven vooral sterke steun aan traumagerichte behandelingen zoals EMDR en trauma-focused CBT bij PTSS. Bij complex trauma of vroeg trauma in relaties is vaak meer nodig: eerst stevig worden, lichaamswerk, hechting en relaties, schaamte en delenwerk. Deze pagina's helpen je het gesprek met een hulpverlener voor te bereiden — ze vervangen dat gesprek niet.
     </div>
-    <section class="therapie-wijzer-sectie verschijn" style="--wacht:.06s">
+    <section class="therapie-wijzer-sectie verschijn" style="--wacht:.08s">
       <div class="therapie-wijzer-kop">
         <h2>PTSS, complex trauma en waar DBT past</h2>
         <p>Twee korte wegwijzers vóór je naar losse therapieën kijkt: gaat het vooral om één afgebakende traumaherinnering, of om bredere sporen van herhaalde onveiligheid? En heb je eerst meer stabiliteit nodig voor je dieper werkt?</p>
@@ -1320,6 +1333,54 @@ const routes = [
   [/^#\/boek\/(.+)$/, m => { renderBoek(m[1]); return (boekVan(m[1]) || {}).titel; }]
 ];
 
+function updateMeta({ titel, beschrijving, afbeelding } = {}) {
+  const basis = location.origin;
+  const url = basis + location.pathname + location.hash;
+  const ogTitel = titel ? `${titel} — EHBT` : "EHBT · Eerste Hulp bij Trauma";
+  const ogDesc = beschrijving || "Rustige, onderbouwde antwoorden over trauma en herstel. 205 vragen, 13 therapieën, wetenschappelijk onderbouwd.";
+  const ogImg = afbeelding ? (afbeelding.startsWith("http") ? afbeelding : `${basis}/${afbeelding}`) : `${basis}/img/hero/trauma-en-herstel.jpg`;
+
+  const set = (id, prop, val) => { const el = document.getElementById(id); if (el) el.setAttribute(prop, val); };
+  set("og-title", "content", ogTitel);
+  set("og-description", "content", ogDesc);
+  set("og-image", "content", ogImg);
+  set("og-url", "content", url);
+  set("tw-title", "content", ogTitel);
+  set("tw-description", "content", ogDesc);
+  set("canonical", "href", url);
+
+  const ld = document.getElementById("ld-json");
+  if (ld) {
+    try {
+      const data = JSON.parse(ld.textContent);
+      data["@graph"].forEach(node => { if (node.url !== undefined) node.url = basis; });
+      ld.textContent = JSON.stringify(data);
+    } catch(e) {}
+  }
+}
+
+function voegVraagSchemaIn(v) {
+  const antwoord = [v.kort, ...(v.blokken || []).map(b => b.tekst)].filter(Boolean).join(" ").slice(0, 500);
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.id = "ld-page";
+  script.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "QAPage",
+    "mainEntity": {
+      "@type": "Question",
+      "name": v.vraag,
+      "acceptedAnswer": { "@type": "Answer", "text": antwoord }
+    }
+  });
+  document.getElementById("ld-page")?.remove();
+  document.head.appendChild(script);
+}
+
+function verwijderPaginaSchema() {
+  document.getElementById("ld-page")?.remove();
+}
+
 function navigeer() {
   const hash = location.hash || "#/";
 
@@ -1327,6 +1388,7 @@ function navigeer() {
     sessionStorage.setItem("scroll:" + navigeer._huidig, window.scrollY);
   }
 
+  verwijderPaginaSchema();
   let titel = null;
   for (const [patroon, actie] of routes) {
     const m = hash.match(patroon);
@@ -1347,6 +1409,7 @@ function navigeer() {
 
   navigeer._huidig = hash;
   markeerNav(hash);
+  updateMeta({ titel });
   koppelLazyBeelden();
   koppelMythes();
   animaties();
