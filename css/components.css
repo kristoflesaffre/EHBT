@@ -298,6 +298,7 @@
 }
 .vraag-kaart-waslaag {
   z-index: 1;
+  border-radius: inherit;
   background:
     linear-gradient(90deg, rgba(255, 255, 255, .6) 0%, rgba(255, 255, 255, .56) 45%, rgba(255, 255, 255, .48) 100%),
     rgba(255, 253, 247, .22);
@@ -598,17 +599,14 @@
 .swim-lane-rij {
   display: flex;
   overflow-x: auto;
-  /* clip (not hidden) keeps the Y-axis from becoming an implicit scroll
-     container, so vertical trackpad/wheel gestures pass through to the page
-     with no elastic capture and no main-thread jank. */
   overflow-y: clip;
-  /* extend the clip region so hover box-shadows (~44px below cards) survive. */
-  overflow-clip-margin: 48px;
+  overflow-clip-margin: 60px;
   flex-wrap: nowrap;
   gap: 18px;
   scrollbar-width: none;
-  margin-top: -8px;
-  padding: 8px 0 16px;
+  margin-top: -12px;
+  margin-bottom: -40px;
+  padding: 12px 0 56px;
   overscroll-behavior-x: contain;
 }
 
@@ -619,13 +617,14 @@
 }
 
 @media (max-width: 640px) {
-  .swim-lane { margin-bottom: 36px; }
+  .swim-lane { margin-bottom: 32px; }
 
   .swim-lane-rij {
     gap: 14px;
     margin-left: calc(-1 * clamp(20px, 4vw, 48px));
     margin-right: calc(-1 * clamp(20px, 4vw, 48px));
-    padding: 4px clamp(20px, 4vw, 48px) 12px;
+    margin-bottom: 0;
+    padding: 8px clamp(20px, 4vw, 48px) 16px;
   }
 
   .swim-lane-rij .vraag-kaart {
