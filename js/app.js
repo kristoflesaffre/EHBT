@@ -1137,7 +1137,6 @@ function renderUitgelegd() {
   app.innerHTML = `
   <section class="sectie">
     ${sectieKop("Trauma uitgelegd", "Begrijpen wat er gebeurt", "Rustige, jargonvrije uitleg over trauma en herstel — met extra houvast rond PTSS-signalen, gewone stressreacties en wanneer hulp zinvol wordt.", "uitgelegd")}
-    ${uitgelegdOverzichtHTML()}
     ${perCat}
 
     <div class="uitgelegd-categorie">
@@ -1148,7 +1147,6 @@ function renderUitgelegd() {
 
     <div class="uitgelegd-categorie">
       <h2 class="uitgelegd-categorie-titel verschijn"><span class="uc-icoon">🪞</span> Persoonlijkheidsstoornissen</h2>
-      <div class="disclaimer-blok stoornis-banner verschijn"><span><strong>Belangrijk:</strong> deze uitleg is educatief en niet-stigmatiserend bedoeld. Het is géén diagnose-instrument. Een persoonlijkheidsstoornis stel je niet zelf vast — en gebruik deze termen nooit als verwijt.</span></div>
       <div class="kaart-raster">${STOORNISSEN.map((s, i) => stoornisKaartHTML(s, i)).join("")}</div>
     </div>
   </section>`;
@@ -1255,7 +1253,6 @@ function renderStoornissen() {
   <section class="sectie">
     <a class="terug-link" href="#/uitgelegd"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Trauma uitgelegd</a>
     ${sectieKop("🪞 Persoonlijkheid", "Persoonlijkheidsstoornissen, met respect uitgelegd", "Patronen die vaak ontstaan door vroege onveiligheid. Bedoeld om te begrijpen, niet om een stempel te geven.", "stoornissen")}
-    <div class="disclaimer-blok stoornis-banner verschijn"><span><strong>Belangrijk:</strong> dit is geen diagnose-instrument. Een persoonlijkheidsstoornis stel je niet zelf of bij een ander vast — dat doet een gekwalificeerde professional. Gebruik deze termen nooit als verwijt of scheldwoord.</span></div>
     <div class="kaart-raster">${STOORNISSEN.map((s, i) => stoornisKaartHTML(s, i)).join("")}</div>
   </section>`;
 }

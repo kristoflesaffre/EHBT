@@ -10,7 +10,7 @@ const VRAGEN_1 = [
     beeld: {
       src: "img/vragen/wat-is-trauma-erg-genoeg.jpg"
     },
-    vraag: "Wat is trauma eigenlijk — en is mijn trauma wel 'erg genoeg'?",
+    vraag: "Wat is trauma eigenlijk (en is mijn trauma wel 'erg genoeg'?)",
     thema: "wat-is-trauma",
     leeftijd: [
       "zelf",
@@ -50,7 +50,11 @@ const VRAGEN_1 = [
       "Wachten tot het 'vanzelf' overgaat terwijl het je leven blijft beperken.",
       "Jezelf veroordelen omdat je 'er nog steeds last van hebt'."
     ],
-    zegDit: "“Wat ik voel is echt, ook al begrijp ik nog niet helemaal waarom.”,“Mijn pijn hoeft niet de ergste te zijn om er hulp voor te zoeken.”",
+    zegDit: [
+      "“Wat ik voel is echt",
+      "ook al begrijp ik nog niet helemaal waarom.”",
+      "“Mijn pijn hoeft niet de ergste te zijn om er hulp voor te zoeken.”"
+    ],
     bronnen: [
       "[object Object]",
       "[object Object]"

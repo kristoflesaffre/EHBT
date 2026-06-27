@@ -370,7 +370,7 @@ const CONCEPTEN = [
   },
   {
     id: "aces-uitgelegd",
-    titel: "ACE's uitgelegd",
+    titel: "ACE's (Adverse Childhood Experiences) uitgelegd",
     icoon: "📊",
     accent: "#5b6a7d",
     categorie: "basis",
@@ -416,7 +416,7 @@ const CONCEPTEN = [
       "trauma-basis",
       "intergenerationeel-trauma"
     ],
-    _index: 6,
+    _index: 7,
     beeld: {
       src: "img/concepten/aces-uitgelegd.jpg"
     }
@@ -582,7 +582,7 @@ const CONCEPTEN = [
   },
   {
     id: "toxisch-schaamte-schuld",
-    titel: "Giftige schaamte (toxic shame) vs. gewone schuld",
+    titel: "Giftige schaamte (toxic shame) vs. gewone schaamte",
     icoon: "🪨",
     accent: "#7c6f8f",
     categorie: "basis",
@@ -628,7 +628,7 @@ const CONCEPTEN = [
       "emotionele-verwaarlozing",
       "herstel-niet-lineair"
     ],
-    _index: 10,
+    _index: 11,
     beeld: {
       src: "img/concepten/toxisch-schaamte-schuld.jpg"
     }
@@ -741,7 +741,7 @@ const CONCEPTEN = [
   },
   {
     id: "fawn-response",
-    titel: "People-pleasen als overlevingsreactie (fawning)",
+    titel: "People-pleasen (fawning) als overlevingsreactie",
     icoon: "🤝",
     accent: "#9a7b4f",
     categorie: "zenuwstelsel",
@@ -787,7 +787,7 @@ const CONCEPTEN = [
       "emotionele-verwaarlozing",
       "emotionele-incest-metafoor"
     ],
-    _index: 13,
+    _index: 14,
     beeld: {
       src: "img/concepten/fawn-response.jpg"
     }
@@ -940,7 +940,7 @@ const HECHTINGSSTIJLEN = [
 const STOORNISSEN = [
   {
     id: "borderline",
-    naam: "Borderline-patroon",
+    naam: "Borderline",
     ookGenoemd: "borderline-persoonlijkheidsstoornis (BPS), emotieregulatiestoornis",
     icoon: "🌊",
     accent: "#8f6a9b",
@@ -989,7 +989,7 @@ const STOORNISSEN = [
   },
   {
     id: "narcistisch",
-    naam: "Narcistisch patroon",
+    naam: "Narcisme",
     ookGenoemd: "narcistische persoonlijkheidsstoornis (NPS)",
     icoon: "🪞",
     accent: "#9a7b4f",

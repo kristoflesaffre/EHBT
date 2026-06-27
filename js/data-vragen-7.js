@@ -36,7 +36,7 @@ const VRAGEN_7 = [
         tekst: "PTSS omvat vaak drie clusters: herbeleving (flashbacks, nachtmerries, lichaam dat opnieuw reageert), vermijding (plaatsen, mensen of gedachten mijden) en verhoogde prikkelbaarheid of verdoving (alert zijn, schrikken, moeite met concentreren, afstand voelen). Niet iedereen heeft hetzelfde beeld — sommigen vechten, anderen bevriezen of vluchten innerlijk weg."
       },
       {
-        kop: "PTSS versus complex trauma",
+        kop: "Trauma (PTSS) versus complex trauma (CPTSS)",
         tekst: "PTSS gaat in de klassieke definitie vaak over één of enkele duidelijke gebeurtenissen. Wanneer trauma herhaaldelijk en vroeg in het leven gebeurde — bijvoorbeeld in de opvoeding — kan het breder doorwerken: identiteit, relaties, zelfbeeld. Dat lijkt op PTSS, maar wordt soms CPTSS genoemd. Beide zijn echt; het verschil helpt vooral bij het kiezen van passende hulp."
       }
     ],

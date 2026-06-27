@@ -137,9 +137,9 @@ const VRAGEN_3 = [
   {
     id: "wat-zijn-aces",
     beeld: {
-      src: "img/vragen/wat-zijn-aces.jpg"
+      src: "img/vragen/wat-zijn-aces.png"
     },
-    vraag: "Wat zijn ACE's?",
+    vraag: "Wat zijn ACE's? (Adverse Childhood Experiences)",
     thema: "wat-is-trauma",
     leeftijd: [
       "zelf",
@@ -179,7 +179,7 @@ const VRAGEN_3 = [
       "Denken dat ACE's alleen over extreme gevallen gaan.",
       "Je score gebruiken om je pijn te minimaliseren ('mijn score is laag, dus het telt niet')."
     ],
-    zegDit: null,
+    zegDit: [],
     bronnen: [
       {
         boek: "deepest-well",

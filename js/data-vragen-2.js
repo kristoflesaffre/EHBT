@@ -342,11 +342,11 @@ const VRAGEN_2 = [
     kort: "Goede traumatherapie helpt je stap voor stap verwerken, niet om je te overspoelen. Even meer emoties kan voorkomen, maar blijf je lang uit balans, dan is dat een signaal dat het tempo, de aanpak of de samenwerking opnieuw bekeken moet worden.",
     blokken: [
       {
-        tekst: "Veel mensen zijn bang dat therapie oude pijn opnieuw openmaakt. Die angst is begrijpelijk. Misschien heb je ervaringen bewust of onbewust op afstand gehouden om te kunnen functioneren, of ging eerdere hulp te snel. Toch is goede traumatherapie er niet op gericht je zomaar terug te brengen naar pijnlijke ervaringen. Het doel is juist om moeilijke dingen op een veilige en behapbare manier te benaderen."
+        tekst: "Veel mensen zijn bang dat therapie oude pijn opnieuw losmaakt. Die angst is begrijpelijk. Misschien heb je ervaringen bewust of onbewust op afstand gehouden om te kunnen functioneren, of ging eerdere hulp te snel. Toch is goede traumatherapie er niet op gericht je zomaar terug te brengen naar pijnlijke ervaringen. Het doel is juist om moeilijke dingen op een veilige en behapbare manier te benaderen."
       },
       {
         kop: "Het verschil zit in tempo en veiligheid",
-        tekst: "Traumatherapie werkt meestal het best als er eerst genoeg veiligheid, rust en vertrouwen is opgebouwd. Pas daarna kijk je naar wat verwerkt wil worden. <strong>Je kunt je na een sessie tijdelijk emotioneler, moe of gevoeliger voelen — dat kan normaal zijn.</strong> Verwerken kost energie. Maar als je lang overspoeld blijft, steeds verder uit balans raakt, of je onveilig voelt bij je therapeut, dan verdient dat aandacht. Dat betekent niet meteen dat therapie verkeerd is, maar wel dat het tempo of de aanpak misschien niet goed past bij wat jij nodig hebt."
+        tekst: "Traumatherapie werkt het best als er eerst genoeg veiligheid, rust en vertrouwen is opgebouwd. Pas daarna kijk je naar wat verwerkt wil worden. <strong>Je kunt je na een sessie tijdelijk emotioneler, moe of gevoeliger voelen — dat kan normaal zijn.</strong> Verwerken kost energie. Maar als je lang overspoeld blijft, steeds verder uit balans raakt, of je onveilig voelt bij je therapeut, dan verdient dat aandacht. Dat betekent niet meteen dat therapie verkeerd is, maar wel dat het tempo of de aanpak misschien niet goed past bij wat jij nodig hebt."
       },
       {
         kop: "Je hoeft het niet alleen te dragen",
@@ -369,7 +369,12 @@ const VRAGEN_2 = [
       "Blijven doorgaan met een aanpak die je telkens opnieuw overspoelt zonder dit te bespreken.",
       "Je ongemak verzwijgen uit angst om lastig gevonden te worden."
     ],
-    zegDit: "\"Dit voelt te veel voor mij op dit moment.\", \"Kunnen we vertragen?\", \"Ik merk dat ik tussen sessies uit balans blijf.\", \"Ik wil graag begrijpen waarom we deze stap zetten.\"",
+    zegDit: [
+      "\"Dit voelt te veel voor mij op dit moment.\"",
+      "\"Kunnen we vertragen?\"",
+      "\"Ik merk dat ik tussen sessies uit balans blijf.\"",
+      "\"Ik wil graag begrijpen waarom we deze stap zetten.\""
+    ],
     bronnen: [
       {
         boek: "complex-ptsd-workbook",

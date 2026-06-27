@@ -1818,7 +1818,7 @@ const VRAGEN_1 = [
     beeld: {
       src: "img/vragen/wat-is-trauma-erg-genoeg.jpg"
     },
-    vraag: "Wat is trauma eigenlijk — en is mijn trauma wel 'erg genoeg'?",
+    vraag: "Wat is trauma eigenlijk (en is mijn trauma wel 'erg genoeg'?)",
     thema: "wat-is-trauma",
     leeftijd: [
       "zelf",
@@ -1858,7 +1858,11 @@ const VRAGEN_1 = [
       "Wachten tot het 'vanzelf' overgaat terwijl het je leven blijft beperken.",
       "Jezelf veroordelen omdat je 'er nog steeds last van hebt'."
     ],
-    zegDit: "“Wat ik voel is echt, ook al begrijp ik nog niet helemaal waarom.”,“Mijn pijn hoeft niet de ergste te zijn om er hulp voor te zoeken.”",
+    zegDit: [
+      "“Wat ik voel is echt",
+      "ook al begrijp ik nog niet helemaal waarom.”",
+      "“Mijn pijn hoeft niet de ergste te zijn om er hulp voor te zoeken.”"
+    ],
     bronnen: [
       "[object Object]",
       "[object Object]"
@@ -2657,11 +2661,11 @@ const VRAGEN_2 = [
     kort: "Goede traumatherapie helpt je stap voor stap verwerken, niet om je te overspoelen. Even meer emoties kan voorkomen, maar blijf je lang uit balans, dan is dat een signaal dat het tempo, de aanpak of de samenwerking opnieuw bekeken moet worden.",
     blokken: [
       {
-        tekst: "Veel mensen zijn bang dat therapie oude pijn opnieuw openmaakt. Die angst is begrijpelijk. Misschien heb je ervaringen bewust of onbewust op afstand gehouden om te kunnen functioneren, of ging eerdere hulp te snel. Toch is goede traumatherapie er niet op gericht je zomaar terug te brengen naar pijnlijke ervaringen. Het doel is juist om moeilijke dingen op een veilige en behapbare manier te benaderen."
+        tekst: "Veel mensen zijn bang dat therapie oude pijn opnieuw losmaakt. Die angst is begrijpelijk. Misschien heb je ervaringen bewust of onbewust op afstand gehouden om te kunnen functioneren, of ging eerdere hulp te snel. Toch is goede traumatherapie er niet op gericht je zomaar terug te brengen naar pijnlijke ervaringen. Het doel is juist om moeilijke dingen op een veilige en behapbare manier te benaderen."
       },
       {
         kop: "Het verschil zit in tempo en veiligheid",
-        tekst: "Traumatherapie werkt meestal het best als er eerst genoeg veiligheid, rust en vertrouwen is opgebouwd. Pas daarna kijk je naar wat verwerkt wil worden. <strong>Je kunt je na een sessie tijdelijk emotioneler, moe of gevoeliger voelen — dat kan normaal zijn.</strong> Verwerken kost energie. Maar als je lang overspoeld blijft, steeds verder uit balans raakt, of je onveilig voelt bij je therapeut, dan verdient dat aandacht. Dat betekent niet meteen dat therapie verkeerd is, maar wel dat het tempo of de aanpak misschien niet goed past bij wat jij nodig hebt."
+        tekst: "Traumatherapie werkt het best als er eerst genoeg veiligheid, rust en vertrouwen is opgebouwd. Pas daarna kijk je naar wat verwerkt wil worden. <strong>Je kunt je na een sessie tijdelijk emotioneler, moe of gevoeliger voelen — dat kan normaal zijn.</strong> Verwerken kost energie. Maar als je lang overspoeld blijft, steeds verder uit balans raakt, of je onveilig voelt bij je therapeut, dan verdient dat aandacht. Dat betekent niet meteen dat therapie verkeerd is, maar wel dat het tempo of de aanpak misschien niet goed past bij wat jij nodig hebt."
       },
       {
         kop: "Je hoeft het niet alleen te dragen",
@@ -2684,7 +2688,12 @@ const VRAGEN_2 = [
       "Blijven doorgaan met een aanpak die je telkens opnieuw overspoelt zonder dit te bespreken.",
       "Je ongemak verzwijgen uit angst om lastig gevonden te worden."
     ],
-    zegDit: "\"Dit voelt te veel voor mij op dit moment.\", \"Kunnen we vertragen?\", \"Ik merk dat ik tussen sessies uit balans blijf.\", \"Ik wil graag begrijpen waarom we deze stap zetten.\"",
+    zegDit: [
+      "\"Dit voelt te veel voor mij op dit moment.\"",
+      "\"Kunnen we vertragen?\"",
+      "\"Ik merk dat ik tussen sessies uit balans blijf.\"",
+      "\"Ik wil graag begrijpen waarom we deze stap zetten.\""
+    ],
     bronnen: [
       {
         boek: "complex-ptsd-workbook",
@@ -2842,9 +2851,9 @@ const VRAGEN_3 = [
   {
     id: "wat-zijn-aces",
     beeld: {
-      src: "img/vragen/wat-zijn-aces.jpg"
+      src: "img/vragen/wat-zijn-aces.png"
     },
-    vraag: "Wat zijn ACE's?",
+    vraag: "Wat zijn ACE's? (Adverse Childhood Experiences)",
     thema: "wat-is-trauma",
     leeftijd: [
       "zelf",
@@ -2884,7 +2893,7 @@ const VRAGEN_3 = [
       "Denken dat ACE's alleen over extreme gevallen gaan.",
       "Je score gebruiken om je pijn te minimaliseren ('mijn score is laag, dus het telt niet')."
     ],
-    zegDit: null,
+    zegDit: [],
     bronnen: [
       {
         boek: "deepest-well",
@@ -5452,7 +5461,7 @@ const VRAGEN_7 = [
         tekst: "PTSS omvat vaak drie clusters: herbeleving (flashbacks, nachtmerries, lichaam dat opnieuw reageert), vermijding (plaatsen, mensen of gedachten mijden) en verhoogde prikkelbaarheid of verdoving (alert zijn, schrikken, moeite met concentreren, afstand voelen). Niet iedereen heeft hetzelfde beeld — sommigen vechten, anderen bevriezen of vluchten innerlijk weg."
       },
       {
-        kop: "PTSS versus complex trauma",
+        kop: "Trauma (PTSS) versus complex trauma (CPTSS)",
         tekst: "PTSS gaat in de klassieke definitie vaak over één of enkele duidelijke gebeurtenissen. Wanneer trauma herhaaldelijk en vroeg in het leven gebeurde — bijvoorbeeld in de opvoeding — kan het breder doorwerken: identiteit, relaties, zelfbeeld. Dat lijkt op PTSS, maar wordt soms CPTSS genoemd. Beide zijn echt; het verschil helpt vooral bij het kiezen van passende hulp."
       }
     ],
@@ -17194,7 +17203,7 @@ const CONCEPTEN = [
   },
   {
     id: "aces-uitgelegd",
-    titel: "ACE's uitgelegd",
+    titel: "ACE's (Adverse Childhood Experiences) uitgelegd",
     icoon: "📊",
     accent: "#5b6a7d",
     categorie: "basis",
@@ -17240,7 +17249,7 @@ const CONCEPTEN = [
       "trauma-basis",
       "intergenerationeel-trauma"
     ],
-    _index: 6,
+    _index: 7,
     beeld: {
       src: "img/concepten/aces-uitgelegd.jpg"
     }
@@ -17406,7 +17415,7 @@ const CONCEPTEN = [
   },
   {
     id: "toxisch-schaamte-schuld",
-    titel: "Giftige schaamte (toxic shame) vs. gewone schuld",
+    titel: "Giftige schaamte (toxic shame) vs. gewone schaamte",
     icoon: "🪨",
     accent: "#7c6f8f",
     categorie: "basis",
@@ -17452,7 +17461,7 @@ const CONCEPTEN = [
       "emotionele-verwaarlozing",
       "herstel-niet-lineair"
     ],
-    _index: 10,
+    _index: 11,
     beeld: {
       src: "img/concepten/toxisch-schaamte-schuld.jpg"
     }
@@ -17565,7 +17574,7 @@ const CONCEPTEN = [
   },
   {
     id: "fawn-response",
-    titel: "People-pleasen als overlevingsreactie (fawning)",
+    titel: "People-pleasen (fawning) als overlevingsreactie",
     icoon: "🤝",
     accent: "#9a7b4f",
     categorie: "zenuwstelsel",
@@ -17611,7 +17620,7 @@ const CONCEPTEN = [
       "emotionele-verwaarlozing",
       "emotionele-incest-metafoor"
     ],
-    _index: 13,
+    _index: 14,
     beeld: {
       src: "img/concepten/fawn-response.jpg"
     }
@@ -17764,7 +17773,7 @@ const HECHTINGSSTIJLEN = [
 const STOORNISSEN = [
   {
     id: "borderline",
-    naam: "Borderline-patroon",
+    naam: "Borderline",
     ookGenoemd: "borderline-persoonlijkheidsstoornis (BPS), emotieregulatiestoornis",
     icoon: "🌊",
     accent: "#8f6a9b",
@@ -17813,7 +17822,7 @@ const STOORNISSEN = [
   },
   {
     id: "narcistisch",
-    naam: "Narcistisch patroon",
+    naam: "Narcisme",
     ookGenoemd: "narcistische persoonlijkheidsstoornis (NPS)",
     icoon: "🪞",
     accent: "#9a7b4f",
